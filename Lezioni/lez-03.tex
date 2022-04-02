@@ -1,0 +1,104 @@
+\section{Lez - 03}
+\subsection{Definizioni limiti e continuit\aca per $\R^n$}
+\begin{definition}
+  Sia $\f$
+  \begin{enumerate}
+    \item f si dice continua in $p_0 \in A$ se 
+    \begin{enumerate}
+      \item $p_0$ \ace un punto \underline{isolato} di A, oppure
+      \item $p_0$ \ace un punto di accomulazione ed $\exists \lim_{p \to p_0} f(p) = f(p_0)$
+    \end{enumerate}
+    \item f si dice \underline{continua} su A se f \ace continua in ogni punto $p_0 \in A$
+  \end{enumerate}
+\end{definition}
+Le nozioni di limite e continuit\aca, introdotte per funzioni $\f$, si possono estendere
+al caso di funzioni $\fn$ con $n\geq 3$.\\
+Pi\acu precisamente su $\R^n$ possiamo definire la distanza Euclidea:
+$$d(p,q) = \sqrt{(x_1-y_1)^2+...+(x_n-y_n)^2}$$
+se $p = (x_1, ..., x_n)$ e $q = (y_1, ..., y_n)$. \\\\
+\underline{Intorno} di centro $p_0 = (x_1^0, ..., x_n^0)$ e $r>0$ \ace l'insieme:
+$$B(p_0,r) = \{p \in \R^n \mid d(p,p_0) < r\}$$
+$$= \{(x_1,...,x_n) \in \R^n \mid (x_1-x_1^0)^2+...+(x_n-x_n^0)^2 < r^2\}$$
+Tramite la nozione di intorni, si possono estendere a $\R^n$ la nozione di:
+\begin{itemize}
+  \item frontiera di un insieme $A \subseteq \R^n$
+  \item insieme aperto/chiuso $A \subseteq \R^n$
+  \item insieme limitato $A \subseteq \R^n$
+  \item punto di accomulazione/isolato di $A \subseteq \R^n$
+\end{itemize}
+Pertanto:
+\begin{definition}
+  Sia $\fn$ e sia $p_0 \in \R^n$ punto di accomulazione di A. Allora si dice che:
+  $$\exists \lim_{p \to p_0} f(p) = L \in \R$$
+  se 
+  $$\forall \varepsilon > 0, \exists \delta = \delta(p,\varepsilon) > 0 \text{ t.c. } 
+  \lvert f(p) - L \rvert < \varepsilon, \forall p \in B(p_0,\delta) \cap (A \setminus \{p_0\})$$
+\end{definition}
+In modo simile si pu\aco introdurre la nozione di continuit\aca per funzioni $\fn$.
+\subsection{Calcolo differenziale per funzioni a pi\acu variabili}
+\subsubsection{Derivate parziali}
+Sia $\f$, A \underline{aperto}, $p_0 = (x_0,y_0) \in A$, essendo A aperto, 
+$\exists \delta_0 > 0$ t.c. 
+$$[x_0-\delta, x_0+\delta]\times [y_0-\delta, y_0+\delta] \subset A$$
+In particolare i segmenti:
+\begin{itemize}
+  \item $(x,y_0) \in A$ $\forall x \in [x_0-\delta, x_0+\delta]$
+  \item $(x_0,y) \in A$ $\forall y \in [y_0-\delta, y_0+\delta]$
+\end{itemize}
+Pertanto son ben definiti i rapporti incrementali
+\begin{itemize}
+  \item $\left((x_0-\delta_0, x_0+\delta_0) \setminus \{x_0\}\right) \ni x \rightarrow \frac{f(x,y_0) - f(x_0,y_0)}{x-x_0}$
+  \item $\left((y_d0-\delta_0, y_0+\delta_0) \setminus \{y_0\}\right) \ni y \rightarrow \frac{f(x_0,y) - f(x_0,y_0)}{y-y_0}$
+\end{itemize}
+\begin{definition}
+  \begin{enumerate}
+    \item Si dice che $f$ \ace \underline{derivabile}(parzialmente) rispetto alla variabile x nel punto $p_0 = (x_0,y_0)$ se 
+          $$\exists \lim_{x \to x_0} \frac{f(x,y_0) - f(x_0,y_0)}{x-x_0} := \frac{\partial f}{\partial x}(x_0,y_0) = D_1 f(x_0,y_0) \in \R$$
+    \item Si dice che $f$ \ace \underline{derivabile}(parzialmente) rispetto alla variabile y nel punto $p_0 = (x_0,y_0)$ se 
+          $$\exists \lim_{y \to y_0} \frac{f(x_0,y) - f(x_0,y_0)}{y-y_0} := \frac{\partial f}{\partial y}(x_0,y_0) = D_2 f(x_0,y_0) \in \R$$
+    \item Se $f$ \ace derivabile (parzialmente) sia rispetto ad x ed y nel punto $p_0 = (x_0,y_0)$, si chiama (vettore)\underline{gradiente} di $f$ in $p_0$
+          il vettore:
+          $$\nabla f(p_0) = \left(\frac{\partial f}{\partial x}(p_0), \frac{\partial f}{\partial y}(p_0)\right) \in \R^2$$
+  \end{enumerate}
+  Sia $\f$, A insieme aperto. Supponiamo che:
+  $$\exists \frac{\partial f}{\partial x},\frac{\partial f}{\partial y} : A \to \R$$
+  allora \ace ben definito il \underline{campo} dei vettori gradiente:
+  $$\nabla f : \R^2 \supseteq A \ni p \to \nabla f(p) = \left(\frac{\partial f}{\partial x}(p), \frac{\partial f}{\partial y}(p)\right) \in \R^2$$
+\end{definition}
+\underline{Applicazione}: Sia $V:A\to \R$ il potenziale di una carica elettrica in un insieme A del piano. Allora 
+vale la realzione $\nabla V = \underline{E}$, dove $\underline{E} := (E_1(x,y),E_2(x,y)) \rightarrow $ vettore campo elettrico.\\\\
+\underline{Problema}: $\exists\nabla f(p_0)$ \ace la nozione corretta di derivabilit\aca per funzioni di due variabili? 
+Per esempio se $\exists\nabla f(p_0) \Rightarrow $ f \ace continua in $p_0$?
+\begin{example}
+  Sia $f: \R^2 \to\R$, $p_0 = (0,0)$ e
+  $$f(x,y):= \left\{\begin{array}{cl}
+    0 & \text{se } (x,y) = (0,0) \\
+    \frac{xy}{x^2+y^2} & \text{se } (x,y) \not = (0,0) \\
+  \end{array}\right.$$
+  Abbiamo visto che: $\not \exists \lim_{p \to p_0} f(p) \Rightarrow $ f non \ace continua in $p_0$.\\
+  D'altra parte:
+  $$\frac{f(x,0)-f(0,0)}{x} = 0$$
+  se $x\not = 0 \Rightarrow \exists \frac{\partial f}{\partial x}(0,0) = 0$
+  $$\frac{f(0,y)-f(0,0)}{y} = 0$$
+  se $y\not = 0 \Rightarrow \exists \frac{\partial f}{\partial y}(0,0) = 0$. \\
+  Pertanto $\exists \nabla f(0,0) = (0,0)$  ma f non \ace continua nel punto (0,0).
+\end{example}
+\subsection{Piano tangente al grafico}
+\textbf{Approssimazione lineare e nozione di differenziabilit\aca per funzioni di pi\acu variabili}. \\\\
+Sia $f:\R^2 \to \R$, $p_0 = (x_0,y_0) \in \R^2$, $z=f(x,y)$. \\\\
+\underline{Problema}: Definire il "piano tangente" alla "superficie" $G_f$ nel punto $(x_0,y_0,f(x_0,y_0))$ se esiste.\\
+Ricordiamo che l'equazione di un piano $\pi$ di $\R^3$, non parallelo all'asse z, passante per il punto 
+$(x_0,y_0,f(x_0,y_0))$ \ace del tipo 
+$$\pi : z = a(x-x_0) + b(y-y_0) + f(x_0,y_0)$$
+dove $a,b \in \R$.\\
+Ricordiamo inoltre che per funzioni di $n=1$ variabile, se $f:(a,b) \to \R$, $x_0\in (a,b)$, la retta tangente $r$ a 
+$G_f$ nel punto $(x_0,f(x_0))$ ha equazione:
+$$r: y = f'(x_0)(x-x_0) + f(x_0)$$
+ed \ace caratterizzata dalla propriet\aca di essere \underline{l'unica retta} del fascio di rette $y=m(x-x_0)+f(x_0)$, 
+$m\in\R$ t.c. 
+$$\text{(D)} \exists \lim_{x\to x_0}\frac{f(x)-\left[m(x-x_0)+f(x_0)\right]}{\lvert x-x_0\rvert} = 0$$
+(miglior approssimazione lineare al primo ordine)
+Infatti: $n=1$, $L(x) = ax$, $a\in\R$ sono le applicazioni lineari di $\R$ in $\R$
+\begin{exercise}
+  
+\end{exercise}

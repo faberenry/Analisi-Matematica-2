@@ -1,0 +1,160 @@
+\section{Lez - 02}
+\begin{definition}[Distanza Euclidea in $\R^2$]
+  Si chiama \underline{distanza euclidea} di $\R^2$ (o nel piano) la funzione, 
+  $d: \R^2 \times \R^2 \to [0,+\infty)$:
+  $$d(p,q) := \sqrt{(x_1-x_2)^2 + (y_1-y_2)^2}$$
+  $p=(x_1,y_1)$, $q=(x_2,y_2)$
+\end{definition}
+\begin{definition}
+  Si chiama \underline{intorno} (sferico) di centro $p_0 = (x_0,y_0) \in \R^2$ e raggio $r>0$ (o anche
+  palla aperta di centro $p_0$ e raggio $r>0$), l'insieme: 
+  $$B_r(p_0) = B(p_0, r) :=  \{p \in \R^2 \mid d(p,p_0) < r\} = $$
+    $$= \{(x,y)\in \R^2 \mid (x-x_0)^2 + (y-y_0)^2 < r^2\}$$ 
+\end{definition}
+\begin{definition}
+  Sia $A \subseteq \R^2$
+  \begin{enumerate}
+    \item Un punto $p_0 \in \R^2$ si dice \underline{punto di frontiera} di A se 
+    $$B(p_0,r)\cap A \not = \varnothing \text{ e } B(p_0,r) \cap (\R^2 \setminus A) \not = \varnothing, \forall r > 0$$
+    L'insieme di tutti i punti di frontiera di A \ace detto \underline{frontiera di A} e di denota $\partial A$
+    \item L'insieme A \ace detto \underline{chiuso} se ogni punto di frontiera di A appartiene ad A
+    \item L'insieme A \ace detto \underline{aperto} se non contiene alcun punto della sua frontiera
+    \item L'insieme di tutti i punti di A che non sono di frontiera si chiama \underline{parte interna di A} e si denota con 
+          $\mathring{A}$
+    \item L'insieme A \ace detto \underline{limitato} se $\exists R_0 > 0 $ t.c. $A \subseteq B(O, R_0)$
+  \end{enumerate}
+\end{definition}
+\begin{example}
+  \begin{enumerate}
+    \item $A =\{(x,y)\in \R^2 \mid x^2 + y^2 \leq 1\}$, allora
+          \begin{itemize}
+            \item $\partial A = \{(x,y)\in \R^2 \mid x^2 + y^2 = 1\}$
+            \item $\mathring{A} = \{(x,y)\in \R^2 \mid x^2 + y^2 < 1\}$
+          \end{itemize}
+    \item $A = \R^2$, $\partial A = \varnothing$, $\mathring{A} = A = \R^2$
+  \end{enumerate}
+\end{example}
+\begin{definition}
+  Dato $A \subseteq \R^2$
+  \begin{enumerate}
+    \item $p_0 \in \R^2$ si dice \underline{punto di accomulazione} per A se 
+          $$B(p_0,r) \cap (A\setminus \{p_0\}) \not = \varnothing, \forall r > 0$$
+    \item $p_0 \in A$ si dice \underline{punto isolato} di A se $p_0$ non \ace un punto di 
+          accomulazione, cio\ace se:
+          $$\exists r_0 > 0 \mid B(p_0,r_0) \cap A = \{p_0\}$$
+  \end{enumerate}
+\end{definition}
+\begin{definition}[Limite di funzioni di due variabili]
+  Sia $\f$ e sia $p_0 \in \R^2$ punto di accomulazione per A. Si dice che:
+  $$\exists lim_{(x,y)\to (x_0,y_0)} f(x,y) = L \in \R$$
+  oppure $\exists \lim_{p \to p_0} f(p) = L$ se 
+  $$\forall \varepsilon > 0, \exists \delta = d(p_0,\varepsilon) > 0 \mid 
+  \lvert f(x,y)-L\rvert < \varepsilon, \forall (x,y) \in B(p,\delta) \cap (A \setminus \{p_0\})$$
+\end{definition}
+\begin{osservazione}
+  Tenendo presente il caso di funzioni di una variabile, si pu\aco enunciare anche la definizione nel caso in cui $L = \pm \infty$
+\end{osservazione}
+\subsection{Calcolo dei limiti}
+\begin{proposition}[Unicit\aca del limite]
+  Sia $\f$ e sia $p_0 \in \R^2$ punto di accomulazione per A. Supponiamo che 
+  $\exists lim_{p \to p_0} f(p) = L \in \R$. Allora $L$ \ace \underline{unico}.
+\end{proposition}
+\begin{theorem}[Tecniche per il calcolo dei limiti]
+  Siano $g,\f$, $p_0 \in \R^2$ punto di accomulazione per A. Supponiamo che 
+  $\exists \lim_{p\to p_0} f(p) = L \in \R$ e $\exists \lim_{p\to p_0} g(p) = M \in \R$, allora:
+  \begin{enumerate}
+    \item $\exists \lim_{p\to p_0} f(p) + g(p)= L + M$
+    \item $\exists \lim_{p\to p_0} f(p) \cdot g(p)= L \cdot M$
+    \item Se $g(p) \not = 0, \forall p \in A\setminus \{p_0\}$ e $M \not = 0$, allora $\exists \lim_{p\to p_0} \frac{f(p)}{g(p)} = \frac{L}{M}$
+    \item Sia $F:\R to \R$ continua e sia $h(p) = F(f(p))$, allora $\exists  \lim_{p\to p_0} h(p) = F(L)$
+    \item \textbf{Teorema del confronto}: Sia $h,g,\f$, supponiamo che:
+          \begin{itemize}
+            \item[5.1] $f(p) \leq g(p) \leq h(p)$, $\forall p \in A \setminus \{p_0\}$
+            \item[5.2] $\exists\lim_{p \to p_0} f(p) = \lim_{p \to p\to p_0} h(p) = L \in \R \cup \{\pm \infty\}$
+          \end{itemize}
+          allora $\exists \lim_{p \to p_0} g(p) = L$
+  \end{enumerate}
+\end{theorem}
+\begin{proof}
+  Le dimostrazioni di 1-4 sono lasciate al lettore :)
+  \begin{itemize}
+    \item[5] Supponiamo che $L \in \R$, dobbiamo provare che $\exists \lim_{p\to p_0} g(p) = L$, cio\ace per definizione:
+    \begin{itemize}
+      \item[1*] $\forall \varepsilon > 0 $, $\exists \delta \left(=\delta(p_0, \varepsilon)\right) > 0$ t.c. 
+                  $\lvert g(p)-L\rvert < \varepsilon$ $\forall p \in B(p_0,\delta) \cap (A \setminus \{p_0\})$.
+                  Per ipotesi sappiamo che 
+                  $$\lim_{p\to p_0} f(p) = L, \lim_{p\to p_0} h(p) = L $$
+                  cio\ace: 
+      \item[2*] $\forall \varepsilon > 0 $, $\exists \delta_1 \left(=\delta_1(p_0, \varepsilon)\right) > 0$ t.c. 
+                $\lvert f(p)-L\rvert < \varepsilon$ o equivalentemente 
+                $L - \varepsilon < f(p) < L + \varepsilon$ $\forall p \in B(p_0,\delta_1) \cap (A \setminus \{p_0\})$, e:
+      \item[3*] $\forall \varepsilon > 0 $, $\exists \delta_2 \left(=\delta_2(p_0, \varepsilon)\right) > 0$ t.c. 
+                $\lvert h(p)-L\rvert < \varepsilon$ o equivalentemente
+                $L - \varepsilon < h(p) < L + \varepsilon$ $\forall p \in B(p_0,\delta_2) \cap (A \setminus \{p_0\})$
+    \end{itemize} 
+    Da (5.1),(2*),(3*) segue che $\forall \varepsilon > 0$, scegliendo $\delta = \min\{\delta_1,\delta_2\}$ vale che 
+    $$L - \varepsilon < f(p) \leq g(p) \leq h(p) < L+\varepsilon$$ $\forall p \in B(p_0,\delta) \cap (A \setminus \{p_0\})$ 
+    e dunque vale la (1*).
+  \end{itemize}
+\end{proof}
+Introduciamo un altro strumento importante per il calcolo dei limiti per funzioni di due variabili. \\
+Ricordiamo che data $f: A \subseteq \R^n \to \R$ e $B \subseteq A$ si chiama \underline{funzione restrizione}
+$f\lvert_{B} : B \to \R$, $\frestr{B}(x) := f(x)$ se $x\in B$.
+\begin{theorem}[Limite lungo direzioni]
+  Siano $\f$ e $p_0 \in \R^2$ punto di accomulazione, allora sono equivalenti
+  \begin{enumerate}
+    \item $\exists \lim_{p\to p_0} f(p) = L$
+    \item Per ogni sottoinsieme $B \subseteq A$, per cui $p_0$ \ace un punto di accomulazione per $B$,
+          $\exists \lim_{p\to p_0} \frestr{B}(p) = L$
+  \end{enumerate}
+\end{theorem}
+Un insieme $B\subseteq A$ pu\aco essere visto come una direzione lungo cui $p \to p_0$.
+\begin{osservazione}
+  Il teorema precedente risulta efficace \underline{solo} per provare che il limite \underline{non} esiste.
+\end{osservazione}
+\subsection{Esempi calcolo limiti}
+\begin{exercise}
+  \begin{enumerate}
+    \item Calcola, se esiste, $\lim_{(x,y)\to (0,0)} \frac{\sin(x^2+y^2)}{x^2+y^2} = 1$
+    \begin{proof}
+      Nel calcolo del limite bisogna valutare:
+      \begin{itemize}
+        \item Esistenza (il limite pu\aco non esistere)
+        \item Tecninche appropriate per il calcolo
+      \end{itemize}
+      Utilizziamo il punto (4) del primo teorema. 
+      \\Ricordiamo anche il limite notevole $\lim_{t\to 0} \frac{\sin{t}}{t} = 1$\\
+      Denotiamo:
+      \begin{itemize}
+        \item $h(x,y) = \frac{\sin(x^2+y^2)}{x^2+y^2}$ se $(x,y) \in A = (\R^2 \setminus \{(0,0)\})$
+        \item $t = x^2 + y^2$
+        \item Sia $p_0 = (0,0)$ punto di accomulazione per A.
+      \end{itemize}
+      Osserviamo che $h(x,y) = F(f(x,y))$, dove $F:\R\to\R$
+      $$F:= \left\{ \begin{array}{cl}
+        \frac{\sin{t}}{t} & t\not = 0 \\
+        1 & t = 0 \\
+      \end{array}\right.$$
+      \ace continua, e $f(x,y) = x^2 + y^2$ $(x,y) \in \R^2$. \\
+      Poich\ace $\lim_{(x,y)\to(0,0)} f(x,y) = 0$, dal punto (4)
+       $$\exists \lim_{p \to p_0} h(p) = \lim_{p\to p_0} F(f(p)) = F(0) = 1$$
+    \end{proof}
+    \item Calcola se esite $\lim_{(x,y)\to (0,0)} \frac{xy}{x^2+y^2}$
+    \begin{proof}
+      Sia $$f(x,y) = \frac{xy}{x^2+y^2}$$ $\forall (x,y)\in A = \R^2\setminus \{(0,0)\}$ e $p_0 = (0,0)$.\\
+      Utilizziamo il teorema per provare che il limite non esiste.\\
+      Infatti se $$\exists \lim_{(x,y)\to (0,0)} f(x,y) = L$$
+      allora\\ (1*) $\exists \lim_{x\to 0} f(x,mx) = L$, $\forall m \in R$\\ dove 
+      $y = mx$, $B = \{y=mx\}$(direzionale) e $m$ \ace finito.\\
+      \underline{Osserviamo} che $f(x,mx) = \frac{mx^2}{(m^2+1)x^2} = \frac{m}{m^2+1}$ se $x\not = 0$, 
+      quindi $$\lim_{x\to 0}f(x,mx) = \frac{m}{m^2+1}$$
+      ma se $m = 0,1$ il limite prende valore $0, \frac{1}{2}$ ($0 \not = \frac{1}{2}$),\\
+      dunque non pu\aco valere (1*), quindi il limite \underline{non esiste}
+    \end{proof}
+  \end{enumerate}
+\end{exercise}
+Dalla definizione di limite per funzioni di due variabili segue subito la nozione di continuit\aca.
+\begin{exercise}
+  Calcolare se esiste $$\lim_{(x,y)\to(0,0)}\frac{x^2y}{x^4+y^2}$$
+  Sugg: Provare che $\not \exists$
+\end{exercise}

@@ -1,0 +1,123 @@
+\chapter{Esercitazioni}
+\section{Lezione 1 - 09/03/2022}
+\begin{eexercise}
+  Determinare e disegnare nel piano xy il dominio delle seguenti funzioni, $\f$, dove A: dominio che dobbiamo determinare.
+  $$f(x,y) = \log(4(x^2+y^2)-1)$$
+  \sol $$4(x^2+y^2)-1 > 0 \iff x^2+y^2 > \frac{1}{4}$$
+  Studiamo quindi: $x^2+y^2 = \frac{1}{4}$ la circonferenza di centro $c=(0,0)$ e raggio $r = \frac{1}{2}$,
+  $$A = \{(x,y)\in \R^2 \mid x^2+y^2 > \frac{1}{4}\} = \R^2 \setminus \overline{B((0,0), \frac{1}{2})}$$
+  dove:
+  \begin{itemize}
+    \item $\overline{B((0,0), \frac{1}{2})} = \{(x,y)\in\R^2 \mid \sqrt{x^2+y^2} \leq \frac{1}{2}\}$
+    \item $B((0,0), \frac{1}{2}) = \{(x,y)\in\R^2 \mid \sqrt{x^2+y^2} < \frac{1}{2}\}$
+  \end{itemize}
+  \hfill\break 
+  \textbf{Insiemi aperti e chiusi}\\
+  $A = \{(x,y)\in \R^2\mid xy\geq 0\}$, A \ace chiuso $\iff A^c$ \ace aperto.\\
+  Definiamo $\bar{A} = A$, $xy \geq 0 \iff \left\{\begin{array}{c}
+    x \geq 0 \\
+    y \geq 0 \\
+  \end{array}\right. \vee \left\{\begin{array}{c}
+    x \leq 0 \\
+    y \leq 0 \\
+  \end{array}\right.$
+  Disegnando gli assi: \\
+  $A^c = \R^2 \setminus A$ \ace aperto. Fisso ora $(x_0,y_0) \in A^c$, $r = d(\partial A, (x_0,y_0)) = \min{\lvert x_0 \rvert, \lvert y_0 \rvert}$. 
+  La palla $B((x_0,y_0), \frac{r}{2}) \subset A^c \Rightarrow A^c $ \ace aperto $\Rightarrow A $ \ace chiuso.
+\end{eexercise}
+\begin{eexercise}
+  $f(x,y) = \sqrt{y^2-x^4}$, $y^2 \geq x^4$. $$A=\{(x,y)\in\R^2 \mid y^2\geq x^4\}$$
+  Proviamo a scrivere $y^2-x^4$ come 
+  $$y^2-x^4 = (y-x^2)(y+x^2) \geq 0$$
+  Due casi:
+  \begin{itemize}
+    \item $y \geq x^2$
+    \item $y \geq -x^2$
+  \end{itemize} 
+  (Dal grafico otteniamo)
+  $$A = \{(x,y)\in\R^2 \mid y \geq x^2 \vee y \leq -x^2\} = \{(x,y)\in\R^2 \mid y \geq x^2\} \cup \{(x,y)\in\R^2 \mid y \leq -x^2\}$$
+\end{eexercise}
+\begin{eexercise}
+  Disegnare l'insieme di livello delle seguenti funzioni
+  $$C_t = \{(x,y\in\R^2 \mid f(x,y) = t)\}$$
+  con $t \in \R$.\\
+  $f(x,y) = x^2y$, fissiamo $t \in \R$, $t = x^2y$
+  \begin{enumerate}
+    \item $t = 0$, $x^2y = 0 \Rightarrow y = 0 \vee x = 0$
+    \item $t > 0$, $t = x^2y \iff y = \frac{t}{x^2}$
+    \begin{itemize}
+      \item $t = 1$, $y = \frac{1}{x^2}$
+      \item $t = 2$, $y = \frac{2}{x^2}$
+    \end{itemize}
+    \item $t < 0$, $t = x^2y \iff y = \frac{t}{x^2}$
+    \begin{itemize}
+      \item $t = -1$, $y = -\frac{1}{x^2}$
+      \item $t = -2$, $y = -\frac{2}{x^2}$
+    \end{itemize}
+  \end{enumerate}
+\end{eexercise}
+\begin{eexercise}
+  $f(x,y) = ye^{-x}$, $t\in\R$, $t=ye^{-x} \iff e^x t = y$
+  \begin{itemize}
+    \item $t=0 \Rightarrow y = 0$
+    \item $t=1 \Rightarrow y = e^{-x}$
+    \item $t=2 \Rightarrow y = 2e^{-x}$
+    \item $t=-1 \Rightarrow y = -e^{-x}$
+    \item $t=-2 \Rightarrow y = -2e^{-x}$
+  \end{itemize}
+\end{eexercise}
+\begin{eexercise}
+  $$\lim_{(x,y)\to (0,0)} \frac{x-y}{\sqrt[3]{x}-\sqrt[3]{y}} = ?$$
+  eleviamo x e y al numeratore per $\frac{3}{3}$, otteniamo:
+  $$\lim_{(x,y)\to (0,0)} \frac{(\sqrt[3]{x})^3-(\sqrt[3]{y})^3}{\sqrt[3]{x}-\sqrt[3]{y}}$$
+  Ricordiamo ora la differenza tra cubi $A^3 - B^3 = (A-B)(A^2+AB+B^2)$, otteniamo:
+  $$\lim_{(x,y)\to (0,0)} \frac{(\sqrt[3]{x}-\sqrt[3]{y})\left((\sqrt[3]{x})^2 + \sqrt[3]{x}\sqrt[3]{y} + (\sqrt[3]{y})^2\right)}{\sqrt[3]{x}-\sqrt[3]{y}} = $$
+  $$= \lim_{(x,y \to (0,0))} (\sqrt[3]{x})^2 + \sqrt[3]{x}\sqrt[3]{y} + (\sqrt[3]{y})^2 = 0$$
+\end{eexercise}
+\begin{eexercise}
+  $$\lim_{(x,y)\to(0,0)} \frac{x^2y}{x^4+y^2}=?$$
+  $\lim_{(x,y)\to(x_0,y_0)} f(x,y) = l \iff$ per ogni restrizione a un sottoinsieme $B$, $\lim_{(x,y)\to(x_0,y_0)} \frestr{B}(x,y) = l$
+  \begin{itemize}
+    \item $B=\{(x,y)\in\R^2\mid y = mx\}$, $\lim \frac{x^2y}{x^4+y^2} \lvert_{B} = \lim \frac{x^2mx}{x^4 + m^2x^2} = $
+    $$= \frac{x^3m}{x^2(x^2+m^2)} = x\left(\frac{m}{x^2+m^2}\right) = \lim_{x\to 0} x\left(\frac{m}{x^2+m^2}\right) = 0$$
+    \item $B=\{(x,y)\in\R^2\mid y = mx^2\}$, $\lim \frac{x^2y}{x^4+y^2} \lvert_{B} = $
+    $$\lim_{x\to 0} \frac{mx^4}{x^4+m^2x^4} = \lim_{x \to 0} \frac{m}{1+m^2}$$
+    Proviamo due valori di m:
+    \begin{itemize}
+      \item $m = 1$, $\frac{1}{2}$
+      \item $m=2$, $\frac{2}{5}$
+    \end{itemize} 
+    Ho trovato due restrizioni $\{y = x^2\}$ e $\{y = 2x^2\}$ dove il limite assume due valori distinti. 
+    Allora per l'unicit\aca del limite, il limite non esiste.
+  \end{itemize}
+\end{eexercise}
+\begin{eexercise}
+  $$\lim_{(x,y) \to (0,0)} \frac{x^2y}{x^2+y^2}$$
+  \textbf{Cordinate polari}\\
+  $\rho = \sqrt{x^2+y^2}$, $\vartheta = arctan\left(\frac{y}{x}\right)$
+  \begin{itemize}
+    \item $x = \rho \cos \vartheta$
+    \item $y = \rho \sin \vartheta$
+  \end{itemize}
+  $$\lim_{(x,y) \to (0,0)} \frac{x^2y}{x^2+y^2} = \lim_{(x,y)\to (0,0)} \frac{\rho^2 \cos^2 \vartheta \cdot \rho \sin\vartheta}
+  {\rho^2 \cos^2 \vartheta + \rho^2 \sin^2 \vartheta} = $$
+  $$= \lim_{(x,y)\to (0,0)} \frac{\rho^3 \cos^2 \vartheta \cdot \sin \vartheta}{\rho^2 \left(\cos^2 \vartheta + \sin^2 \vartheta\right)}$$
+  Sappiamo che $\cos^2 \vartheta + \sin^2 \vartheta = 1$, quindi il limite rimane:
+  $$\lim \rho \cos^2 \vartheta \cdot \sin \vartheta$$
+  $$0 \leq \lvert \rho \cos^2 \vartheta \cdot \sin \vartheta \rvert < \rho$$
+  Da cui se $(x,y) \to (0,0)$ allora anche $\rho \to 0$ e siccome $\left\{\begin{array}{c}
+    \cos^2 \vartheta < 1\\
+    \sin \vartheta < 1 \\
+  \end{array}\right.$, grazie al 
+  \textbf{teorema del confronto} il limite vale 0.
+\end{eexercise}
+\begin{eexercise}
+  Dire quali insiemi sono aperti/chiusi e quali limitati, inoltre determinare la frontiera.
+  $$H=\{(x,y)\in \R^2 \mid (xy)(y-1)\geq 0\}$$
+  \begin{itemize}
+    \item $x\geq 0$
+    \item $y\geq 0$
+    \item $y-1\geq 0$, $y\geq 1$
+  \end{itemize}
+  Frontiera: $\partial H = \{y=1\} \cup \{x=0\} \cup \{y=0\}$
+\end{eexercise}

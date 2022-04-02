@@ -1,0 +1,53 @@
+\documentclass{report}
+\usepackage{mathtools}
+\usepackage{mathbbol}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{blindtext}
+\usepackage{nicematrix}
+\usepackage{booktabs}
+\usepackage{amsfonts}
+\usepackage{pgfplots}
+\usepackage{dutchcal}
+\usepackage{bbm}
+\usepackage{listings}
+\usepackage{tikz} 
+
+\newtheorem{theorem}{Teorema}[section]
+\newtheorem{proof}{\textit{Dim.}}[section]
+\newtheorem{example}{Esempio}
+\newtheorem{proposition}{Proposizione}[section]
+\newtheorem{exercise}{Esercizio}
+\newtheorem{eexercise}{Esercizio}[section]
+\newtheorem{definition}{Definizione}[section]
+\newtheorem{osservazione}[theorem]{Osservazione}
+
+\newcommand{\sol}{\textbf{Soluzione:}}
+\newcommand{\ac}[1]{\`#1}
+\newcommand{\ace}{\`e }
+\newcommand{\aci}{\`i }
+\newcommand{\aca}{\`a }
+\newcommand{\aco}{\`o }
+\newcommand{\acu}{\`u }
+\newcommand{\Ins}[1]{\mathbb{#1}}
+\newcommand{\R}{\Ins{R}}
+\newcommand{\f}{f: A \subseteq \R^2 \to \R}
+\newcommand{\fn}{f: A \subseteq \R^n \to \R}
+\newcommand{\frestr}[1]{f\lvert_{#1}}
+
+\title{Analisi Matematica 2}
+\author{Enrico Favretto}
+\date{28/02/2022}
+
+\begin{document}
+  \maketitle
+  \tableofcontents
+  \clearpage
+  \include{Lezioni/lez-01}
+  \include{Lezioni/lez-02}
+  \include{Lezioni/lez-03}
+  \include{Esercitazioni/es-01}
+\end{document}

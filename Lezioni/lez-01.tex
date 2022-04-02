@@ -1,0 +1,65 @@
+\chapter{Funzioni a pi\acu variabili}
+\section{Lez - 01}
+Studieremo funzioni a pi\acu variabili reali a valori scalari e vettoriali, cio\ace 
+$f : A \subseteq \Ins{R}^n \to \Ins{R}^k$ con $n, k \in Ins{N}$ e $n \geq 1, k \geq 1$. \\
+Se $k = 1, n \geq 2$, $f$ si dice \underline{funzione di pi\acu variabili a valori scalari}; \\
+Se $k \geq 1, n \geq 1$, $f$ si dice \underline{funzione di pi\acu variabili a valori vettoriali}.\\\\
+Incominciamo a trattare il caso in cui $n = 2,3$ e $k = 1$.\\\\
+\underline{MOTIVAZIONE}: I fenomenti in Fisica/Ingegneria sono modelizzati da funzioni che dipendono da due/tre variabili. 
+\begin{example}
+  \begin{enumerate}
+    \item La funzione temperatura di una piastra piana $A \subseteq \Ins{R}^2$. \\
+          La funzione temperatura della piastra A pu\aco essere modelizzata da una funzione 
+          $$T : A \subseteq \Ins{R}^2 \to [0, +\infty] \subseteq \Ins{R}$$
+          $$\Ins{R}^2 := \Ins{R} \times \Ins{R} = \{(x,y)\mid x \in \R, y \in \R\}$$
+    \item La funzione distanza dall'origine in $\R^3$, $$f: \R^3 \to [0,+\infty]$$
+          $$f(p) := d(O, p) = \sqrt{x^2+y^2+z^2}$$
+          $$\Ins{R}^3 := \Ins{R} \times \Ins{R} \times \R= \{(x,y,z)\mid x, y, z \in \R\}$$
+  \end{enumerate}
+\end{example} 
+\subsection{Grafico di una funzione scalare di pi\acu variabili}
+Ricordiamo che nel caso di una funzione scalare da una variabile $f: A \subseteq \R \to \R$ ($y = f(x)$, $x \in A$), 
+$A$ intervallo di $\R$.
+$$G_f := \{(x,f(x))\mid x \in A\} \subseteq \R^2$$
+Se $f: A \subseteq \R^2 \to \R$ ($z = f(x,y)$, $(x,y) \in A$)
+$$G_f := \{(x,y,f(x,y))\mid (x,y) \in A\} \subseteq \R^3$$
+$f: A \subseteq \R^3 \to \R$ ($t = f(x,y,z)$, $(x,y,z) \in A$)
+$$G_f := \{(x,y,z,f(x,y,z))\mid (x,y,z) \in A\} \subseteq \R^4$$
+Disegnare $G_f$ in $\R^4$? Non pu\aco essere facilmente studiato, il grafico \ace una ipersuperficie di $\R^4$
+\subsection{Curve di livello di una funzione di pi\acu variabili}
+Sia $f: A \subseteq \R^2 \to \R$, fissato $t \in \R$, 
+$$C_t := \{(x,y) \in A \mid f(x,y) = t\}$$
+(\ace un insieme di tipo "curva" contenuto in A)
+\begin{example}
+  $f : \R^2 \to \R$, $f(x,y) := x-y$, (z = x-y) $x-y-z = 0$, $$((1,-1,-1),(x,y,z)) = 0$$
+  $$C_t := \{(x,y) \in \R^2 \mid x-y = t\}$$ fascio di rette parallele al variare di t
+  $$G_f := \{(x,y,x-y) \mid x,y \in \R\}$$ piano di $\R^3$ contenente la retta $r$ e ortogonale
+  al vettore (1,-1,-1)
+  $$r:= \{(x,y)\in \R^2\mid x-y = 0\}$$
+  Pi\acu in generale se $f: A \subseteq \R^3 \to \R$, $C_t := \{(x,y,z) \in A \mid f(x,y,z) = t\}$ \ace un insieme di tipo 
+  "superficie". 
+\end{example} 
+\begin{exercise}
+  Studiare le curve di livello della funzione $f:\R^2 \to \R$, $f(x,y) = x^2 + y^2$.
+  $$C_t := \{(x,y)\in \R^2 \mid x^2 + y^2 = t\}$$
+  \begin{itemize}
+    \item $C_t$ \ace la circonferenza di centro $(0,0)$ e raggio $\sqrt{t}$, se $t\geq 0$
+    \item $C_t$ \ace vuoto ($\varnothing$), se $t < 0$
+  \end{itemize}
+\end{exercise}
+\subsection{Limiti e continuit\aca per funzioni di pi\acu variabili}
+\underline{Problema}: Data $f:A \subset \R^2 \to \R$, fissato $(x_0, y_0)\in \R^2$ introdurre la definizione 
+$$\lim_{(x,y)\to (x_0,y_0)} f(x,y) = L$$
+Ricordiamo la definizione di limite per funzioni reali di una variabile, $f:(a,b)\to \R$, $x_0 \in [a,b]$
+$lim_{x\to x_0} f(x) = L \in \R \iff (def.)$, 
+$$\forall \varepsilon > 0, \exists \delta = d(x_0, \varepsilon) > 0 \mid \lvert f(x)-L \rvert < \varepsilon$$ 
+$\forall x \in (a,b) \cap (x_0-\delta, x_0+\delta), x \not = x_0$, $lim_{x\to a^{+}} f(x) = L, lim_{x\to b^{-}} f(x) = L$
+$$B(x_0,\delta) := (x_0-\delta, x_0+\delta) = \{x\in \R \mid \lvert x-x_0\rvert < \delta\}$$
+\textit{intorno sferico di centro $x_0$ e reaggio $\delta > 0$}
+\subsubsection{Idea per l'introduzione di limite per funzioni di $n=2$ varaibili}
+\underline{Generalizzazione}:
+\begin{enumerate}
+  \item La definizione di intorno di centro $x_0$ e raggio $r > 0$ a $\R^2$
+  \item La nozione di intervallo apero e chiuso a $\R^2$, come pure la nozione di punto 
+        estremo di un intervallo.
+\end{enumerate}
