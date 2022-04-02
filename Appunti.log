@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.9.27)  2 APR 2022 19:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.9.27)  2 APR 2022 19:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/enrico/latex/Analisi_2/Appunti.tex
-(/home/enrico/latex/Analisi_2/Appunti.tex
+**/home/enrico/latex/Analisi-Matematica-2/Appunti.tex
+(/home/enrico/latex/Analisi-Matematica-2/Appunti.tex
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
@@ -797,23 +797,23 @@ Package: listings 2015/06/04 1.6 (Carsten Heinz)
 \c@exercise=\count333
 \c@eexercise=\count334
 \c@definition=\count335
- (/home/enrico/latex/Analisi_2/Appunti.aux (/home/enrico/latex/Analisi_2/Lezioni/lez-01.aux) (/home/enrico/latex/Analisi_2/Lezioni/lez-02.aux) (/home/enrico/latex/Analisi_2/Lezioni/lez-03.aux) (/home/enrico/latex/Analisi_2/Esercitazioni/es-01.aux))
+ (/home/enrico/latex/Analisi-Matematica-2/Appunti.aux (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-01.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-02.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-03.aux) (/home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-01.aux))
 \openout1 = `Appunti.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count336
@@ -840,7 +840,7 @@ Package grfext Info: Graphics extension search list:
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 \AtBeginShipoutBox=\box60
-Package hyperref Info: Link coloring OFF on input line 45.
+Package hyperref Info: Link coloring OFF on input line 47.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -848,44 +848,44 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count342
 )
-LaTeX Info: Redefining \ref on input line 45.
-LaTeX Info: Redefining \pageref on input line 45.
-LaTeX Info: Redefining \nameref on input line 45.
- (/home/enrico/latex/Analisi_2/Appunti.out) (/home/enrico/latex/Analisi_2/Appunti.out)
+LaTeX Info: Redefining \ref on input line 47.
+LaTeX Info: Redefining \pageref on input line 47.
+LaTeX Info: Redefining \nameref on input line 47.
+ (/home/enrico/latex/Analisi-Matematica-2/Appunti.out) (/home/enrico/latex/Analisi-Matematica-2/Appunti.out)
 \@outlinefile=\write4
 \openout4 = `Appunti.out'.
 
  ABD: EveryShipout initializing macros
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable tick labels; missing features). Consider writing \pgfplotsset{compat=1.15} into your preamble.
- on input line 45.
+ on input line 47.
 
 \c@lstlisting=\count343
-LaTeX Font Info:    Try loading font information for U+bbold on input line 47.
+LaTeX Font Info:    Try loading font information for U+bbold on input line 49.
 (/usr/share/texlive/texmf-dist/tex/latex/bbold/Ubbold.fd)
-LaTeX Font Info:    Try loading font information for U+msa on input line 47.
+LaTeX Font Info:    Try loading font information for U+msa on input line 49.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 47.
+LaTeX Font Info:    Try loading font information for U+msb on input line 49.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (/home/enrico/latex/Analisi_2/Appunti.toc)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (/home/enrico/latex/Analisi-Matematica-2/Appunti.toc)
 \tf@toc=\write5
 \openout5 = `Appunti.toc'.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.48   \clearpage
+l.50   \clearpage
                   [1
 
 ]
 \openout2 = `Lezioni/lez-01.aux'.
 
- (/home/enrico/latex/Analisi_2/Lezioni/lez-01.tex
+ (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-01.tex
 Chapter 1.
 
 Underfull \hbox (badness 10000) in paragraph at lines 3--10
@@ -911,7 +911,7 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10> not available
  [3]) [4]
 \openout2 = `Lezioni/lez-02.aux'.
 
- (/home/enrico/latex/Analisi_2/Lezioni/lez-02.tex
+ (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-02.tex
 Overfull \hbox (3.69254pt too wide) in paragraph at lines 3--5
 []\OT1/cmr/m/it/10 Si chiama $[]$ di
  []
@@ -932,7 +932,7 @@ Overfull \hbox (0.63162pt too wide) in paragraph at lines 48--49
 ] [6] [7]) [8]
 \openout2 = `Lezioni/lez-03.aux'.
 
- (/home/enrico/latex/Analisi_2/Lezioni/lez-03.tex
+ (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-03.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 2.
@@ -975,17 +975,17 @@ Overfull \hbox (26.39444pt too wide) in paragraph at lines 87--92
 []$\OT1/cmr/m/n/10 : Definire il "pi-ano tan-gente" alla "su-per-fi-cie" $\OML/cmm/m/it/10 G[]$ \OT1/cmr/m/n/10 nel punto $(\OML/cmm/m/it/10 x[]; y[]; f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; y[]\OT1/cmr/m/n/10 ))$
  []
 
-[11]) [12]
+[11] [12]) [13]
 \openout2 = `Esercitazioni/es-01.aux'.
 
- (/home/enrico/latex/Analisi_2/Esercitazioni/es-01.tex
+ (/home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-01.tex
 Chapter 2.
 
 Overfull \hbox (1.24283pt too wide) in paragraph at lines 14--27
 \OML/cmm/m/it/10 A[] \OT1/cmr/m/n/10 = \U/bbold/m/n/10 R[] \OMS/cmsy/m/n/10 n \OML/cmm/m/it/10 A$ \OT1/cmr/m/it/10 ^^Re aperto. Fisso ora $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; y[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 A[]$\OT1/cmr/m/it/10 , $\OML/cmm/m/it/10 r \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 d\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 @A; \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; y[]\OT1/cmr/m/n/10 )) = [] []$\OT1/cmr/m/it/10 .
  []
 
-[13
+[14
 
 
 
@@ -994,29 +994,29 @@ Overfull \hbox (27.12868pt too wide) detected at line 38
 \OML/cmm/m/it/10 A \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2 \U/bbold/m/n/10 R[] \OMS/cmsy/m/n/10 j \OML/cmm/m/it/10 y \OMS/cmsy/m/n/10 ^^U \OML/cmm/m/it/10 x[] \OMS/cmsy/m/n/10 _ \OML/cmm/m/it/10 y \OMS/cmsy/m/n/10 ^^T ^^@\OML/cmm/m/it/10 x[]\OMS/cmsy/m/n/10 g \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2 \U/bbold/m/n/10 R[] \OMS/cmsy/m/n/10 j \OML/cmm/m/it/10 y \OMS/cmsy/m/n/10 ^^U \OML/cmm/m/it/10 x[]\OMS/cmsy/m/n/10 g [ f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2 \U/bbold/m/n/10 R[] \OMS/cmsy/m/n/10 j \OML/cmm/m/it/10 y \OMS/cmsy/m/n/10 ^^T ^^@\OML/cmm/m/it/10 x[]\OMS/cmsy/m/n/10 g
  []
 
-[14] [15]) [16]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 53.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 53.
- (/home/enrico/latex/Analisi_2/Appunti.aux (/home/enrico/latex/Analisi_2/Lezioni/lez-01.aux) (/home/enrico/latex/Analisi_2/Lezioni/lez-02.aux) (/home/enrico/latex/Analisi_2/Lezioni/lez-03.aux) (/home/enrico/latex/Analisi_2/Esercitazioni/es-01.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 53.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 53.
+[15] [16]) [17]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 55.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 55.
+ (/home/enrico/latex/Analisi-Matematica-2/Appunti.aux (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-01.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-02.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-03.aux) (/home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-01.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 55.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 55.
 Package rerunfilecheck Info: File `Appunti.out' has not changed.
 (rerunfilecheck)             Checksum: D87AC351A5970B801A16D8CC8D5A9FD4;1085.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 53.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 55.
  ) 
 Here is how much of TeX's memory you used:
- 36683 strings out of 492982
- 845114 string characters out of 6134896
+ 36694 strings out of 492982
+ 845684 string characters out of 6134896
  1025456 words of memory out of 5000000
- 39621 multiletter control sequences out of 15000+600000
+ 39623 multiletter control sequences out of 15000+600000
  541862 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,9n,96p,10429b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,9n,96p,10440b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on /home/enrico/latex/Analisi_2/Appunti.pdf (17 pages, 237341 bytes).
+Output written on /home/enrico/latex/Analisi-Matematica-2/Appunti.pdf (18 pages, 242459 bytes).
 PDF statistics:
- 316 PDF objects out of 1000 (max. 8388607)
- 276 compressed objects within 3 object streams
- 98 named destinations out of 1000 (max. 500000)
+ 329 PDF objects out of 1000 (max. 8388607)
+ 288 compressed objects within 3 object streams
+ 107 named destinations out of 1000 (max. 500000)
  125 words of extra memory for PDF output out of 10000 (max. 10000000)
 
