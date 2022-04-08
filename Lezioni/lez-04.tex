@@ -1,0 +1,162 @@
+\section{Lez - 04}
+Piano tangente al grafico $G_f$ in un punto $\left(x_0,y_o,f(x_0,y_0)\right)$, per una funzione $\f$ \ace un piano 
+$\pi$ di equazione $z=a(x-x_0)+b(y-y_0)+f(x_0,y_0)$ dove $p_0 = (x_0,y_0)\in A$, verificante la seguente equazione:
+$$\text{(D)} \exists \lim_{(x,y)\to (0,0)}\frac{f(x)-\left[a(x-x_0)+b(y-y_0+f(x_0)\right]}{d(p,p_0)}$$
+dove $d(p,p_0) = \sqrt{(x-x_0)^2+(y-y_0)^2}$
+\begin{definition}
+  Datp $A subseteq \R^2$ aperto e dato $p_0=(x_0,y_0)\in A$, la funzione $\f$ si dice \underline{differenziabile}
+  nel punto $p_0$ se vale $(D)$, per $a,b \in \R$ opportuni.
+\end{definition}
+\begin{proposition}
+  Se f \ace differenziabile nel punto $p_0 =(x_0,y_0)$, allora $$\exists\nabla f(p_0) = \left(\ppartx, \pparty\right)$$
+  e $$a = \ppartx , b =\pparty $$
+  \begin{proof}
+    Supponiamo che f sia differenziabile in $p_0$, cio\ace che valga (D). \\
+    Ponendo nella (D), $y = y_0$ otteniamo che:
+    $$\exists \lim_{x\to x_0} \frac{f(x,y_0) \left[a(x-x_0)+f(x_0,y_0)\right]}{\lvert x -x_0\rvert} = 0$$
+    $$\Rightarrow \exists\ppartx = a$$
+    procediamo allo stesso modo, ponendo $x=x_0$ nella (D) e otteniamo $\pparty = b$
+  \end{proof}
+\end{proposition}
+\begin{definition}
+  L'applcazione lineare $L:\R^2\to\R^2$, $$L(x,y) := \ppartx x + \pparty y$$ si chima \underline{differenziale} di f in $p_0$, si denota
+  con: $$L = df(p_0) := \ppartx dx + \pparty dy$$
+\end{definition}
+\begin{definition}[Piano tangente]
+  Sia $\f$, A aperto con f differenziabile in $p_0$. Si chiama \underline{piano tangente} al grafico $G_f$ nel 
+  punto $(x_0,y_0,f(x_0,y_0))$ il piano $\pi$ di equazione:
+  $$z = \ppartx (x-x_0) + \pparty (y-y_0) + f(x_0,y_0)$$
+\end{definition}
+\begin{theorem}
+  Sia $\f$, A aperto, f differenziabile in $p_0 \in A$, allora f \ace continua in $p_0$
+  \begin{proof}
+    $$f(p)-f(p_0) = \frac{f(p)-f(p_0)-df(p_0)(p-p_0)}{d(p,p_0)} \cdot d(p,p_0) + df(p_0)(p-p_0) = $$
+    $$= \ppartx (x-x_0) + \pparty (y-y_0)$$
+    Il tutto tende a 0 per $p\to p_0$.\\
+    $$\Rightarrow \exists \lim_{p\to p_0} \left(f(p)-f(p_0)\right) = 0$$
+  \end{proof}
+\end{theorem}
+\subsection{Differenziabilit\aca in $n\geq 3$}
+Sia $\fn$, A aperto, $p_0 \in A$, $p = (x_1,...,x_n)$, $p_0 = (x_1^0, ..., x_n^0)$ possiamo definire
+$$\exists \frac{\partial f}{\partial x_i}(p_0) := \lim_{h\to 0} \frac{f(p_0+he_i)-f(p_0)}{h}$$
+dove $i = 1,...,n$, $e_i,...,e_n$ denota la base canonica di $\R^n$, cio\ace $e_i = (0,0,...,0,1_{\text{i-esimo elemento}},0,0,...,0)$\\
+Diremo che 
+$$\exists\nabla f(p_0) := \left(\frac{\partial f}{\partial x_1}(p_0), ..., \frac{\partial f}{\partial x_n}(p_0)\right)$$
+\underline{gradiente di f in $p_0$}, se $\exists\frac{\partial f}{\partial x_i}(p_0)$, $\forall i = 1,...,n$
+\begin{definition}
+  f si dice \underline{differenziabile} in un punto $p_0 \in A$ se esiste un'\underline{applicazione lineare} $L :\R^n \to \R$
+  t.c. 
+  $$(D) \exists \lim_{p \to p_0} \frac{f(p) -f(p_0)-L(p-p_0)}{d(p.p_0)} = 0$$
+  L'applicazione lineare $L:\R^n \to \R$ per cui valga (D) si denota con $L = df(p_0)$
+\end{definition}
+\begin{proposition}[11.4]
+  Se f \ace differenziabile nel punto $p_0$ allora 
+  \begin{itemize}
+    \item[i] $\exists\nabla df(p_0)$
+    \item[ii] $$df(p_0)(v) = \sum_{i=1}^{n} \frac{\partial f}{\partial x_i}(p_0)v_i := \nabla f(p_0) \cdot v$$
+        se $v = (v_1,...,v_n)$
+  \end{itemize}
+\end{proposition}
+\begin{osservazione}
+  Se $v = e_i$, $\nabla f(p_0)\cdot e_i = \frac{\partial f}{\partial x_i} (p_0)$
+\end{osservazione}
+\begin{notazione}
+  $df(p_0) := \sum_{i=1}^{n} \frac{\partial f}{\partial x_i}(p_0) dx_i$
+\end{notazione}
+\begin{osservazione}
+  Dalla definizione di differenziabilit\aca nel caso $n=1$, segue che, se $A = (a,b)$, $x_0 \in A$, allora 
+  \textbf{Esercizio 1.5, foglio 2:} 
+  $$\exists f'(x_0) \iff \text{f \ace differenziabile in }x_0$$
+\end{osservazione}
+\begin{exercise}[1b, foglio 2]
+  Calcolare se esiste $$\lim_{(x,y) \to (0,0)} \frac{1-e^{xy^2}}{\sqrt{x^4+y^4}}$$
+  \begin{proof}
+    Ricordiamo che (1) $\exists \lim_{t\to 0} \frac{e^t-1}{t} = 1$. \\
+    Utilizzando il precedente limite possiamo eseguire il seguente bilanciamento:
+    $$\frac{1-e^{xy^2}}{xy^2}\cdot \frac{xy^2}{\sqrt{x^4+y^4}}$$
+    $\forall (x,y) \in \R^2$, con $xy^2 \not = 0$. Osserviamo che:
+    \begin{itemize}
+      \item[(2)] $$\frac{1-e^{xy^2}}{\sqrt{x^4+y^4}} = 0$$
+                Se $xy^2 \not = 0$ e $(x,y)\not = (0,0)$
+      \item[(3)] $\lim_{(x,y)\to (0,0)}\frac{1-e^{xy^2}}{xy^2} = 1$. \\
+      Rimane da calcolare, se esiste: 
+      \item[(4)]  $\lim_{(x,y) \to (0,0)} \frac{xy^2}{\sqrt{x^4+y^4}}$
+    \end{itemize}
+    \ace molto utile, per studiare limite del tipo (4) fare un cambiamento di variabili ed utilizzare le coordinate polari:\\\\
+    \textbf{Coordinate polari}\\
+    Consideraimo il seguente cambiameto di variabili $\left\{\begin{array}{c}
+      x = \rho\cos\vartheta \\
+      y = \rho\sin\vartheta \\
+    \end{array}\right.$
+    con $\rho > 0$ e $0 \leq \vartheta \leq \pi$, quindi:
+    $$\frac{xy^2}{\sqrt{x^4+y^4}} \rightarrow \frac{\rho\cdot\cos\vartheta \cdot \rho^2\sin^2\vartheta}
+    {\sqrt{\rho^4\left(\cos^4\vartheta +\sin^4\vartheta\right)}} = \rho\cdot \frac{\cos\vartheta \cdot \sin^2\vartheta}
+    {\sqrt{\left(\cos^4\vartheta +\sin^4\vartheta\right)}}$$
+    Dalla (2) sappiamo che se $\exists \lim_{(x,y)\to (0,0)} \frac{1-e^{xy^2}}{\sqrt{x^4+y^4}} = L \Rightarrow L = 0$.\\
+    \underline{Idea}: Utilizzare la funzione in coordinate polari, per cercare di provare tramite il 
+    teorema del confronto che (5) $\exists \lim_{(x,y)\to (0,0)}\frac{xy^2}{\sqrt{x^4+y^4}}$. \\
+    Le coordinate polari risulatano molto utili per trovare delle stime per applicare il 
+    teorema del confronto:
+    $$\text{(6) } 0\leq \lvert \frac{xy^2}{\sqrt{x^4+y^4}}\rvert = \lvert \rho\cdot \frac{\cos\vartheta \cdot \sin^2\vartheta}
+    {\sqrt{\left(\cos^4\vartheta +\sin^4\vartheta\right)}} \rvert \leq$$
+    $$\leq \rho\cdot \frac{\lvert \cos\vartheta \cdot \sin^2\vartheta \rvert}{\sqrt{\left(\cos^4\vartheta +\sin^4\vartheta\right)}}
+     \leq \frac{\rho \cdot 1}{\sqrt{\cos^4\vartheta + \sin^4\vartheta}}$$
+    \begin{exercise}
+      $\cos^4\vartheta +\sin^4\vartheta \geq \frac{1}{2}$, $\forall \vartheta \in [0,2\pi]$ 
+    \end{exercise}
+    Pertanto da (6) segue che $$\left\{\begin{array}{cl}
+      \vartheta > 0 & \forall \vartheta \in (0,2\pi) \\ 
+      \\
+      \frac{1}{\vartheta} > 0 & \vartheta \to 0^{+} \\
+    \end{array}\right.$$
+    $$0 \leq \lvert \frac{xy^2}{\sqrt{x^4+y^4}} \rvert \leq \sqrt{2}\cdot\rho = \sqrt{2}\cdot\sqrt{x^2+y^2}$$
+    $\forall (x,y) \in \R^2 \setminus \{(0,0)\}$ se $(x,y) \to (0,0)$
+    Dunque vale (5) e possiamo concludere che $$\exists \lim_{(x,y) \to (0,0)} \frac{1-e^{xy^2}}{\sqrt{x^4+y^4}} = 0$$
+  \end{proof}
+\end{exercise}
+$$f(x,y) = \frac{1-e^{xy^2}}{\sqrt{x^4+y^4}}$$
+se $(x,y)\not = (0,0)$, 
+\begin{itemize}
+  \item $!\exists \lim_{x\to 0} f(x,0) = 0$
+  \item $!\exists \lim_{y\to 0} f(0,y) = 0$
+\end{itemize}
+$\Rightarrow \exists \lim_{(x,y)\to (0,0)}f(x,y) = L \Rightarrow L = 0$
+\begin{proof}[1.5, foglio 2]
+  $(\Rightarrow) \exists f'(p_0) \Rightarrow $ f \ace differenziabile in $x_0$. \\
+  Ricordiamo che per definizione
+  $$\exists f'(x_0) \in \R \iff (1) \exists \lim_{x\to x_0} \frac{f(x)-f(x_0)}{x-x_0} = f'(x_0) \in \R$$
+  \textbf{N.B.}: $\lim_{x\to x_0} f(x) = 0 \iff \lim_{x\to x_0} \lvert f(x) \rvert= 0$
+  \begin{exercise}
+    $$(1) \iff (2) \exists \lim_{x\to x_0} \frac{f(x)-f(x_0)-f'(x_0)(x-x_0)}{\lvert x-x_0\rvert} = 0$$
+    Osserviamo che per definizione f \ace differenziabile in $x_0 \iff $ vale (2). \\
+    Mostriamo l'implicazione $(\Leftarrow)$, Supponiamo che valga (2). 
+  \end{exercise}
+  \begin{exercise}
+    $$(2) \iff (3) \exists \lim_{x\to x_0} \frac{f(x)-f(x_0)-f'(x_0)(x-x_0)}{x-x_0} = 0$$
+    \ac{E} chiaro che $$(3) \iff \exists \lim_{x\to x_0}\left(\frac{f(x)-f(x_0)}{x-x_0} - f'(x_0)\right) = 0 \iff$$
+    $$\iff \exists \lim_{x\to x_0} \frac{f(x)-f(x_0)}{x-x_0} -f'(x_0) \xLeftrightarrow{def} \exists f'(x_0)$$
+  \end{exercise}
+\end{proof}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

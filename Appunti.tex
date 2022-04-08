@@ -24,6 +24,7 @@
 \newtheorem{eexercise}{Esercizio}[section]
 \newtheorem{definition}{Definizione}[section]
 \newtheorem{osservazione}[theorem]{Osservazione}
+\newtheorem{notazione}[theorem]{Notazione}
 
 \newcommand{\sol}{\textbf{Soluzione:}}
 \newcommand{\ac}[1]{\`#1}
@@ -39,7 +40,12 @@
 \newcommand{\frestr}[1]{f\lvert_{#1}}
 \newcommand{\ppartx}{\frac{\partial f}{\partial x}(p_0)}
 \newcommand{\pparty}{\frac{\partial f}{\partial y}(p_0)}
-
+\newcommand{\abs}[1]{\left\lvert #1 \right\rvert}
+\newcommand{\polarBase}{\begin{array}{l}
+                          x = \rho\cos\vartheta \\
+                          y = \rho\sin\vartheta \\
+                        \end{array}}
+\newcommand{\tuple}[1]{\left\langle #1 \right\rangle}
 \title{Analisi Matematica 2}
 \author{Enrico Favretto}
 \date{28/02/2022}
@@ -51,5 +57,7 @@
   \include{Lezioni/lez-01}
   \include{Lezioni/lez-02}
   \include{Lezioni/lez-03}
+  \include{Lezioni/lez-04}
   \include{Esercitazioni/es-01}
+  \include{Esercitazioni/es-02}
 \end{document}

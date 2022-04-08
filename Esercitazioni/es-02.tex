@@ -1,0 +1,156 @@
+\section{Esercitazione 2 - 23/03/2022}
+\begin{eexercise}
+  \begin{enumerate}
+    \item[(a)] $$\lim_{(x,y)\to (0,0)} \frac{(e^{xy^2}-1)\log(1+x^2+y^2)}{(x^2+y^2)\sin(xy)}$$
+          Ricordiamo che: 
+          \begin{itemize}
+            \item $\frac{\log(1+t)}{t} \xrightarrow[t\to 0]{} 1$
+            \item $\frac{e^t-1}{t} \xrightarrow[t\to 0]{} 1$
+            \item $\frac{\sin(t)}{t} \xrightarrow[t\to 0]{} 1$
+          \end{itemize}
+          Grazie a ci\aco il nostro limite diventa:
+          $$\lim_{(x,y)\to (0,0)} \frac{e^{xy^2}-1}{xy^2} \cdot \frac{\log(1+x^2+y^2)}{x^2+y^2}\cdot \frac{xy}{\sin(xy)} \cdot y$$
+          \begin{enumerate}
+            \item[(i)] Definiamo $t = x^2+y^2 \rightarrow 0$ per $(x,y) \to (0,0)$, 
+                      $$\frac{\log(1+x^2+y^2)}{x^2+y^2} = \frac{\log(1+t)}{t} \xrightarrow[t\to 0]{} 1$$
+            \item[(ii)]  Definiamo $t = xy \rightarrow 0$ per $(x,y) \to (0,0)$, 
+                      $$ \frac{xy}{\sin(xy)} = \frac{t}{\sin(t)} \xrightarrow[t\to 0]{} 1$$
+            \item[(iii)] Definiamo $t = xy^2 \rightarrow 0$ per $(x,y) \to (0,0)$,
+                      $$ \frac{e^{xy^2}-1}{xy^2} = \frac{e^t-1}{t} \xrightarrow[t\to 0]{} 1$$ 
+          \end{enumerate}
+          $$= 1\cdot \lim_{(x,y)\to (0,0)} y = 0$$
+    \item[(c)] $$\lim_{(x,y) \to (0,0)} \frac{1-\cos(xy)}{\log(1+x^2+y^2)}$$
+            Ricordiamo che: $$\lim_{t\to 0} \frac{1-\cos(t)}{t^2} = \frac{1}{2}$$
+            Allora il limite diventa: 
+            $$\lim_{(x,y)\to (0,0)}\frac{1-\cos(xy)}{(xy)^2}\cdot \frac{x^2+y^2}{\log(1+x^2+y^2)} \cdot \frac{(xy)^2}{x^2+y^2}$$
+            \begin{itemize}
+              \item[(i)] $t = xy \rightarrow 0$ per $(x,y)\to (0,0)$
+                          $$\frac{1-\cos(xy)}{(xy)^2} = \frac{1-\cos(t)}{t^2} \xrightarrow[t\to 0]{} \frac{1}{2}$$
+              \item[(ii)] Per (i) dell'esercizio (a) si ha: $$\lim_{(x,y)\to (0,0)}\frac{\log(1+x^2+y^2)}{x^2+y^2} = 1$$
+            \end{itemize}
+            $$= 1 \cdot \frac{1}{2} \cdot \lim_{(x,y)\to (0,0)} = ?$$
+            Passiamo alle coordinate polari: $\left\{\begin{array}{c}
+              x = \rho \cos\vartheta \\
+              y = \rho \sin\vartheta \\
+            \end{array}\right.$
+            $$0 \leq \frac{x^2\cdot y^2}{x^2+y^2} = \frac{\rho^4 \cdot \cos^2\vartheta \cdot \sin^2 \vartheta}{\rho^2 \left(\cos^2\vartheta + \sin^2 \vartheta\right)} \leq \rho^2$$
+            Per $\rho \to 0$ tutto $0 \to 0$ e $\rho^2 \to 0$, quindi anche il limite tende a zero per il teorema del confronto. \\
+            Consideriamo il caso in cui $x = 0$ o $y = 0$
+            \begin{itemize}
+              \item Vediamo $x = 0$, 
+                    $$\lim_{y\to 0} \frac{1-\cos(0)}{log(1+y^2)} = \left[\frac{0}{0}\right]_{F.IND.} = \lim_{y\to 0} 1 - \cos(0) \cdot \frac{y^2}{\log(1+y^2)}  \cdot \frac{1}{y^2} = 0$$
+              \item Vediamo $y = 0$, 
+                    $$\lim_{x\to 0} \frac{1-\cos(0)}{log(1+x^2)} = \left[\frac{0}{0}\right]_{F.IND.} = \lim_{y\to 0} 1 - \cos(0) \cdot \frac{x^2}{\log(1+x^2)}  \cdot \frac{1}{x^2} = 0$$
+            \end{itemize}
+    \item[(e)] $$\lim_{(x,y,z)\to (0,0,1)} \frac{xy(z-1)}{x^2+y^2+(z-1)^2}$$
+              \begin{itemize}
+                \item \textbf{Primo metodo}
+                      $$\left\{\begin{array}{l}
+                        x = \rho \cos\vartheta \\
+                        y = \rho \sin\vartheta \\
+                        t = z-1 \xrightarrow[z\to 1]{} t \to 0 \\
+                      \end{array}\right.$$
+                      $$0\leq \abs{\frac{\rho\cos\vartheta\cdot\rho\sin\vartheta \cdot t}{\rho^2\left(\cos^2\vartheta + \sin^2 \vartheta\right) + t^2}} \leq \abs{\frac{\rho^2\cdot t}{\rho^2+t^2}} \leq 1 \cdot t$$
+                      $$\left(\frac{\rho^2}{\rho^2+t^2} \leq 1 \iff \rho^2 \leq \rho^2+t^2 \iff t^2 \geq 0 \Rightarrow \text{ sempre }\right)$$
+                      Quindi per $t \to 0$, $0 \to 0$ e $t \to 0$, quindi per il teorema del confronto il limite 
+                      $$\lim_{(x,y,z)\to (0,0,1)} \frac{xy(z-1)}{x^2+y^2+(z-1)^2} = 0$$
+                \item \textbf{Secondo metodo}: $t = z-1 \xrightarrow[]{z\to 1} 0$ \\
+                      $\lim_{(x,y,t)\to (0,0,0)} \frac{xyt}{x^2+y^2+t^2}$
+                      $$0 \leq \abs{\frac{xyt}{x^2+y^2+t^2}} \leq^{?} \frac{\left(\sqrt{x^2+y^2+t^2}\right)^3}{x^2+y^2+t^2} = \sqrt{x^2+y^2+t^2}$$
+                      In particolare si ha $\abs{x} \leq \sqrt{x^2+y^2+t^2} \Rightarrow x^2 \leq x^2+y^2+t^2 \iff y^2+t^2 \geq 0$, lo stesso vale per 
+                      $\abs{y} \leq \sqrt{x^2+y^2+t^2}$ e $\abs{t} \leq \sqrt{x^2+y^2+t^2}$, quindi otteniamo:
+                      $$0 \leq \abs{\frac{xyt}{x^2+y^2+t^2}} \leq \sqrt{x^2+y^2+t^2}$$
+                      Che tende a 0 per $(x,y,t)\to (0,0,0)$, quindi grazie al teorema del confronto il limite vale 0
+              \end{itemize}
+  \end{enumerate}
+\end{eexercise}
+\begin{eexercise}
+  Data $\f$ definita da $$f(x,y) = \left\{\begin{array}{cl}
+    g(x,y) & (x,y) \neq (0,0) \\
+    0 & (x,y) = (0,0) \\
+  \end{array}\right.$$
+  \begin{enumerate}
+    \item[a)] $$g(x,y) = \frac{x\sin(x^2y)}{x^2+y^2} \,\forall (x,y) \not = (0,0)$$
+              La funzione f, che coincide con g $\forall (x,y) \not = (0,0)$, \ace \textbf{continua} $\forall (x,y) \not = (0,0)$
+              perch\ace \ace \textbf{composizione} e \textbf{prodotto} di funzioni continue (\underline{Teorema}). \\
+              Dobbiamo quindi vedere il comportamento della funzione in $(0,0)$, $$\lim_{(x,y)\to (0,0)} f(x,y) = f(0,0) = 0$$
+              cio\ace
+              $$= \lim_{(x,y)\to (0,0)}g(x,y) = \lim_{(x,y)\to (0,0)} \frac{x\sin(x^2y)}{x^2+y^2} \cdot \frac{x^2y}{x^2y}$$
+              per $x \neq 0$ e $y \neq 0$. \\\\
+              (i) $t = x^2y \to 0$ per $(x,y)\to (0,0)$, $\frac{\sin(t)}{t} \to 1$ 
+              $$ = 1 \cdot \lim_{(x,y)\to (0,0)}\frac{x^3y}{x^2+y^2} = 1 \cdot 0 = 0$$
+              Verifichiamolo tramite le coordinate polari.\\
+              $\begin{array}{l}
+                x = \rho\cos\vartheta \\
+                y = \rho\sin\vartheta \\
+              \end{array}$
+              $$0 \leq \abs{\frac{x^3y}{x^2+y^2}} = \abs{\frac{\rho^4\cdot \cos^3\vartheta \sin\vartheta}
+                {\rho^2\left(\cos^2\vartheta + \sin^2\vartheta\right)}} \leq \rho^2$$
+                Quindi per $\rho \to 0$ anche il limite vale 0 grazie al teorema del confronto. \\
+                Abbiamo verificato che il limite $\lim_{(x,y)\to (0,0)} f(x,y) = 0 = f(0,0)$, quindi la funzione 
+                f \ace continua. \\ 
+                Controlliamo ora: 
+                \begin{itemize}
+                  \item $y = 0$ e $x\not = 0$, $\lim_{x\to 0}\frac{x\cdot 0}{x^2} = 0$
+                  \item $y \not = 0$ e $x = 0$, $\lim_{y\to 0}\frac{0}{y^2} = 0$
+                \end{itemize}
+    \item[b)] $$g(x,y) = \frac{\sin(2xy)}{e^{x^2+y^2}-1}$$
+              Dobbiamo studiarne il comportamento in $(0,0)$
+              $$ = \lim_{(x,y)\to (0,0)} 2\cdot \frac{\sin(2xy)}{2xy}\cdot \frac{xy}{x^2+y^2} \cdot \frac{x^2+y^2}{e^{x^2+^2}}$$
+              \begin{itemize}
+                \item[(i)] $t = 2xy$, $\frac{\sin(t)}{t} \xrightarrow[t\to 0]{} 1$ per $(x,y)\to (0,0)$
+                \item[(ii)] $t = x^2+y^2 \to 0$ per $(x,y)\to (0,0)$, $\frac{t}{e^t-1} \xrightarrow[t\to 0]{} 1$
+              \end{itemize}
+              \begin{itemize}
+                \item Proviamo con le coordinate polari: $\left\{\begin{array}{l}
+                        x = \rho\cos\vartheta \\
+                        y = \rho\sin\vartheta \\
+                      \end{array}\right.$
+                      $$\Rightarrow \frac{\rho^2\sin\vartheta\cos\vartheta}{\rho^2} \Rightarrow \sin\vartheta\cos\vartheta$$
+                      Quindi non va bene, allora proviamo a prendere una restrizione del dominio.
+                \item $y = mx$, 
+                      $$\lim_{x \to 0} \frac{x^3m}{x^2(m^2+1)} \rightarrow \frac{m}{m^2+1}$$
+                      Ottenimao due rislutati diversi, $\left((m=1,\lim=\frac{1}{2}), (m=2,\lim = \frac{2}{5})\right)$,
+                      quindi ho trovare due restrizioni dove il limite \ace diverso, perci\aco $\nexists \lim$.
+              \end{itemize}
+  \end{enumerate}
+\end{eexercise}
+\begin{eexercise}
+  Calcolare il gradiente delle seguenti funzioni:
+  \begin{enumerate}
+    \item $f(x,y) = \sin(x,y)$, $\nabla f(x,y) = \left(\ppartx, \pparty\right)$
+          \begin{itemize}
+            \item $\frac{\partial f}{\partial x} (x,y) = \cos(xy)\cdot \frac{\partial (xy)}{\partial x} = \cos(xy)\cdot y$
+            \item $\frac{\partial f}{\partial y} (x,y) = \cos(xy)\cdot \frac{\partial (xy)}{\partial y} = \cos(xy)\cdot x$
+          \end{itemize}
+          $\nabla f(x,y) = \left(y\cos(xy),x\cos(xy)\right) = \cos(xy)\cdot (y,x)$.\\
+          Calcolare la \underline{derivata direzionale} rispetto al vettore $v = \frac{1}{\sqrt{3}}
+          \left(-\frac{1}{2}, \frac{3}{2}\right)$
+          $$\frac{\partial f}{\partial v} (x,y) = \tuple{\nabla f(x,y), v} = \frac{\cos(xy)}{\sqrt{3}} \tuple{(y,x),(
+            -\frac{1}{2}, \frac{3}{2})} = $$ 
+          $$= \frac{\cos(xy)}{\sqrt{3}} \cdot \left(-\frac{y}{2}+\frac{3x}{2}\right) = \frac{\cos(xy)}{2\sqrt{3}} (3x-y)$$
+          Calcoliamo il piano tangente nei punti $(0,0,f(0,0))$ e $(1,2,f(1,2))$, ricrodiamo la formula del piano:
+          $$z = f(x_0,y_0) + \tuple{\nabla f(x_0,y_0), (x,y)-(x_0,y_0)}$$
+          Cerchiamo ora i valori:
+          \begin{itemize}
+            \item $f(x,y) = \sin(xy)$, $f(0,0) = 0$
+            \item $\nabla f(x,y) = \cos(xy)(y,x)$, $\nabla f(0,0) = 1\cdot (0,0) = 0$
+          \end{itemize}
+          Quindi $z = 0 + 0 \Rightarrow$ il piano tangente \ace $z = 0$. \\
+          Chi \ace il normale? \\
+          $n = (0,0,1)$, $(x_0,y_0) = (1,2)$ 
+          \begin{itemize}
+            \item $f(x,y) = \sin(xy)$, $f(1,2) = \sin(2)$
+            \item $\nabla f(x,y) = \cos(xy)(y,x)$, $\nabla f(1,2) = \cos(2) \cdot (2,1)$
+          \end{itemize}
+          $z = \sin(2) + \tuple{\cos(2)\cdot (2,1), (x-1, y-2)} = \sin(2)+\cos(2)\cdot (2x+y-4)$
+  \end{enumerate}
+\end{eexercise}
+
+
+
+
+
+
+
+
