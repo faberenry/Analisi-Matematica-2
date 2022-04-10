@@ -1,0 +1,146 @@
+\section{Lez - 05}
+\subsection{Condizioni sulle derivate parziali che assicurino la diffrenenziablit\aca}
+\begin{osservazione}
+  La derivabilit\aca parziale non \ace sufficiente ad assicurare la diffrenenziablit\aca
+\end{osservazione}
+\textbf{Problema}: Data $\f$, A aperto e supponiamo che $\exists\nabla f(p_0)$ con $p_0\in A$.
+Quale propriet\aca ulteriore bisogna aggiungere per ottenere la diffrenenziablit\aca di f in $p_0$?
+\begin{theorem}[del differenziale totale]
+  Sia $A\subseteq \R^2$ aperto, $p_0\in A$. Supponiamo che 
+  \begin{enumerate}
+    \item[(i)] $$\exists \frac{\partial f}{\partial x} , \frac{\partial f}{\partial y} : A \to \R$$
+    \item[(ii)] $\frac{\partial f}{\partial x}, \frac{\partial f}{\partial y}$ siano continue nel 
+              punto $p_0$, cio\ace $$\exists \lim_{p\to p_0} \frac{\partial f}{\partial x} (p) = \frac{\partial f}{\partial x} (p_0) \,
+              e \lim_{p\to p_0} \frac{\partial f}{\partial y} (p) = \frac{\partial f}{\partial y} (p_0)$$
+  \end{enumerate}
+  Allora f \ace differenzibile nel punto $p_0$. \textit{[BDPG, 11.5]}
+\end{theorem}
+\begin{osservazione}
+  \ac{E} sufficiente richiedre la (i) e (ii) in un intorno di $p_0$
+\end{osservazione}
+Il teorema del differenziale totale giustifica la seguente definizione:
+\begin{definition}
+  Sia $\f$
+  \begin{enumerate}
+    \item[(i)] f si dice \underline{differenziabile} su A se \ace diff su ogni punto di A.
+    \item[(ii)] f si dice di \underline{classe $C^1$} su A se f \ace \underline{continua} e 
+          $$\exists \frac{\partial f}{\partial x}, \frac{\partial f}{\partial y} : A \to \R \text{ continui}$$ 
+          In questo caso scriveremo che $f \in C^1(A)$
+  \end{enumerate}
+\end{definition}
+Dal teorema del differenziale totale segue anche:
+\begin{corollary}
+  Sia $f\in C^1(A)$ allora f \ace differenziabile su ogni punto di $p_0 \in A$
+\end{corollary}
+\subsection{Derivate direzionali}
+\subsubsection{Norma di un vettore di $\R^n$}
+Sia $v = (v_1,...,v_n)\in\R^n$, si chiama \underline{norma} di v, e si denota 
+$$\norma{v} := \sqrt{v_1^2+...+v_n^2} = d(v,\origine) = \sqrt{v\cdot v}$$
+\begin{example}
+  \begin{enumerate}
+    \item $n = 1$, $\norma{v} = \abs{v}$ se $v\in \R$
+    \item $n = 2$. (immaginarsi il piano cartesiano)
+  \end{enumerate}
+\end{example}
+\begin{osservazione}
+  Se $p,q \in \R^n \Rightarrow d(p,q) = \norma{p-q}$
+\end{osservazione}
+\begin{exercise}[6,foglio 1]
+  \begin{enumerate}
+    \item $\norma{v} = 0 \iff v = \origine = (0,...,0)$
+    \item Se $\lambda \in \R$ e $\lambda v = (\lambda v_1, ..., \lambda v_n)$ con $v = (v_1,...,v_n)$, 
+          allora $\norma{\lambda v} = \abs{\lambda}\norma{v}$
+    \item \underline{Disuguaglianza triangolare:} Se $v,w \in \R^n$, $\norma{v+w} \leq \norma{v} + \norma{w}$
+  \end{enumerate}
+\end{exercise}
+\begin{definition}
+  Un vettore $v \in \R^n$ si dice \underline{direzione} (\underline{vettore unitario}, \underline{versore}) se $\norma{v} = 1$
+\end{definition}
+\begin{example}
+  $n=2$, i vettori $e_1 = (1,0)$ ed $e_2= (0,1)$ sono direzioni di $\R^2$
+\end{example}
+Sia $v = (v_1,v_2)\in \R^2$ una direzione, e $\f$, A aperto e $p_0 = (x_0,y_0)\in A$, allora 
+$\exists \delta > 0$ t.c. $$p_0+hv = (x_0+hv_1,y_0+hv_2)\in A$$
+se $\abs{h}\leq \delta$, pertanto \ace ben definita: 
+$$ (-\delta, \delta) \setminus \{0\} \ni h \rightarrow \frac{f(p_0+hv) -f(p_0)}{h}$$
+\begin{definition}
+  Si dice che f \ace \underline{derivabile} (parzialmente) rispetto alla direzione v nel punto $p_0$
+  se $$\exists \frac{\partial f}{\partial v} (p_0) := \lim_{h\to 0} \frac{f(p_0+hv) -f(p_0)}{h} \in \R$$
+\end{definition}
+\begin{notazione}
+  Talvolta $\frac{\partial f}{\partial v} (p_0) = D_v f(p_0)$
+\end{notazione}
+\begin{osservazione}
+  \begin{enumerate}
+    \item[(i)] Sia $F : (-\delta,\delta) \to \R$, (funzione di $n=1$ variabile)
+               $$F(t) := f(p_0+tv) \, \text{ se } t \in (-\delta,\delta)$$
+               Allora \ace immediato verificare che 
+               $$\exists \frac{\partial f}{\partial v} (p_0) \iff \exists F'(0) = \lim_{h\to 0} \frac{F'(h)-F(0)}{h}$$
+               ed in questo case, $\frac{\partial f}{\partial v} (p_0) = F'(0)$
+    \item[(ii)] \ac{E} immediato verificare che se $v = e_1$ o $v = e_2$, allora 
+                $$\frac{\partial f}{\partial e_1} (p_0) = \frac{\partial f}{\partial x} (p_0) \text{ e }
+                \frac{\partial f}{\partial e_2} (p_0) = \frac{\partial f}{\partial y} (p_0)$$ 
+  \end{enumerate}
+\end{osservazione}
+\subsection{Teo: Diff. vs. Deriv. direz.}
+\begin{theorem}[diffrenenziablit\aca vs derivabiliit\aca direzionale]
+  Sia $\f$, A aperto e sia fissato $p_0 = (x_0,y_0) \in A$. Supponiamo che f sia differenziale in $p_0$, allora
+  $$\exists \frac{\partial f}{\partial v} (p_0) = df(p_0)(v) = \nabla f(p_0) \cdot (v) = \frac{\partial f}{\partial x} (p_0)(v_1) + \frac{\partial f}{\partial y} (p_0) (v_2)$$
+  per ogni direzione $v = (v_1,v_2) \in \R^2$
+  \begin{proof}
+    Consideriamo la funzione $F: (-\delta,\delta)\to \R$, 
+    $$F(t) = f(p_0 +tv) = f(x_0+tv_1,y_0+tv_2)$$
+    Per ipotesi, f \ace differenziabile in $p_0$, cio\ace vale:
+    $$(D) \exists \lim_{p\to p_0} \frac{f(p)-f(p_0)-\nabla f(p_0)\cdot (p-p_0)}{d(p,p_0)} = 0$$
+    la condizione (D) \ace equivalente a chiedere:
+    $$(D*) f(p) = f(p_0) + \nabla f (p_0) \cdot (p-p_0) + o\left(d(p,p_0)\right) \, \forall p \in A$$
+    dove con $o\left(d(p,p_0)\right) \xLeftrightarrow{def.} \exists \lim_{p\to p_0} \frac{o(d(p,p_0))}{d(p,p_0)}=0$
+    Scegliendo $p = p_0+hv$ in (D*), otteniamo che:
+    $$F(h) := f(p_0+hv) - f(p_0)+\nabla f(p_0)\cdot (hv) + o(d(p_0+hv,p_0)) = $$
+    $$= F(0) + h\left(\nabla f(p_0)\cdot v\right) + o(\abs{h})$$
+    Infatti ricordiamo che: 
+    $$d(p_0+hv,p_0) =  \norma{p_0+hv-p_0} = \norma{hv} = \abs{h}\norma{v} = \abs{h}$$
+    Dall'identit\aca precedente segue che:
+    $$\exists F'(0) := \lim_{h\to 0}\frac{F(h) - F(0)}{h} = \nabla f(p_0) \cdot v = df(p_0)(v)$$
+    Per l'osservazione precedente $F'(0) = \frac{\partial f}{\partial v} (p_0)$ da cui segue la tesi.
+  \end{proof}
+\end{theorem}
+Dal teorema segue la generalizzazione del teorema del valore medio (G. Lagrange) a funzioni $n=2$ variabili.
+\subsection{Teorema del valore medio}
+\begin{theorem}[TdVM, n=1]
+  Sia $f:[a,b]\to \R$ continua e derivabile in $(a,b)$. Allora $\exists c \in (a,b)$ t.c.
+  $$\frac{f(b)-f(a)}{b-a} = f'(c)$$
+\end{theorem}
+\begin{theorem}[del valore medio, n=2]
+  Sia $\f$, A aperto. Supponiamo che:
+  \begin{enumerate}
+    \item[(i)] $\exists p,q \in A$ t.c. $[p,q] := \{tq+(1-t)p \mid t\in [0,1]\} \subset A$
+    \item[(ii)] f \ace continua sull'insieme $[p,q]$ e differenziabile su $(p,q) := \{tq+(1-t)p \mid t \in (0,1)\}$ 
+  \end{enumerate}
+  Allora esiste un punto $\bar{c} \in (p,q)$ t.c. $f(q)-f(p) = \nabla f(\bar{c})\cdot (q-p)$
+  \begin{proof}
+    Supponiamo $p \not = q$ altrimenti la tesi \ace banale e sia 
+    $$v := \frac{q-p}{\norma{q-p}}$$ una direzione di $\R^2$. \\
+    Definiamo la funzione (d n=1 variabile) $F(t) := f(p+tv)$ con $t\in \left[0,\norma{q-p}\right] (\subset \R)$ e fissiamo $p,q$, 
+    osserviamo che F \ace ben definita per la (i) e $F(0) = f(p)$ e $F(\norma{q-p}) = f(q)$.
+    Inoltre per la (ii):
+    \begin{enumerate}
+      \item $F:[0,\norma{q-p}] \to \R$ \ace continua;
+      \item $\exists F'(t) = \frac{\partial f}{\partial v} (p+tv)$, $\forall t \in (0,\norma{q-p})$
+    \end{enumerate}
+    Possimao applicare il teorema del valore medio (n=1 variabile) a F e otteniamo che esiste 
+    $\bar{t} \in (0,\norma{q-p})$ t.c. 
+    $$f(q)-f(p) = F(\norma{q-p}) - F(0) = F(\bar{t})\norma{q-p} = $$
+    $$=_{(2)} \frac{\partial f}{\partial v}(p+\bar{t}v)\norma{q-p} = \left(\nabla f(p+\bar{t}v)\cdot v\right)\norma{q-p} = $$
+    $$= \left(\nabla f(p+\bar{t}v)\cdot \frac{q-p}{\norma{q-p}}\right)\cdot \frac{q-p}{\norma{q-p}} = \nabla f(p+\bar{t}v)(q-p)$$
+    Scegliendo $\bar{c} = p+\bar{t}v \in (p,q)$ otteniamo la tesi  
+  \end{proof}
+\end{theorem}
+\begin{corollary}
+  Sia $f: B(p_0,r_0) \subset \R^2 \to \R$. Supponiamo che $\exists \nabla f(p_0) = (0,0) \, \forall p \in B(p_0,r_0)$.
+  Allora $f(p) = f(p_0)$, $\forall p \in B(p_0,r_0)$
+  \begin{proof}
+    per il teorema del diff. tot. f \ace differenziale su $B(p_0,r_0)$. Possimao applicare il teorema del valore 
+    medio e otteniamo che $\exists \bar{c} \in (p,p_0)$ t.c. $f(p)-f(p_0) = \nabla f(\bar{c}) (p-p_0) = 0$, $\forall p \in B(p_0,r_0)$
+  \end{proof}
+\end{corollary}
