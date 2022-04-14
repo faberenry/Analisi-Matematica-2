@@ -1,0 +1,158 @@
+\section{Lez - 06}
+\subsection{Derivate parziali di una f composta di pi\acu variabili}
+\textbf{Problema:} Vogliamo determinare una formula generale che ci consente di calcolare le derivate parziali di una (generica)
+funzione composta di pi\acu variabili.
+\begin{exercise}[7, foglio 3]
+  Consideriamo la funzione composta $h: \R \to \R$ definita come $h := f \circ g$, dove $f : \R^2 \setminus \{(0,0)\} \to \R$,
+  $g:\R\to \R^2\setminus \{(0,0)\}$:
+  $$f(x,y)=\frac{xy}{x^2+y^2}$$
+  se $(x,y)\neq (0,0)$ e\\
+  $g(t) = (g_1(t),g_2(t)) = (\sin^2(t),\cos^2(t))$, $t\in \R$
+  Calcolare $h'(t)$, $t\in \R$
+\end{exercise}
+\subsubsection{Richiami della RDC}
+Siano $f: I \to \R$ e $g: J \to \R$ con $g(J)\subseteq I$, $I,J$ intervalli aperti di $\R$. \\
+$h:= f\circ g$, $h(x):=f(g(x))$, $x\in I$
+\begin{proposition}[Regola della catena, RDC]
+  Se $f,g$ sono derivabli, rispettivamente, in $g(x_0)$ e in $x_0$, allora $\exists h'(x) = f'(g(x_0))\cdot g'(x_0)$
+\end{proposition}
+\begin{example}
+  $f(y) = \sin{y}$, $g(x) = x^2$, $h = f\circ g$, $h(x) = \sin{x^2}$, 
+  $\exists h'(x) = f'(g(x))\cdot g'(x) = \cos{x^2}\cdot 2x$
+\end{example}
+Prima di arrivare alla formula generale di derivazione di una funzione composta, introduciamo alcuni casi particolari
+\subsection{I° caso particolare}
+Consideriamo $g : I \subseteq \R \to \R^2$, I intervallo aperto di $\R$, $t_0 \in I$ fissato. 
+$$I \ni t \rightarrow g(t) = (g_1(t),g_2(t)) = (x(t),y(t))$$
+con $g_1,g_2 : I \to \R$. \\
+Supponiamo che $\exists g_1'(t_0), g_2'(t_0)$ e $g(I) \subseteq A \subseteq \R^2$, A aperto.\\
+Sia $\f$ e supponiamo che f sia differenziabile in $$p_0 = (x_0,y_0) = g(t_0) = (g_1(t_0),g_2(t_0))$$
+Consideriamo la funzione composta $h: I \subseteq \R \to \R$, $h:= f\circ g$
+$$I \ni t \rightarrow h(t) := (f\circ g)(t) = f(g(t))=f(g_1(t),g_2(t))$$
+\begin{theorem}
+  $$(1) \, \exists h'(t_0) = \ppartx \cdot g_1'(t_0) + \pparty \cdot g_2'(t_0)$$
+  oppure tramite matrici
+  $$(1bis) \, \exists h'(t_0) =  \begin{bmatrix} \ppartx & \pparty \end{bmatrix} \cdot \begin{bmatrix}{c}
+    g_1'(t_0)\\
+    g_2'(t_0)\\
+  \end{bmatrix} = $$
+  $= \nabla f(p_0)\cdot g'(t_0)$, dove $g'(t_0) = (g_1'(t_0), g_2(t_0))$.
+\end{theorem}
+\subsubsection{Espansione calssica di RDC, Leibniz}
+Se scriviamo g e f, in termini di "variabili dipendenti", cio\ace 
+$$g = \left\{\begin{array}{l}
+  x = x(t) = g_1(t) \\
+  y = y(t) = g_2(t) \\
+\end{array}\right. \text{ (curva del piano)}$$
+$z = z(x,y) = f(x,y)$, allora componendo f con g, la variabile dipendente $z$ dipender\aca dalla sola variabile
+indipendente $t$ per cui, $z = z(t) = z(x(t),y(t))$, $t \in I$. \\
+Quindi in termini di queste variabili $(z,x,y,t)$ si pu\aco scrivere la (1) come:
+$$\frac{dz)}{dt} = \frac{\partial z}{\partial x} \cdot \frac{\partial x}{\partial t} + \frac{\partial z}{\partial y} \cdot \frac{\partial y}{\partial t}$$
+oppure utilizzando (1bis)
+$$\frac{dz}{dt} = \begin{bmatrix}
+  \frac{\partial z}{\partial x} & \frac{\partial z}{\partial y}\\
+\end{bmatrix} \cdot \begin{bmatrix}
+  \frac{\partial x}{\partial t} \\ 
+  \\
+  \frac{\partial y}{\partial t}\\
+\end{bmatrix}$$
+\begin{proof}[Idea!]
+  Proviamo la (1), cio\ace provare che 
+  $$(2) \, \exists h'(t_0) = \lim_{t\to t_0} \frac{h(t)-h(t_0)}{t-t_0} = \nabla f(p_0)\cdot g'(t_0)$$
+  Essendo f differenziabile in $p_0$ vale che:
+  $$(3) \, f(p) = f(p_0) + df(p_0)\cdot(p-p_0) + o(\norma{p-p_0})$$
+  $\forall p \in A$ se $p_0 = g(t_0)$. \\
+  Da (3) segue che, se scegliamo $p = g(t)$ otteniamo:
+  $$f(g(t)) = f(g(t_0)) + df(g(t_0))\cdot (g(t)-g(t_0)) + o (\norma{g(t)-g(t_0)})$$
+  $\forall t \in I$, da cui:
+  $$(4)\, \frac{f(g(t)) - f(g(t_0))}{t-t_0} = \frac{df(g(t_0))\cdot (g(t)-g(t_0))}{t-t_0} + \frac{o (\norma{g(t)-g(t_0)})}{t-t_0}$$
+  $t \in I, t \neq t_0$. \\
+  Osserviamo che essendo $df(p_0): \R^2 \to \R$ lineare allora:
+  $$(5)\, \frac{df(p_0)(g(t)-g(t_0))}{t-t_0} = df(p_0)\cdot \left(\frac{g(t)-g(t_0)}{t-t_0}\right)$$
+  Passando al limite nella (5) per $t \to t_0$, dalla continuit\aca della funzione $df(p_0)$, si ottiene che:
+  $$\lim_{t\to t_0} df(p_0)\left(\frac{g(t)-g(t_0)}{t-t_0}\right) = df(p_0)\cdot g'(t_0)$$
+  $$(6) \, \exists \lim_{t \to t_0} \frac{df(p_0)(g(t)-g(t_0))}{t-t_0} = df(p_0)\cdot g'(t_0) = \nabla f(p_0)\cdot g'(t_0)$$
+  Si pu\aco provare anche (ed \ace il punto delicato che omettiamo)
+  $$(7) \, \exists \lim_{t\to t_0} \frac{o(\norma{g(t)-g(t_0)})}{t-t_0} = 0$$
+  Da (6) e (7), possiamo passare al limite per $t \to t_0$ nella (4) ed otteniamo la (2) e dunque la tesi.
+\end{proof}
+\subsection{II° caso particolare}
+$g: A \subseteq \R^2 \to \R^2$, A aperto, e $p_0 = (s_0,t_0)\in A$
+$$A \ni (s,t) \rightarrow g(s,t) = (g_1(s,t), g_2(s,t))$$
+$g_1, g_2 : A \subseteq \R^2 \to \R$. \\
+Supponiamo che $g_1$ e $g_2$ siano differenziabili in $p_0$ e $g(A) \subseteq B \subseteq \R$, B aperto. 
+In particolare:
+$$\exists \nabla g_i(p_0) = \left(\frac{\partial g_i}{\partial s}(p_0), \frac{\partial g_i}{\partial t}(p_0)\right) \, i = 1,2$$
+Sia $f : B \subseteq \R^2 \to \R$, B aperto, f differenziabile in $q_0 = (x_0,y_0)=(g_1(p_0),g_2(p_0))$, 
+$B \ni (x,y) \rightarrow f(x,y)\in \R$. \\
+Supponiamo che f sia differenziabile in $q_0$. \\
+Consideriamo $h := f \circ g : A \subseteq \R^2 \to \R$,
+$$A \ni (s,t) \rightarrow (f\circ g)(s,t) = f(g(s,t)) = f(g_1(s,t),g_2(s,t))$$
+\begin{theorem}
+  $$(1) \, \begin{array}{l}
+    \exists \frac{\partial h}{\partial s}(p_0) = \frac{\p f}{\p x}(g(p_0)) \cdot \frac{\p g_1}{\p s}(p_0) + \frac{\p f}{\p y}(g(p_0)) \cdot \frac{\p g_2}{\p s}(p_0) \\
+    \\
+    \exists \frac{\partial h}{\partial t}(p_0) = \frac{\p f}{\p x}(g(p_0)) \cdot \frac{\p g_1}{\p t}(p_0) + \frac{\p f}{\p y}(g(p_0)) \cdot \frac{\p g_2}{\p t}(p_0) \\
+  \end{array}$$
+\end{theorem}
+in termini di matrici:
+$$(1bis) \, \begin{bmatrix}
+  \frac{\p h}{\p s}(p_0) & \frac{\p h}{\p t} \\
+\end{bmatrix} = \begin{bmatrix}
+  \frac{\p f}{\p x}(g(p_0)) & \frac{\p f}{\p y}(g(p_0)) \\
+\end{bmatrix} \cdot \begin{bmatrix}
+  \frac{\p g_1}{\p s}(p_0) & \frac{\p g_1}{\p t}(p_0)\\
+  \\
+  \frac{\p g_2}{\p s}(p_0) & \frac{\p g_2}{\p t}(p_0) \\
+\end{bmatrix}$$
+Dove $\frac{\p g_1}{\p s}(p_0), \frac{\p g_1}{\p t}(p_0) = \nabla g_1(p_0)$ e 
+$\frac{\p g_2}{\p s}(p_0) ,\frac{\p g_2}{\p t}(p_0) = \nabla g_2 (p_0)$
+\begin{exercise}
+  Utilizzare (1bis) del teorma nel secondo caso e svolgere esercizio 7 foglio 3
+\end{exercise}
+\subsection{Caso generale di RDC}
+Vogliamo ora trattare il caso generale della formuala di derivazione per funzioni composte di pi\acu variabili.
+\subsubsection{Matrice Jacobiana}
+\begin{definition}[Matrice Jacobiana]
+  Sia $f : A \subseteq \R^n \to \R^m$, A aperto,
+  $$A \ni x = (x_1, ..., x_n)\rightarrow f(x) = \left(f(x_1),..., f(x_n)\right)$$
+  con $f_i : A \subseteq \R^n \to \R$, $i = 1,...,n$.\\ Supponiamo che dato $x_0 = (x_1^0, ..., x_n^0) \in A$, 
+  $$\exists \nabla f_i(x_0) := \left(\frac{\p f_i}{\p x_1}(x_0), \dots, \frac{\p f_i}{\p x_n}\right)$$
+  con $i = 1,..., m$. \\\\
+  Si chiama \underline{Matrice Jacobiana} di f nel punto $x_0$ la matrice $m\times n$
+  $$D f(x_0) = J f(x_0) = \begin{bmatrix}
+    \frac{\p f_1}{\p x_1}(x_0) & \frac{\p f_1}{\p x_2}(x_0) & \cdots & \frac{\p f_1}{\p x_n}(x_0) \\
+    \\
+    \frac{\p f_2}{\p x_1}(x_0) & \frac{\p f_2}{\p x_2}(x_0) & \cdots & \frac{\p f_2}{\p x_n}(x_0) \\ 
+    \vdots &  & & \vdots \\
+    \frac{\p f_n}{\p x_1}(x_0) & \frac{\p f_n}{\p x_2}(x_0) & \cdots & \frac{\p f_n}{\p x_n}(x_0) \\
+  \end{bmatrix}$$
+\end{definition}
+\hfill \break
+\begin{osservazione}
+  \begin{enumerate}
+    \item[(i)] La nozione di matrice Jacobiana generalizza la nozione di vettore gradiente per una 
+                funzione (scalare) $\fn$. \\
+                Si noti che in questo caso la matrice Jacobiana $1 \times n$ \ace data da 
+                $$D f_(x_0) := \left(\frac{\p f}{\p x_1}(x_0), \cdots, \frac{\p f}{\p x_n}(x_0)\right) \equiv \nabla f(x_0)$$ 
+    \item[(ii)] La riga i-esima della matrice Jacobiana $D f(x_0)$ coincide con $\nabla f_i (x_0)$
+    \item[(iii)] La (1bis) del precedente teorema, in termini di matrici Jacobiane pu\aco scriversi come 
+                $$D h(p_0) = D f(g(p_0))\cdot D g(p_0) \text{ (RDC)}$$ 
+  \end{enumerate}
+\end{osservazione}
+\subsection{Teorema RDC}
+\begin{theorem}[Regola della catena, RDC]
+  Siano $g: A \subseteq \R^n\to \R^m$ e $f : B \subseteq \R^m \to \R^k$, A e B aperti
+  \begin{enumerate}
+    \item[(i)] $g(A) \subseteq B$
+    \item[(ii)] Se $g = (g_1, \dots, g_m)$, $f = (f_1, \dots, f_k)$ \\
+              Supponiamo che  $\begin{array}{l}
+                g_i : A \subseteq \R^n \to \R \, (i = 1,\dots,m) \text{ sia diff. in un dato } x_0 \in A \\
+                f_i : B \subseteq \R^m \to \R \, (i = 1,\dots,k) \text{ sia diff. in un dato } y_0 = g(x_0) \\ 
+              \end{array}$ \\
+              Consideriamo ora la funzione $h:= f \circ g : A \subseteq \R^n \to \R^k$, $h = (h_1, \dots, h_k)$
+              con $h_i : A \subseteq \R^n \to \R$, \\ allora le funzioni 
+              $h_i : A \to \R (i = 1,\dots,k) \text{ sono diff. in } x_0$ e 
+              $$D h(x_0) = D f(g(x_0)) \cdot D g(x_0)$$
+  \end{enumerate}
+\end{theorem}

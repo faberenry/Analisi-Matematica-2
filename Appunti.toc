@@ -1,25 +1,39 @@
-\contentsline {chapter}{\numberline {1}Funzioni a pi\`u variabili}{2}{chapter.1}
-\contentsline {section}{\numberline {1.1}Lez - 01}{2}{section.1.1}
-\contentsline {subsection}{\numberline {1.1.1}Grafico di una funzione scalare di pi\`u variabili}{2}{subsection.1.1.1}
-\contentsline {subsection}{\numberline {1.1.2}Curve di livello di una funzione di pi\`u variabili}{3}{subsection.1.1.2}
-\contentsline {subsection}{\numberline {1.1.3}Limiti e continuit\`a per funzioni di pi\`u variabili}{3}{subsection.1.1.3}
-\contentsline {subsubsection}{Idea per l'introduzione di limite per funzioni di $n=2$ varaibili}{4}{section*.2}
-\contentsline {section}{\numberline {1.2}Lez - 02}{5}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Calcolo dei limiti}{6}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}Esempi calcolo limiti}{7}{subsection.1.2.2}
-\contentsline {section}{\numberline {1.3}Lez - 03}{9}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}Definizioni limiti e continuit\`a per $\mathbb {R}^n$}{9}{subsection.1.3.1}
-\contentsline {subsection}{\numberline {1.3.2}Calcolo differenziale per funzioni a pi\`u variabili}{10}{subsection.1.3.2}
-\contentsline {subsubsection}{Derivate parziali}{10}{section*.3}
-\contentsline {subsection}{\numberline {1.3.3}Piano tangente al grafico}{11}{subsection.1.3.3}
-\contentsline {section}{\numberline {1.4}Lez - 04}{13}{section.1.4}
-\contentsline {subsection}{\numberline {1.4.1}Differenziabilit\`a in $n\geq 3$}{14}{subsection.1.4.1}
-\contentsline {section}{\numberline {1.5}Lez - 05}{18}{section.1.5}
-\contentsline {subsection}{\numberline {1.5.1}Condizioni sulle derivate parziali che assicurino la diffrenenziablit\`a }{18}{subsection.1.5.1}
-\contentsline {subsection}{\numberline {1.5.2}Derivate direzionali}{19}{subsection.1.5.2}
-\contentsline {subsubsection}{Norma di un vettore di $\mathbb {R}^n$}{19}{section*.4}
-\contentsline {subsection}{\numberline {1.5.3}Teo: Diff. vs. Deriv. direz.}{20}{subsection.1.5.3}
-\contentsline {subsection}{\numberline {1.5.4}Teorema del valore medio}{21}{subsection.1.5.4}
-\contentsline {chapter}{\numberline {2}Esercitazioni}{22}{chapter.2}
-\contentsline {section}{\numberline {2.1}Lezione 1 - 09/03/2022}{22}{section.2.1}
-\contentsline {section}{\numberline {2.2}Esercitazione 2 - 23/03/2022}{26}{section.2.2}
+\contentsline {chapter}{\numberline {1}Funzioni a pi\`u variabili}{3}{chapter.1}
+\contentsline {section}{\numberline {1.1}Lez - 01}{3}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Grafico di una funzione scalare di pi\`u variabili}{3}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Curve di livello di una funzione di pi\`u variabili}{4}{subsection.1.1.2}
+\contentsline {subsection}{\numberline {1.1.3}Limiti e continuit\`a per funzioni di pi\`u variabili}{4}{subsection.1.1.3}
+\contentsline {subsubsection}{Idea per l'introduzione di limite per funzioni di $n=2$ varaibili}{5}{section*.2}
+\contentsline {section}{\numberline {1.2}Lez - 02}{6}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Calcolo dei limiti}{7}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Esempi calcolo limiti}{8}{subsection.1.2.2}
+\contentsline {section}{\numberline {1.3}Lez - 03}{10}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Definizioni limiti e continuit\`a per $\mathbb {R}^n$}{10}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Calcolo differenziale per funzioni a pi\`u variabili}{11}{subsection.1.3.2}
+\contentsline {subsubsection}{Derivate parziali}{11}{section*.3}
+\contentsline {subsection}{\numberline {1.3.3}Piano tangente al grafico}{12}{subsection.1.3.3}
+\contentsline {section}{\numberline {1.4}Lez - 04}{14}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}Differenziabilit\`a in $n\geq 3$}{15}{subsection.1.4.1}
+\contentsline {section}{\numberline {1.5}Lez - 05}{19}{section.1.5}
+\contentsline {subsection}{\numberline {1.5.1}Condizioni sulle derivate parziali che assicurino la diffrenenziablit\`a }{19}{subsection.1.5.1}
+\contentsline {subsection}{\numberline {1.5.2}Derivate direzionali}{20}{subsection.1.5.2}
+\contentsline {subsubsection}{Norma di un vettore di $\mathbb {R}^n$}{20}{section*.4}
+\contentsline {subsection}{\numberline {1.5.3}Teo: Diff. vs. Deriv. direz.}{21}{subsection.1.5.3}
+\contentsline {subsection}{\numberline {1.5.4}Teorema del valore medio}{22}{subsection.1.5.4}
+\contentsline {section}{\numberline {1.6}Lez - 06}{23}{section.1.6}
+\contentsline {subsection}{\numberline {1.6.1}Derivate parziali di una f composta di pi\`u variabili}{23}{subsection.1.6.1}
+\contentsline {subsubsection}{Richiami della RDC}{23}{section*.5}
+\contentsline {subsection}{\numberline {1.6.2}I° caso particolare}{23}{subsection.1.6.2}
+\contentsline {subsubsection}{Espansione calssica di RDC, Leibniz}{24}{section*.6}
+\contentsline {subsection}{\numberline {1.6.3}II° caso particolare}{25}{subsection.1.6.3}
+\contentsline {subsection}{\numberline {1.6.4}Caso generale di RDC}{26}{subsection.1.6.4}
+\contentsline {subsubsection}{Matrice Jacobiana}{26}{section*.7}
+\contentsline {subsection}{\numberline {1.6.5}Teorema RDC}{27}{subsection.1.6.5}
+\contentsline {section}{\numberline {1.7}Lez - 07}{28}{section.1.7}
+\contentsline {subsection}{\numberline {1.7.1}Derivate parziali di ordine superiore}{28}{subsection.1.7.1}
+\contentsline {subsection}{\numberline {1.7.2}Teo: Inversione dell'ordine di derivazione}{28}{subsection.1.7.2}
+\contentsline {subsection}{\numberline {1.7.3}Taylor per funzioni di pi\`u variabili}{28}{subsection.1.7.3}
+\contentsline {subsection}{\numberline {1.7.4}Taylor del II ordine + resto di Peano}{28}{subsection.1.7.4}
+\contentsline {chapter}{\numberline {2}Esercitazioni}{29}{chapter.2}
+\contentsline {section}{\numberline {2.1}Lezione 1 - 09/03/2022}{29}{section.2.1}
+\contentsline {section}{\numberline {2.2}Esercitazione 2 - 23/03/2022}{33}{section.2.2}
