@@ -31,7 +31,69 @@ Nel caso in cui $j=i \Rightarrow \frac{\p^2 f}{\p x_i^2} = \frac{\p }{\p x_i}\le
 \frac{\p f}{\p x_i}\right) = \frac{\p^2 f}{\p x_i \p x_i}(x_0)$. \\
 Con queste notazioni, vale la seguente generalizzazione del teorema sull'inversione dell'ordine di derivazione.
 \begin{theorem}
-  
+  Sia $\fn$, A aperto. Supponimao che per fissati $i,j = 1,..., n$, con $i \neq j$, 
+  $\exists \frac{\p^2 f}{\p x_i \p x_j}, \frac{\p^2 f}{\p x_j \p x_i} : A \to \R$ e siano 
+  continue in $x_0$. Allora:
+  $$\frac{\p^2 f}{\p x_i \p x_j} (x_0) = \frac{\p^2 f}{\p x_j \p x_i} (x_0)$$
 \end{theorem}
+\begin{definition}
+  Sia $\fn$, A aperto
+  \begin{itemize}
+    \item[(a)] f si dice di \underline{classe} $C^2(A)$ e scriveremo $f\in C^2(A)$ se $f \in C^0(A)$
+              ed $\exists \frac{\p f}{\p x_i} : A \to \R$ continua $\forall i = 1,..., n$, 
+              $\exists \frac{\p^2 f}{\p x_i \p x_j} : A \to \R$ continua $\forall i,j = 1,..., n$
+    \item[(b)]  f si dice di \underline{classe} $C^m(A)$ e scriveremo $f \in C^m(A), (m \geq 1)$ se $f \in C^0(A)$
+              e $\exists \frac{\p^k f}{\p x_{i_1} \p x_{i_2} \dots \p x_{i_k}}:A \to \R$ continua $\forall i_1, ..., i_k = 1,..., n$
+               e $\forall 1 \leq k \leq n$
+  \end{itemize}
+\end{definition}
+\begin{osservazione}
+  Se $f \in C^m(A)$, con $m\geq 2$ per il teo sull'inversione dell'ordine di derivazione 
+  $$\frac{\p^2 f}{\p x_j \p x_i}(x) = \frac{\p^2 f}{\p x_i \p x_j}(x)$$
+  $\forall x \in A$, $\forall i,j = 1,..., n$
+\end{osservazione}
 \subsection{Taylor per funzioni di pi\acu variabili}
+\textbf{Problema:} Data $f: B(p_0,r) \subset \R^2 \to \R$ funzione di classe $C^m\left(B(p_0,r)\right)$, 
+approssimare f con un polinomio di $n=2$ variabili di ordine m, nel modo "migliore possibile"
+\begin{definition}
+  Dato $m \in \Ins{N}$, $p_0 = (x_0,y_0) \in \R^2$ fissato, si chiama \underline{polinomio di ordine m} di $n=2$ variabili,
+  centrato in $p_0$, una funzione $T: \R^2 \to \R$ del tipo
+  $$T(x,y) = \sum_{h=0}^{m} \sum_{i = 0}^n c_{i,h-i} (x-x_0)^i(y-y_0)^{h-i}$$
+  $(x,y)\in \R^2$, dove $c_{i,h-i}$ (i = 0,...,h e h = 0,..., m) sono $\frac{(m+1)(m+2)}{2}$ coeff. ass. 
+\end{definition}
+\begin{example}
+  \begin{itemize}
+    \item[(a)] Se m = 0, $T(x,y) = c_{0,0} \in \R \, \forall (x,y) \in \R^2$
+    \item[(b)] Se m = 1, $T(x,y) = c_{0,0} + c_{1,0}(x-x_0)+ c_{0,1}(y-y_0)$, $\forall (x,y)\in \R^2$
+    \item[(c)] Se m = 2, $T(x,y) = c_{0,0} + c_{1,0}(x-x_0)+ c_{0,1}(y-y_0) + c_{2,0}(x-x_0)^2 + c_{1,1}(x-x_0)(y-y_0)
+                + c_{0,2}(y-y_0)^2$, $\forall (x,y)\in \R^2$  
+  \end{itemize}
+\end{example}
+\textbf{Problema:} Sia $f \in C^2\left(B(p_0,r)\right)$, determinare se esiste un polinomio $T: \R^2 \to \R$ di 
+ordine 2, centrato in $p_0$, t.c. $$f(p) = T(p) + o\left(\abs{p-p_0}^2\right)$$
+$\forall p = (x,y) \in B(p_0,r)$
+\begin{notazione}
+  Se $v,w \in \R^n$, $v \cdot w = \tuple{v,w}$
+\end{notazione}
+\begin{definition}
+  Data $f \in C^2(A)$, $A \in \R^2$ aperto, si chiama, \underline{matrice hessiana}
+  di f in un punto $p\in A$, la matrice $2\times 2$
+  $$D^2f(p) = H(f)(p) = \begin{bmatrix}
+    \frac{\p^2 f}{\p x^2}(p) & \frac{\p^2 f}{\p y \p x}(p) \\
+    \frac{\p^2 f}{\p x \p y}(p) & \frac{\p^2 f}{\p y^2}(p) \\
+  \end{bmatrix}_{2\times 2}$$
+\end{definition}
+\begin{osservazione}
+  per il teo. dell'inv. dell'ordine di derivazione $D^2 f(p)$ \ace \underline{simmetrica}
+\end{osservazione}
 \subsection{Taylor del II ordine + resto di Peano}
+Sia $f \in C^2\left(B(p_0,r)\right)$, $p_0 = (x_0,y_0) \in \R^2$ e $r > 0$ fissato. Allora vale:
+$$\left(FT_2\right) f(p) = T_2(p) + o\left(\abs{p-p_0}^2\right)$$
+$\forall p = (x,y) \in B(p_0,r)$, dove 
+$$T_2(p) := f(p_0) + \tuple{\nabla f(p_0), p-p_0} + \frac{1}{2} \tuple{D^2f(p_0) \cdot (p-p_0), p-p_0}$$
+se $p \in \R^2$. \\
+(polinomio di taylor del II ordine di f, centrato in $p_0$) \\
+Ricordiamo che con $o\left(\abs{p-p_0}^2\right) \Rightarrow \exists\lim_{p\to p_0} \frac{o\left(\abs{p-p_0}^2\right)}{\abs{p-p_0}^2} = 0$
+\begin{proof}
+  
+\end{proof} 

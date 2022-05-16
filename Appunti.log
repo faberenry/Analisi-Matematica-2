@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.9.27)  19 APR 2022 19:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.9.27)  16 MAY 2022 12:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1094,10 +1094,20 @@ Overfull \hbox (3.86166pt too wide) in paragraph at lines 29--34
 \OT1/cmr/m/n/10 Con queste no-tazioni, vale la seguente gen-er-al-iz-zazione del teo-rema sull'inversione
  []
 
-) [28
+[28
 
 
 ]
+Overfull \hbox (54.60869pt too wide) in paragraph at lines 59--61
+[]\OT1/cmr/m/it/10 Dato $\OML/cmm/m/it/10 m \OMS/cmsy/m/n/10 2 \U/bbold/m/n/10 N$\OT1/cmr/m/it/10 , $\OML/cmm/m/it/10 p[] \OT1/cmr/m/n/10 = (\OML/cmm/m/it/10 x[]; y[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2 \U/bbold/m/n/10 R[]$ \OT1/cmr/m/it/10 fis-sato, si chiama $[]$
+ []
+
+
+Overfull \hbox (4.16302pt too wide) in paragraph at lines 79--81
+[]\OT1/cmr/m/it/10 Data $\OML/cmm/m/it/10 f \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 C[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 A\OT1/cmr/m/n/10 )$\OT1/cmr/m/it/10 , $\OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 2 \U/bbold/m/n/10 R[]$ \OT1/cmr/m/it/10 aperto, si chiama, $[]$
+ []
+
+[29]) [30]
 \openout2 = `Esercitazioni/es-01.aux'.
 
  (/home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-01.tex
@@ -1107,7 +1117,7 @@ Overfull \hbox (1.24283pt too wide) in paragraph at lines 14--27
 \OML/cmm/m/it/10 A[] \OT1/cmr/m/n/10 = \U/bbold/m/n/10 R[] \OMS/cmsy/m/n/10 n \OML/cmm/m/it/10 A$ \OT1/cmr/m/it/10 ^^Re aperto. Fisso ora $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; y[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 A[]$\OT1/cmr/m/it/10 , $\OML/cmm/m/it/10 r \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 d\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 @A; \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; y[]\OT1/cmr/m/n/10 )) = [] []$\OT1/cmr/m/it/10 .
  []
 
-[29
+[31
 
 
 
@@ -1116,13 +1126,13 @@ Overfull \hbox (27.12868pt too wide) detected at line 38
 \OML/cmm/m/it/10 A \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2 \U/bbold/m/n/10 R[] \OMS/cmsy/m/n/10 j \OML/cmm/m/it/10 y \OMS/cmsy/m/n/10 ^^U \OML/cmm/m/it/10 x[] \OMS/cmsy/m/n/10 _ \OML/cmm/m/it/10 y \OMS/cmsy/m/n/10 ^^T ^^@\OML/cmm/m/it/10 x[]\OMS/cmsy/m/n/10 g \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2 \U/bbold/m/n/10 R[] \OMS/cmsy/m/n/10 j \OML/cmm/m/it/10 y \OMS/cmsy/m/n/10 ^^U \OML/cmm/m/it/10 x[]\OMS/cmsy/m/n/10 g [ f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2 \U/bbold/m/n/10 R[] \OMS/cmsy/m/n/10 j \OML/cmm/m/it/10 y \OMS/cmsy/m/n/10 ^^T ^^@\OML/cmm/m/it/10 x[]\OMS/cmsy/m/n/10 g
  []
 
-[30] [31]) [32]
+[32] [33]) [34]
 \openout2 = `Esercitazioni/es-02.aux'.
 
- (/home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-02.tex [33
+ (/home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-02.tex [35
 
 
-] [34]
+] [36]
 Overfull \hbox (9.66373pt too wide) in paragraph at lines 59--62
 \OML/cmm/m/it/10 y[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 t[] \OMS/cmsy/m/n/10 ^^U \OT1/cmr/m/n/10 0$\OT1/cmr/m/it/10 , lo stesso vale per $[] \OMS/cmsy/m/n/10 ^^T []$ \OT1/cmr/m/it/10 e $[] \OMS/cmsy/m/n/10 ^^T []$\OT1/cmr/m/it/10 ,
  []
@@ -1132,12 +1142,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 78--81
 
  []
 
-[35]
+[37]
 Overfull \hbox (2.00244pt too wide) in paragraph at lines 112--115
 \OT1/cmr/m/it/10 Ottenimao due ris-lu-tati di-versi, $[]$,
  []
 
-[36]) [37]
+[38]) [39]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 70.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 70.
  (/home/enrico/latex/Analisi-Matematica-2/Appunti.aux (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-01.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-02.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-03.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-04.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-05.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-06.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-07.aux) (/home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-01.aux) (/home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-02.aux))
@@ -1148,18 +1158,18 @@ Package rerunfilecheck Info: File `Appunti.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 70.
  ) 
 Here is how much of TeX's memory you used:
- 36870 strings out of 492982
- 849197 string characters out of 6134896
+ 36880 strings out of 492982
+ 849318 string characters out of 6134896
  1025456 words of memory out of 5000000
  39663 multiletter control sequences out of 15000+600000
  541862 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,17n,96p,10440b,618s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on /home/enrico/latex/Analisi-Matematica-2/Appunti.pdf (38 pages, 335559 bytes).
+Output written on /home/enrico/latex/Analisi-Matematica-2/Appunti.pdf (40 pages, 342803 bytes).
 PDF statistics:
- 604 PDF objects out of 1000 (max. 8388607)
- 538 compressed objects within 6 object streams
- 208 named destinations out of 1000 (max. 500000)
+ 625 PDF objects out of 1000 (max. 8388607)
+ 557 compressed objects within 6 object streams
+ 218 named destinations out of 1000 (max. 500000)
  277 words of extra memory for PDF output out of 10000 (max. 10000000)
 
