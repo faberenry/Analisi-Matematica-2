@@ -1,0 +1,198 @@
+\section{Lez - 08}
+\subsection{Massimi e minimi per funzioni a pi\acu variabili}
+\textbf{Problema:} Dato un insieme $A \subseteq \R^n$ e data $f:A\to\R$, determinare,
+\underline{se esistono}, i punti di max e min di f.
+\begin{definition}
+  Data $\fn$: 
+  \begin{enumerate}
+    \item $p_0 \in A$ si dice, punto di \underline{massimo} (= max) \underline{relativo} di f su A se 
+          $\exists r_0 > 0$ t.c. $f(p) \leq f(p_0) \, \forall p \in A \cap B(p_0,r_0)$ \\
+          Rispettivamente $p_0 \in A$ si dice, punto di \underline{minimo} (= min) \underline{relativo} di f su A se 
+          $\exists r_0 > 0$ t.c. $f(p) \geq f(p_0) \, \forall p \in A \cap B(p_0,r_0)$
+    \item $p_0 \in A$ si dice punto di \underline{massimo} (= MAX) \underline{assoluto} se 
+          $\forall p \in A$, $f(p) \leq f(p_0)$ \\
+          Rispettivamente $p_0 \in A$ si dice punto di \underline{minimo} (= MIN) \underline{assoluto} se 
+          $\forall p \in A$, $f(p) \geq f(p_0)$ 
+  \end{enumerate}
+\end{definition}
+\begin{osservazione}
+  Se $p_0$ \ace un punto di max ( o min) assoluto $\Rightarrow p_0$ \ace punto di max (o min) relativo. Il 
+  viceversa non pu\aco valere.
+\end{osservazione}
+\begin{NB}
+  Non confondere i punti di max e min di una funzione con il suo massimo e minimo.
+  \begin{itemize}
+    \item $Min_{A} f := Min{f(p) : p \in A} \in \R$, se esiste \ace unico
+    \item $Max_{A} f := Max{f(p) : p \in A} \in \R$, se esiste \ace unico
+  \end{itemize}
+\end{NB}
+Consideriamo il seguente esempio:
+\begin{example}
+  $n=1$, $f : \R \to \R \, f(x) =:= x(3-x^2)$ \\\\
+  In particolare si pu\aco vedere che i punti $x = \pm 1$ sono rispettivamente max e min relativi, ma $x=-1$ non \ace 
+  minimo assoluto e $x=+1$ non \ace massimo assoluto. \\
+  Infatti essendo la funzione non limitata ($\sup_{\R} f = +\infty$ e $\inf_{\R} f = -\infty$) $\not \exists max_{\R} f$ e $min_{\R} f$ 
+\end{example}
+\subsection{Estremi liberi di una funzione (min/max relativi)}
+\textbf{Problema:} Supponiamo che $A \subseteq \R^n$ sia aperto e $f: A \to \R$, vogliamo determinare se esistono i punti di max e min
+relativo su A. Questi punti sono detti \underline{estremi liberi} di f. \\\\
+Lo strumento principale per la ricerda di estremi liberi \ace: 
+\begin{theorem}[Fermat]
+  Sia $\fn$, A aperto. Supponiamo che esista $p_0 \in A$ t.c. 
+  \begin{enumerate}
+    \item[(i)] f differenziabile in $p_0$. In particolare $\exists \nabla f(p_0)$
+    \item[(ii)] $p_0$ sia un estremo libero di f in A
+  \end{enumerate}
+  Allora $\nabla f(p_0) = \underline{O}_{\R^n} = (0,...,0) \text{ (n-volte)}$
+\end{theorem}
+Il precedente teorema giustifica la seguente definizione:
+\begin{definition}
+  Data $\fn$, A aperto, un punto $p_0\in A$ si chiama \underline{punto stazionario}(o \underline{critico}) di f se f \ace differenziabile
+  in $p_0$ e $\nabla f(p_0) = \underline{O}_{\R^n}$
+  \begin{proof}
+    Per semplicit\aca, $n = 2$, $p_0 = (x_0,y_0)$. Essendo A aperto esiste $\delta > 0$ t.c. $p_0+te_1 \in A$ se $t \in (-\delta,\delta)$. \\
+    Consideriamo $F:(-\delta,\delta)\to\R$, $F(t) := f(p_0+te_1)$, da (i) 
+    $$\exists\frac{\p f}{\p x}(p_0) \iff (1) \left\{\begin{array}{l}
+      \text{F \ace derivabile nel punto t = 0} \\
+      \text{ e } F'(0) = \frac{\p f}{\p x}(p_0) \\
+    \end{array}\right.$$
+    Dall'altra parte, da (ii) $p_0$ estremo libero di f (2) $t=0$ \ace un estremo libero di F. \\
+    Possiamo applicare il teorema di Fermat di una variabile ed otteniamo $F'(0) = 0 =_{(1)} \frac{\p f}{\p x}(p_0)$. \\\\
+    Analogamente consideriamo $F(t) = f(p_0+te_2)$ e si prova che $\frac{\p f}{\p y}(p_0)=0$. \\
+    Pertanto si prova che $\nabla f(p_0) = (0,0) = \underline{O}_{\R}^2$
+  \end{proof}
+\end{definition}
+\begin{osservazione}
+  Non ogni punto stazionario di f \ace un punto di estremo libero.
+\end{osservazione}
+\begin{example}
+  $\f$, $f(x,y) = y^3$, $p_0 = (x_0,0)$. \\
+  Poich\ace $\nabla f(x,y) = (0,3y^2)$, $\nabla f(p_0) = (0,0)$. Pertanto ogni punto $p_0 = (x_0,0)$ (per un fissato 
+  $x_0\in \R$) \ace un punto stazionario di f, ma $p_0$ non \ace un estremo libero, infatti $\forall r > 0$ $f(x_0,0) = 0 \, 
+  \forall x_0 \in \R$, quindi $p_0=(x_0,0)$ si dice punto di \underline{sella}.
+\end{example}
+\begin{definition}
+  Sia $\fn$, A aperto. Un punto $p_0 \in A$ si dice \underline{punto di sella} se $p_0$ \ace un punto 
+  stazionario di f e $f(p)-f(p_0)$ amette sia valori positivi che negativi in ogni intorno di $p_0$
+\end{definition}
+\subsection{Matrice Hessiana}
+
+\textbf{Problema:} Sia $A \subseteq \R^n$, $f \in C^2(A)$. Supponiamo che $p_0 \in A$ sia un punto stazionario di f. \\
+Come determinare se $p_0$ sua un estremo libero o un  punto di sella?
+\begin{definition} 
+  Sia $f \in C^2(A)$, si chiama, \underline{matrice hessiana} di f nel punto $p_0\in A$ la matrice simmetrica ($n\times n$)
+  $$D^2f(p_0) = H f(p_0) = \begin{bmatrix}
+    \frac{\p^2 f}{\p x_1^2}(p_0) & \dots & \frac{\p^2 f}{\p x_n \p x_1}(p_0) \\
+    \vdots & & \vdots \\
+    \frac{\p^2 f}{\p x_1 \p x_n}(p_0) & \dots & \frac{\p^2 f}{\p x_n^2}(p_0) \\
+  \end{bmatrix} = \begin{bmatrix}
+    \nabla \left(\frac{\p^2 f}{\p x_1}\right)(p_0) \\
+    \vdots \\
+    \nabla \left(\frac{\p^2 f}{\p x_n}\right)(p_0)
+  \end{bmatrix}$$
+\end{definition}
+\subsection{Teorema: Criterio per il segno di una matrice}
+\subsubsection{Richiami di algfebra lineare}
+\begin{definition}
+  Sia H una matrice $n\times n$
+  \begin{enumerate}
+    \item[(i)] H si dice \underline{definita positiva} se $\tuple{Hv,v} > 0$, $\forall v \in \R^n \times \{\origine\}$
+    \item[(ii)] H si dice \underline{semi-definita positiva} se $\tuple{Hv,v} \geq 0$, $\forall v \in \R^n \times \{\origine\}$
+    \item[(iii)] H si dice \underline{definita negativa} se $\tuple{Hv,v} < 0$, $\forall v \in \R^n \times \{\origine\}$
+    \item[(iv)] H si dice \underline{semi-definita negativa} se $\tuple{Hv,v}  \leq 0$, $\forall v \in \R^n \times \{\origine\}$
+  \end{enumerate}
+\end{definition}
+Un criterio semplice per verificare il segno di una matrice H $n\times n$:
+\begin{theorem}[criterio per il segno di una matrice]
+  Sia $$H = \begin{bmatrix}
+    h_{11} & \dots & h_{1n} \\
+    \vdots & & \vdots \\
+    h_{n1} & \dots & h_{nn} \\
+  \end{bmatrix} \text{ una matrice } n \times n$$
+  Definiamo $$D_i = det\begin{matrix}
+    h_{11} & \dots & h_{1i} \\
+    \vdots & & \vdots \\
+    h_{i1} & \dots & h_{ii} \\
+  \end{matrix} \text{ con } 1 \leq i \leq n$$
+  Allora 
+  \begin{enumerate}
+    \item[(a)] H \ace definita positiva $\iff D_i > 0 \, \forall i = 1, ..., n$
+    \item[(b)] H \ace definita negativa $\iff \left\{\begin{array}{l}
+      D_i > 0 \text{ per i valori pari di i} \\
+      D_i < 0 \text{ per i valori dispari di i} \\
+    \end{array}\right.$
+    \item[(c)] Se $detH = Dn \neq 0$ e nessuna delle condizioni precedenti fosse soddisfatta, allora H non \ace semi-definita 
+                positiva n\ace semi-definita negativa
+  \end{enumerate}
+\end{theorem}
+\begin{corollary}
+  Se H ($2\times 2$) matrice simmetrica $H = \begin{bmatrix}
+    h_{11} & h_{12} \\
+    h_{21} & h_{22} \\
+  \end{bmatrix}$ con $h_{12} = h_{21}$
+  \begin{enumerate}
+    \item[(a)] H \ace definita positiva $\iff h_{11} > 0$ e $detH > 0$
+    \item[(b)] H \ace definita negativa $\iff h_{11} < 0$ e $detH > 0$
+    \item[(c)] Se $detH < 0$, allora H non \ace semi-def. pos. n\ace semi.def. neg.
+  \end{enumerate}
+\end{corollary}
+\begin{theorem}[BDPG,11.25]
+  Sia A aperto di $\R^n$, $f\in C^2(A)$ e sia $p_0\in A$ un punto stazionario di f
+  \begin{enumerate}
+    \item[(i)] Se $D^2f(p_0)$ fosse def. pos. $\Rightarrow p_0$ \ace un punto di \underline{minimo relativo} di f su A
+    \item[(ii)] Se $D^2f(p_0)$ fosse def. neg. $\Rightarrow p_0$ \ace un punto di \underline{massimo relativo} di f su A
+    \item[(iii)] Se $D^2f(p_0)$ non fosse semi-def. pos. n\ace semi-def. neg. $\Rightarrow p_0$ \ace un punto di \underline{sella} di f su A
+    \item[(iv)] Se $D^2f(p_0)$ fosse semi-def. pos. o semi-def. neg. $\Rightarrow p_0$ pu\aco essere un punto di \underline{massimo o minimo relativo} o 
+                un punto di \underline{sella} di f su A
+  \end{enumerate}
+\end{theorem}
+\subsection{Esempi}
+\begin{example}[1a,foglio 5]
+  Data $\f$, $f(x,y) = x^2++2kxy+y^2$. \\
+  Determinare al variare di $k \in \R$, i punti di max e min relativo di f.
+  \begin{itemize}
+    \item[Soluzione 1.] \textbf{Punti stazionari di f su $\R^2$}
+          $$\nabla f(x,y) = (0,0) \iff \left\{\begin{array}{l}
+            \frac{\p f}{\p x}(x,y) = 2x+2ky = 0 \\
+            \\
+            \frac{\p f}{\p y}(x,y) = 2kx+2y = 0 \\
+          \end{array}\right.$$
+          \begin{itemize}
+            \item \begin{exercise}
+                    Se $k\neq 1 \Rightarrow (0,0)$ \ace l'unico punto stazionario 
+                  \end{exercise}
+            \item Se $k = 1 \Rightarrow$ I punti della retta $x+y=0$ sono tutti e soli i punti stazionari
+            \item Se $k = -1 \Rightarrow$ I punti della retta $x-y=0$ sono tutti e soli i punti stazionari 
+          \end{itemize}
+    \item[Soluzione 2.] \textbf{Studio del segno della matrice Hessiana}
+          $$D^2f(x,y) = \begin{bmatrix}
+            \frac{\p^2 f}{\p x^2} & \frac{\p^2 f}{\p y \p x}  \\
+            \\
+            \frac{\p^2 f}{\p x \p y} & \frac{\p^2 f}{\p y^2}  \\
+          \end{bmatrix}(x,y) = \begin{bmatrix}
+            2 & 2k \\
+            2k & 2 \\
+          \end{bmatrix}$$
+          $\forall (x,y)\in \R^2$ e $detD^2f(x,y) = 4-4k^2 = 4(1-k^2)$
+          \begin{itemize}
+            \item \begin{exercise}
+              Se $k^2 < 1 \Rightarrow D^2 f(0,0)$ \ace def. positiva $\Rightarrow$ (0,0) \ace un punto di minimo relativo
+            \end{exercise}
+            \item Se $k=1$, $detD^2f(x_0,-x_0) = 0 \Rightarrow D^2f(x_0,-x_0)$ non \ace def-neg. n\ace def-pos. $\Rightarrow$ nulla si pu\aco dire
+              \begin{itemize}
+                \item Se $k=1$, $f(x,y) = x^2+2xy+y^2 = (x+y)^2 \Rightarrow (x_0,-x_0)$ \ace un punto di minimo assoluto
+                \item Se $k=-1$, $f(x,y) = x^2-2xy+y^2 = (x-y)^2 \Rightarrow (x_0,-x_0)$ \ace un punto di minimo assoluto
+              \end{itemize}
+          \end{itemize}
+  \end{itemize}
+\end{example}
+\textbf{Appendice:}
+\begin{enumerate}
+  \item Se f \ace differenziabile in $p_0$ e $\nabla f(p_0) = (0,0) \Rightarrow \exists \frac{\p f}{\p v}(p_0)=0 \, 
+        \forall v \in \R^2$, $\norma{v}=1$. \\
+        Infatti poich\ace $\frac{\p f}{\p v}(p_0) = \nabla f (p_0 = \origine_{\R^2}) \cdot v = 0$
+  \item $f : \R \to \R$, $f(x) = \abs{x}$, $x_0 = 0$, il punto di $x_0=0$ \ace un punto di minimo assoluto per f.
+  \item Se $k=1$ i punti della retta di eq: $x+y=0$ sono tutti e soli i punti stazionari di f.
+  \item $k=1$, $f(x,y) = (x+y)^2 \geq 0 \, \forall (x,y)\in \R^2$, $f(x_0,-x_0)=0$
+\end{enumerate}
+

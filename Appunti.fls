@@ -276,6 +276,8 @@ INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-06.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-06.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-07.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-07.aux
+INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-08.aux
+INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-08.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-01.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-01.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-02.aux
@@ -381,6 +383,9 @@ INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-06.tex
 OUTPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-07.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-07.tex
 INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-07.tex
+OUTPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-08.aux
+INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-08.tex
+INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-08.tex
 OUTPUT /home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-01.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-01.tex
 INPUT /home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-01.tex
@@ -405,6 +410,8 @@ INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-06.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-06.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-07.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-07.aux
+INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-08.aux
+INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-08.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-01.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-01.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-02.aux
@@ -414,6 +421,7 @@ INPUT /home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-03.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/Appunti.out
 INPUT /home/enrico/latex/Analisi-Matematica-2/Appunti.out
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold7.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb

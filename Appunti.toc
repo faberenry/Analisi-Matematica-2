@@ -34,7 +34,14 @@
 \contentsline {subsection}{\numberline {1.7.2}Teo: Inversione dell'ordine di derivazione}{28}{subsection.1.7.2}
 \contentsline {subsection}{\numberline {1.7.3}Taylor per funzioni di pi\`u variabili}{29}{subsection.1.7.3}
 \contentsline {subsection}{\numberline {1.7.4}Taylor del II ordine + resto di Peano}{30}{subsection.1.7.4}
-\contentsline {chapter}{\numberline {2}Esercitazioni}{32}{chapter.2}
-\contentsline {section}{\numberline {2.1}Lezione 1 - 09/03/2022}{32}{section.2.1}
-\contentsline {section}{\numberline {2.2}Esercitazione 2 - 23/03/2022}{36}{section.2.2}
-\contentsline {section}{\numberline {2.3}Lezione 3 - 06/04/2022}{41}{section.2.3}
+\contentsline {section}{\numberline {1.8}Lez - 08}{32}{section.1.8}
+\contentsline {subsection}{\numberline {1.8.1}Massimi e minimi per funzioni a pi\`u variabili}{32}{subsection.1.8.1}
+\contentsline {subsection}{\numberline {1.8.2}Estremi liberi di una funzione (min/max relativi)}{32}{subsection.1.8.2}
+\contentsline {subsection}{\numberline {1.8.3}Matrice Hessiana}{33}{subsection.1.8.3}
+\contentsline {subsection}{\numberline {1.8.4}Teorema: Criterio per il segno di una matrice}{34}{subsection.1.8.4}
+\contentsline {subsubsection}{Richiami di algfebra lineare}{34}{section*.8}
+\contentsline {subsection}{\numberline {1.8.5}Esempi}{35}{subsection.1.8.5}
+\contentsline {chapter}{\numberline {2}Esercitazioni}{37}{chapter.2}
+\contentsline {section}{\numberline {2.1}Lezione 1 - 09/03/2022}{37}{section.2.1}
+\contentsline {section}{\numberline {2.2}Esercitazione 2 - 23/03/2022}{41}{section.2.2}
+\contentsline {section}{\numberline {2.3}Lezione 3 - 06/04/2022}{46}{section.2.3}
