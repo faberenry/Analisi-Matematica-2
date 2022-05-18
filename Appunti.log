@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.9.27)  16 MAY 2022 15:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.9.27)  18 MAY 2022 15:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -798,7 +798,7 @@ Package: listings 2015/06/04 1.6 (Carsten Heinz)
 \c@exercise=\count334
 \c@eexercise=\count335
 \c@definition=\count336
- (/home/enrico/latex/Analisi-Matematica-2/Appunti.aux (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-01.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-02.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-03.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-04.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-05.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-06.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-07.aux) (/home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-01.aux) (/home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-02.aux))
+ (/home/enrico/latex/Analisi-Matematica-2/Appunti.aux (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-01.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-02.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-03.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-04.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-05.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-06.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-07.aux) (/home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-01.aux) (/home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-02.aux) (/home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-03.aux))
 \openout1 = `Appunti.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
@@ -878,17 +878,17 @@ Missing character: There is no Â in font cmr10!
 Missing character: There is no ° in font cmr10!
 Missing character: There is no Â in font cmr10!
 Missing character: There is no ° in font cmr10!
-)
-\tf@toc=\write5
-\openout5 = `Appunti.toc'.
-
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.60   \clearpage
-                  [1
+l.40 ...3}Lezione 3 - 06/04/2022}{41}{section.2.3}
+                                                   [1
 
-] [2]
+])
+\tf@toc=\write5
+\openout5 = `Appunti.toc'.
+
+ [2]
 \openout2 = `Lezioni/lez-01.aux'.
 
  (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-01.tex
@@ -1153,28 +1153,44 @@ Overfull \hbox (2.00244pt too wide) in paragraph at lines 112--115
  []
 
 [39]) [40]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 70.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 70.
- (/home/enrico/latex/Analisi-Matematica-2/Appunti.aux (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-01.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-02.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-03.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-04.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-05.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-06.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-07.aux) (/home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-01.aux) (/home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-02.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 70.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 70.
+\openout2 = `Esercitazioni/es-03.aux'.
+
+ (/home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-03.tex [41
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 77--82
+
+ []
+
+[42] [43]
+Underfull \hbox (badness 10000) in paragraph at lines 213--215
+
+ []
+
+) [44]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 71.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 71.
+ (/home/enrico/latex/Analisi-Matematica-2/Appunti.aux (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-01.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-02.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-03.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-04.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-05.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-06.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-07.aux) (/home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-01.aux) (/home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-02.aux) (/home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-03.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 71.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 71.
 Package rerunfilecheck Info: File `Appunti.out' has not changed.
-(rerunfilecheck)             Checksum: F4B27C18BA884EF241EA1B6F2E037FCB;2590.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 70.
+(rerunfilecheck)             Checksum: F01D67550791751A350D71B94CE530AA;2659.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 71.
  ) 
 Here is how much of TeX's memory you used:
- 36883 strings out of 492982
- 849349 string characters out of 6134896
+ 36903 strings out of 492982
+ 849872 string characters out of 6134896
  1025456 words of memory out of 5000000
- 39663 multiletter control sequences out of 15000+600000
+ 39665 multiletter control sequences out of 15000+600000
  541862 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,17n,96p,10440b,618s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on /home/enrico/latex/Analisi-Matematica-2/Appunti.pdf (41 pages, 347451 bytes).
+Output written on /home/enrico/latex/Analisi-Matematica-2/Appunti.pdf (45 pages, 361249 bytes).
 PDF statistics:
- 631 PDF objects out of 1000 (max. 8388607)
- 562 compressed objects within 6 object streams
- 221 named destinations out of 1000 (max. 500000)
- 277 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 661 PDF objects out of 1000 (max. 8388607)
+ 588 compressed objects within 6 object streams
+ 232 named destinations out of 1000 (max. 500000)
+ 285 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -37,3 +37,4 @@
 \contentsline {chapter}{\numberline {2}Esercitazioni}{32}{chapter.2}
 \contentsline {section}{\numberline {2.1}Lezione 1 - 09/03/2022}{32}{section.2.1}
 \contentsline {section}{\numberline {2.2}Esercitazione 2 - 23/03/2022}{36}{section.2.2}
+\contentsline {section}{\numberline {2.3}Lezione 3 - 06/04/2022}{41}{section.2.3}

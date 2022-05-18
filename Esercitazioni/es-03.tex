@@ -1,0 +1,236 @@
+\section{Lezione 3 - 06/04/2022}
+\begin{eexercise}[Es 2, Provetta]
+  Siano $f : \R^3 \to \R^2, g : \R^2 \to \R^3$, 
+  \begin{itemize}
+    \item $f(t,u,v) = \left(k(t+v), u^2+v\right)$
+    \subitem $f_1 = k(t+v)$
+    \subitem $f_2 = u^2+v$
+    \item $g(x,y) = \left(\log(1+x^2+y^2), \sin(x-y), x-y\right)$
+    \subitem $g_1 = \log(1+x^2+y^2)$
+    \subitem $g_2 = \sin(x-y)$
+    \subitem $g_3 = x-y$
+  \end{itemize}
+  \begin{itemize}
+    \item[(1)] Calcolare $D f(t,u,v)$ $\forall (t,u,v)\in \R^3$ e $D g(x,y) \forall (x,y) \in \R^2$
+    \item[(2)] Calcolare la matricve Jacobiana di h in (0,0), $D h(0,0)$, dove $h = f\circ g$ 
+  \end{itemize}
+  \begin{itemize}
+    \item[(1)]
+              Iniziamo osservando che l funzioni $f_i : \R^3 \to \R$ (i = 1,2) sono $C^{\infty}$ perch\ace sono polinomi e 
+              $g_i : \R^2 \to \R$ (i = 1,2,3) sono $C^{\infty}$ perch\ace composizione di funzioni $C^{\infty}$,
+              $\Rightarrow$ f e g sono differenziabili, per definizione di jacobiana si ha 
+              $$Df(t,u,v) = \begin{bmatrix}
+                \frac{\p f_1}{\p t }(t,u,v) & \frac{\p f_1}{\p u }(t,u,v) & \frac{\p f_1}{\p v }(t,u,v) \\
+                \\
+                \frac{\p f_2}{\p t }(t,u,v) & \frac{\p f_2}{\p u }(t,u,v) & \frac{\p f_2}{\p v }(t,u,v) \\
+                \\
+                \frac{\p f_3}{\p t }(t,u,v) & \frac{\p f_3}{\p u }(t,u,v) & \frac{\p f_3}{\p v }(t,u,v) \\
+              \end{bmatrix} = $$ 
+              $$= \begin{bmatrix}
+                \nabla f_1 \\ \nabla f_2 \\ 
+              \end{bmatrix} = \begin{bmatrix}
+                k & 0 & k \\
+                0 & 2u & 1 \\
+              \end{bmatrix}$$
+              $$D g(x,y) = \begin{bmatrix}
+                \frac{\p g_1}{\p x }(x,y) & \frac{\p g_1}{\p y }(x,y) \\
+                \\
+                \frac{\p g_2}{\p x }(x,y) & \frac{\p g_2}{\p y }(x,y) \\
+                \\
+                \frac{\p g_3}{\p x }(x,y) & \frac{\p g_3}{\p y }(x,y) \\
+              \end{bmatrix} = \begin{bmatrix}
+                \frac{2x}{1+x^2+y^2} & \frac{2y}{1+x^2+y^2} \\
+                \\
+                \cos(x-y) & -\cos(x-y) \\
+                \\
+                1 & -1 \\
+              \end{bmatrix}$$
+    \item[(2)] $h = f \circ g = f(g (x,y)) = h(x,y)$, $h : \R^2 \to \R^2 \Rightarrow Dh $ \ace $2\times 2$,
+              Essendo f e g differenziabili, segue che la funzione composta $h = f\circ g$ \ace differenziabile e 
+              vale RDC, cio\ace $D h(0,0) = D f(g(0,0)) \cdot D g(0,0)$, poich\ace 
+              $g(0,0)=(0,0,0)$ e $$D g(0,0) = \begin{bmatrix}
+                0 & 0 \\ 
+                1 & -1 \\
+                1 & -1 \\
+              \end{bmatrix}$$
+              $$D f(0,0,0) = \begin{bmatrix}
+                k & 0 & k \\
+                0 & 0 & 1 \\
+              \end{bmatrix} \Rightarrow det\begin{bmatrix}
+                k & k \\
+                0 & 1 \\ 
+              \end{bmatrix} = k \neq 0 \text{, se } k \neq 0 \Rightarrow$$
+              $$\Rightarrow D h(0,0) = \begin{bmatrix}
+                k & 0 & k \\
+                0 & 0 & 1 \\
+              \end{bmatrix} \cdot \begin{bmatrix}
+                0 & 0 \\ 
+                1 & -1 \\
+                1 & -1 \\
+              \end{bmatrix} = \begin{bmatrix}
+                k & -k \\
+                1 & -1 \\
+              \end{bmatrix}$$
+  \end{itemize}
+\end{eexercise}
+\begin{eexercise}[Es. 3, Provetta]
+  Consideriamo la funzione $\f$, $$f(x,y) = \arctan(1+x^3+\sqrt(2)kxy+y^2-x^2) \, \forall(x,y)\in\R^2$$
+  Determinare se esistono punti di massimo e/o minimo relativo o di sella. \\\\
+  $arctan(t) \Rightarrow (arctan(t))' = \frac{1}{1+t^2} > 0 \Rightarrow \text{ arctan strettamente crescente}$
+  Siccome arctan \ace strettamente crescente i punti di min e max rel. e sella coincidono con i punti
+  di max/min/sella della funzione:
+  $$g(x,y) = 1+x^3+\sqrt(2)kxy+y^2-x^2$$
+  I punti critici di g sono quelli dove si annulla il gradiente $\nabla g(x,y) = (0,0) \Rightarrow$
+  $$\left\{
+    \begin{array}{c}
+      \frac{\p g}{\p x}(x,y) = 0 \\
+      \\
+      \frac{\p g}{\p y}(x,y) = 0 \\
+    \end{array}
+  \right. \iff 
+  \left\{
+    \begin{array}{c}
+      3x^2 + \sqrt(2)ky - 2x = 0 \\
+      \\
+      \sqrt(2)kx + 2y = 0 \\
+    \end{array}
+  \right. \iff $$
+  $$\iff \left\{
+    \begin{array}{c}
+      3x^2 + \sqrt(2) k\left(\frac{-kx}{\sqrt(2)}\right) - 2x = 0 \\
+      \\
+      y = -\frac{kx}{\sqrt(2)} \\
+    \end{array}
+  \right. \iff \left\{
+    \begin{array}{c}
+      3x^2 - k^2x -2x = 0 \\
+      \\
+      y = -\frac{kx}{\sqrt(2)} \\
+    \end{array}
+  \right. \iff $$
+  $$\iff \left\{
+    \begin{array}{c}
+      x(3x-(k^2+2)) = 0 \\
+      \\
+      y = -\frac{kx}{\sqrt(2)} \\
+    \end{array}
+  \right. \iff$$ $$ \iff \left\{ \begin{array}{c}
+    x = 0 \\
+    y = 0 \\
+  \end{array}\right. \vee \left\{\begin{array}{c}
+    x = \frac{2+k^2}{3} \\
+    \\
+    y = \frac{-k(2+k^2)}{3\sqrt(2)} \\
+  \end{array}\right.$$
+  $$\Rightarrow \begin{array}{c}
+    p_1 = (0,0) \\ 
+    \\
+    p_2 = \left(\frac{2+k^2}{3}, \frac{-k(2+k^2)}{3\sqrt(2)} \right)
+  \end{array} \text{ sono punti stazionari}$$
+  \begin{itemize}
+    \item $ \frac{\p g}{\p x} (x,y) = 3x^2 + \sqrt(2)ky - 2x$
+      \subitem $h_{11} = \frac{\p^2 g}{\p x^2} (x,y) = 6x-2$
+    \item $\frac{\p g}{\p y} (x,y) = \sqrt(2)kx + 2y$
+      \subitem $h_{22} = \frac{\p^2 g}{\p y^2} (x,y) = 2$
+    \item $h_{12} = h_{21} = \frac{\p^2 g}{\p x \p y} (x,y) = \sqrt(2)k = \frac{\p^2 g}{\p y \p x}$ dal teorema di Schwartz
+  \end{itemize}
+  $$H g(x,y) =  \begin{bmatrix}
+    \frac{\p^2 g}{\p x^2} (x,y) & \frac{\p^2 g}{\p x \p y} (x,y) \\
+    \\
+    \frac{\p^2 g}{\p y \p x} (x,y) & \frac{\p^2 g}{\p y^2} (x,y) \\
+  \end{bmatrix} = \begin{bmatrix}
+    h_{11} & h_{21} \\
+    \\
+    h_{12} & h_{22} \\    
+  \end{bmatrix} = \begin{bmatrix}
+    6x-2 & \sqrt(2)k \\
+    \\
+    \sqrt(2)k & 2 \\
+  \end{bmatrix}$$
+  \begin{itemize}
+    \item Calcoliamo $Hg(p_1)$
+      $$Hg(p_1) = H g(0,0) = \begin{bmatrix}
+        -2 & \sqrt(2)k \\
+        \sqrt(2)k & 2 \\
+      \end{bmatrix}$$
+      Autovalori di $H g(p_1)$, $det\begin{bmatrix}
+        -2-\lambda & \sqrt(2)k \\
+        \sqrt(2)k & 2 -\lambda \\
+      \end{bmatrix} = -4 + \lambda^2 - 2k^2 = 0 \Rightarrow$ \\
+      $\Rightarrow \lambda^2 = 2k^2 + 4 \iff \lambda \pm \sqrt{4+2k^2}$
+      \begin{itemize}
+        \item $\lambda_1 = \sqrt{4+2k^2} > 0$ 
+        \item $\lambda_2 = -\sqrt{4+2k^2} < 0$
+      \end{itemize}
+      $\Rightarrow$ la matrice $H g(0,0)$ non \ace definita dal colorralio viso a lezione, \\
+      $detH = -4 - 2k^2 < 0 \Leftarrow detH < 0 \Rightarrow$ non definita \\
+      $\Rightarrow$ per i teremi visti a lezione $(0,0)$ \ace un punto di sella. 
+    \item Calcoliamo $H g(p_2)$
+    $$Hg(p_2) = H g\left(\frac{2+k^2}{3}, \frac{-k(2+k^2)}{3\sqrt(2)} \right) = \begin{bmatrix}
+      2+2k^2 & \sqrt(2)k \\
+      \sqrt(2)k & 2 \\
+    \end{bmatrix}$$
+    $$det\begin{bmatrix}
+      2+2k^2 & \sqrt(2)k \\
+      \sqrt(2)k & 2 \\
+    \end{bmatrix} = 4 +4k^2 - 2k^2 = 4+2k^2 > 0$$
+    Siccome $h_{11} > 0$ e $detH g(p_2) > 0$ si ha dal corollario visto a lezione che 
+    $H g(p_2)$ \ace definita positiva. \\
+    Quindi per il teorema visto a lezione $p_2$ \ace un punto di minimo relativo.
+  \end{itemize}
+\end{eexercise}
+\begin{eexercise}[Es 1, Provetta]
+  Data $\f$, $$f(x,y) = \left\{\begin{array}{ll}
+    \frac{(1-\cos{x})(\sin(ky))}{kx^2 + y^4} & (x,y)\neq (0,0) \\
+    \\
+    0 & (x,y) = (0,0) \\
+  \end{array}\right.$$
+  \begin{enumerate}
+    \item Dire se \ace continua in (0,0)
+       Per definizione di continuit\aca, f \ace continua in (0,0) \\ $\iff \exists 
+        \lim_{(x,y)\to (0,0)} f(x,y) = f(0,0) = 0$.\\
+        Ricordiamo i limiti notevoli:
+        \begin{itemize}
+          \item $\lim_{t \to 0}\frac{1-\cos(t)}{t^2} = \frac{1}{2}$
+          \item $\lim_{t \to 0} \frac{\sin{t}}{t} = 1$
+        \end{itemize}
+        Osserviamo che $f(x,0) = 0 \, \forall x \not = 0$ e $f(0,y) = 0 \, \forall y \not = 0$ e
+        $$(*) f(x,y) = \frac{1-cos(x)}{x^2} \cdot x^2 \cdot \frac{\sin(ky)}{ky} \cdot \frac{ky}{kx^2 + y^4} = 
+          \frac{1}{2} \cdot 1 \cdot \frac{ky}{kx^2 + y^4}$$ 
+        Notiamo che:
+        $$0 \leq \abs{\frac{ky}{kx^2 + y^4}} \leq \abs{\frac{ky}{kx^2}}\leq \abs{y}$$
+        Quindi per $y \to 0$ e grazie al TDC $\frac{ky}{kx^2 + y^4} \to 0$, 
+        siccome tutti e tre i limiti in $(*)$ esistono e sono finiti si ha:
+        $$\lim_{(x,y) \to (0,0)} \frac{1}{2} \cdot 1 \cdot 0 = 0 \Rightarrow \text{ f \ace continua in (0,0)}$$
+    \item Dire se $\exists \nabla f(0,0)$\\
+          $\nabla f(0,0) = \left(\frac{\p f}{\p x}(0,0), \frac{\p f}{\p y}(0,0)\right)$
+          \begin{itemize}
+            \item $\frac{\p f}{\p x}(0,0) = \lim_{t \to 0} \frac{f(t,0) - f(0,0)}{t} = \lim_{t \to 0} \frac{0-0}{t} = 0$
+            \item $\frac{\p f}{\p y}(0,0) = \lim_{t \to 0} \frac{f(0,t) - f(0,0)}{t} = \lim_{t \to 0} \frac{0-0}{t} = 0$
+          \end{itemize}
+          Quindi $\exists \nabla f(0,0) = (0,0)$
+    \item Dire se f \ace differenziabile in (0,0)
+          $$\lim_{(x,y)\to (0,0)} \frac{f(x,y)-\tuple{\nabla f(0,0), (x,y)}}{\sqrt{x^2+y^2}} ?= 0$$
+          $\tuple{\nabla f(0,0), (x,y)} = \tuple{(0,0),(x,y)} = (0,0)$, \\
+          $$\Rightarrow \lim_{(x,y)\to (0,0)}\frac{f(x,y)-(0,0)}{\sqrt(x^2+y^2)} ?= 0$$
+          $\lim_{(x,y)\to (0,0) } f(x,y) = 0$ da svolgimento del primo punto (1) 
+          $$\Rightarrow \lim_{(x,y)\to (0,0)} \frac{0 - (0,0)}{\sqrt{x^2+y^2}} = 0$$
+  \end{enumerate}
+\end{eexercise}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
