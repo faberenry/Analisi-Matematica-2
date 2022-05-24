@@ -278,6 +278,8 @@ INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-07.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-07.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-08.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-08.aux
+INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-09.aux
+INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-09.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-01.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-01.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-02.aux
@@ -386,6 +388,12 @@ INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-07.tex
 OUTPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-08.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-08.tex
 INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-08.tex
+OUTPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-09.aux
+INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-09.tex
+INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-09.tex
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmss10.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 OUTPUT /home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-01.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-01.tex
 INPUT /home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-01.tex
@@ -412,6 +420,8 @@ INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-07.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-07.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-08.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-08.aux
+INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-09.aux
+INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-09.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-01.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-01.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-02.aux
@@ -436,6 +446,8 @@ INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb

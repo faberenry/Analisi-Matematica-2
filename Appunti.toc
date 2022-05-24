@@ -41,7 +41,16 @@
 \contentsline {subsection}{\numberline {1.8.4}Teorema: Criterio per il segno di una matrice}{34}{subsection.1.8.4}
 \contentsline {subsubsection}{Richiami di algfebra lineare}{34}{section*.8}
 \contentsline {subsection}{\numberline {1.8.5}Esempi}{35}{subsection.1.8.5}
-\contentsline {chapter}{\numberline {2}Esercitazioni}{37}{chapter.2}
-\contentsline {section}{\numberline {2.1}Lezione 1 - 09/03/2022}{37}{section.2.1}
-\contentsline {section}{\numberline {2.2}Esercitazione 2 - 23/03/2022}{41}{section.2.2}
-\contentsline {section}{\numberline {2.3}Lezione 3 - 06/04/2022}{46}{section.2.3}
+\contentsline {section}{\numberline {1.9}Lez - 09}{37}{section.1.9}
+\contentsline {subsection}{\numberline {1.9.1}Ricerca del max e min (assoluto) su insieme limitato e chiuso}{37}{subsection.1.9.1}
+\contentsline {subsection}{\numberline {1.9.2}Frontiera attraverso parametrizzazione}{38}{subsection.1.9.2}
+\contentsline {subsubsection}{Caso $n=2$}{38}{section*.9}
+\contentsline {subsubsection}{Caso $n=3$}{38}{section*.10}
+\contentsline {subsection}{\numberline {1.9.3}Metodo dei moltiplicatori di Lagrange, TML}{40}{subsection.1.9.3}
+\contentsline {subsubsection}{Caso $n=2$}{40}{section*.11}
+\contentsline {subsubsection}{Teorema della funzione implicita, U. Dini}{40}{section*.12}
+\contentsline {subsubsection}{Caso $n=3$}{41}{section*.13}
+\contentsline {chapter}{\numberline {2}Esercitazioni}{43}{chapter.2}
+\contentsline {section}{\numberline {2.1}Lezione 1 - 09/03/2022}{43}{section.2.1}
+\contentsline {section}{\numberline {2.2}Esercitazione 2 - 23/03/2022}{47}{section.2.2}
+\contentsline {section}{\numberline {2.3}Lezione 3 - 06/04/2022}{52}{section.2.3}

@@ -1,5 +1,210 @@
 \section{Lez - 09}
+\textbf{Problema:} Condizioni che assicurino l'esistenza di $\min_{A}f$ e $\max_{A}f$ e come determinarli
+\begin{theorem}[Weirestrass][BDPG,10.10]
+  Sia $\fn$, Supponiamo che:
+  \begin{itemize}
+    \item[(i)] A sia limitato e chiuso, (in $n=1$, $A = [a,b], \p A = \{a,b\}, \overcirc{A} = (a,b)$)
+    \item[(ii)] f sia continua su A 
+  \end{itemize}
+  Allora esiste $\min_{A}f$ e $\max_{A}f$
+\end{theorem}
 \subsection{Ricerca del max e min (assoluto) su insieme limitato e chiuso}
+Sia $A \subseteq \R^2$ limitato e chiuso e $f:A \to \R$. Allora per il Teorema di Weirestrass 
+$\exists \min_{A}f = f(p_1)$ e $\exists\max_{A}f = f(p_2)$. \\
+Vi sono le seguenti possibilit\aca se $i = 1,2$
+\begin{itemize}
+  \item[(i)] $p_i \in \overcirc{A}$ e $\exists \nabla f(p_i) = (0,0)$
+  \item[(ii)] $p_i \in \overcirc{A}$ ma $\not \exists \nabla f(p_i)$, diremo in questo caso che $p_i$ \ace \underline{punto singolare}
+  \item[(iii)] $\p_i \in \p A$  
+\end{itemize}
+\textbf{Problema:}\textit{[BDPG,13.2]}  Ricerca dei punti di max e min nei punti della frontiera di A, dettoi anche estremi vincolati
+\begin{itemize}
+  \item $max,min \in \overcirc{A} \Rightarrow $ estremi liberi
+  \item $max,min \in \p A \Rightarrow $ estremi vincolati
+\end{itemize}
+\begin{example}\label{para}
+  $A = \{(x,y)\in \R^2 : x^2+y^2 \leq 1\}$, $f(x,y) = x^2+2y^2$
+  \begin{itemize}
+    \item $\overcirc{A} = \{(x,y)\in\R^2 : x^2+y^2 < 1\}$
+    \item $\p A = \{(x,y)\in\R^2 : x^2+y^2=1\}$
+    \item $\nabla f(x,y) = (2x,4y)$ $(x,y)\in\R^2$
+  \end{itemize}
+  $f(p_2) = \exists max_{A} f$ e $f(p_1) = \exists min_{A}f$, $\nabla f(x,y)=(0,0) \iff x = y = 0$ 
+  $f(0,0) = 0$ e $p_1 = (0,0)$ \ace un punto di minimo assoluto di f. \\
+  \ac{E} chiaro che $p_2 \in \p A$ e dunque vale che $max_{A} f = max_{\p A}f$ \\
+  quindi ci poniamo il problema di come determinare $max_{\p A}f$
+\end{example}
+\begin{osservazione}
+  $\nabla f(x,y) = (2x,4y) \neq (0,0)$ $\forall (x,y) \in \p A$
+\end{osservazione}
 \subsection{Frontiera attraverso parametrizzazione}
+\subsubsection{Caso $n=2$}
+  Sia $A \subseteq \R^2$ limitato e chiuso.\\ Si chiama \underline{parametrizzazione} di $\p A$ una funzione
+  $\gamma : [a,b]\to \R^2$ (detta \underline{curva})
+  \begin{itemize}
+    \item (P1)  $\gamma(t) = \left(\gamma_1(t), \gamma_2(t)\right)$ 
+    \item (P2) con $\gamma_1, \gamma_2 : [a,b]\to \R$ di classe $C^1$ 
+    \item (P3) e $\gamma([a,b]) = \p A$ 
+  \end{itemize}
+  Supponiamo che $f \in C^1(\R^2)$ e vogliamo minimizzare/massimizzare f su $\p A$\\
+  Definiamo $F:[a,b]\to \R$, $F(t) = f(\gamma (t))$. \\
+  Si pu\aco provare tramite RDC che $F\in C^1([a,b])$. Inoltre \ace immediato verificare 
+  $min_{\p A}f = min_{[a,b]}F$ e $max_{\p A}f = max_{[a,b]}F$ \\
+  Pertanto la ricerca di $min_{\p A} f$ e $max_{\p A} f$ si riduce a $min_{[a,b]}F$ e $max_{[a,b]}F$\\\\
+  Ritorniamo all'esempio \ref{para}:\\
+  Una parametrizzazione di $\p A = \{(x,y)\in \R^2 : x^2+y^2=1\}$ \ace data da 
+  $$\gamma(t) = (\cos t, \sin t)\, t \in [0,2\pi] \, \gamma([0,2\pi]) = \p A$$
+  $F(t) = f(\cos{t}, \sin{t}) = \cos^2 t + 2sin^2 t = 1 +sen^2 (t)$, allora \ace facile verificare che
+  $$max_{[0,2\pi]}F = 2 = F\left(\frac{\pi}{2}\right) = F\left(\frac{3}{2}\pi\right)$$
+  Pertanto i punti di $\p A$ dove \ace raggiunto il massimo sono dati da:
+  $$\gamma\left(\frac{\pi}{2}\right) = (0,1) \text{ e } \gamma\left(\frac{3}{2}\pi\right) = (0,-1)$$
+  Infatti $f(0,1) = f(0,-1) = 2$
+\subsubsection{Caso $n=3$}
+  Sia $A \subseteq 3$ chiuso e limitato. Si chiama parametrizzazione di $\p A$ una funzione
+  $\gamma : B \subseteq \R^2 \to \R^3$, $$\gamma(s,t) = \left(\gamma_1(s,t), \gamma_2(s,t), \gamma_3(s,t)\right)$$
+  Con $\gamma_1, \gamma_2, \gamma_3 : B \to \R$ t.c.
+  \begin{itemize}
+    \item[(P1)] $B$ chiuso e limitato
+    \item[(P2)] $\gamma(B) = \p A$
+    \item[(P3)] $\gamma_1, \gamma_2, \gamma_3 \in C^1 (\overcirc{B}) \cap C^{0}(B)$ 
+  \end{itemize}
+  $\p A$ \ace detta superficie. \\\\
+  Sia $f \in C^1(\R^3)$ si vuole determinare $max_{\p A} f$ e $min_{\p A} f$. \\
+  Definiamo $F:B\to \R$, $F(s,t) := f(\gamma(s,t))$ con $(s,t)\in B$, allora
+  $$min_{\p A} f = min_{B} f \text{ e } max_{\p A} f = max_{B} f$$
+\begin{osservazione}
+  Pertanto il $min_{\p A} f$ e il $max_{\p A} f$ (di una funzione di 3 variabili sul bordo di A) viene riportato 
+  al $min_{B} f$ e $max_{B} f$ (di una funzione di 2 variabili) su un insieme $B\subseteq \R^2$
+\end{osservazione}
+\begin{example}
+  Sia $A = \{(x,y,z)\in\R^3 : x^2+y^2+z^2 \leq 1\}$, $f(x,y,z) = x+y-z$ \\
+  Determinare $min_{A} f$ e $max_{A} f$. \\\\
+  \textbf{Soluzione:} 
+  \begin{enumerate}
+    \item \textbf{Punti stazionari di $\overcirc{A}$} \\
+          Osserviamo che $f \in C^{\infty}(\overcirc{A})$. 
+          \begin{exercise}
+            Non ci sono punti stazionari in $\overcirc{A}$
+          \end{exercise}
+          Dal'altra parte $f \in C^{0}(A)$ ed $A \subseteq \R^3$ \ace chiuso e limitato. Pertanto
+          per il teorema di Weirestrass 
+          $$\exists min_{A} f = min_{\p A} f \text{ e } max_{A} f = max_{\p A} f$$
+    \item \textbf{Max e min su $\p A$} \\
+          $\p A = \{(x,y,z)\in \R^3 : x^2+y^2+z^2 = 1\}$, $B = [0,2\pi]\times [0,\pi]\subseteq \R^2 \ni (\vartheta, \varphi)$
+          $$\gamma(\vartheta, \varphi) = (\cos\vartheta \sin \varphi, \sin\vartheta\sin\varphi, \cos\varphi)$$ 
+          $\gamma$ \ace una parametrizzazione di $\p A$ (cambiamento di coordinate sferiche)\\
+          $F(\vartheta, \varphi) := f(\gamma(\vartheta, \varphi)) = \cos\vartheta \sin \varphi + \sin\vartheta\sin\varphi - \cos\varphi = 
+          \sin\varphi \cdot (\cos\vartheta+\sin\vartheta) - \cos\varphi$ \\\\
+          Per proseguire nella nostra strategia dovremmo determinare $min_{B} F$ e $min_{B} F$ con $F : B = [0,2\pi]\times [0,\pi] \to \R$. \\\\
+          Ci rendiamo conto subito che questa ricerca non \ace semplice.
+  \end{enumerate}
+\end{example}
+\begin{osservazione}
+  In effetti il metodo di ricerca dei max e min di una funzione su un bordo dato come parametrizzazione, diventa complesso, e dunque
+  inefficace per funzioni di variabili $n\geq 3$
+\end{osservazione}
 \subsection{Metodo dei moltiplicatori di Lagrange, TML}
-\subsection{Teorema della funzione implicita, U. Dini}
+\subsubsection{Caso $n=2$}
+ Supponiamo che l'insieme $A=\{(x,y)\in \R^2 : g(x,y)\leq 0\}$ dove $\p A := \{(x,y)\in \R^2 : g(x,y) = 0\}$. \\
+ Un insieme del piano $\V := \{(x,y)\in \R^2  : g(x,y)=0\}$ \ace detto \underline{vincolo} (\ace una curva del piano)
+\begin{theorem}[Teorema dei moltiplicatori di Lagrange, TML]
+  Sia $f \in C^1(\R^2)$ e $\V = \{(x,y)\in \R^2 : g(x,y) = 0\}$ dove $g \in C^1(\R^2)$. Supponiamo che:
+  \begin{enumerate}
+    \item[(i)] $\exists \min_{\V} f = f(p_0) (\text{o } \exists \max_{\V} f = f(p_0))$ con $p_0 = (x_0,y_0) \in \V$
+    \item[(ii)] $\exists \nabla g(p_0) \not = (0,0)$
+  \end{enumerate}
+  Allora esiste $\lambda_0 \in \R$ (detto \underline{moltiplicatore}) t.c. $(x_0,y_0,\lambda_0)\in \R^3$ \ace un 
+  punto stazionario della funzione. \\
+  Equivalentemente: $$\exists\lambda_0 \in \R \text{ t.c. } \left\{\begin{array}{l}
+    g(p_0) = 0 \\
+    \\
+    \nabla f(p_0) + \lambda_0 \nabla g(p_0) = (0,0) \\
+  \end{array}\right. (*)  \label{tml_v2}$$
+\end{theorem}
+\begin{definition}
+  Un punto $p_0 \in \V$ verificante \ref{tml_v2} (*) su opportuno $\lambda_0 \in \R$ si dice 
+  \textbf{punto stazionario vincolato alla funzione $f$ relativamente al vincolo $\V$}
+\end{definition}
+\begin{example}
+  Trovare $max_{\p A} f$ se $f(x,y) = x^2+2y^2$ e $A = \{(x,y)\in \R^2 : x^2+y^2 \leq 1\}$. \\
+  Sia $g(x,y) = x^2+y^2-1$. Allora: \\
+  $A = \{(x,y)\in \R^2 : g(x,y) = x^2+y^2-1=0\}$, $\nabla g(x,y) = (2x+2y) \neq (0,0)$ $\forall (x,y)\in \p A$. \\
+  Pertanto possiamo applicare il metodo dei moltiplicatori di Lagrange:\\
+  Sia $L(x,y,\lambda) := x^2+2y^2+\lambda(x^2+y^2-1)$, 
+  $$\nabla L(x,y,\lambda) = (0,0,0) \iff \left\{\begin{array}{lclcl}
+    \frac{\p L}{\p x} & = & 2x+2\lambda x & = & 0 \\
+    \\
+    \frac{\p L}{\p y} & = & 4y+2\lambda y & = & 0 \\
+    \\
+    \frac{\p L}{\p \lambda} & = & x^2 + y^2 - 1 & = & 0 \\
+  \end{array}\right. \iff $$
+  $\iff (x,y,\lambda)=(\pm 1, 0, -1), (0,\pm 1,-2)$,
+  $$min_{\p A}f = f(\pm 1, 0) = 1 \text{ e } max_{\p A} f = (0,\pm 1) = 2$$
+\end{example}
+\subsubsection{Teorema della funzione implicita, U. Dini}
+Prima della dimostrazione del metodo dei moltiplicatori di Lagrange, premettiamo il seguente teorema:
+\begin{theorem}[della funzione implicita, U. Dini][BDPG, 13.3] \label{impfun}
+  Supponiamo che, per esempio, $g(p_0)=0$ e $\frac{\p g}{\p y} (p_0)\neq 0$. \\
+  Allora $\V$ \ace localmente grafico di una funzione $y = \varphi(x)$, cio\ace 
+  $\exists \delta_0 > 0$ ed \ace un'unica funzione $\varphi: (x_0-\delta_0, x_0+\delta_0) \to \R$, 
+  $\exists r_0 > 0$ t.c.
+  \begin{enumerate}
+    \item[($D_1$)] $\V \cap B(p_0,r_0) = \{(x,\varphi(x)): x \in (x_0-\delta_0, x_0+\delta_0)\}$ e $\varphi(x_0)=y_0$ 
+    \item[($D_2$)] $\varphi$ \ace derivabile e 
+                    $$\varphi'(x) = -\frac{\frac{\p g}{\p x}(x,\varphi(x))}{\frac{\p g}{\p y}(x,\varphi(x))}$$ 
+                    $\forall x \in (x_0-\delta_0, x_0+\delta_0)$ 
+  \end{enumerate}
+\end{theorem}
+\begin{proof}[TML, \ref*{tml_v2}]
+  Supponiamo per esempio che $\frac{\p g}{\p y}(p_0) \neq 0$. \\
+  Possiamo applicare il teorema della funzione implicita \ref*{impfun}: per $D_1$, possiamo definire $h(x):= f(x,\varphi(x))$
+  $x \in (x_0-\delta_0, x_0+\delta_0)$ \\
+  Essendo $p_0 \in \V$ un punto di minimo (da ipotesi) di f su $\V$ $\Rightarrow (1) x_0$ \ace un punto di minimo di 
+  h si $(x_0-\delta_0, x_0+\delta_0)$. \\
+  D'altra parte, per RDC, $h \in C^1\left((x_0-\delta_0, x_0+\delta_0)\right)$. \\  
+  Per il teorema di Fermat, per funzioni di 1 variabile, 
+  $$0 = h'(x_0) =_{(RDC)} \frac{\p f}{\p x}(x_0,\varphi(x_0)) + \frac{\p f}{\p y}(x_0,\varphi(x_0)) \cdot \varphi'(x_0) = $$
+  $$=_{(D_2)} \frac{\p f}{\p x}(p_0) + \frac{\p f}{\p y}(p_0) \cdot \left(-\frac{\frac{\p g}{\p x}(x,\varphi(x))}{\frac{\p g}{\p y}(x,\varphi(x))}\right) \iff$$
+  $$\iff det\begin{bmatrix}
+    \frac{\p f}{\p x}(p_0) & \frac{\p f}{\p y} (p_0) \\
+    \\
+    \frac{\p g}{\p x}(p_0) & \frac{\p g}{\p y} (p_0) \\
+  \end{bmatrix} = 0 \iff \exists \lambda_0 \in R \text{ t.c. } \nabla f(p_0) = -\lambda_0 \nabla g(p_0)$$
+\end{proof}
+\subsubsection{Caso $n=3$}
+Il teorema dei moltiplicatori di Lagrange su pu\aco estendere a funzioni di $n=3$ variabili
+\begin{theorem}[TML con $n=3$]
+  Sia $f \in C^1(\R^3)$ e $\V = \{(x,y,z)\in \R^3 : g(x,y,z) = 0\}$ dove $g \in C^1(\R^3)$. Supponiamo che:
+  \begin{enumerate}
+    \item[(i)] $\exists \min_{\V} f = f(p_0) (\text{o } \exists \max_{\V} f = f(p_0))$ con $p_0 = (x_0,y_0, z_0) \in \V$
+    \item[(ii)] $\exists \nabla g(p_0) \not = (0,0,0)$
+  \end{enumerate}
+  Allora $$\exists\lambda_0 \in \R \text{ t.c. } \left\{\begin{array}{l}
+    g(p_0) = 0 \\
+    \\
+    \nabla f(p_0) + \lambda_0 \nabla g(p_0) = (0,0,0) \\
+  \end{array}\right. (*)  \label{tml_v3}$$
+\end{theorem}
+\begin{osservazione}
+  Il vincolo $\V$ in questo caso \ace una superficie di $\R^3$
+\end{osservazione}
+\begin{example}
+  Trovare $max_{\p A}f$, $f(x,y,z)=x+y-z$ e $\p A=\{(x,y,z)\in \R^3 : x^2+y^2+z^2=1\}$
+  \textbf{Soluzione:}\\
+  Applichiamo il metodo dei moltiplicatori di Lagrange per funzioni di $n=3$ variabili
+  $$L(x,y,z,\lambda) = f(x,y,z) +\lambda g(x,y,z) = x+y-z + \lambda(x^2+y^2+z^2-1)$$
+  se $(x,y,z,\lambda)\in\R^4$, in quanto $\p A = \{(x,y,z)\in \R^3 : g(x,y,z) = 0\}$
+  $$\left\{\begin{array}{lcl}
+    \frac{\p L}{\p x} = 1+2x\lambda & = & 0 \\
+    \\
+    \frac{\p L}{\p x} = 1+2y\lambda & = & 0 \\
+    \\
+    \frac{\p L}{\p z} = 1+2z\lambda & = & 0 \\
+    \\
+    \frac{\p L}{\p \lambda} =  x^2+y^2+z^2-1 & = & 0 \\
+  \end{array}\right. \iff (x,y,z,\lambda) = \left(\pm\frac{1}{\sqrt{3}}, \pm\frac{1}{\sqrt{3}}, \mp \frac{1}{\sqrt{3}}, 
+  \pm \frac{\sqrt{3}}{2}\right)$$
+  $$\Rightarrow max_{\p A}f = max\left\{f\left(\pm\frac{1}{\sqrt{3}}, \pm\frac{1}{\sqrt{3}}, \mp \frac{1}{\sqrt{3}}\right)\right\}= \sqrt{3}ù
+  \text{ e } $$
+  $$min_{\p A} f = min\left\{f\left(\pm\frac{1}{\sqrt{3}}, \pm\frac{1}{\sqrt{3}}, \mp \frac{1}{\sqrt{3}}\right)\right\} = -\sqrt{3}$$
+\end{example}
