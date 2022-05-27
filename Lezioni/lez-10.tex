@@ -1,0 +1,135 @@
+\chapter{Integrale per funzioni a pi\acu variabili, [BDPG, 14]}
+Vogilamo introdurre la nozione di \underline{integrale } per una funzione 
+$\fn (n=2,3)$, detto anche \underline{integrale multiplo} 
+\section{Lez - 10, Integrale doppio su un rettangolo}
+\subsubsection{Caso $n=2$}
+$A = Q = [a,b]\times [c,d]$ e sia $f:A\to \R$ limitata, 
+cio\ace $\exists M > 0$ t.c. $\abs{f(p)} \leq M \, \forall p \in A$\\\\
+\textbf{Idea:(Interpretazione geometrica dell'integrale)} \\\\
+Supponiamo $f(p)\geq 0 \, \forall p \in A$, definiamo 
+$$\T_f(A) =\{(x,y,z)\in\R^3 : 0 \leq f(x,y), (x,y)\in A\}$$
+(trapezioidale indotta da $f : A \to \R$). \\
+$\T_f(A) \equiv$ solido di $\R^3$ sotteso dal grafico di f, $G_f$.\\
+Vogliamo definire un numero reale non negativo:
+$$L = \iint_{A} f(x,y)\,dx\,dy \text{ (integrale doppio di f su A)}$$
+t.c. $L = volume(\T_f(A))$ 
+\begin{definition}
+  \begin{itemize}
+    \item[(i)] Si chiama suddivisione dell'intervallo $[a,b]$ un insieme \underline{finito} (detto retta reale)
+              $\{x_0,x_1,..., x_{n-1}, x_n\}$ t.c. $a = x_0 < x_1 < ... < x_{n-1} < x_n = b$
+    \item[(ii)] Si chiama sudddivisione dell'insieme $\Qbase$ l'insieme (del piano)
+      $\mathcal{D} := \D_1 \times \D_2 = \{(x_i,y_j): i = 0,..., n , j = 0,..., m\}$, dove:
+      $$\D_1 = \{x_0,...,x_n\} \text{ suddivisione di [a,b]}$$ 
+      $$\D_2 = \{y_0,...,y_n\} \text{ suddivisione di [c,d]}$$
+      Dato $\D$ una suddivisione di Q, Q resta suddiviso in $n\times m$ rettangoli
+      $$Q_{ij} := [x_{i-1}, x_i]\times[y_{j-1},y_j]$$
+      con $i = 1,..., n$ e $j = 1,..., m$\\
+      Definiamo $area(Q_{ij}):=(x_i-x_{i-1})(y_j-y_{j-1})$
+  \end{itemize}
+\end{definition}
+\begin{definition}
+  Si chiama \underline{somme superiore} (risp. \underline{somme inferiore}) di f rispetto alla suddivisione 
+  $\D$ di Q, fissata una funzione $f:Q \to \R$, il numero reale
+  $$S(f,\D):= \sum_{j=1}^{m}\sum_{i=1}^{n} M_{ij} area(Q_{ij}) \, M_{ij} := sup_{Q_{ij}}f$$
+  rispettivamente il numero reale
+  $$s(f,\D):= \sum_{j=1}^{m}\sum_{i=1}^{n} m_{ij} area(Q_{ij}) \, m_{ij} := inf_{Q_{ij}}f$$
+\end{definition}
+\begin{osservazione}
+  Essendo f limitata, $i = 1,..., n \, j = 1,..., m$
+  $$M_{ij} :=  sup_{Q_{ij}}f := sup\{f(p):p \in Q_{ij}\}$$
+  $$m_{ij} :=  inf_{Q_{ij}}f := inf\{f(p):p \in Q_{ij}\}$$
+\end{osservazione}
+\subsection{Propriet\aca importanti delle somme sup. ed inf. }
+\begin{itemize}
+  \item[(PS1)] Se $f\geq 0$ su Q, allora $M_{ij}area(Q_{ij})$ e $m_{ij}area(Q_{ij})$ rappresentano
+          il volume di un parallelepipedo di base $Q_{ij}$ ed altezza $M_{ij}$ o $m_{ij}$
+  \item[(PS2)] Per ogni suddivisione $\D$ di Q
+            $$area(Q)\cdot inf_{Q} f \leq s(f,\D) \leq S(f,\D) \leq area(Q) \cdot \sup_{Q} f$$
+  \item[(PS3)] Si potrebbe provare (ma lo omettiamo) che, prese $\D'$ e $\D''$ due suddivisioni di Q, allora 
+            $s(f,\D') \leq S(f,\D'')$
+\end{itemize}
+\begin{definition}
+  Siano $\Qbase$ e $f : Q \to \R$ limitata. La funzione si dice integrabile (secondo \underline{Reimann}) su Q, e scriveremo
+  $f\in \mathcal{R}(Q)$, se $$L = sup{s(f,\D): \D \text{ sudd. di Q}} = inf\{S(f,\D), \D \text{ sudd. di Q}\}$$
+  Il numero reale L si chiama \underline{integrale}(doppio) e si denota
+  $$L = \iint_{Q} f(x,y) \, dx \, dy = \iint_{Q} f = \int_{Q} f$$
+  Nel caso in cui $f\geq 0$ ed $f \in \Rcal(Q)$, definiamo il \underline{volume del solido $\T_{f}(Q)$}
+  $$vol\left(\T_f(Q)\right):= \iint_{Q} f$$ 
+\end{definition}
+
+\subsection{Teoremi: Esistenza \& Propriet\aca integrale}
+\textbf{Problema:} Condizioni che assicurano $f\in \Rcal(Q)$? \\\\
+Richiami per funzioni di $n=1$ variabili $Q=[a,b]$
+\begin{theorem}
+  $f \in C^0\left([a,b]\right)$, allora $f\in \Rcal\left([a,b]\right)$, \\
+  $f \geq 0, f \in C^0\left([a,b]\right)$, $area(\T_f([a,b])) := \int_{a}^{b} f(x)\, dx$
+\end{theorem}
+\begin{theorem}
+  Se $f:[a,b]\to \R$ \ace non decrescete (cio\ace $x<y \Rightarrow f(x)\leq f(y)$), allora $f \in \Rcal\left([a,b]\right)$
+\end{theorem}
+\begin{theorem}[Esistenza dell'integrale][BDPG,14.4]
+  Sia $f \in C^0\left(Q\right)$ allora $f \in \Rcal(Q)$
+\end{theorem}
+\begin{theorem}[Propriet\aca dell'integrale][BDPG, 14.5]
+  Siano $f,g \in \Rcal (Q)$ con $\Qbase$
+  \begin{itemize}
+    \item[(i)] \textbf{Linearit\aca}: $\alpha f + \beta g \in \Rcal(Q)$, $\forall \alpha,\beta\in\R$ e 
+              $$\iint_{Q}\left(\alpha f + \beta g\right) = \alpha \iint_{Q}f + \beta \iint_{Q} g$$
+    \item[(ii)] \textbf{Monotonia}: Se $g\leq f$ su Q, allora $$\iint_{Q} g \leq \iint_{Q}f$$
+    \item[(iii)] \textbf{Valore assoluto}: $\abs{f} \in \Rcal(Q)$ e $$\abs{\iint_{Q}f} \leq \iint_{Q}\abs{f}$$
+    \item[(iv)] \textbf{Teorema della media interale} 
+                $$inf_{Q} f \leq \frac{1}{area(Q)}\iint_{Q} f \leq sup_{Q}f$$
+                e il valore $\frac{1}{area(Q)}\iint_{Q} f \equiv$ media integrale di f su Q. \\
+                Se $f \in C^0(Q)$, allora esiste $p_0 = (x_0,y_0)\in Q$ t.c. 
+                $$f(p_0) = \frac{1}{area(Q)}\iint_{Q} f$$
+  \end{itemize}
+\end{theorem}
+\subsection{Formula di riduzione sui rettangoli}
+\textbf{Problema}: Sia $f \in \Rcal(Q)$, come calcolare $\iint_{Q}f$?
+\begin{theorem}[Formula di riduzione sui rettangoli][BDPG, 14.6]
+  Siano $\Qbase$ e $f \in \Rcal(Q)$
+  \begin{itemize}
+    \item[(i)] Supponiamo che, $\forall y \in [c,d]$, la funzione 
+                $[a,b]\ni x \to f(x,y)$ sia integrabile (come funzione di una variabile), 
+                allora la funzione 
+                $[c,d]\ni y \to \int_{a}^{b} f(x,y) \, dx$ \ace integrabile su [c,d] e 
+                $$(1) \iint_{Q} f = \int_{c}^{d} \left(\int_{a}^{b} f(x,y) \, dx\right) \, dy$$
+    \item[(ii)] Supponiamo che, $\forall x \in [a,b]$, la funzione 
+                $[c,d]\ni y \to f(x,y)$ sia integrabile (come funzione di una variabile), 
+                allora 
+                $$(2) \iint_{Q} f = \int_{a}^{b} \left(\int_{c}^{d} f(x,y) \, dy\right) \, dx$$
+                In particolare se $f\in C^0(Q)$, valgono (i) e (ii) e 
+                $$(3) \iint_{Q} f = \int_{a}^{b} \left(\int_{c}^{d} f(x,y) \, dy\right) \, dx = \int_{c}^{d} \left(\int_{a}^{b} f(x,y) \, dx\right) \, dy$$
+  \end{itemize}
+\end{theorem}
+\begin{osservazione}[Prinxipio di Cavalieri]
+  La formula (2) pu\aco essere interpretata geometricamente nel modo seguente: \\
+  sia $f \geq 0$, definimao la regione piana $\T_{f}^{x}(Q):=\{(x,y,z)\in \R^3 : 0 \leq z \leq f(x,y)\}$ per 
+  $x\in[a,b]$ fissato. Allora $$A(x) = \int_{c}^{d} f(x,y) \, dy = area\left(\T_{f}^{x}(Q)\right)$$
+  Pertanto la (2) si pu\aco interpretare come 
+  $$volume(\T_{f}(Q)):= \iint_{Q}f =_{(2)} \int_{a}^{b} \left(\int_{c}^{d} f(x,y) \, dy\right) \, dx = $$
+  $$= \int_{a}^{b} area(\T_{f}^{x}(Q)) \, dx \textit{ somma di volumi infinitesimi}$$
+\end{osservazione}
+\subsection{Esempio}
+\begin{example}
+  Calcolare $\iint_{Q} f$ dove $Q = [0,1]\times[0,\pi]$, $f(x,y):=x\cdot \sin(xy)$ \\\\
+  \textbf{Soluzione:} \\
+  \ac{E} facile verificare che $f \in C^0(Q)$, quindi possiamo utilizzare la formula (3), per\aco
+  osserviamo che, ai fini del caolcolo, utilizzare (1) o (2) pu\aco essere differente.
+  $$\iint_{Q}f = \int_{0}^{1}\left(\int_{0}^{\pi} x\cdot \sin(xy) \, dy\right) \, dx$$
+  Fissiamo $0 \leq x \leq 1$
+  $$\int_{0}^{\pi} x\cdot \sin(xy) = x \int_{0}^{\pi} \sin(xy) \, dy = x \left. \left(-\frac{\cos(xy)}{x}\right) \right|_{0}^{\pi}
+  = -cos(\pi x)+1$$
+  Quindi 
+  $$\int_{0}^{1}\left(\int_{0}^{\pi}  x\cdot \sin(xy) \, dy\right)\, dx = 
+  \int_{0}^{1} \left(-cos(\pi x)+1\right) \, dx = \left. - \frac{\sin(\pi x)}{\pi} + x \right|_{0}^{1} = 
+  -\frac{\sin\pi}{\pi} + 1 + \frac{\sin0}{\pi} - 0 = 1$$
+  \begin{exercise}
+    Verificare che l'integrlae iterato 
+    $$1 = \iint_{Q} f = \int_{0}^{\pi} \left(\int_{0}^{1} x\cdot \sin(xy) \, dx\right) \, dy = 
+    \int_{0}^{\pi} \frac{\sin(y) - y\cos(y)}{y^2} \, dy$$
+    L'ultimo integrale, esiste, ma la funzione integranda non ammettec ome primitivva rappresentabile come funzioni 
+    elementari, come, per esempio $\int \frac{\sin{x}}{x}\,dx$, $\int e^{-x^2} \,dx$, 
+    $[0,1]\ni x \to \frac{\sin(x)}{x}$ \ace continua, dunque $\exists \int_{0}^{1} \frac{\sin(x)}{x} \, dx \in \R$
+  \end{exercise}
+\end{example}
