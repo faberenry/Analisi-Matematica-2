@@ -1,8 +1,170 @@
 \section{Lez 11 - Integrale doppio su insiemi generali}
+Vogliamo defnire la nozione di integrale per una funzione $\f$ limitata, dove 
+A \ace un dominioi pi\acu generale di uun rettangolo.
+\begin{definition}
+  Sia $\f$ limitata e A limitato e sia $\Qbase \supset A$. Definiamo
+  $$\widetilde{f} : Q \to \R, \ftilde(x,y) := \left\{\begin{array}{ccl}
+    f(x,y) & se & (x,y)\in A \\
+    0 & se & (x,y)\in Q\setminus A \\
+  \end{array}\right.$$ 
+  Si dice che f \ace \underline{integrabile} su A, e scriveremo $f \in \Rcal(A)$, se 
+  $\ftilde \in \Rcal(Q)$. In questo caso:
+  $$\iint_{A} f = \iint_{Q} \ftilde \text{ (integrale doppio di f su A)}$$
+  \label{deftilde}
+\end{definition}
+\begin{osservazione}
+  \begin{itemize}
+    \item[(i)] Si pu\aco verificare (ma omettiamo) che l'integrbilit\aca di f su A non dipende dalla
+                scelta del rettangolo Q, come pure il valore $\iint_{Q} \ftilde$
+    \item[(ii)] La funzione $\ftilde$, tipicamente, non sar\aca continua nei punti di frontiera $\p A$
+  \end{itemize}
+\end{osservazione}
+\begin{example}
+  $A = $ cerchio del piano, f = 1 su A.
+  $$G_{\ftilde} := \{(x,y,1) : (x,y) \in A\} \cup \{(x,y,0):(x,y)\in Q \setminus A\}$$
+  Se Q \ace un retta contenente A, allora $\ftilde:Q\to\R$, come definita in \ref{deftilde}, \ace discontinua in 
+  tutti i punti di $\p A$. \\
+  In accordo con la nostra definizione precedente e tenendo conto della nostra idea geometrica di integrale doppio
+  $$\iint_{Q}\ftilde := volume(\T_{\ftilde}(Q))$$
+  dove $\T_{\ftilde}(Q):=\{(x,y,z)\in\R^3: 0 \leq z \leq \ftilde(x,y)\} = 
+  \{(x,y,0):(x,y)\in Q \setminus A\}\cup\{(x,y,z):(x,y)\in A, 0 \leq z \leq 1\} = P \cup \T_{f}(A)$, 
+  essendo P una parte limitata di un piano, $volume(P) = 0$, mentre 
+  $volume(\T_{f}(A)) = volume(A \times [0,1]) = area(A)$. \\
+  Quindi questo ragionamento ci porta a concludere:
+  $$\iint_{A} f := \iint_{Q} \ftilde = volume(\T_{\ftilde(Q)}) = area(A)$$
+  Pertanto, da questo ragionamento, risulta evidente che, se per l'insieme A non fosse defnita una nozione di area 
+  non sapremmo come calolcare $\iint_{A} f$
+\end{example}
 \subsection{Insiemi numerabili e loro area}
+\begin{definition}
+  Sia $\f$, definita come $f(x):=1$ se $x\in A$, conn A limitato. L'insieme A si dice \underline{misurabile}
+  (secondo Peano-Jordan) se $f \in \Rcal(A)$. In questo caso il valore dell'integrale si chiama
+  \underline{misura} (o area) di A e si denota $$\abs{A}_2 := \iint_{A} 1 \,dx\,dy$$ 
+\end{definition}
+\begin{osservazione}
+  Se $A = \Qbase$, allora \ace facile verificare che Q \ace misurabile e 
+  $$\abs{Q}_2 = area(Q) = (b-a)(d-c)$$
+\end{osservazione}
 \subsubsection{Teorema: Caraterizzazione degli insiemi misurabili}
+\begin{theorem}[Caraterizzazione degli insiemi misurabili][BDPG,14.9]
+  \label{14.9}
+  Sia $A \subseteq \R^2$ limitato. Allora 
+  $$\text{ A \ace misurabile} \iff \p A \text{\ace misurabile e } \abs{\p A}_2 = 0$$
+\end{theorem}
+\begin{theorem}[BDPG, 14.11]
+  \label{14.11}
+  Sia $g:[a,b]\to \R$ integrabile (come funzione di n=1 variabile). Allora 
+  $G_{g} := \{(x,g(x)) : x \in [a,b]\}$ \ace misurabile e $\abs{G_{g}}_2 = 0$
+\end{theorem}
+Tramite i teoremi \ref{14.9}, \ref{14.11} si pu\aco provare il seguente corollario.
+\begin{corollary}
+  \label{cormis}
+  Sia $A \subseteq \R^2$ limitato. Supponiamo che 
+  $$\p A = \bigcup_{i = 1}^k G_{g_i}$$ dove $g_{i} : [a_i,b_i] \to \R$ continue $\forall i = 1, ..., k$\\
+  Allora A \ace misurabile.
+\end{corollary}
+\begin{example}[Misurabilit\aca insiemi semplici del piano]
+  Siano $g_1,g_2 : [a,b]\to \R$ continue e supponiamo che $g_1(x) \leq g_2(x) \, \forall x\in [a,b]$. Sia
+  $$A = \{(x,y)\in \R^2 : a \leq x \leq b, g_1(x) \leq y \leq g_2(x)\}$$
+  insieme semplice rispetto all'asse y.
+  \begin{exercise}
+    A \ace limitato e chiuso.
+  \end{exercise}
+  $$\p A = G_{g_1} \cup \{(b,y) : g_{1}(b) \leq y \leq g_2(b)\} G_{g_2} \cup \{(a,y) : g_{1}(a) \leq y \leq g_2(a)\}$$
+  Pertanto $\abs{\p A}_2 = 0$ e, per il corollario \ref{cormis}, A \ace misurabile.
+\end{example}
 \subsection{Integrali doppi su insiemi misurabili}
 \subsubsection{Teorema: Esistenza integrale doppio su insiemi misurabili}
+\begin{theorem}[Esistenza integrale doppio su insiemi misurabili][BDPG, 14.13]
+  \label{14.13}
+  Sia $f : A \to \R$. Supponiamo che:
+  \begin{itemize}
+    \item A sia limitato e misurabile
+    \item f sia limitato e $f \in C^0 (A)$
+  \end{itemize}
+  Allora $f\in \Rcal(A)$
+\end{theorem}
+\begin{osservazione}
+  \begin{itemize}
+    \item Dal \ref{14.13}, segue che, se A \ace limitato, chiuso e misurabile e 
+          e $f \in C^{0}(A)$, allora $f\in \Rcal(A)$
+    \item Continuano a valere le propriet\aca di linearit\aca, monotonia e il teorema della media integrale, che abbiamo
+          visto per l'integrale doppio di una funzione defnita su un rettangolo
+  \end{itemize}
+\end{osservazione}
+Infine vale il seguente risultato, molto utili nel calcolo di integrali.
 \subsection{Teo.: Integrale doppio su insieme di misura nulla}
+\begin{theorem}[Integrale doppio su insieme di misura nulla][BDPG,14.15]
+  \label{14.15}
+  Sia $A \subseteq \R^2$ un insieme limitato e misurabile, sia $f \in \Rcal(A)$. 
+  Supponamo che $A = B \cup C$, con B e C misurabli e $\abs{C}_2 = 0$. Allora:
+  $$\iint_{A} f = \iint_{B} f$$
+\end{theorem}
+\begin{osservazione}
+  Una immediata conseguenza di \ref{14.9} e \ref{14.15} \ace la seguente: sia 
+  $A \subseteq \R^2$ limitato e misurabile e sia $\f \in \Rcal(A)$, allora
+  $$\iint_{A} f = \iint_{\overcirc{A}} f$$
+\end{osservazione}
 \section{Integrali doppi su domini semplici e formule di riduzione}
+\begin{definition}
+  Un sottoinsieme $A \subset \R^2$ si dice 
+  \begin{itemize}
+    \item \underline{Dominio semplice} (o normale) rispetto all'asse y se esistono 
+          $g_1, g_2 \in C^0([a,b])$ t.c. $g_1 \leq g_2$ su $[a,b]$ e 
+          $$A = \{(x,y)\in\R^2 : x \in [a,b], g_1(x) \leq y \leq g_2(x)\}$$
+    \item \underline{Dominio semplice} (o normale) rispetto all'asse x se esistono 
+          $h_1, h_2 \in C^0([c,d])$ t.c. $h_1 \leq h_2$ su $[c,d]$ e 
+          $$A = \{(x,y)\in\R^2 : y \in [c,d], h_1(y) \leq x \leq h_2(y)\}$$
+  \end{itemize}
+\end{definition}
+\begin{osservazione}
+  Ricordiamo che, per quanto visto prima, un dominio semplice \ace limitato e misurabile. Inoltre, per il 
+  \ref{14.13}, se A \ace semplice ed $f \in C^0(A)$, allora $f\in \Rcal(A)$
+\end{osservazione}
+Vogliamo ora introdurre una formila per il calcolo di integrali doppi su domini semplici.
 \subsection{Teorema: Forumla di riduzione su domini semplici}
+\begin{theorem}[Forumla di riduzione su domini semplici][BDPG,14.17]
+  \label{14.17}
+  Sia $A\subseteq\R^2$ un dominio semplice rispetto ad uno degli assi. Supponiamo che $f\in C^{0}(A)$, allora 
+  $f\in\Rcal(A)$ e valgono le seguenti formule:
+  \begin{enumerate}
+    \item Se $A = \{(x,y)\in\R^2 : x \in [a,b], g_1(x) \leq y \leq g_2(x)\}$ con $g_1, g_2 \in C^0([a,b])$, allora 
+          $$(1) \iint_{A} f = \int_{a}^{b} \left(\int_{g_1(x)}^{g_2(x)} f(x,y) \, dy\right) \, dx$$
+          In particoalre A \ace misurabile e $\abs{A}_2 = \iint_{A} 1 = \int_{a}^{b} \left(g_2(x)-g_1(x)\right) \, dx$
+    \item Se $A = \{(x,y)\in\R^2 : y \in [c,d], h_1(y) \leq x \leq h_2(y)\}$ con $h_1, h_2 \in C^0([c,d])$, allora 
+          $$(2) \iint_{A} f = \int_{c}^{d} \left(\int_{h_1(y)}^{h_2(y)} f(x,y) \, dx\right) \, dy$$
+          In particoalre A \ace misurabile e $\abs{A}_2 = \iint_{A} 1 = \int_{c}^{d} \left(h_2(y)-h_1(y)\right) \, dy$
+  \end{enumerate}
+\end{theorem}
+\begin{osservazione}
+  Le propriet\aca di linearit\aca, monotonia e il teorema della media integrale, continuano a valere per integrali
+  doppi su domini semplici.
+\end{osservazione}
+\begin{example}
+  Calcolare $\iint_{A} f(x,y) \,dx \,dy$ nei seguenti casi:
+  \begin{enumerate}
+    \item $A = \{(x,y)\in\R^2: 0 \leq x \leq 1, 0 \leq y \leq x^2\}$, $ f(x,y) = x$ \\\\
+      \textbf{Soluzione:} \\ A \ace un dominio semplice rispetto all'asse y ed $f \in C^0(A)$, possiamo applicare la 
+      \ref{14.17} (1), ottendo che 
+      $$\iint_{A} f = \int_{0}^{1}\left(\int_{0}^{x^2} x \, dy\right)\,dx$$
+      Fissato $x \in [0,1]$,
+      $$\int_{0}^{x^2} x \, dy = x \int_{0}^{x^2} 1 \, dy = \left.xy\right|_{0}^{x^2} = x^3$$
+      Pertanto 
+      $$\iint_{A}x\,dx\,dy = \int_{0}^1 x^3 \,dx = \left.\frac{x^4}{4}\right|_{0}^1 = \frac{1}{4}$$
+    \item $A = \{(x,y)\in\R^2: y \leq x \leq \frac{\pi}{2}, 0 \leq y \leq \frac{\pi}{2}\}$, $ f(x,y) = \frac{\sin(x)}{x}$\\\\
+      \textbf{Soluzione:} \\
+      A \ace un dominio semplice rispetto all'asse x ed $f \in C^0(A)$, possiamo applicare la 
+      \ref{14.17} (2), ottendo che
+      $$\iint_{A} \frac{\sin(x)}{x} \,dx\,dy = \int_{0}^{\frac{\pi}{2}}\left(\int_{y}^{\frac{\pi}{2}} \frac{\sin(x)}{x} \, dx\right)\,dy$$
+      Fissiamo $y \in [0, \frac{\pi}{2}]$
+      $$\exists \int_{y}^{\frac{\pi}{2}} \frac{\sin(x)}{x} \, dx \text{, ma non si pu\aco calolcare}$$
+      Osserviamo che A \ace un dominio semplice anche rispetto all'asse y, infatti:
+      $$A = \{(x,y)\in \R^2 : 0 \leq \frac{\pi}{2}, 0 \leq y \leq x\}$$
+      possiamo quindi applicare \ref{14.17} (1) ed otteniamo
+      $$\iint_{A} \frac{\sin(x)}{x} \,dx\,dy = \int_{0}^{\frac{\pi}{2}} \left(\int_{0}^{x} \frac{\sin{x}}{x} \,dy\right)\, dx$$
+      Fissiamo $x \in (0, \frac{\pi}{2}]$
+      $$\int_{0}^x \frac{\sin(x)}{x}\,dy = \frac{\sin(x)}{x}\int_{0}^y \,dy = \frac{\sin(x)}{x} \cdot x = \sin(x)$$
+      Pertanto 
+      $$\iint_{A} \frac{\sin(x)}{x} \,dx\,dy = \int_{0}^{\frac{\pi}{2}} \sin(x) \,dx = \left.-\cos(x)\right|_{0}^{\frac{\pi}{2}} = 1$$
+  \end{enumerate}
+\end{example}
