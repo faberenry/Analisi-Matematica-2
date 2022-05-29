@@ -1,0 +1,223 @@
+\section{Lez - 12}
+\subsection{Applicazione della formula di riduzione su domini semplici al calcolo di volumi di solidi}
+\begin{definition}
+  Sia $A \subseteq \R^2$ limitato e misurabile e $f\in\Rcal(A)$, con $f\geq 0$ su A. Denotiamo 
+  $$\T_{f}(A) := \{(x,y,z)\in\R^3: 0 \leq z \leq f(x,y), (x,y)\in A\}$$
+  Si chiama volume del solido $\T_{f}(A)$ il numero 
+  $$volume\left(\T_{f}(A)\right):= \iint_{A} f$$
+\end{definition}
+Tramite la formula (1) e (2) del precedente teorema \ref{14.17} si possono calcolare i volumi di diversi solidi.
+\begin{example}
+  Sappiamo che $A \subseteq \R^2$ sia un dominio semplice rispetto a y, allora dalla (1) si ottiene:
+  $$(*) \text{ } volume(\T_{f}(A))=\iint_{A}f = \int_{a}^{b}\left(\int_{g_1(x)}^{g_2(x)}f(x,y)\,dy \right) \, dx$$
+\end{example}
+\begin{exercise}
+  Calcolare il volume del solido di $\R^3$, $$S = \{(x,y,z)\in \R^3: 0 \leq z \leq y^2, (x,y)\in [0,1]\times[0,1]\}$$
+  \textbf{Soluzione:}\\\\
+  \ac{E} facile verificare che $S = \T_{f}(A)$ con $A = [0,1]\times[0,1]$ dominio semplice sia rispetto y che x, ed 
+  $f(x,y):= y^2$, $f \in C^0(A)$. Pertanto possiamo applicare (*) e otteniamo
+  $$volume(S) = volume(\T_{f}(A)) = \iint_{A}f = \int_{0}^{1}\left(\int_{0}^{1}y^2 \,dy\right)\, dx$$
+  se rappresentiamo 
+  $$A = \{(x,y)\in \R^2 : 0 \leq x \leq 1, 0 \leq y \leq 1\}$$
+  Fissato $x \in [0,1]$, 
+  $$\int_{0}^{1} y^2 \, dy = \left.\frac{1}{3}y^3 \right|_{0}^{1} = \frac{1}{3}$$
+  Pertanto $$volume(S) = \int_{0}^{1} \frac{1}{3}\,dx = \frac{1}{3}$$
+\end{exercise}
+Infine vale la seguente propriet\aca, molto utili nel calcolo di integrali doppi
+\subsection{Teorema: Additivit\aca dell'integrale doppio}
+\begin{theorem}[Additivit\aca dell'integrale doppio][BDPG,14.18] \\
+  Siano $A_1,...,A_m \subseteq \R^2$ insiemi semplici t.c.
+  $$A_i \cap A_j \subseteq \p A_i \cap \p A_j$$ se $i\neq j, i, j = 1,...,m$. \\
+  Sia $f:A_1\cup...\cup A_m \to \R$ e supponiamo che $f \in \Rcal(A_i) \forall i = 1,..., m$. \\
+  Allora f \ace integrabile su $A_1\cup...\cup A_m$, cio\ace $f \in \Rcal(A_1\cup...\cup A_m)$ e 
+  $$\iint_{A_1\cup...\cup A_m} f = \sum_{i=1}^{m} \iint_{A_i}f$$ 
+\end{theorem}
+\section{Cambiamento di var. per gli integrali doppi}
+\subsection{Caso particolare: coordinate polari}
+\textbf{Problema}: Calcolare il volume della semisfera di centro $(0,0,0)$ e raggio $r>0$ in $\R^3$. \\
+\ac{E} facile verificare che, se denotiamo S la semisfera di centro $(0,0,0)$ e raggio $r>0$, 
+$$S:=\{(x,y,z)\in\R^3 : x^2+y^2+z^2 \leq r^2, z\geq 0\}$$
+$z^2 \leq r^2-(x^2+y^2)$, $0 \leq z \leq \sqrt{r^2-(x^2+y^2)}$ \\\\
+Inotre, se denotiamo $D:=\{(x,y)\in\R^2:x^2+y^2 \leq r^2\}$ allora S pu\aco essere anche rappresentato
+nella forma 
+$$S = \left\{(x,y,z)\in\R^3:(x,y)\in D, 0 \leq z \leq \sqrt{r^2-(x^2+y^2)}\right\} = \T_{f}(D)$$
+dove $f(x,y) := \sqrt{r^2-(x^2+y^2)}$,$(x,y)\in D$. \\
+Utilizzando la nostra definizione di volume $\T_{f}(D)$, otteniamo che 
+$$volume(S) = volume(\T_{f}(D)) := \iint_{D}f(x,y)\,dx\,dy$$
+\begin{exercise}
+  Calcolare $\iint_{D}\sqrt{r^2-(x^2+y^2)}\,dx\,dy$
+\end{exercise}
+\textbf{Soluzione:}
+\begin{itemize}
+  \item \textbf{Primo modo} \\
+        Osserviamo che l'insieme D pu\aco essere rappresentato come un dominio semplcei rispetto all'asse y.
+        Infatti $$D = \{(x,y)\in\R^2 : -r \leq x \leq r, -\sqrt{r^2-x^2} \leq y \leq \sqrt{r^2-x^2}\}$$
+        Utilizzando la formula di riduzione per integrali doppi su domini semplici, otteniamo
+        $$\iint_{D} \sqrt{r^2-(x^2+y^2)}\,dx\,dy = \int_{-r}^{r}\left(\int_{-\sqrt{r^2-x^2}}^{\sqrt{r^2-x^2}} 
+        \sqrt{r^2-(x^2+y^2)} \, dy \right)\,dx$$
+        Notiamo che il calcolo dell'integrare iterato risulta abbastanza complicato.
+  \item \textbf{Secondo modo} \\
+        Utilizziamo le coordinate polari, cio\ace consideriamo l'applicazione 
+        $\psi : (0,+\infty)\times(0,2\pi) \to \R^2$, $\rho, \vartheta \to (\rho\cos\vartheta, \rho\sin\vartheta)$
+        $$\left\{\begin{array}{l}
+          x = x(\rho,\vartheta) = \rho\cos\vartheta \\
+          y = y(\rho,\vartheta) = \rho\sin\vartheta \\
+        \end{array}\right.$$
+        \ac{E} facile verificare che $\psi:(0,+\infty)\times(0,2\pi) \to \R^2 \setminus\{(x,0): x \geq 0\}$
+        \ace bigettiva e se $D^{*}:= (0,r)\times(0,2\pi)$
+        $$\psi(D^*) = \overcirc{D}\setminus\{(x,0):  0\leq x\leq r\}$$
+        Poich\ace $$area(D) = area\left(\overcirc{D}\setminus\left\{(x,0):  0\leq x\leq r\right\}\right)$$ e 
+        $$area(\p D) = area\left(\{(x,0):  0\leq x\leq r\}\right) = 0$$
+        per la propriet\aca degli integrali doppi sugli insiemi di misura nulla, segue che
+        $$\iint_{D} \sqrt{r^2-(x^2+y^2)}\,dx\,dy = \iint_{\overcirc{D}\setminus\{(x,0): 0 \leq x \leq r\}}\sqrt{r^2-(x^2+y^2)}\,dx\,dy$$
+        $$= \iint_{\overcirc{D}\setminus\{(x,0): 0 \leq x \leq r\}}\sqrt{r^2-\rho^2}\,dx\,dy$$  
+        \textbf{Idea:} Vogliamo cambiare le variabili di integrazione nell'integrale doppio 
+        da $(x,y) \rightarrow \text{ a } (\rho,\vartheta)$. \\
+        Il problema \ace capire come si trasforma l'elemento infinitesimo di area $dA = dxdy$ in funzione
+        dell'elemento infinitesimo $dA^* = d\rho d\vartheta$\\\\
+        Pi\acu precisamente capire quale sia il coefficiente di trasformazione $k = k(\rho,\vartheta)$ per cui 
+        $dA = dxdy = k (\rho, \vartheta)\, d\rho \, d\vartheta = k(\rho,\vartheta)dA^{*}$\\
+        Utilizziamo un ragionamento intuitivo: il rettangolo 
+        $Q^* = [\rho, \rho + d\rho]\times[\vartheta, \vartheta+d\vartheta]$, sar\aca trasportato nella
+        regione piana $Q = \psi(Q^*)$ delimitata da:
+        \begin{itemize}
+          \item $L_1$ = il segmento che congiunge i punti $\psi(\rho, \vartheta)$ e $\psi(\rho + d\rho, \vartheta)$
+          \item $L_2$ = l'arco di cerchio che congiunge i punti $\psi(\rho+d\rho, \vartheta)$ e $\psi(\rho + d\rho, \vartheta+d\vartheta)$
+          \item $L_3$ = il segmento che congiunge i punti $\psi(\rho+d\rho, \vartheta+d\vartheta)$ e $\psi(\rho, \vartheta+d\vartheta)$
+          \item $L_4$ = l'arco di cerchio che congiunge i punti $\psi(\rho, \vartheta+d\vartheta)$ e $\psi(\rho, \vartheta)$
+        \end{itemize} 
+        Se $d\rho$ e $d\vartheta$ sono "molto piccoli", 
+        $dA = dx dy \cong area(Q) \cong lunghezza(L_4) d\rho = \rho d\vartheta d\rho = \rho dA^*$
+        con $A = [x,x+dx]\times[y,y+dy]$. \\
+        Si pu\aco provare rigorosamente che $dA = \rho dA^*$. \\
+        Ritornando al calcolo dell'integrale doppio
+        $$\iint_{D}\sqrt{r^2-(x^2+y^2)} \,dx \,dy = \iint_{\overcirc{D}\setminus\{(x,0): 0 \leq x \leq r\}}
+        \sqrt{r^2-\rho^2} dA =$$
+        $$= \iint_{(0,r)\times(0,2\pi)} \sqrt{r^2-\rho^2} \rho dA^* = \iint_{(0,r)\times(0,2\pi)}
+        \sqrt{r^2-\rho^2} \rho d\rho d\vartheta = $$
+        $$= \int_{0}^{r}\left(\int_{0}^{2\pi} \sqrt{r^2-\rho^2} \rho \, d\vartheta\right)\, d\rho = 
+        2\pi \int_{0}^{r} \sqrt{r^2-\rho^2} \rho \,d\rho$$
+        \begin{exercise}
+          $\int_{0}^{r} \sqrt{r^2-\rho^2} \rho \,d\rho = \frac{r^3}{3}$
+        \end{exercise}
+        In conclusione 
+        $$volume(S) = \iint_{D} \sqrt{r^2-(x^2+y^2)} \,dx \, dy = \frac{2}{3}\pi r^3 $$
+      \end{itemize}
+\subsection{Caso generale}
+Siano $D, D^* \subseteq \R^2$ aperti limitati e misurabili e sia 
+$$\psi:D^*\to D, \psi(u,v) = \left(\psi_1(u,v), \psi_2(u,v)\right) = \left(x(u,v), y(u,v)\right)$$
+$\psi_1, \psi_2 : D^* \to \R$
+\begin{definition}
+  \label{cambiamentovariabili}
+  La mappa $\psi$ si dice un cambiamento di variabili se
+  \begin{itemize}
+    \item $\psi$ \ace bigettiva
+    \item $\psi_i \in C^1(D^*)$, $\psi_i, \frac{\p \psi_i}{\p u}, \frac{\p \psi_i}{\p v} : D^* \to \R$ limitate (i=1,2)
+    \item $\det D\psi(u,v)\not = 0$ , $\forall (u,v)\in D^*$, dove
+          $$D \psi(u,v) := \begin{bmatrix}
+            \frac{\p \psi_1}{\p u} (u,v) & \frac{\p \psi_1}{\p v} (u,v)\\
+            \\
+            \frac{\p \psi_2}{\p u} (u,v) & \frac{\p \psi_2}{\p v} (u,v) \\
+          \end{bmatrix} \text{ (Matrice Jacobiana)}$$
+  \end{itemize}
+  Denotiamo $dA^* = du\,dv$ e $dA = dx\,dy$
+\end{definition}
+\textbf{Problema:} Legame tra $dA$ e $dA^*$? \\\\
+Si pu\aco provare che $dA = \abs[det D\psi(u,v)] dA^*$.\\
+Pi\acu precisamente vale:
+\subsection{Teorema: Cambiamento di variabili negli integrali doppi}
+\begin{theorem}[Cambiamento di variabili negli integrali doppi][BDPG,14.19]
+  Siano $D, D^* \subseteq \R^2$ aperti limitati e misurabili, sia $\psi : D^* \to D$
+  un cambiamento di variabili e sia $f:D \to \R$ continua e limitata. \\
+  Allora vale la formula
+  $$(FCV)_2 \, \iint_{D} f(x,y) \,dx\,dy = \iint_{D^*} f(\psi(u,v))\abs{\det D\psi(u,v)} \,du\,dv$$ 
+\end{theorem}
+\begin{exercise}
+  \begin{itemize}
+    \item[(i)] Calcolare l'area dell'insieme 
+               $$D:=\left\{(x,y)\in\R^2:\frac{x^2}{a^2}+\frac{y^2}{b^2} \leq 1\right\}$$
+               dove $a>0, b>0$ fissati. \\\\
+               \textbf{Soluzione:} \\\\
+               L'insieme D rappresenta un'elisse con semiassi di lunghezza a e b. L'insieme D \ace 
+               limitato e misurabile. Infatti:
+               \begin{exercise}
+                 D \ace un dominio semplice rispetto all'asse y. Quindi D \ace misurabile.
+               \end{exercise}
+               Per definizione $$area(D) = \abs{D}_2 = \iint_{D} 1 \,dx\,dy$$
+               Utilizzando il cambiamento di variabili rispetto a coordinate ellittiche, il calcolo
+               dell'integrale doppio diventa abbastanza semplice. Infatti, consideriamo il cambiamento
+               $$\left\{\begin{array}{l}
+                 x(\rho,\vartheta) = \psi_1(\rho,\vartheta):= a\rho\cos\vartheta \\
+                 y(\rho,\vartheta) = \psi_2(\rho,\vartheta):= b\rho\cos\vartheta \\
+               \end{array}\right. \rho \geq 0, \vartheta \in [0,2\pi]$$
+               e sia $D^* := (0,1)\times (0,2\pi)$, $\psi : D^* \to \R^2$, 
+               $\psi(\rho,\vartheta):=\left(\psi_1(\rho,\vartheta), \psi_2(\rho,\vartheta)\right)$
+               \begin{exercise}
+                 Verificare che la mappa $\psi : D^* \to \overcirc{D}\setminus\{(x,0):0\leq x\leq a\}$
+                 \ace un cambiamento di variabili, in accordo con la definizione \ref{cambiamentovariabili} prima introdotta. 
+                 Inoltre $\det D\psi(\rho,\vartheta) = ab\rho$.
+               \end{exercise}
+               Possiamo applicare $(FCV)_2$ con $f\equiv 1$ su D, ed otteniamo
+              $$area(D) = \iint_{D} 1 \,dx\,dy = \iint_{\overcirc{D}\setminus\{(x,0):0\leq x\leq a\}} 1 \,dx \,dy =$$
+              $$= \iint_{D^*} 1 \cdot \abs{\det D\psi(\rho, \vartheta)} \,d\rho\,d\vartheta = 
+              2\pi ab \int_{0}^{1} \rho \,d\rho\,d\vartheta = \pi ab$$
+    \item[(ii)] Calcolare l'integrale doppio $$\iint_{D} \frac{y^2}{x} \,dx \,dy$$
+                Dove $D:=\left\{(x,y)\in\R^2 : x^2 \leq y \leq 2x^2, y^2 \leq x \leq 3y^2\right\}$ \\\\
+                \textbf{Soluzione:}\\\\
+                L'insieme D pu\aco essere viso come $D = D_1 \cap D_2$, dove 
+                \begin{itemize}
+                  \item $D_1 = \{(x,y)\in\R^2 : x^2 \leq y \leq 2x^2\}$
+                  \item $D_2 = \{(x,y)\in\R^2y^2 \leq x \leq 3y^2\}$
+                \end{itemize}
+                Incominciamo a studiare la geometria di D. \ac{E} chiaro che $(0,0)\in D$. Supponiamo che 
+                $(x,y)\in D\setminus\{(0,0)\}$ allora per definizione di D, 
+                $(x,y)\in \left(D_1\setminus\{(0,0)\}\right) \cap \left(D_2 \setminus \{(0,0)\}\right)$. \ac{E} chiaro
+                che, per come sono definiti $D_1$ e $D_2$, necessariamente 
+                \begin{enumerate}
+                  \item $x>0$ e $y>0$
+                  \item $x^2 \leq y\leq 2x^2$
+                  \item $y^2\leq x\leq 3y^2$
+                \end{enumerate}
+                Dividendo la disuguaglianza (2) per $x^2$ e la (3) per $y^2$, grazie alla condizione (1), si intuisce
+                che un possibile cambiamento di variabili $x=\psi_1(u,v)$, $y = \psi_2(u,v)$ potrebbe essere 
+                quello per cui 
+                $$\left\{\begin{array}{l}
+                  u = \frac{y}{x^2} \\
+                  \\
+                  v = \frac{x}{y^2}
+                \end{array}\right. \text{ con } 1 \leq u \leq 2 , 1 \leq v \leq 3$$
+                \begin{exercise}
+                  Risolvere il sistema precedente rispetto ad x e y.
+                \end{exercise}
+                Otteniamo 
+                $$\left\{\begin{array}{l}
+                  x = x(u,v) = \psi_1(u,v) = \frac{1}{u^{\frac{2}{3}}v^{\frac{1}{3}}} \\
+                  \\
+                  y = y(u,v) = \psi_2(u,v) = \frac{1}{u^{\frac{1}{3}}v^{\frac{2}{3}}} \\
+                \end{array}\right.$$
+                Sia $D^* :=\{(u,v) \in \R^2 : 1 < u < 2, 1 < v < 3\}$
+                \ace chiaro per costruzione che:
+                \begin{itemize}
+                  \item $\psi : D^* \to \overcirc{D}$ \ace bigettiva
+                  \item $D^*$ e $\overcirc{D}$ sono limitati e misurabili (da \ref{cormis})
+                  \item $\psi_i \in C^1(D^*)$, i =1,2
+                  \item \begin{exercise}
+                    $$D\psi(u,v) = \begin{bmatrix}
+                      -\frac{2}{3} u^{-\frac{5}{3}}v^{-\frac{1}{3}} & -\frac{1}{3} u^{-\frac{2}{3}}v^{-\frac{4}{3}}  \\
+                      -\frac{1}{3} u^{-\frac{4}{3}}v^{-\frac{2}{3}} & -\frac{2}{3} u^{-\frac{1}{3}}v^{-\frac{5}{3}} 
+                    \end{bmatrix}$$
+                  \end{exercise}
+                \end{itemize}
+                $\det D\psi(u,v) = \frac{1}{3} u^{-2} v^{-2}$ se $(u,v) \in D^*$
+                Possimao applicare l'osservazione (??) e $(FCV)_2$, ottenendo che 
+                $$\iint_{D} \frac{y^2}{x} \,dx\,dy = \iint_{\overcirc{D}} \frac{y^2}{x} \,dx \,dy = $$
+                $$=\iint_{D^*} \frac{1}{v} \frac{1}{3} \frac{1}{u^2} \frac{1}{v^2} \,du\,dv = 
+                \frac{1}{3}\iint_{D^*}\frac{\,du\,dv}{u^2v^3}$$
+                L'ultimo integrale doppio risulta essere un integrale doppo su un rettangolo, applicando la formula
+                di riduzione sui rettangoli otteniamo:
+                $$\iint_{D^*} \frac{\,du\,dv}{u^2v^3} = \int_{1}^{2} u^{-2} \,du \cdot \int_{1}^{3} v^{-3} \, dv = $$
+                $$= \left.-\frac{1}{u}\right|_{1}^{2} \cdot \left.-2v^{-2}\right|_{1}^{3} = \frac{2}{9}$$
+                Pertanto 
+                $$\iint_{D} \frac{y^2}{x} = \frac{1}{3} \cdot \frac{2}{9} = \frac{2}{27}$$
+  \end{itemize}
+\end{exercise}
