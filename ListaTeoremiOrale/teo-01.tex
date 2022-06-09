@@ -1,0 +1,33 @@
+\chapter{Teoremi Orale}
+\section{Continuit\aca, derivabilit\aca, differenziabilit\aca, polinomio di Taylor.}
+\subsection{Teorema del confronto}
+\begin{theorem}[Teorema del confronto]
+  Sia $h,g,\f$, supponiamo che:
+  \begin{itemize}
+    \item[5.1] $f(p) \leq g(p) \leq h(p)$, $\forall p \in A \setminus \{p_0\}$
+    \item[5.2] $\exists\lim_{p \to p_0} f(p) = \lim_{p \to p\to p_0} h(p) = L \in \R \cup \{\pm \infty\}$
+  \end{itemize}
+  allora $\exists \lim_{p \to p_0} g(p) = L$
+  \begin{proof}
+    Supponiamo che $L \in \R$, dobbiamo provare che $\exists \lim_{p\to p_0} g(p) = L$, cio\ace per definizione:
+    \begin{itemize}
+      \item[1*] $\forall \varepsilon > 0 \, \exists \delta \left(=\delta(p_0, \varepsilon)\right) > 0$
+                t.c. 
+                $$\lvert g(p)-L\rvert < \varepsilon \, \,\forall p \in B(p_0,\delta) \cap (A \setminus \{p_0\})$$
+                Per ipotesi sappiamo che 
+                  $$\lim_{p\to p_0} f(p) = L, \lim_{p\to p_0} h(p) = L $$
+                cio\ace: 
+      \item[2*] $\forall \varepsilon > 0 $, $$\exists \delta_1 \left(=\delta_1(p_0, \varepsilon)\right) > 0$$ t.c. 
+                $\lvert f(p)-L\rvert < \varepsilon$ o eq.
+                $$L - \varepsilon < f(p) < L + \varepsilon \,\, \forall p \in B(p_0,\delta_1) \cap (A \setminus \{p_0\})$$
+                E
+      \item[3*] $\forall \varepsilon > 0 $, $$\exists \delta_2 \left(=\delta_2(p_0, \varepsilon)\right) > 0$$
+                t.c. 
+                $\lvert h(p)-L\rvert < \varepsilon$ o eq.
+                $$L - \varepsilon < h(p) < L + \varepsilon \, \, \forall p \in B(p_0,\delta_2) \cap (A \setminus \{p_0\})$$
+    \end{itemize} 
+    Da (5.1),(2*),(3*) segue che $\forall \varepsilon > 0$, scegliendo $\delta = \min\{\delta_1,\delta_2\}$ vale che 
+    $$L - \varepsilon < f(p) \leq g(p) \leq h(p) < L+\varepsilon$$ $\forall p \in B(p_0,\delta) \cap (A \setminus \{p_0\})$ 
+    e dunque vale la (1*).
+  \end{proof}
+\end{theorem}

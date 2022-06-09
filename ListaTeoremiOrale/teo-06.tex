@@ -1,0 +1,17 @@
+\subsection{Regola della catena nel caso generale di due funzioni, 
+$f:\R^n \to \R^m$ e $g:\R^m\to\R^k$}
+\begin{theorem}[Regola della catena, RDC]
+  Siano $g: A \subseteq \R^n\to \R^m$ e $f : B \subseteq \R^m \to \R^k$, A e B aperti
+  \begin{enumerate}
+    \item[(i)] $g(A) \subseteq B$
+    \item[(ii)] Se $g = (g_1, \dots, g_m)$, $f = (f_1, \dots, f_k)$ \\
+              Supponiamo che  $\begin{array}{l}
+                g_i : A \subseteq \R^n \to \R \, (i = 1,\dots,m) \text{ sia diff. in un dato } x_0 \in A \\
+                f_i : B \subseteq \R^m \to \R \, (i = 1,\dots,k) \text{ sia diff. in un dato } y_0 = g(x_0) \\ 
+              \end{array}$ \\
+              Consideriamo ora la funzione $h:= f \circ g : A \subseteq \R^n \to \R^k$, $h = (h_1, \dots, h_k)$
+              con $h_i : A \subseteq \R^n \to \R$, \\ allora le funzioni 
+              $h_i : A \to \R (i = 1,\dots,k) \text{ sono diff. in } x_0$ e 
+              $$D h(x_0) = D f(g(x_0)) \cdot D g(x_0)$$
+  \end{enumerate}
+\end{theorem}

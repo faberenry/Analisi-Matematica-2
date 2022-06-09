@@ -1,0 +1,17 @@
+\subsection{Definizione di differenziabilit\aca in un punto per una funzione $\f$ 
+e relazione con l'esistenza del gradiente in quel punto}
+\begin{definition}
+  Dato $A \subseteq \R^2$ aperto e dato $p_0=(x_0,y_0)\in A$, la funzione $\f$ si dice \underline{differenziabile}
+  nel punto $p_0$ se vale 
+  $$\text{(D) } \exists \lim_{(x,y)\to (0,0)}\frac{f(x)-\left[a(x-x_0)+b(y-y_0)+f(x_0)\right]}{d(p,p_0)}$$
+  dove $d(p,p_0) = \sqrt{(x-x_0)^2+(y-y_0)^2}$ e per $a,b \in \R$ opportuni. \\\\
+  Se f \ace differenziabile nel punto $p_0 =(x_0,y_0)$, allora $$\exists\nabla f(p_0) = \left(\ppartx, \pparty\right)$$
+  e $$a = \ppartx , b =\pparty $$
+  \begin{proof}
+    Supponiamo che f sia differenziabile in $p_0$, cio\ace che valga (D). \\
+    Ponendo nella (D), $y = y_0$ otteniamo che:
+    $$\exists \lim_{x\to x_0} \frac{f(x,y_0)- \left[a(x-x_0)+f(x_0,y_0)\right]}{\lvert x -x_0\rvert} = 0$$
+    $$\Rightarrow \exists\ppartx = a$$
+    Procediamo allo stesso modo, ponendo $x=x_0$ nella (D) e otteniamo $\pparty = b$
+  \end{proof}
+\end{definition}

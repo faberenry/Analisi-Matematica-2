@@ -1,0 +1,13 @@
+\subsection{Formula di Taylor del II ordine per una funzione di due variabili}
+\begin{definition}
+  Dato $m \in \Ins{N}$, $p_0 = (x_0,y_0) \in \R^2$ fissato, si chiama \underline{polinomio di ordine m} di $n=2$ variabili,
+  centrato in $p_0$, una funzione $T: \R^2 \to \R$ del tipo
+  $$T(x,y) = \sum_{h=0}^{m} \sum_{i = 0}^n c_{i,h-i} (x-x_0)^i(y-y_0)^{h-i}$$
+  $(x,y)\in \R^2$, dove $c_{i,h-i}$ (i = 0,...,h e h = 0,..., m) sono $\frac{(m+1)(m+2)}{2}$ coeff. ass. \\\\
+  Sia $f \in C^2\left(B(p_0,r)\right)$, $p_0 = (x_0,y_0) \in \R^2$ e $r > 0$ fissato. Allora vale:
+  $$\left(FT_2\right) f(p) = T_2(p) + o\left(\norma{p-p_0}^2\right)$$
+  $\forall p = (x,y) \in B(p_0,r)$, dove 
+  $$T_2(p) := f(p_0) + \tuple{\nabla f(p_0), p-p_0} + \frac{1}{2} \tuple{D^2f(p_0) \cdot (p-p_0), p-p_0}$$
+  se $p \in \R^2$. \\
+  (polinomio di taylor del II ordine di f, centrato in $p_0$) 
+\end{definition}

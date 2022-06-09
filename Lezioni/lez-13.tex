@@ -1,7 +1,65 @@
 \section{Lez - 13, Integrali tripli, [BDPG,14.5]}
 \subsection{Integrale triplo su un parallelepipedo}
+Sia $Q:= [a_1,b_1]\times [a_2,b_2]\times [a_3,b_3]  \subset \R^3$ un parallelepipedo.
+Siano
+\begin{itemize}
+  \item $\D_1 := \{a_1 = x_0 \leq \dots \leq x_i \leq \dots x_{n_1} = b_1\}$ sudd. di $[a_1,b_1]$
+  \item $\D_2 := \{a_2 = y_0 \leq \dots \leq y_j \leq \dots y_{n_2} = b_1\}$ sudd. di $[a_2,b_2]$
+  \item $\D_3 := \{a_3 = z_0 \leq \dots \leq z_k \leq \dots z_{n_3} = b_3\}$ sudd. di $[a_3,b_3]$
+\end{itemize}
+\begin{definition}
+  Si chiama \underline{suddivisione $\D$} del parallelepipedo $Q=[a_1,b_1]\times [a_2,b_2]\times [a_3,b_3]$
+  un insieme del tipo 
+  $$\D = \D_1 \times \D_2 \times \D_3 = \{(x_i,y_j,z_k): i = 0,...,n_1; j = 0,...,n_2; k = 0,..., n_3\}$$
+  se $\D_1, \D_2, \D_3$ sono definiti come sopra. 
+\end{definition}
+Data una suddivisione $\D$ di Q, Q risulta suddiviso in $n_1\times n_2 \times n_3$ parallelepipedi
+$$Q_{ijk} = [x_{i-1}, x_i]\times [y_{j-1},y_j] \times [z_{k-1},z_k]$$
+con $i = 1,..., n_1$, $j = 1,...,n_2$, $k = 1,..., n_3$, il cui volume \ace 
+$$vol(Q_{ijk}) = \abs{Q_{ijk}}_3 := (x_i-x_{i-1})(y_j-y_{j-1})(z_k-z_{k-1})$$
+Sia $f : Q \to \R$ limitata e definiamo
+$$m_{ijk} = inf_{Q_{ijk}} f \in \R \text{ e } M_{ijk} = sup_{Q_{ijk}} f \in \R$$
+con $i = 1,..., n_1$, $j = 1,...,n_2$, $k = 1,..., n_3$
+Definiamo 
+\begin{itemize}
+  \item $S(f,Q) = \sum_{ijk} M_{ijk} \cdot \abs{Q_{ijk}}_3$ (somma superiore di f su Q)
+  \item $s(f,Q) = \sum_{ijk} m_{ijk} \cdot \abs{Q_{ijk}}_3$ (somma inferiore di f su Q)
+\end{itemize}
+\begin{definition}
+  Si dice che f \ace integrabile su Q e si scrive $f \in \Rcal(Q)$ se 
+  $$L = sup_{\D} s(f,\D) = inf_{\D} S(f,\D) \in \R$$
+  Il valore L prende nome di \underline{integrale triplo} di f su Q e si denota con i simboli
+  $$\iiint_{Q} f(x,y,z) \,dx\,dy\,dz, \iiint_{Q} f, \int_{Q} f, \int_{Q} f \,dx\,dy\,dz$$
+\end{definition}
+Continuano a valere i risultati degli interali doppi su rettangoli.
 \subsubsection{Propriet\aca}
+\begin{theorem}[Esistenza dell'integrale]
+  Sia $f \in C^0\left(Q\right)$ allora $f \in \Rcal(Q)$
+\end{theorem}
+\begin{theorem}[Propriet\aca dell'integrale]
+  Siano $f,g \in \Rcal (Q)$
+  \begin{itemize}
+    \item[(i)] \textbf{Linearit\aca}: $\alpha f + \beta g \in \Rcal(Q)$, $\forall \alpha,\beta\in\R$ e 
+              $$\int_{Q}\left(\alpha f + \beta g\right) = \alpha \int_{Q}f + \beta \int_{Q} g$$
+    \item[(ii)] \textbf{Monotonia}: Se $g\leq f$ su Q, allora $$\int_{Q} g \leq \int_{Q}f$$
+    \item[(iii)] \textbf{Valore assoluto}: $\abs{f} \in \Rcal(Q)$ e $$\abs{\int_{Q}f} \leq \int_{Q}\abs{f}$$
+    \item[(iv)] \textbf{Teorema della media interale} 
+                $$inf_{Q} f \leq \frac{1}{\abs{Q}_3}\int_{Q} f \leq sup_{Q}f$$
+                Se $f \in C^0(Q)$, allora esiste $p_0 = (x_0,y_0,z_0)\in Q$ t.c. 
+                $$f(p_0) = \frac{1}{\abs{Q}_3}\int_{Q} f$$
+  \end{itemize}
+\end{theorem}
 \subsection{Integrale triplo su insiemi generali}
+\begin{definition}
+  Sia $A\subseteq \R^3$ limitato, $f: A \to \R$ limitata. Allora f si dice \underline{integrabile}
+  su A, e si scrive $f\in\Rcal(A)$ se la funzione $\ftilde:Q\to\R$ definita come
+  $$ \ftilde(x,y,z) := \left\{\begin{array}{ccl}
+    f(x,y,z) & se & (x,y,z)\in A \\
+    0 & se & (x,y,z)\in Q\setminus A \\
+  \end{array}\right.$$
+  \ace integrabile su Q, dove Q \ace un (qualunque) parallelepipedo contenente A.\\
+  Si pone: $$\int_A f := \int_{Q} \ftilde$$ 
+\end{definition}
 \subsection{Formule di riduzione per integrali tripli}
 \subsubsection{Applicazione della formula di riduzione per strati: volume di un solido di rotazione}
 \subsection{Cambiamento di variabili negli integrali tripli}

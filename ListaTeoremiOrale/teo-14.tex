@@ -1,0 +1,13 @@
+\subsection{Formula di riduzione di integrali doppi su insiemi semplici}
+\begin{theorem}[Forumla di riduzione su domini semplici][BDPG,14.17]
+  Sia $A\subseteq\R^2$ un dominio semplice rispetto ad uno degli assi. Supponiamo che $f\in C^{0}(A)$, allora 
+  $f\in\Rcal(A)$ e valgono le seguenti formule:
+  \begin{enumerate}
+    \item Se $A = \{(x,y)\in\R^2 : x \in [a,b], g_1(x) \leq y \leq g_2(x)\}$ con $g_1, g_2 \in C^0([a,b])$, allora 
+          $$(1) \iint_{A} f = \int_{a}^{b} \left(\int_{g_1(x)}^{g_2(x)} f(x,y) \, dy\right) \, dx$$
+          In particoalre A \ace misurabile e $\abs{A}_2 = \iint_{A} 1 = \int_{a}^{b} \left(g_2(x)-g_1(x)\right) \, dx$
+    \item Se $A = \{(x,y)\in\R^2 : y \in [c,d], h_1(y) \leq x \leq h_2(y)\}$ con $h_1, h_2 \in C^0([c,d])$, allora 
+          $$(2) \iint_{A} f = \int_{c}^{d} \left(\int_{h_1(y)}^{h_2(y)} f(x,y) \, dx\right) \, dy$$
+          In particoalre A \ace misurabile e $\abs{A}_2 = \iint_{A} 1 = \int_{c}^{d} \left(h_2(y)-h_1(y)\right) \, dy$
+  \end{enumerate}
+\end{theorem}

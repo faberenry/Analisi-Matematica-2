@@ -1,0 +1,31 @@
+\subsection{ Definizione di matrice Hessiana per un funzione $\f$
+e sua applicazione nella formula di Taylor del II ordine}
+\begin{definition}
+  Data $f \in C^2(A)$, $A \in \R^2$ aperto, si chiama, \underline{matrice hessiana}
+  di f in un punto $p\in A$, la matrice $2\times 2$
+  $$D^2f(p) = H(f)(p) = \begin{bmatrix}
+    \frac{\p^2 f}{\p x^2}(p) & \frac{\p^2 f}{\p y \p x}(p) \\
+    \frac{\p^2 f}{\p x \p y}(p) & \frac{\p^2 f}{\p y^2}(p) \\
+  \end{bmatrix}_{2\times 2}$$
+\end{definition}
+\hfill \break
+L'applicazione della matrice Hessiana nel PT2o si pu\aco trovare nello 
+sviluppo della dimostrazione, infatti per una funzione
+$F(t) = f(p_0+tv), t \in (-r,r) \text{ e } B(p_0,r)$ andando a calcolare il polinomio di Taylor 
+per $t = 0$, e supponendo di avere $v = \frac{p-p_0}{\norma{p-p_0}}$,
+otteniamo che $F''(t)$:
+$$F''(t) = v_1 \cdot \tuple{\nabla \left(\frac{\p f}{\p x}\right)(p_0+tv), v} + 
+            v_2 \cdot \tuple{\nabla \left(\frac{\p f}{\p y}\right)(p_0+tv), v} = $$
+$$= v_1 \left(\frac{\p^2 f}{\p x^2}(p_0+tv)v_1 + \frac{\p^2 f}{\p y \p x}(p_0+tv)v_2\right) + 
+    v_2 \left( \frac{\p^2 f}{\p x \p y}(p_0+tv)v_1 + \frac{\p^2 f}{\p y^2}(p_0+tv)v_2\right) = $$
+$$ = \frac{\p^2 f}{\p x^2}(p_0+tv)v_1^2 + 2 \frac{\p^2 f}{\p y \p x}(p_0+tv)v_1 v_2 + 
+      \frac{\p^2 f}{\p y^2}(p_0 + tv)v_2^2$$
+Pertanto calcolando $F''(0)$ otteniamo:
+$$F''(0) = \frac{\p^2 f}{\p x^2}(p_0+tv)v_1^2 + 2 \frac{\p^2 f}{\p y \p x}(p_0+tv)v_1 v_2 + 
+  \frac{\p^2 f}{\p y^2}(p_0 + tv)v_2^2$$
+Che pu\aco essere riscritto mediante matrice Hessiana del tipo:
+$$F''(0) = \tuple{D^2f(p_0)v,v}$$
+E sostituendola otteniamo
+$$f(p_0+tv) = F(t) = f(p_0) + \tuple{\nabla f(p_0), v}t + \frac{1}{2} \tuple{D^2 f(p_0)v, v}t^2 + o(t^2) , \text{ per } t \to 0$$
+Scegliendo $t = \norma{p-p_0}$ e otteniamo la forma del polinomio di Taylor di II ordine. 
+Ed \ace questa l'applicazione della matrice Hessiana.

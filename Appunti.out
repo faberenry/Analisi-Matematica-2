@@ -66,3 +66,22 @@
 \BOOKMARK [1][-]{section.3.1}{Lezione 1 - 09/03/2022}{chapter.3}% 66
 \BOOKMARK [1][-]{section.3.2}{Esercitazione 2 - 23/03/2022}{chapter.3}% 67
 \BOOKMARK [1][-]{section.3.3}{Lezione 3 - 06/04/2022}{chapter.3}% 68
+\BOOKMARK [0][-]{chapter.4}{Teoremi Orale}{}% 69
+\BOOKMARK [1][-]{section.4.1}{Continuit\340 , derivabilit\340 , differenziabilit\340 , polinomio di Taylor.}{chapter.4}% 70
+\BOOKMARK [2][-]{subsection.4.1.1}{Teorema del confronto}{section.4.1}% 71
+\BOOKMARK [2][-]{subsection.4.1.2}{Definizione di limite per una funzione f: A R2 R}{section.4.1}% 72
+\BOOKMARK [2][-]{subsection.4.1.3}{Definizione di continuit\340 per una funzione f: A R2 R}{section.4.1}% 73
+\BOOKMARK [2][-]{subsection.4.1.4}{Definizione di derivate parziali e di vettore gradiente per una funzione f: A R2 R A aperto}{section.4.1}% 74
+\BOOKMARK [2][-]{subsection.4.1.5}{Definizione di differenziabilit\340 in un punto per una funzione f: A R2 R e relazione con l'esistenza del gradiente in quel punto}{section.4.1}% 75
+\BOOKMARK [2][-]{subsection.4.1.6}{Regola della catena nel caso generale di due funzioni, f:Rn Rm e g:RmRk}{section.4.1}% 76
+\BOOKMARK [2][-]{subsection.4.1.7}{Formula di Taylor del II ordine per una funzione di due variabili}{section.4.1}% 77
+\BOOKMARK [2][-]{subsection.4.1.8}{ Definizione di matrice Hessiana per un funzione f: A R2 R e sua applicazione nella formula di Taylor del II ordine}{section.4.1}% 78
+\BOOKMARK [1][-]{section.4.2}{Massimi e minimi}{chapter.4}% 79
+\BOOKMARK [2][-]{subsection.4.2.1}{Definizione di punto di massimo/minimo relativo, massimo/minimo assoluto e punto di sella per una funzione f: A R2 R}{section.4.2}% 80
+\BOOKMARK [2][-]{subsection.4.2.2}{Teorema di Fermat sui punti stazionari di una funzione}{section.4.2}% 81
+\BOOKMARK [2][-]{subsection.4.2.3}{Teorema di Weierstrass sull’esistenza del massimo e minimo assoluto di una funzione}{section.4.2}% 82
+\BOOKMARK [2][-]{subsection.4.2.4}{Metodo dei moltiplicatori di Lagrange per la ricerca di massimi e minimi vincolati per funzioni di due variabili}{section.4.2}% 83
+\BOOKMARK [1][-]{section.4.3}{Integrali per funzioni in pi\371 variabili}{chapter.4}% 84
+\BOOKMARK [2][-]{subsection.4.3.1}{Definizione di insieme insieme semplice \(o normale\) in R2 rispetto agli assi cartesiani}{section.4.3}% 85
+\BOOKMARK [2][-]{subsection.4.3.2}{Formula di riduzione di integrali doppi su insiemi semplici}{section.4.3}% 86
+\BOOKMARK [2][-]{subsection.4.3.3}{Formula di cambiamento di variabili per integrali doppi e tripli}{section.4.3}% 87

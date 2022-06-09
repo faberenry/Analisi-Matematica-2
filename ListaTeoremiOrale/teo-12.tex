@@ -1,0 +1,16 @@
+\subsection{Metodo dei moltiplicatori di Lagrange per la ricerca di massimi e
+minimi vincolati per funzioni di due variabili}
+\begin{theorem}[Teorema dei moltiplicatori di Lagrange, TML]
+  Sia $f \in C^1(\R^2)$ e $\V = \{(x,y)\in \R^2 : g(x,y) = 0\}$ dove $g \in C^1(\R^2)$. Supponiamo che:
+  \begin{enumerate}
+    \item[(i)] $\exists \min_{\V} f = f(p_0) (\text{o } \exists \max_{\V} f = f(p_0))$ con $p_0 = (x_0,y_0) \in \V$
+    \item[(ii)] $\exists \nabla g(p_0) \not = (0,0)$
+  \end{enumerate}
+  Allora esiste $\lambda_0 \in \R$ (detto \underline{moltiplicatore}) t.c. $(x_0,y_0,\lambda_0)\in \R^3$ \ace un 
+  punto stazionario della funzione. \\
+  Equivalentemente: $$\exists\lambda_0 \in \R \text{ t.c. } \left\{\begin{array}{l}
+    g(p_0) = 0 \\
+    \\
+    \nabla f(p_0) + \lambda_0 \nabla g(p_0) = (0,0) \\
+  \end{array}\right. (*)  \label{tml_v2}$$
+\end{theorem}
