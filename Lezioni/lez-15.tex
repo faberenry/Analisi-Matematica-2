@@ -1,0 +1,163 @@
+\section{Lez - 15, Lunghezza di una curva}
+Vogliamo ora definire la nozione di lunghezza di una curva.\\
+Sia $\g:[a,b]\to\R^n$ una curva e sia $\D := {t_0 = a < t_1 < ... < t_N = b}$ 
+una suddivisione di $[a,b]$: essa induce una suddivisione del sostegno di 
+$\g$ in $N+1$ parti definite da 
+$\g(t_0),\g(t_1)\dots \g(t_N)$. \\
+Consideriamo i segmenti
+$$[\g(t_{i-1}),\g(t_i)] := \{s\g(t_i)+(1-t)\g(t_{i-1}) : 0 \leq s \leq 1\}$$
+$i = 1,...,N$. La lunghezza della spezzata definita dall'unione 
+$\bigcup_{i=1}^{N} [\g(t_{i-1}),\g(t_i)]$ \ace data da 
+$$L(\g,\D) := \sum_{i=1}^{N} \norma{\g(t_i)-\g(t_{i-1})} \in [0,+\infty)$$
+Denotiamo 
+$$L(\g) := sup_{\D} L(\g,\D) \in [0,+\infty] =_{def} [0,+\infty) \cup \{+\infty\}$$
+\begin{definition}
+  Sia $\g:[a,b]\to\R^n$ una curva. Se $L(\g) < +\infty$, allora la curva si dice
+  \underline{rettificabile} e $L(\g)$ \ace detta \underline{lunghezza} di $\g$
+\end{definition}
+\begin{osservazione}
+  Si pu\aco provare che esistono curve per cui $L(\g) = +\infty$, vedi esempio [BDPG,12.5].
+\end{osservazione}
+\begin{theorem}[Lunghezza di una curva][BDPG,12.10]
+  \label{lunghezzacurva}
+  Sia $\g:[a,b]\to\R^n$ una curva di classe $C^1$. Allora $\g$ \ace rettificabile e 
+  $$L(\g)= \int_{a}^{b} \norma{\g'(t)} \,dt = \int_{a}^{b} \sqrt{\g_1'(t)^2 + ... + \g_n'(t)^2}\,dt$$
+\end{theorem}
+\begin{corollary}[Lunghezza curve piane cartesiane]
+  Sia $\g:[a,b]\to\R^2$ una curva piana cartesiana di classe $C^1$, cio\ace
+  $$\g(t)=\left\{\begin{array}{ll}
+    (t,f(t)) & t \in [a,b] \\
+    \text{oppure} \\
+    (f(t),t) & t \in [a,b]
+  \end{array}\right.$$
+  con $f\in C^1([a,b])$. Allora $\g$ \ace rettificabile e 
+  $$L(\g) = \int_{a}^{b} \sqrt{1+f'(t)^2} \,dt$$
+  \begin{example}
+    Sia $f(t)=t^2$, allora $L(\g) = \int_{0}^{1} \sqrt{1+4t^2} \,dt$
+  \end{example}
+\end{corollary}
+\begin{theorem}[Indipendenza della lunghezza dalla parametrizzazione]
+  Siano $\g:[a,b] \to \R^n$ e $\gtilde : [\alpha,\beta]\to \R^n$ due curve di classe $C^1$
+  equivalenti. Allora $$L(\g) = L(\gtilde)$$
+  \begin{proof}
+    Sia $\varphi:[\alpha,\beta]\to[a,b]$ il cambiamento di parametrizzazione, cio\ace 
+    $$\gtilde (\tau) = \g(\varphi(\tau)) \, \forall\tau\in[\alpha,\beta]$$
+    $\varphi\in C^1$ e bigettiva. \\ 
+    Supponiamo, per esempio, che $\varphi'(\tau)>0$ $\forall\tau\in[\alpha,\beta]$. Allora per 
+    il Teorema \ref{lunghezzacurva} e (RDC) 
+    $$L(\gtilde) =_{\ref{lunghezzacurva}} \int_{\alpha}^{\beta} \norma{\gtilde'(\tau)}\,d\tau =_{(RDC)}
+    \int_{\alpha}^{\beta} \norma{\g'(\varphi(\tau))\cdot \varphi'(\tau)} \,d\tau = $$
+    $$= \int_{\alpha}^{\beta} \norma{\g'(\varphi(\tau))} \varphi'(\tau) \,d\tau = $$
+    Poniamo $t = \varphi(\tau)$ e otteniamo
+    $$= \int_{\varphi(\alpha)}^{\varphi(\beta)} \norma{\g'(t)}\,dt = \int_{a}^{b} \norma{\g'(t)}\,dt = L(\g)$$
+  \end{proof}
+\end{theorem}
+\begin{osservazione}
+  \ac{E} facile verificare che una curva $C^1$ a tratti \ace rettificabile e, se 
+  $\g = \bigcup_{i=1}^{N} \g_i$, con $\g_i: [t_{i-1},t_i] \to \R^n$ di classe 
+  $C^1$, allora 
+  $$L(\g) = \sum_{i=1}^{N} \int_{t_{i-1}}^{t_i} \norma{\g_i'(t)} \,dt$$
+\end{osservazione}
+\section{Integrali curvilinei di I specie}
+\textbf{Motivazione fisica:} Sia $\g:[a,b]\to\R^3$ una curva di classe $C^1$ e supponimao che 
+il sostegno di $\g$, $\Gamma:= \g([a,b])\subseteq\R^3$ modelizzi 
+un filo rigiido dello spazio di densit\aca lineare f, ovvero f ha la dimensione di una 
+massa x unit\aca di lunghezza.\\
+Se f fosse costante, M:= massa totale filo, allora
+$$M = f\cdot L(\g) = \int f\norma{\g'(t)}\,dt := \int_{\g} f \,ds$$
+$ds \cong \norma{\g'(t)} \,dt$ elemento infinetesimale di lunghezza.\\
+In generale, se la densit\aca f non fosse costante, $f:\Gamma \to \R$ e dunque 
+$$M =\int_{a}^{b} f(\gamma(t)) \norma{\gamma'(t)}\,dt$$
+\begin{definition}
+  Sia $\g : [a,b]\to\R^n$ una curva di classe $C^1$ e sia $f:\Gamma \to \R$
+  una funzione continua. Si definisce
+  $$\int_{\gamma} f \,ds = \int_{a}^{b} f(\gamma(t))\norma{\g'(t)} \,dt$$
+  e si chiama \underline{Integrale curvilineo} di I specie di f lungo $\g$.
+\end{definition}
+\begin{notazione}
+  Se $\g$ fosse una crva chiusa e semplice su usa anche il simbolo $\oint_{\g}f\,ds$
+\end{notazione}
+\begin{osservazione}
+  \begin{itemize}
+    \item L'integrale curvilineo di I specie \ace lineare.
+    \item L'integrale curvilineo di I psecie si estende a curve $C^1$ a tratti. Infatti
+          $\g:[a,b]\to\R^n$ una curva $C^1$ a tratti e
+          $\g = \bigcup_{i=1}^{N} \g|_{[t_{i-1},t_i]} : [t_{i-1},t_i] \to\R^n$, $i = 1,...,N$ di classe 
+          $C^1$; sia $f:\Gamma \to \R$ continua. Allora possiamo definire
+          $$\int_{\g}f\,ds:=\sum_{i=1}^{N}\int_{\g|_{t_{i-1},t_i}} f \,ds$$
+  \end{itemize}
+\end{osservazione}
+\begin{proposition}
+  Siano $\g:[a,b]\to\R^n$, $\gtilde:[\alpha,\beta]\to\R^n$ curve di classe $C^1$
+  equivalenti e sia $f:\Gamma = \g([a,b]) = \gtilde([\alpha,\beta]) \to \R$ continua. 
+  Allora $$\int_{\g} f\,ds = \int_{\gtilde} f \,ds$$
+  \begin{exercise}
+    Dimostrazione.
+  \end{exercise}
+\end{proposition}
+\section{Integrali curvilinei di II specie: campi vettoriali e forme 
+differenziali}
+\subsection{Campi vettoriali e forme differenziali}
+\begin{definition}
+  Si chiama \underline{campo vettoriale} su un insieme $E\subseteq \R^n$ una mappa 
+  $F:E\to \R^n$, $F(x) = (F_1(x),...,F_n(x))$ $x \in E$, 
+  $F_i : E \to \R$
+\end{definition}
+\begin{osservazione}
+  In fisica/ingegneria un campo vettoriale pu\aco rappresentare una forza applicata in 
+  un punto $x\in E$, dove $E$ \ace una regione del piano o dello spazio,
+  $E\subseteq \R^2$ o $E\subseteq \R^3$
+\end{osservazione}
+\begin{definition}
+  Dato un campo vettoriale $F:E \to \R^n$, si chiama \underline{forma differenziale} (lineare) su E 
+  l'espressione formale
+  $$\omega = F_1\,dx_1+...+F_n\,dx_n = \sum_{i=1}^{n}F_i\,dx_i = \tuple{F,dx}$$
+\end{definition}
+\begin{osservazione}
+  Dalla definizione, si evince che ad ogni 
+  $$F:E\to\R^n \rightarrow \omega:= \tuple{F,dx}$$ 
+  Viceversa, data 
+  $$\omega = \tuple{F,dx} \text{ forma differenziale su E} \rightarrow F:E\subseteq\R^n\to\R^n$$
+  Pertanto si pu\aco stabilire una \underline{corrispondenza biunivoca} tra:
+  $$\text{campo vettoriale} \iff \text{forma differenziale}$$
+\end{osservazione}
+\begin{definition}
+  Una forma differenziale $\omega = \tuple{F,dx}$ su un insieme $E \subseteq\R^n$ si dice 
+  di classe $C^0$(risp $C^1$) se $F_i \in C^0(E)$ (risp $F_i \in C^1(E)$) $\forall i = 1,...,n$
+\end{definition}
+\textbf{Motivazione fisica:}[Lavoro compiuto da una forza lungo un percorso] \\
+Sia $n=3$, $F:\R^3\to\R^3$ una forza assegnata, 
+$$F(x,y,z) := \left(F_1(x,y,z),F_2(x,y,z),F_3(x,y,z)\right)$$
+se $(x,y,z)\in\R^3$ con $F_i : \R^3\to\R$ ($i=1,2,3$) funzione continua. \\
+Sia $\g:[a,b]\to \R^3$, $\g(t) = \left(\g_1(t), \g_2(t),\g_3(t)\right) = \left(x(t),y(t),z(t)\right)$
+una curva di classe $C^1$.\\
+La forma diff. $\omega$ rappresenta il \underline{lavoro} compiuto dalla forza 
+$F$ su un punto materiale che si muove di uno spostamento infinitesimo 
+$$(dx,dy,dz) =(x'(t)\,dt,y'(t)\,dt,z'(t)\,dt) $$ 
+lungo la curva $\g$. \\
+Pi\acu precisamente, se il punto si muovesse lungo la curva $\g$ e all'istante $t$ si trovasse
+nella posizione $\g(t)$, allora il lavoro compiuto dalla forza nell'intervallo infinitesimo ddi tempo 
+$dt$ sarebbe dato da $\tuple{F(\g(t)),\g'(t)}\,dt$
+\begin{osservazione}
+  Ricordare che $\tuple{F(\g(t)),\g'(t)} = \norma{F(\g(t))}\norma{\g'(t)}\cos(\vartheta)$
+  dove $\vartheta = $ angolo formato dai vettori $F(\g(t))$ e $\g'(t)$
+\end{osservazione}
+La motivazione fisica suggerisce la seguente definizione:
+\begin{definition}
+  Sia $\g:[a,b]\to E\subseteq\R^n$ una curva di classe $C^1$ e sia
+  $\omega$ una forma differenziale di classe $C^0$ su E. \\
+  Si definisce \underline{integrale curvilineo} di II specie di $\omega$
+  (o del campo F) lungo $\g$ il valore 
+  $$\int_{\g} \omega := \int_{a}^{b} \tuple{f(\g(t)), \g'(t)}\,dt = 
+    \int_{a}^{b} \sum_{i=1}^{n} F_i(\g(t))\g_i'(t) \,dt$$
+  Se $\g$ fosse chiusa il precedente integrale si scrive anche $\oint_{\g} \omega$
+\end{definition}
+\begin{osservazione}
+  \begin{enumerate}
+    \item L'integrale curvilineo di II specie \ace lineare
+    \item L'integrale curvilineo di II specie si estende a curve $C^1$ a tratti. Infatti
+          data $\g = \bigcup_{i=1}^{N}\g_i :[a,b]\to E\subseteq\R^n$ una curva $C^1$ a tratti
+          e $\omega$ una forma differenziale continua su E, allora si definisce
+          $$\int_{\g} \omega := \sum_{i=1}^{N} \int_{\g_i}\omega$$
+  \end{enumerate}
+\end{osservazione}
