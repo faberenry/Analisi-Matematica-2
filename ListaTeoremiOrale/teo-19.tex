@@ -1,0 +1,16 @@
+\subsection{Formula di integrazione per fili e per strati}
+\begin{theorem}[Formule di riduzione su parallelepipedi][BDPG,14.26]
+  Siano $Q = [a_1,b_1]\times [a_2,b_2]\times [a_3,b_3]$, $f \in C^0(Q)$
+  \begin{enumerate}
+    \item[(i)] La funzione $$[a_1,b_1]\times [a_2,b_2] \ni (x,y) \to \int_{a_3}^{b_3} f(x,y,z) \,dz$$
+              \ace integrabile su $[a_1,b_1]\times [a_2,b_2]$ e 
+              $$(1) \iiint_{Q} f = \iint_{[a_1,b_1]\times [a_2,b_2]} \left(\int_{a_3}^{b_3} f(x,y,z) \,dz\right)$$
+    \item[(ii)] La funzione $$[a_1,b_1] \ni x \to \iint_{[a_2,b_2]\times [a_3,b_3]} f(x,y,z) \,dy\,dz$$
+                \ace integrabile su $[a_1,b_1]$ e 
+                $$(2) \iiint_{Q} f = \int_{a_1}^{b_1} \left(\iint_{[a_2,b_2]\times[a_3,b_3]} f(x,y,z) \,dz\right)$$
+  \end{enumerate}
+  La \begin{itemize}
+    \item[(1)] si chiama formula di riduzione per \underline{fili}
+    \item[(2)] si chiama formula di riduzione per \underline{strati}
+  \end{itemize}
+\end{theorem}

@@ -60,6 +60,134 @@ Continuano a valere i risultati degli interali doppi su rettangoli.
   \ace integrabile su Q, dove Q \ace un (qualunque) parallelepipedo contenente A.\\
   Si pone: $$\int_A f := \int_{Q} \ftilde$$ 
 \end{definition}
+\begin{definition}
+  Un insieme $A \subseteq \R^3$ limitato si dice \underline{misurabile} (secondo Peano-Jordan) se la funzione
+  $\ftilde : Q \to \R$, definita come 
+  $$ \ftilde(x,y,z) := \left\{\begin{array}{ccl}
+    1 & se & (x,y,z)\in A \\
+    0 & se & (x,y,z)\in Q\setminus A \\
+  \end{array}\right.$$
+  \ace integrabile su Q, per un opportuno parallelepipedo $Q \supseteq A$
+  $$\abs{A}_3 := \iiint_{A} 1 \,dx\,dy\,dz$$
+  (misura 3-dimensionale o volume di A)
+\end{definition}
+Continuano a valere 
+\begin{theorem}[Caraterizzazione degli insiemi misurabili]
+  Sia $A \subseteq \R^3$ limitato. Allora 
+  $$\text{ A \ace misurabile} \iff \p A \text{\ace misurabile e } \abs{\p A}_3 = 0$$
+\end{theorem}
+\begin{theorem}[BDPG, 14.11]
+  Sia $E\subseteq \R^3$ limitato e misurabile, sia $g \in \Rcal(E)$. Allora 
+  $G_{g} := \{(x,y,g(x,y)) : (x,y)\in E\} \subseteq \R^3$ \ace misurabile e $\abs{G_{g}}_3 = 0$
+\end{theorem}
+\begin{theorem}[Esistenza integrale tripli su insiemi misurabili]
+  Sia $f : A \subseteq \R^3 \to \R$. Supponiamo che:
+  \begin{itemize}
+    \item A sia limitato e misurabile
+    \item f sia limitato e $f \in C^0 (A)$
+  \end{itemize}
+  Allora $f\in \Rcal(A)$
+\end{theorem}
 \subsection{Formule di riduzione per integrali tripli}
+\begin{theorem}[Formule di riduzione su parallelepipedi][BDPG,14.26]
+  Siano $Q = [a_1,b_1]\times [a_2,b_2]\times [a_3,b_3]$, $f \in C^0(Q)$
+  \begin{enumerate}
+    \item[(i)] La funzione $$[a_1,b_1]\times [a_2,b_2] \ni (x,y) \to \int_{a_3}^{b_3} f(x,y,z) \,dz$$
+              \ace integrabile su $[a_1,b_1]\times [a_2,b_2]$ e 
+              $$(1) \iiint_{Q} f = \iint_{[a_1,b_1]\times [a_2,b_2]} \left(\int_{a_3}^{b_3} f(x,y,z) \,dz\right)$$
+    \item[(ii)] La funzione $$[a_1,b_1] \ni x \to \iint_{[a_2,b_2]\times [a_3,b_3]} f(x,y,z) \,dy\,dz$$
+                \ace integrabile su $[a_1,b_1]$ e 
+                $$(2) \iiint_{Q} f = \int_{a_1}^{b_1} \left(\iint_{[a_2,b_2]\times[a_3,b_3]} f(x,y,z) \,dz\right)$$
+  \end{enumerate}
+  La \begin{itemize}
+    \item[(1)] si chiama formula di riduzione per \underline{fili}
+    \item[(2)] si chiama formula di riduzione per \underline{strati}
+  \end{itemize}
+  \begin{itemize}
+    \item L'insieme $\{(x,y,z)\in\R^3:(y,z)\in[a_2,b_2]\times[a_3,b_3]\}$ \ace uno strato.
+    \item L'insieme $\{(x,y,z)\in\R^3: z\in[a_3,b_3]\}$ \ace un filo.
+  \end{itemize}
+\end{theorem}
+Un'immediata conseguenza della formula di riduzione sui parallelepipedi e di quella per i rettangoli \ref{ridRettangoli}
+segue il seguente risultato:
+\begin{corollary}
+  Sia $f \in C^0(Q)$ allora 
+  $$\iiint_{Q} f = \int_{a_1}^{b_1} \left( \int_{a_2}^{b_2} \left(\int_{a_3}^{b_3} f(x,y,z) \,dz\right)\,dy\right)\,dx$$
+\end{corollary}
+\begin{definition}
+  Un insieme $A \subseteq \R^3$ si chiama \underline{semplice} (o \underline{normale}) rispetto all'asse z se 
+  $$(*) \, A=\{(x,y,z)\in\R^3: (x,y)\in E, g_1(x,y)\leq z \leq g_2(x,y)\}$$
+  dove $g_1,g_2 : E \subseteq \R^2 \to \R$, $g_1,g_2 \in C^0(E)$
+\end{definition}
+\begin{osservazione}
+  Definizioni analoghe si possono dare per insiemi semplici rispetto agli assi x ed y.
+\end{osservazione}
+\begin{theorem}[Formule di riduzione per integrali tripli rispetto a domini semplici][BDPG,14.28]
+  Sia $A\subseteq \R^3$ un insieme semplice rispetto all'asse z di tipo $(*)$ e sia 
+  $f\in C^0(A)$. Allora 
+  $$(3)\, \iiint_{A}f = \iint_{E} \left(\int_{g_1(x,y)}^{g_2(x,y)} f(x,y,z) \,dz\right) \,dx\,dy$$
+\end{theorem}
+\begin{osservazione}
+  La formula (3) \ace una formula di riduzione per fili che generalizza la formula (1) di quella sui parallelepipedi.\\
+  La formula (2) di riduzione per strati su parallelepipedi pu\aco essere estesa ad insiemi pi\acu generali.
+  Sia $A\subseteq \R^3$ limitato e misurabile e supponiamo che 
+  $$(**) \, A = A \cap \left(\R\times[a,b]\times\R\right)$$
+  e sia tale che, lo strato di A 
+  $$(***) \, A_y = \{(x,z)\in\R^2:(x,y,z)\in A\} \text{ sia misurabile (come insieme del piano x,z)}$$
+\end{osservazione}
+\begin{theorem}[Formula di riduzione per strati][BDPG,14.28]
+  Sia $A\subseteq \R^3$ verificante $(**)$ e $(***)$ e sia $f \in C^0(A)$ limitata. Allora
+  $$(4) \, \iiint_{A}f = \int_{a}^{b} \left(\iint_{A_y} f(x,y,z) \,dx \,dz\right)\,dy$$
+\end{theorem}
 \subsubsection{Applicazione della formula di riduzione per strati: volume di un solido di rotazione}
+Sia $A = \{(x,y,z)\in\R^3: z \in [c,d], x^2+y^2\leq f(z)^2\}$ dovve $f\in C^0([c,d])$, $f\geq 0$.\\
+A pu\aco essere visto come il \underline{solido di rotazione} ottenuto ruotando l'insieme
+$$F:=\{(y,z):z\in[c,d], 0\leq y \leq f(z)\}$$
+attorno all'asse z.\\
+Fissato $z \in [c,d]$ lo strato di A
+$$A_z = \{(x,y)\in \R^2: x^2+y^2 \leq f(z)^2\}$$
+rappresenta un cerchio (nel piano x,y) con centro (0,0) e raggio $f(z)$. \\
+Quindi 
+$$area(A_z) = \pi f(z)^2 \, \forall z \in [c,d]$$
+Pertanto applicando la (4), otteniamo 
+$$\abs{A}_3 = \iiint_A 1 \,dx\,dy\,dz = \int_{c}^{d} \left(\iint_{A_z} 1 \,dx\,dy\,dz\right) = $$
+$$= \int_{c}^{d} area(A_z) \,dz = \pi \int_{c}^{d} f(z)^2 \,dz$$
+(formula del volume di un solido di rotazione)
 \subsection{Cambiamento di variabili negli integrali tripli}
+Siano $D^*, D \subseteq \R^3$ aperti limitati e misurabili, e sia 
+$\Psi : D^* \to \D$, $\Psi = (\Psi_1, \Psi_2, \Psi_3) = (x,y,z)$, 
+$\Psi_i = \Psi_i(u,v,w):D^*\to\R$ (i=1,2,3).
+\begin{definition}
+  La mappa $\Psi$ si dice \underline{cambiamento di variabile} (in $\R^3$) Se
+  \begin{itemize}
+    \item[(i)] $\Psi$ \ace bigettiva
+    \item[(ii)] $\Psi_i \in C^1(D^*)$, 
+                $$\Psi_i, \frac{\p \Psi_i}{\p u}, \frac{\p \Psi_i}{\p v}, \frac{\p \Psi_i}{\p w} : D^* \to \R$$
+                limitate (i = 1,2,3) 
+    \item[(iii)] $\det D\Psi(u,v,w) \neq 0$, dove 
+                $$D\Psi(u,v,w) := \begin{bmatrix}
+                  \frac{\p \Psi_1}{\p u} & \frac{\p \Psi_1}{\p v} & \frac{\p \Psi_1}{\p w} \\
+                  \\
+                  \frac{\p \Psi_2}{\p u} & \frac{\p \Psi_2}{\p v} & \frac{\p \Psi_2}{\p w} \\
+                  \\
+                  \frac{\p \Psi_3}{\p u} & \frac{\p \Psi_3}{\p v} & \frac{\p \Psi_3}{\p w} \\
+                \end{bmatrix}$$
+                se $(u,v,w)\in\D^*$
+  \end{itemize}
+\end{definition}
+\begin{theorem}[Cambiamento di variabili negli integrali tripli]
+  Siano $D^*, D \subset \R^3$ aperti limitati e misurabili, sia 
+  $\Psi : D^* \to D$ un cambiamento di variabili e sia $f \in C^0(D)$ e limitata.
+  Allora 
+  $$\iiint_{D} f(x,y,z) \,dx\,dy\,dz = \iiint_{D^*} f(\Psi(u,v,w)) \abs{\det D\Psi(u,v,w)} \,du\,dv\,dw$$
+\end{theorem}
+\begin{definition}
+  Coordinate sferiche:
+  $$\Psi \equiv \left\{\begin{array}{l}
+    x = r \sin\varphi\cos\vartheta \\
+    y = r \sin\varphi\sin\vartheta \\
+    z = r \cos\varphi \\
+  \end{array}\right.$$
+  $0 \leq \vartheta\leq 2\pi, r\geq 0, 0 \leq \varphi \leq \pi$, 
+  $\abs{\det D\Psi(r,\vartheta,\varphi)} = r^2 \sin\varphi$
+\end{definition}

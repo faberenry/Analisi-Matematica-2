@@ -1,7 +1,49 @@
 \subsection{Formula di cambiamento di variabili per integrali doppi e tripli}
+\subsubsection{Integrali doppi}
+\begin{definition}
+  \label{cambiamentovariabili}
+  La mappa $\psi$ si dice un cambiamento di variabili se
+  \begin{itemize}
+    \item $\psi$ \ace bigettiva
+    \item $\psi_i \in C^1(D^*)$, $\psi_i, \frac{\p \psi_i}{\p u}, \frac{\p \psi_i}{\p v} : D^* \to \R$ limitate (i=1,2)
+    \item $\det D\psi(u,v)\not = 0$ , $\forall (u,v)\in D^*$, dove
+          $$D \psi(u,v) := \begin{bmatrix}
+            \frac{\p \psi_1}{\p u} (u,v) & \frac{\p \psi_1}{\p v} (u,v)\\
+            \\
+            \frac{\p \psi_2}{\p u} (u,v) & \frac{\p \psi_2}{\p v} (u,v) \\
+          \end{bmatrix} \text{ (Matrice Jacobiana)}$$
+  \end{itemize}
+  Denotiamo $dA^* = du\,dv$ e $dA = dx\,dy$
+\end{definition}
+Si pu\aco provare che $dA = \abs[det D\psi(u,v)] dA^*$.\\
 \begin{theorem}[Cambiamento di variabili negli integrali doppi][BDPG,14.19]
   Siano $D, D^* \subseteq \R^2$ aperti limitati e misurabili, sia $\psi : D^* \to D$
   un cambiamento di variabili e sia $f:D \to \R$ continua e limitata. \\
   Allora vale la formula
   $$(FCV)_2 \, \iint_{D} f(x,y) \,dx\,dy = \iint_{D^*} f(\psi(u,v))\abs{\det D\psi(u,v)} \,du\,dv$$ 
+\end{theorem}
+\subsubsection{Integrali tripli}
+\begin{definition}
+  La mappa $\Psi$ si dice \underline{cambiamento di variabile} (in $\R^3$) Se
+  \begin{itemize}
+    \item[(i)] $\Psi$ \ace bigettiva
+    \item[(ii)] $\Psi_i \in C^1(D^*)$, 
+                $$\Psi_i, \frac{\p \Psi_i}{\p u}, \frac{\p \Psi_i}{\p v}, \frac{\p \Psi_i}{\p w} : D^* \to \R$$
+                limitate (i = 1,2,3) 
+    \item[(iii)] $\det D\Psi(u,v,w) \neq 0$, dove 
+                $$D\Psi(u,v,w) := \begin{bmatrix}
+                  \frac{\p \Psi_1}{\p u} & \frac{\p \Psi_1}{\p v} & \frac{\p \Psi_1}{\p w} \\
+                  \\
+                  \frac{\p \Psi_2}{\p u} & \frac{\p \Psi_2}{\p v} & \frac{\p \Psi_2}{\p w} \\
+                  \\
+                  \frac{\p \Psi_3}{\p u} & \frac{\p \Psi_3}{\p v} & \frac{\p \Psi_3}{\p w} \\
+                \end{bmatrix}$$
+                se $(u,v,w)\in\D^*$
+  \end{itemize}
+\end{definition}
+\begin{theorem}[Cambiamento di variabili negli integrali tripli]
+  Siano $D^*, D \subset \R^3$ aperti limitati e misurabili, sia 
+  $\Psi : D^* \to D$ un cambiamento di variabili e sia $f \in C^0(D)$ e limitata.
+  Allora 
+  $$\iiint_{D} f(x,y,z) \,dx\,dy\,dz = \iiint_{D^*} f(\Psi(u,v,w)) \abs{\det D\Psi(u,v,w)} \,du\,dv\,dw$$
 \end{theorem}

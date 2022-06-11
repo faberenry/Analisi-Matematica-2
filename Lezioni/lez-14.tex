@@ -1,0 +1,206 @@
+\chapter{Curve ed integrali curvilinei, [BDPG, 12]}
+\section{Lez - 14, Curve in $\R^n$}
+\begin{definition}
+  \begin{itemize}
+    \item[(i)] Si chiama \underline{curva} una mappa $\gamma:I \to \R^n$ continua, 
+                $\gamma(t) = (\gamma_1(t),...,\gamma_n(t))$
+                con $I$ intervallo di $\R$
+    \item[(ii)] Se $I = [a,b]$, i punti $\gamma(a)$, $\gamma(b)$ di $\R^n$ si chiamano
+                \underline{estremi} della curva
+    \item[(iii)] Si chiama \underline{sostegno} (o supporto) della curva $\gamma$, l'insieme 
+                  $\gamma(I) \subseteq \R^n$. Si chiama \underline{equazione parametrica} di $\gamma$ 
+                  l'equazione $x = (x_1,...,x_n) = \gamma(t) \, t \in I$
+    \item[(iv)] La curva $\gamma$ si dice \underline{chiusa} se $I = [a,b]$ e $\gamma(a) = \gamma(b)$
+    \item[(v)] La curva $\gamma:I\to\R^n$ si dice \underline{semplice} se $\gamma$ \ace iniettiva, o 
+                se $\gamma$ \ace chiusa e $I = [a,b]$, allora $\gamma :[a,b) \to \R^n$ \ace iniettiva.
+  \end{itemize}
+\end{definition}
+I casi pi\acu significativi di curve, interessanti per le applicazioni, sono in $n=2,3$.
+\begin{example}
+  \begin{itemize}
+    \item[(i)] Sia $f\in C^0([a,b])$ e consideriamo le curve $\gamma, \gamma^* : [a,b]\to \R^2$,
+              $\gamma(t) = (t,f(t))$ e $\gamma^*(t) = (f(t),t)$, $t \in [a,b]$.\\
+              $\gamma, \gamma^*$ sono dette \underline{curve piane cartesiane}.
+              \begin{itemize}
+                \item Gli estremi della curva $\gamma$ sono i punti: $(a,f(a)), (b,f(b))$
+                \item Gli estremi della curva $\gamma^*$ sono i punti: $(f(a),a), (f(b),b)$
+              \end{itemize}
+              Il supporto della curva $\gamma,\gamma^*$ coincide rispettivamente, con il grafico della funzione
+              f, $G_f$, vista, nel primo caso, come funzione di y rspetto a x, cio\ace 
+              $$G_f := \{(t,f(t)):t\in[a,b]\}$$
+              e, nel secondo caso, come funzione di x rispetto a y, cio\ace $$G_f :=\{(f(t),t):t\in[a,b]\}$$
+              Osserviamo che le due curve sono semplici e non chiuse. \\
+              Le eq. parametriche sono, rispettivamente, 
+              \begin{itemize}
+                \item $(x,y) = \gamma(t) = (t,f(t)) \, t \in [a,b] \iff \left\{\begin{array}{l}
+                  x = t \\
+                  y = f(t) \\
+                \end{array}\right.$, $t \in [a,b]$ e 
+                \item $(x,y) = \gamma(t) = (f(t),t) \, t \in [a,b] \iff \left\{\begin{array}{l}
+                  x = f(t)\\
+                  y = t \\
+                \end{array}\right.$, $t \in [a,b]$
+              \end{itemize}
+    \item[(ii)] Sia $\gamma:[0,2\pi] \to \R^2$ la curva definita da $\gamma(t) = (\cos(t),\sin(t))$, $t \in [0,2\pi]$
+                \ac{E} faccile verificare che $\gamma$ \ace una curva piana chiusa $(\gamma(0) = (1,0) = \gamma(2\pi))$ e 
+                semplice. \\
+                Il sostegno di $\gamma$,$\gamma([0,2\pi])$ \ace dato da 
+                $$C = \{(x,y)\in\R^2 : x^2+y^2 = 1\}$$
+                L'equazione parametrica di $\gamma$ \ace data da 
+                $$(x,y) = \gamma(t) = (\cos(t), \sin(t)), t \in [0,2\pi] \iff \left\{\begin{array}{l}
+                  x = \cos(t) \\
+                  y = \sin(t) \\
+                \end{array}\right.t \in [0,2\pi]$$
+    \item[(iii)] Sia $\gamma : [0,4\pi] \to \R^2$ la curva definita come nell'esempio (ii), cambaindo il dominio.\\
+                  La curva \ace ancora una curva piana chiusa $(\gamma(0) = (1,0) = \gamma(4\pi))$ ma non \ace semplice.
+                  Infatti la funzione $\gamma [0,4\pi) \to \R^2$ non \ace iniettiva.\\
+                  La curva ha come sostego $C$ dell'esempio (ii). Da un punto di vista intuitivo, il sostegno di $\gamma$
+                  \ace percorso due volte.
+                  \begin{NB}
+                    Due curve possono avere lo stesso sostegno ma essere differenti, come gli esempi (ii) e (iii)
+                  \end{NB}
+    \item[(iv)] Sia $\gamma:\R \to \R^3$ la curva definita da $\gamma(t) = (\cos(t),\sin(t),t)$, $t\in\R$
+                  $\gamma$ \ace una curva semplice, on chiusa ed il suo sostegno rappresenta un'elica infinia
+                  contenuta nel cilindro $\{(x,y,z)\in\R^3:x^2+y^2=1\}$. \\
+                  L'eq. parametrica \ace data da 
+                  $$(x,y,z) = \gamma(t) = (\cos(t),\sin(t),t) t \in \R \iff \left\{\begin{array}{l}
+                    x = cos(t) \\
+                    y = sin(t) \\
+                    z = t \\
+                  \end{array}\right. t \in \R$$
+  \end{itemize}
+\end{example}
+\subsection{Orientazione di una curva semplice}
+Sia data una curva semplice $\gamma:I\to\R^n$. Allora 
+essa induce \underline{un'orientazione} sul suo sostegno $\gamma(I) \subseteq \R^n$. \\
+Pi\acu precisamente
+\begin{definition}
+  Data $\gamma:I\to\R^n$ curva semplice, si dice che il punto $x_1 = \gamma(t_1)$ \underline{precede}
+  il punto $x_2 = \gamma(t_2)$ se $t_1 < t_2$. L'orientazione della curva viene detta
+  anche \underline{verso} della curva.
+\end{definition}
+\begin{example}
+  Le curve degli esempi (i), (ii), (iv), essendo semplici, sono tutte orientabili, mentre 
+  la curva (iii) non essendo semplice, non \ace orientabile.
+\end{example}
+\subsection{Vettore velocit\aca di una curva}
+Sia $\gamma:I\to\R^n$ una curva. Se le componenti $\gamma_i :I \to \R$ ($i = 1,...,n$)
+sono derivabili in un fissato punto $t_0 \in I$, il vettore
+$$\gamma'(t_0) = (\gamma_1'(t_0),...,\gamma_n')$$
+\ace detto \underline{vettore velocit\aca} di $\gamma$ in $t_0$.\\
+Essendo la funzione $\gamma_i$ derivabile, sappiamo che 
+$$(*) \, \gamma_i (t) = \gamma_i(t_0) + \gamma_i'(t_0)(t-t_0) + o(t-t_o) \, (t\to t_0)$$
+per $i=1,...,n$. \\
+Una forma pi\acu compatta per scrivere (*) \ace  
+$$\gamma(t) = \gamma(t_0) + \gamma'(t_0)(t-t_0) + o(t-t_o) \, (t\to t_0)$$
+\begin{osservazione}
+  \ac{E} immediato verificare che $\gamma'(t_0) = D\gamma(t_0)^{T}$, dove 
+  $$D\gamma(t_0) = \begin{bmatrix}
+    \gamma_1'(t_0) \\
+    \vdots \\
+    \gamma_n'(t_0) \\
+  \end{bmatrix} \text{ matrice Jacobiana } n\times 1$$
+\end{osservazione}
+\begin{definition}
+  Se $\gamma'(t_0) \neq \origine_{\R^n}$, si chiama \underline{retta tangente} alla curva $\gamma$ nel 
+  punto $x_0 = \gamma(t_0)$ la retta di equazione parametrica
+  $$x = \gamma(t_0)+\gamma'(t_0)(t-t_0) = \gamma_1(t_0)+\gamma_1'(t_0)(t-t_0) + ... + \gamma_n(t_0)+\gamma_n'(t_0)(t-t_0) $$
+  se $t \in I$
+\end{definition}
+\begin{osservazione}
+  \begin{itemize}
+    \item[(i)] Sia $n=2$, $\gamma(t) = (\gamma_1,(t)\gamma_2(t))$, $t\in I$, 
+              $p_0 = \gamma(t_0) = (x_0,y_0)$, $\gamma'(t_0) = (v_1,v_2) \neq (0,0)$. 
+              Supponiamo per esempio, $v_2\neq 0$. \\
+              L'eq. parametrica della retta tangente diventa
+              $$\left\{\begin{array}{l}
+                x = v_1(t-t_0)+x_0 \\
+                y = v_2(t-t_0)+y_0
+              \end{array}\right. \iff \left\{\begin{array}{l}
+                t-t_0 = \frac{y-y_0}{v_2} \\
+                \\
+                x = v_1(t-t_0) + x_0 \\
+              \end{array}\right.$$
+              $$\Rightarrow x = \frac{v_1}{v_2} (y-y_0) + x_0 \iff $$
+              $$\iff r: v_2(x-x_0) - v_1(y-y_0) = 0$$
+              (eq. di una retta nel piano x,y passante per $(x_0,y_0)$ di direzione v)
+              \begin{NB}
+                Si noti che il vettore $(v_2,-v_1)$ \ace \underline{ortogonale} al vettore $(v_1,v_2)$, in quanto
+                $(v_1,v_2)\cdot(v_2,-v_1) = 0$, e la retta $r$ pu\aco essere riscritta come:
+                $$r: (x-x_0,y-y_0)\cdot(v_2,-v_1)$$
+              \end{NB}
+    \item[(ii)] Se $\gamma'(t_0) = \origine_{\R^n}$, la retta tangente pu\aco non esistere
+  \end{itemize}
+\end{osservazione}
+\begin{example}
+  $n=2$, $\gamma : \R\to\R^2$, definita come $\gamma(t) = (x_0,y_0) \, \forall t \in \R$.\\
+  Il sostegno di $\gamma$ \ace il punto $(x_0,y_0)$: non \ace una curva regolare.
+\end{example}
+\begin{definition}
+  Una curva $\gamma:I\to\R^n$
+  \begin{itemize}
+    \item[(a)] si dice di classe $C^m$ se $\gamma_i : I \to \R$ sono di classe $C^m \, \forall i = 1,...,n$
+    \item[(b)] si dice \underline{regolare} se $\gamma$ \ace di classe $C^1$ e $\gamma'(t) \neq \origine_{\R^n}$ $\forall t \in I$ 
+  \end{itemize}
+\end{definition}
+\begin{definition}
+  Data $\gamma : I \to \R^n$ curva regolare, si chiama \underline{versore} (o direzione) tangente a $\gamma$
+  il campo vettore $$\T_{\gamma} (t) := \frac{\gamma'(t)}{\norma{\gamma'(t)}} \, t \in I$$
+\end{definition}
+\begin{definition}
+  Una curva $\g : [a,b]\to\R^n$ si dice $C^1$ a tratti (o regolare a tratti) se esiste una 
+  suddivisione $a = t_0 < ... < t_n = b$ di $[a,b]$ t.c.
+  $$\g|_{[t_{i-1},t_i]}:[t_{i-1},t_i] \to \R^n$$
+  \ace di classe $C^1$ (rispettivamente regolare).\\
+  In tal caso $\g$ si dice anche uunionce delle $N$ curve $\g_i := \g|_{[t_{i-1},t_i]}$
+  e si scrive $$\g:= \bigcup_{i=1}^{N} \g_i$$
+\end{definition}
+\begin{example}
+  Sia $\g:[-1,1]\to \R^2$ la curva $\g(t) = (t,\abs{t})$, $t \in [-1,1]$. \\
+  Allora \ace facile verificare che $\g$ una curva regolare a tratti. Infatti
+  se $-1 = t_0 < 0 = t_1 < t_2 = 1$, \ace facile verificare che 
+  $$\g_i \equiv \g|_{[t_{i-1},t_i]} : [t_{i-1},t_i] \to \R^2$$
+  \ace \underline{regolare}. \\
+  Poich\ace 
+  \begin{itemize}
+    \item $\g_1 := (t,-t)$, $t\in[t_0,t_1]$
+    \item $\g_1 := (t,t)$, $t\in[t_1,t_2]$
+  \end{itemize}
+  Si noti che il sostegno di $\g$ \ace il grafico della funzione $f:[-1,1]\to\R$, $y = f(x) = \abs{x}$
+\end{example}
+\subsection{Cambiamento di parametro di una curva} 
+\begin{definition}
+  Due curve $\g : I \to \R^n$, $\gtilde:\widetilde{I}\to\R^n$ di classe $C^1$ si dicono \underline{equivalenti}
+  se esiste una funzione bigettiva $\varphi:\widetilde{I}\to I$ t.c. 
+  $$\varphi \in C^1(\widetilde{I}); \varphi'(\tau) \neq 0 \, \forall \tau \in \widetilde{I};
+  \gtilde(\tau) = \g(\varphi(\tau)) \tau \in \widetilde{I};$$
+  In tal caso $\tau \rightarrow t = \varphi(\tau) \in I$ si dice \underline{cambiamento di parametrizzazione}.\\
+  Se $\varphi'(\tau)>0$, $\forall\tau \in\widetilde{I}$, allora si dice che $\g$, $\gtilde$ hanno
+  \underline{lo stesso verso}; Se $\varphi'(\tau)<0$, $\forall\tau \in\widetilde{I}$, allora si dice che $\g$, $\gtilde$ hanno
+  \underline{verso opposto}
+\end{definition}
+\begin{exercise}
+  Siano
+  \begin{itemize}
+    \item $\g(t) := (cos(t), sin(t))$, $t \in [0,2\pi]$
+    \item \item $\gtilde(\tau) := (cos(2\tau), sin(2\tau))$, $\tau \in [0,\pi]$
+    \item $\g^*(s) := (cos(s), -sin(s))$, $s \in [0,2\pi]$
+  \end{itemize}
+  Provare che:
+  \begin{enumerate}
+    \item $\g,\gtilde, \g^*$ sono equivalenti
+    \item $\g,\gtilde$ hanno lo stesso verso, mentre $\g,\g^*$ hanno verso opposto
+  \end{enumerate}
+  \textbf{Soluzione:}(suggerimento)\\\\
+  1. Per provare che $\g, \gtilde$ sono eq. basta considerare il cambiamento
+  di parametrizzazione $\varphi:[0,\pi]\to[0,2\pi]$, $\varphi(\tau):= 2\tau$
+  per provare che $\g,\g^*$ sono eq. basta considerare il cambiamento di 
+  parametrizzazione $\varphi:[0,2\pi]\to[0,2\pi]$, $\varphi(s) 2\pi-s$
+\end{exercise}
+\begin{osservazione}
+  Si pu\aco che: date due curve equivalenti, allora
+  \begin{enumerate}
+    \item esse hanno lo stesso sostegno
+    \item se una delle due fosse semplice, anche l'altra sarebbe semplice
+  \end{enumerate}
+\end{osservazione}

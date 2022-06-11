@@ -76,29 +76,46 @@
 \contentsline {subsection}{\numberline {2.6.1}Integrale triplo su un parallelepipedo}{61}{subsection.2.6.1}
 \contentsline {subsubsection}{Propriet\`a }{62}{section*.17}
 \contentsline {subsection}{\numberline {2.6.2}Integrale triplo su insiemi generali}{62}{subsection.2.6.2}
-\contentsline {subsection}{\numberline {2.6.3}Formule di riduzione per integrali tripli}{62}{subsection.2.6.3}
-\contentsline {subsubsection}{Applicazione della formula di riduzione per strati: volume di un solido di rotazione}{62}{section*.18}
-\contentsline {subsection}{\numberline {2.6.4}Cambiamento di variabili negli integrali tripli}{62}{subsection.2.6.4}
-\contentsline {chapter}{\numberline {3}Esercitazioni}{63}{chapter.3}
-\contentsline {section}{\numberline {3.1}Lezione 1 - 09/03/2022}{63}{section.3.1}
-\contentsline {section}{\numberline {3.2}Esercitazione 2 - 23/03/2022}{67}{section.3.2}
-\contentsline {section}{\numberline {3.3}Lezione 3 - 06/04/2022}{72}{section.3.3}
-\contentsline {chapter}{\numberline {4}Teoremi Orale}{76}{chapter.4}
-\contentsline {section}{\numberline {4.1}Continuit\`a , derivabilit\`a , differenziabilit\`a , polinomio di Taylor.}{76}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Teorema del confronto}{76}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Definizione di limite per una funzione $f: A \subseteq \mathbb {R}^2 \to \mathbb {R}$}{78}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Definizione di continuit\`a per una funzione $f: A \subseteq \mathbb {R}^2 \to \mathbb {R}$}{79}{subsection.4.1.3}
-\contentsline {subsection}{\numberline {4.1.4}Definizione di derivate parziali e di vettore gradiente per una funzione $f: A \subseteq \mathbb {R}^2 \to \mathbb {R}$ A aperto}{80}{subsection.4.1.4}
-\contentsline {subsection}{\numberline {4.1.5}Definizione di differenziabilit\`a in un punto per una funzione $f: A \subseteq \mathbb {R}^2 \to \mathbb {R}$ e relazione con l'esistenza del gradiente in quel punto}{81}{subsection.4.1.5}
-\contentsline {subsection}{\numberline {4.1.6}Regola della catena nel caso generale di due funzioni, $f:\mathbb {R}^n \to \mathbb {R}^m$ e $g:\mathbb {R}^m\to \mathbb {R}^k$}{82}{subsection.4.1.6}
-\contentsline {subsection}{\numberline {4.1.7}Formula di Taylor del II ordine per una funzione di due variabili}{83}{subsection.4.1.7}
-\contentsline {subsection}{\numberline {4.1.8} Definizione di matrice Hessiana per un funzione $f: A \subseteq \mathbb {R}^2 \to \mathbb {R}$ e sua applicazione nella formula di Taylor del II ordine}{84}{subsection.4.1.8}
-\contentsline {section}{\numberline {4.2}Massimi e minimi}{85}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Definizione di punto di massimo/minimo relativo, massimo/minimo assoluto e punto di sella per una funzione $f: A \subseteq \mathbb {R}^2 \to \mathbb {R}$}{85}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Teorema di Fermat sui punti stazionari di una funzione}{86}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Teorema di Weierstrass sull’esistenza del massimo e minimo assoluto di una funzione}{87}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}Metodo dei moltiplicatori di Lagrange per la ricerca di massimi e minimi vincolati per funzioni di due variabili}{88}{subsection.4.2.4}
-\contentsline {section}{\numberline {4.3}Integrali per funzioni in pi\`u variabili}{89}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Definizione di insieme insieme semplice (o normale) in $\mathbb {R}^2$ rispetto agli assi cartesiani}{89}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Formula di riduzione di integrali doppi su insiemi semplici}{90}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Formula di cambiamento di variabili per integrali doppi e tripli}{91}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {2.6.3}Formule di riduzione per integrali tripli}{63}{subsection.2.6.3}
+\contentsline {subsubsection}{Applicazione della formula di riduzione per strati: volume di un solido di rotazione}{65}{section*.18}
+\contentsline {subsection}{\numberline {2.6.4}Cambiamento di variabili negli integrali tripli}{65}{subsection.2.6.4}
+\contentsline {chapter}{\numberline {3}Curve ed integrali curvilinei, [BDPG, 12]}{67}{chapter.3}
+\contentsline {section}{\numberline {3.1}Lez - 14, Curve in $\mathbb {R}^n$}{67}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Orientazione di una curva semplice}{68}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Vettore velocit\`a di una curva}{69}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Cambiamento di parametro di una curva}{71}{subsection.3.1.3}
+\contentsline {chapter}{\numberline {4}Esercitazioni}{72}{chapter.4}
+\contentsline {section}{\numberline {4.1}Lezione 1 - 09/03/2022}{72}{section.4.1}
+\contentsline {section}{\numberline {4.2}Esercitazione 2 - 23/03/2022}{76}{section.4.2}
+\contentsline {section}{\numberline {4.3}Lezione 3 - 06/04/2022}{81}{section.4.3}
+\contentsline {chapter}{\numberline {5}Teoremi Orale}{85}{chapter.5}
+\contentsline {section}{\numberline {5.1}Continuit\`a , derivabilit\`a , differenziabilit\`a , polinomio di Taylor.}{85}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Teorema del confronto}{85}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Definizione di limite per una funzione $f: A \subseteq \mathbb {R}^2 \to \mathbb {R}$}{87}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Definizione di continuit\`a per una funzione $f: A \subseteq \mathbb {R}^2 \to \mathbb {R}$}{88}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.4}Definizione di derivate parziali e di vettore gradiente per una funzione $f: A \subseteq \mathbb {R}^2 \to \mathbb {R}$ A aperto}{89}{subsection.5.1.4}
+\contentsline {subsection}{\numberline {5.1.5}Definizione di differenziabilit\`a in un punto per una funzione $f: A \subseteq \mathbb {R}^2 \to \mathbb {R}$ e relazione con l'esistenza del gradiente in quel punto}{90}{subsection.5.1.5}
+\contentsline {subsection}{\numberline {5.1.6}Regola della catena nel caso generale di due funzioni, $f:\mathbb {R}^n \to \mathbb {R}^m$ e $g:\mathbb {R}^m\to \mathbb {R}^k$}{91}{subsection.5.1.6}
+\contentsline {subsection}{\numberline {5.1.7}Formula di Taylor del II ordine per una funzione di due variabili}{92}{subsection.5.1.7}
+\contentsline {subsection}{\numberline {5.1.8} Definizione di matrice Hessiana per un funzione $f: A \subseteq \mathbb {R}^2 \to \mathbb {R}$ e sua applicazione nella formula di Taylor del II ordine}{93}{subsection.5.1.8}
+\contentsline {section}{\numberline {5.2}Massimi e minimi}{94}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Definizione di punto di massimo/minimo relativo, massimo/minimo assoluto e punto di sella per una funzione $f: A \subseteq \mathbb {R}^2 \to \mathbb {R}$}{94}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Teorema di Fermat sui punti stazionari di una funzione}{95}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Teorema di Weierstrass sull’esistenza del massimo e minimo assoluto di una funzione}{96}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.4}Metodo dei moltiplicatori di Lagrange per la ricerca di massimi e minimi vincolati per funzioni di due variabili}{97}{subsection.5.2.4}
+\contentsline {section}{\numberline {5.3}Integrali per funzioni in pi\`u variabili}{98}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Definizione di insieme insieme semplice (o normale) in $\mathbb {R}^2$ rispetto agli assi cartesiani}{98}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Formula di riduzione di integrali doppi su insiemi semplici}{99}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Formula di cambiamento di variabili per integrali doppi e tripli}{100}{subsection.5.3.3}
+\contentsline {subsubsection}{Integrali doppi}{100}{section*.19}
+\contentsline {subsubsection}{Integrali tripli}{100}{section*.20}
+\contentsline {subsection}{\numberline {5.3.4}Cambiamento di coordinate cilindriche e sferiche}{102}{subsection.5.3.4}
+\contentsline {subsubsection}{Coordinate ellittiche}{102}{section*.21}
+\contentsline {subsubsection}{Coordinate sferiche}{102}{section*.22}
+\contentsline {subsection}{\numberline {5.3.5}Formule di riduzione per integrali tripli su un parallelepipedo}{103}{subsection.5.3.5}
+\contentsline {subsection}{\numberline {5.3.6}Definizione di insieme definito per fili e per strati}{104}{subsection.5.3.6}
+\contentsline {subsection}{\numberline {5.3.7}Formula di integrazione per fili e per strati}{105}{subsection.5.3.7}
+\contentsline {section}{\numberline {5.4}Curve e forme differenziali}{106}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1} Definizione di curva in $\mathbb {R}^n$, supporto di una curva, estremi di una curva, equazione parametrica di una curva}{106}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Definizione di curva chiusa, semplice, regolare, orientazione (o verso di percorrenza) di una curva semplice}{107}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}Definizione di versore tangente ad una curva regolare}{108}{subsection.5.4.3}
