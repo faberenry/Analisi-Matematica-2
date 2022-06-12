@@ -1,0 +1,16 @@
+\subsection{Definizione di forma differenziale esatta e di potenziale di una
+forma differenziale}
+Sia $E\subseteq\R^n$ un insieme aperto e sia $\U \in C^1(E)$. Possiamo associare ad $\U$
+la forma diff. 
+$$d\U = \tuple{\nabla\U,dx} = \frac{\p \U}{\p x_1}\,dx_1+\dots+\frac{\p \U}{\p x_n}\,dx_n$$
+che viene anche chiamata \underline{differenziale di $\U$} poich\ace coincide con la notazione
+con cui indichiamo il differenziale di $\U$
+\begin{definition}
+  Sia $E\subseteq\R^n$ un aperto e sia $\om = \tuple{F,dx}$ dove
+  $F:E\to\R^n$ di classe $C^0$. La forma $\om$ si dice \underline{esatta} in E 
+  se esiste $\U:E\to\R$ di classe $C^1$ t.c.
+  $$\nabla\U(x) = F(x) \, \forall x \in E$$
+  o, equivalentemente, $d\U = \om$.\\
+  In tal caso $\U$ \ace detta \underline{funzione potenziale} (o primitiva) di $\om$ in E.
+\end{definition}
+

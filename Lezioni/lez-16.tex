@@ -1,5 +1,284 @@
-\subsection{Lez - 16, Teo: INtegrale curvilineo di II specie rispetto a curve eq.}
+\subsection{Lez - 16, Teo: Integrale curvilineo di II specie rispetto a curve eq.}
+\begin{theorem}
+  Siano $E\subseteq\R^n$, $\gamma:[a,b]\to E$, $\gtilde : [\alpha,\beta]\to E$ curve $C^1$
+  e $\omega$ una forma differenziale $C^0$ su E.
+  \begin{enumerate}
+    \item $\int_{\g} \om = \int_{\gtilde} \om $ se $\g,\gtilde$ hanno lo stesso verso.
+    \item $\int_{\g} \om = -\int_{\gtilde} \om $ se $\g,\gtilde$ hanno lo verso opposto.
+  \end{enumerate}
+  \begin{proof}
+    Siano $\g$ e $\gtilde$ come definite prima e sia $\varphi : [\al,\bb]\to [a,b]$ il cambiamento
+    di parametrizzazione t.c.
+    $$\gtilde(\tau) = \g(\varphi(\tau)) \, \forall \tau \in [\al,\bb]$$
+    Osserviamo che per RDC, 
+    $$(1) \, \gtilde'(\tau) = \g'(\varphi(\tau))\varphi'(\tau) \, \forall \tau \in [\al,\bb]$$
+    Allora 
+    $$\int_{\gtilde} \om = \int_{\al}^{\bb} \tuple{F(\gtilde(\tau)), \gtilde'(\tau)} \,d\tau = $$
+    $$=_{(1)} \int_{\al}^{\bb} \tuple{F(\g(\varphi(\tau))), \g'(\varphi(\tau))}\varphi'(\tau) \, d\tau$$
+    Poniamo ora $t = \varphi(\tau)$
+    $$= \int_{\varphi(\al)}^{\varphi(\bb)} \tuple{F(\g(t)), \g'(t)} \, dt$$ 
+    \begin{itemize}
+      \item Se $\g,\gtilde$ hanno lo stesso verso ($\varphi'(\tau)>0$), allora $a = \varphi(\al)$ e 
+            $b=\varphi(\bb)$ e otteniamo la 1.
+      \item Se $\g,\gtilde$ hanno lo verso opposto ($\varphi'(\tau)<0$), allora $b = \varphi(\al)$ e 
+            $a=\varphi(\bb)$ e otteniamo la 2.
+    \end{itemize}
+  \end{proof}
+\end{theorem}
+\begin{osservazione}
+  Le propriet\aca 1 e 2 sono coerenti con l'interpretazione fisica dell'integrale curvilineo di II sp., come lavoro.
+\end{osservazione}
+\begin{exercise}
+  Sia $\g:[a,b]\to E\subseteq\R^n$ regolare e semplice e sia $\om =\tuple{F,dx}$ un forma differenziale $C^0$ su F.
+  Allora $$\int_{\g} \om = \int_{\g} \tuple{F,\T_{\g}} \,ds$$
+  dove $\T_{\g}(t) := \frac{\g'(t)}{\norma{\g'(t)}}$, $t \in [a,b]$ \\\\
+  \textbf{Soluzione:} \\\\
+  Ricordiamo che la curva $\g$ si dice regolare se \ace di classe $C^1$ e 
+  $\g'(t) \neq \origine_{\R^n}$, si dice semplice se non \ace chiusa, oppure 
+  \ace chiusa e $\g:[a,b) \to \R^n$ \ace iniettiva. \\
+  Supponiamo che $\g$ non sia chiusa e $\g$ sia iniettiva. \ac{E} chiaro che
+  se $\Gamma := \g([a,b]) \subset E$ sostegno di $\g$, allora \ace ben definita la funzione
+  inversa $\g^{-1} : \Gamma \to [a,b]$. \\
+  Inoltre si pu\aco provare che $\g^{-1}$ \ace continua. \\
+  Per definizione di integrale curvilineo di II sp.
+  $$\int_{\g} \om = \int_{\g} \tuple{F,dx} = \int_{a}^{b} \tuple{F(\g(t)),\g'(t)} \,dt = $$
+  $$= \int_{a}^{b} \tuple{F(\g(t)), \frac{\g'(t)}{\norma{\g'(t)}}} \norma{\g'(t)} \,dt = 
+    \int_{a}^{b} \tuple{F(\g(t)), \T_{\g}(t)} \norma{\g'(t)} \,dt = $$
+  $$= \int_{a}^{b} f(\g(t))\norma{\g'(t)} \, dt = \int_{\g} f \, ds$$
+  dove $f(p) = \tuple{F(p),\T_{\g}(\g^{-1}(p))}$ se $p\in\Gamma$
+\end{exercise}
+\begin{osservazione}
+  Se F fosse ortogonale a $\T_{\g}$ in ogni punto $\g(t)$ allora 
+  $$\tuple{F(\g(t)), \T_{\g}(t)} = 0 \, \forall t \in [a,b]$$
+  Dunque $$\int_{\g} \om = \int_{\g} \tuple{F,dx} = 0$$
+\end{osservazione}
 \subsection{Forme differenziali esatte (o campi vettoriali conservativi)}
+Sia $E\subseteq\R^n$ un insieme aperto e sia $\U \in C^1(E)$. Possiamo associare ad $\U$
+la forma diff. 
+$$d\U = \tuple{\nabla\U,dx} = \frac{\p \U}{\p x_1}\,dx_1+\dots+\frac{\p \U}{\p x_n}\,dx_n$$
+che viene anche chiamata \underline{differenziale di $\U$} poich\ace coincide con la notazione
+con cui indichiamo il differenziale di $\U$
+\begin{definition}
+  Sia $E\subseteq\R^n$ un aperto e sia $\om = \tuple{F,dx}$ dove
+  $F:E\to\R^n$ di classe $C^0$. La forma $\om$ si dice \underline{esatta} in E 
+  se esiste $\U:E\to\R$ di classe $C^1$ t.c.
+  $$\nabla\U(x) = F(x) \, \forall x \in E$$
+  o, equivalentemente, $d\U = \om$.\\
+  In tal caso $\U$ \ace detta \underline{funzione potenziale} (o primitiva) di $\om$ in E.
+\end{definition}
+\begin{osservazione}
+  \begin{itemize}
+    \item Se $n=1$, allora un campo vettoriale si riduce ad un campo scalare $F:E\subseteq\R\to\R$. Pertanto
+          se, per esempio, $E=(a,b)$ e $F\in C^0([a,b])$, allora esiste 
+          $$\U(x):= \int_{a}^{x} F(t)\,dt \, x \in [a,b]$$
+          Per il teorema fondamentale del calcolo e $\U'(x) = F(x)$ $\forall x \in [a,b]$. \\
+          Dunque se $n=1$, $E = (a,b)$, $F \in C^0([a,b])$ esiste (almeno) una primitiva
+          $\U$ della forma $\om = \tuple{F,dx}$ che coincide con la primitiva di F su E.
+    \item Se $n\geq 2$, vedremo che, dato un campo vettoriale $F:E\subseteq \R^n \to \R^n$, pu\aco esiste un potenziale.
+  \end{itemize}
+\end{osservazione}
+\begin{theorem}[Integrale per forme esatte]
+  Sia $E \subseteq \R^n$ aperto, $\om$ forma diff. continua ed esatta su E. Allora per ogni
+  curva $\g:[a,b]\to E$ $C^1$ a tratti vale che 
+  $$(*)\, \int_{\g}\om = \U(\g(b))-\U(\g(a))$$
+  dove $\U:E\to\R$ \ace un qualunque potenziale di $\om$
+  \begin{proof}
+    Per ipotesi, essendo $\om = \tuple{F,dx}$ esatta, esiste un potenziale $\U:E\to\R$ di $\om$ su E, cio\ace
+    $\U \in C^1(E)$ t.c.
+    $$(1) \, \nabla\U(x) = F(x) \, \forall x \in E$$
+    Supponiamo che $\g:[a,b] \to E$ sia di classe $C^1$. Allora per (RDC) e da (1), 
+    $$(2) \, \frac{d}{dt}\left(\U(\g(t))\right) = \frac{\p \U}{\p x_1}(\g(t)) \g_1'(t) + ... + 
+              \frac{\p \U}{\p x_n}(\g(t)) \g_n'(t) = $$
+    $$ = \tuple{\nabla\U(\g(t)),\g'(t)} = \tuple{f(\g(t)),\g'(t)}$$
+    $\forall t \in [a,b]$. \\
+    Dalla (2) e dal teorema fondamentale del calcolo integrale, 
+    $$(3) \, \int_{\g} \om := \int_{a}^{b} \tuple{F(\g(t)), \g'(t)} \, dt = 
+            \int_{a}^{b} \frac{d}{dt}\left(\U(\g(t))\right)\,dt = \U(\g(b)) - \U(\g(a))$$
+    Si pu\aco provare la (3) in modo analogo, assumendo $\g$ sia $C^1$ a tratti.
+  \end{proof}
+\end{theorem}
+\begin{osservazione}
+  \begin{enumerate}
+    \item Da (*) segue che se $\om$ fosse esatta (o che F ammette una primitiva) su E, allora
+          per ogni curva chiusa $\g:[a,b] \to E$ $C^1$ a tratti $\oint_{\g}\om = 0$. \\
+          Si pu\aco provare che vale il viceversa, sotto alcune ipotesi. [BDPG,12.17]
+    \item In Fisica le forme diff. esatte sono di particolare importanza. Infatti
+          $$\tuple{F,dx} \text{ \ace esatta} \iff \text{F \ace un campo di forze conservativo}$$
+  \end{enumerate}
+\end{osservazione}
+\begin{example}[di forma non esatta]
+  Sia $E = \R^2 \setminus \{(0,0)\}$, $$F(x,y)=\left(-\frac{y}{x^2+y^2}, \frac{x}{x^2+y^2}\right)$$
+  Allora $$\om = -\frac{y}{x^2+y^2}\,dx + \frac{x}{x^2+y^2}\,dy$$
+  non \ace esatta su E. Infatti, sia $\g:[0,2\pi] \to E$, 
+  $\g(t) = (\cos(t),\sin(t))$. Allora $\g$ \ace una curva chiusa $C^1$, ma 
+  $$\oint_{\g}\om = \int_{0}^{2\pi} \left(-\frac{\sin(t)}{\cos^2(t)+\sin^2(t)} (-\sin(t))+ 
+                           \frac{\cos(t)}{\cos^2(t)+\sin^2(t)} (\cos(t))\right) \, dt = $$
+                    $$= \int_{0}^{2\pi} 1 \,dt \neq 0$$
+  Per il teorema precedente $\om$ non pu\aco essere esatta su E.
+\end{example}
 \subsection{Forma differenziali chiuse}
+\textbf{Problema:} Dato $F:E\subseteq\R^n\to\R^n$ campo vettoriale continuo:
+\begin{enumerate}
+  \item Come riconoscere se $\om$ sia esatta?
+  \item Se $\om$ fosse esatta, come determinare un potenziale $\U$ di $\om$?
+\end{enumerate}
+Introduciamo ora un criterio per verificare quando una forma differenziale lineare potrebbe essere esatta.
+\begin{definition}
+  Sia $E\subseteq\R^n$ un insieme aperto e sia $\om = \tuple{F,dx}$, dove $F:E\subseteq\R^n \to \R^n$,
+  $F(x) = \left(F_1(x),...,F_n(x)\right)$ con $F_i \in C^1(E)$ $i = 1,...,n$. \\
+  Allora la forma $\om$ si dice \underline{chiusa} in E se 
+  $$\frac{\p F_i}{\p x_j}(x) = \frac{\p F_j}{\p x_i}(x) \text{ Regola derivate in croce}$$
+  $\forall i,j = 1,...,n$
+\end{definition}
+\begin{proposition}
+  Sia $\om$ una forma di classe $C^1$ in $E\subseteq\R^n$ aperto. Allora 
+  $$(**) \, \om \text{ esatta su E} \Rightarrow \om \text{ chiusa in E}$$
+  \begin{proof}
+    Per ipotesi, essendo $\om$ esatta, esite una funzione potenziale $\U$ t.c.
+    $$\nabla\U(x) = \left(\frac{\p\U}{\p x_1}(x),...,\frac{\p\U}{\p x_n}(x) \right) = $$
+    $$=\left(F_1(x),...,F_n(x)\right) = F(x) \, \forall x \in E$$
+    o, equivalentemente, 
+    $$(1)\, \frac{\p\U}{\p x_i}(x) = F_i(x) \forall x \in E, \forall i = 1,...,n$$
+    Per il teo. sull'inversione dell'ordine di derivazione, fissato $i$ e derivando 
+    rispetto ad un fissato $x_j$, nella (1), con $j\neq i$, essendo $\U \in C^2(E)$,
+    otteniamo 
+    $$\begin{array}{ll}
+      \frac{\p^2\U}{\p x_j \p x_i} (x) = \frac{\p F_i}{\p x_j}(x) & \forall x \in E \\
+      \\
+      \frac{\p^2\U}{\p x_i \p x_j} (x) = \frac{\p F_j}{\p x_i}(x) & \forall x \in E \\
+    \end{array}$$
+    Dalle identit\aca precedenti, segue che F soddisfa la regola delle derivate in croce, e
+    dunque $\om$ \ace chiusa.
+  \end{proof}
+\end{proposition}
+\begin{osservazione}
+  Non vale l'implicazione inversa di (**), cio\ace
+  $$\om \text{ esatta su E} \nLeftarrow \om \text{ chiusa in E}$$
+\end{osservazione}
+\begin{example}
+  $n=2$, $$\om = -\frac{y}{x^2+y^2}\,dx + \frac{x}{x^2+y^2}\,dy$$ in $E = \R^2 \setminus\{(0,0)\}$
+  \begin{exercise}
+    Verificare che $\om$ \ace chiusa, cio\ace 
+    $$\frac{\p F_1}{\p y}=\frac{\p F_2}{\p x}$$
+    in E se $F(x,y) = \left(F_1(x,y), F_2(x,y)\right) = \left(-\frac{y}{x^2+y^2},\frac{x}{x^2+y^2}\right)$
+    se $(x,y) \in E$. \\
+    D'altra parte, abbiamo visto che, se $\g:[0,2\pi] \to E$, $\g(t) = (\cos(t),\sin(t))$, allora 
+    $\g$ \ace una curva chiusa di classe $C^1$ e $\oint_{\g} \om = 2\pi$.\\
+    Dunque $\om$ non \ace esatta in E.
+  \end{exercise}
+\end{example}
+Una condizione necessaria e sufficiente che garantisce l'esattezza di una forma \ace 
+data dal seguente teorema.
 \subsubsection{Teo: Chiusa = Esatta}
+\begin{theorem}[Chiusa = Esatta][BDPG,12.21]
+  \label{chiusaesatta}
+  Sia $E\subseteq \R^n$ un aperto, \underline{convesso}, cio\ace per definizione
+  $$\forall p,q \in E \, [p,q] := \{tp + (1-t)q : 0 \leq t \leq 1\} \subset E$$
+  Sia $\om = \tuple{F,dx}$, dove $F=(F_1,...,F_n)$ con $F_i \in C^1(E)$ $i = 1,...,n$.
+  Allora 
+  $$\om \text{ \ace esatta su E} \iff \om \text{ \ace chiusa in E}$$
+\end{theorem}
+\begin{example}
+  \begin{enumerate}
+    \item $$\om = -\frac{y}{x^2+y^2}\,dx + \frac{x}{x^2+y^2}\,dy$$ in $E = \R^2 \setminus\{(0,0)\}$
+          $[p,q] \not \subset E$ se $p = (-1,1)$ e $q=(1,1)$, in quanto $(0,0)\not \in E$.
+          Pertanto E non \ace convesso. \\
+          D'altra parte sappiamo che $\om$ non \ace esatta.
+    \item $$\om = -\frac{y}{x^2+y^2}\,dx + \frac{x}{x^2+y^2}\,dy$$ in $E = \{(x,y)\in\R^2:x>0\}$
+          \begin{exercise}
+            E \ace convesso.
+          \end{exercise}
+          Essendo $\om$ chiusa in E, per il teorema precedente, $\om$ \ace esatta in E, cio\ace 
+          esiste una funzione potenziale $\U : E \to \R$ di classe $C^1$ t.c.
+          $$\nabla\U(x,y) = F(x,t) = \left(-\frac{y}{x^2+y^2}, \frac{x}{x^2+y^2}\right) \, \forall (x,y)\in E$$
+  \end{enumerate}
+\end{example}
+Il problema che ora rimane \ace come calcolare la funzione potenziale $\U$
 \subsection{Costruzione di un potenziale per una forma diff. chiusa su aperto conv.}
+Sia $E \subseteq \R^n$ ($n\geq 2$) un aperto convesso e sia $\om = \tuple{F,dx}$ una forma
+differenziale chiusa su E.
+Per il teorema \ref{chiusaesatta} sappiamo che esiste $\U:E\to\R$ di $\om$, cio\ace una funzione
+$\U \in C^2(E)$ t.c. $\nabla\U (x) = F(x)$ $\forall x \in E$, o eq., 
+$$(1)\, \frac{\p\U}{\p x_i}(x) = F_i(x)$$
+$\forall x \in E, i = 1,...,n$. \\\\
+\textbf{Problema:} Come determinare, esplicitamente, una funzione $\U$ verificante (1)? 
+\subsubsection{Procedura per la costruzione di $\U$}
+\begin{enumerate}
+  \item[Passo 1] 
+        Consideriamo la (1) nel caso $i=1$, cio\ace l'equazione
+        $$(2) \, \frac{\p\U}{\p x_1}(x_1,...,x_n) = F_1(x_1,...,x_n)$$
+        Fissiamo $x_2,...,x_n$ ed integriamo la (2) rispetto a $x_1$ ed otteniamo
+        $$(3)\, \U(x_1,...,x_n) = \int F_1(x_1,...,x_n)\,dx_1$$
+        Osserviamo che 
+        $$\int F_1(x_1,...,x_n)\,dx_1 = \U_1(x_1,...,x_n) + c_1 (x_2,...,x_n)$$
+        Pertanto dalla (3) otteniamo che $\U$ deve essere della forma 
+        $$(4) \U(x_1,...,x_n) = \U_1(x_1,...,x_n)+c_1(x_2,...,x_n)$$
+  \item[Passo 2]
+        Imponiamo  ora che $\U$ del tipo (4) verifichi la (1) nel caso $i=2$, cio\ace 
+        $$\frac{\p\U}{\p x_2}(x_1,...,x_n) = \frac{\p\U_1}{\p x_2}(x_1,...,x_n) + \frac{\p c_1}{\p x_2}(x_2,...,x_n)$$
+        $$= F_2(x_1,...,x_n)$$
+        Da questa identit\aca si ricava che 
+        $$(5) \, \frac{\p c_1}{\p x_2}(x_2,...,x_n) = F_2(x_1,...,x_n) - \frac{\p\U_1}{\p x_2}(x_1,...,x_n)$$
+        Osserviamo ora che fissati, $x_2,...,x_n$ la funzione (di una variabile)
+        $$x_1 \to F_2(x_1,...,x_n) - \frac{\p\U_1}{\p x_2}(x_1,...,x_n)$$
+        \ace costante, quando \ace definita su un certo intervallo. \\
+        Infatti la sua derivata 
+        $$\frac{\p F_2}{\p x_1} (x_1,...,x_n) - \frac{\p^2\U_1}{\p x_1 \p x_2}(x_1,...,x_n) = 
+        \frac{\p F_2}{\p x_1} (x_1,...,x_n) - \frac{\p^2\U_1}{\p x_2 \p x_1}(x_1,...,x_n) = $$
+        $$= \frac{\p F_2}{\p x_1} (x_1,...,x_n) - \frac{\p F_1}{\p x_2}(x_1,...,x_n) = 0$$
+        Pertanto la funzione \ace indipendente da $x_1$ e dunque dipende solo da $x_2,...,x_n$. \\
+        Dunque possiamo scrivere che 
+        $$F_2 (x_1,...,x_n) - \frac{\p\U_1}{ \p x_2}(x_1,...,x_n) = g(x_2,...,x_n)$$
+        Sostituendo nella (5) otteniamo che 
+        $$(6) \, \frac{\p c_1}{\p x_2}(x_1,...,x_n) = g(x_2,...,x_n)$$
+        Fissiamo ora $x_3,...,x_n$ ed integriamo rispetto $x_2$ nella (6) e otteniamo
+        $$c_1(x_2,...,x_n) = \int g(x_2,...,x_n) \, dx_2 = \U_2(x_2,...,x_n) + c_2(x_3,...,x_n)$$
+        Sostituendo nella (4), otteniamo che la funzione $\U$ sar\aca della forma 
+        $$(7) \, \U(x_1,...,x_n) = \U_1 (x_1,...,x_n) + \U_2(x_2,...,x_n) + c_2(x_3,...,x_n)$$
+  \item[Passo 3]
+        Imponiamo ora che una funzione $\U$ del tipo (7) verifichi (1) con $i=3$. \\
+        Ragionando come nel \underline{Passo 2}, otteniamo che la funzione $\U$ sar\aca della forma 
+        $$\U(x_1,...,x_n) = \U_1(x_1,..,x_n) + \U(x_2,...,x_n) + \U(x_3,...,x_n) + c_3(x_4,...,x_n)$$
+  \item[Passo n]
+        otteniamo che la funzione $\U$ \ace della forma 
+        $$\U(x_1,...,x_n) = c_n + \sum_{i=1}^{n} \U_i(x_i,...,x_n)$$
+        dove $c_n \in \R$. \\
+        Questa funzione $\U$ \ace la funzione potenziale cercata.
+\end{enumerate}
+\begin{osservazione}
+  La procedura proposta porterebbe alla stessa conclusione se nel pass 1, si partisse da 
+  $$\frac{\p \U}{\p x_j} = F_j(x)$$
+  con $J02,...,n$
+  e si completasse il procedimento fino ad eliminare le n variabili rimanenti
+\end{osservazione}
+\begin{exercise}
+  Data la forma differenziale
+  $$\om(x,y) = -\frac{y}{x^2+y^2}\,dx + \frac{x}{x^2+y^2}\,dy$$
+  su $E:=\{(x,y)\in\R^2: x>0\}$, determinare se $\om$ sia esatta in $E$ e calcolare 
+  un potenziale $\U$ di $\om$ in E. \\
+  \textbf{Soluzione:} \\\\
+  Abbiamo gi\aca visto che $\om$ \ace esatta in E, essendo $\om$ chiusa in E ed 
+  E un insieme aperto e convesso. \\
+  Applichiamo la procedura proposta. \\
+  Sappiamo che esiste una funzione $\U:E\to\R$ di $C^2$ t.c. $\forall (x,y)\in E$
+  $$\left\{\begin{array}{lc}
+    \frac{\p\U}{\p x}(x,y) = F_1(x,y) = -\frac{y}{x^2+y^2} & (*) \\
+    \\
+    \frac{\p\U}{\p y}(x,y) = F_2(x,y) = \frac{x}{x^2+y^2} & (**) \\
+  \end{array}\right.$$
+  Fissiamo $x>0$ ed integriamo rispetto ad y la (**). otteniamo
+  $$\U(x,y) = \int \frac{x}{x^2+y^2}$$
+  \begin{exercise}
+    Verificare:
+    $$\int \frac{x}{x^2+y^2} = \arctan\frac{y}{x} + c_1(x)$$
+  \end{exercise}
+  Pertanto, dalla (**) segue che $\U$ sar\aca della forma 
+  $$(***)\, \U(x,y) = \arctan\frac{y}{x} + c_1(x)$$
+  se $(x,y)\in E$
+  Da (*) e (***) segue
+  $$\frac{\p\U}{x}(x,y) = -\frac{y}{x^2+y^2} + c_1'(x) = F_1(x,y) = -\frac{y}{x^2+y^2}$$
+  Da cui si ricava che $c_1'(x)=0$ se $x>0$ e dunque $c_1(x) \equiv c \in \R$ (costante). 
+  Pertanto una funzione potenziale di $\U$ di $\om$ in E \ace data da 
+  $$\U(x,y) = \arctan\frac{y}{x}+c \, c\in\R$$
+\end{exercise}
+ 

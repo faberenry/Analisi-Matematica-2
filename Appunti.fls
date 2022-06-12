@@ -352,6 +352,10 @@ INPUT /home/enrico/latex/Analisi-Matematica-2/ListaTeoremiOrale/teo-25.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/ListaTeoremiOrale/teo-25.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/ListaTeoremiOrale/teo-26.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/ListaTeoremiOrale/teo-26.aux
+INPUT /home/enrico/latex/Analisi-Matematica-2/ListaTeoremiOrale/teo-27.aux
+INPUT /home/enrico/latex/Analisi-Matematica-2/ListaTeoremiOrale/teo-27.aux
+INPUT /home/enrico/latex/Analisi-Matematica-2/ListaTeoremiOrale/teo-28.aux
+INPUT /home/enrico/latex/Analisi-Matematica-2/ListaTeoremiOrale/teo-28.aux
 OUTPUT /home/enrico/latex/Analisi-Matematica-2/Appunti.aux
 INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT /usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -592,6 +596,12 @@ INPUT /home/enrico/latex/Analisi-Matematica-2/ListaTeoremiOrale/teo-25.tex
 OUTPUT /home/enrico/latex/Analisi-Matematica-2/ListaTeoremiOrale/teo-26.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/ListaTeoremiOrale/teo-26.tex
 INPUT /home/enrico/latex/Analisi-Matematica-2/ListaTeoremiOrale/teo-26.tex
+OUTPUT /home/enrico/latex/Analisi-Matematica-2/ListaTeoremiOrale/teo-27.aux
+INPUT /home/enrico/latex/Analisi-Matematica-2/ListaTeoremiOrale/teo-27.tex
+INPUT /home/enrico/latex/Analisi-Matematica-2/ListaTeoremiOrale/teo-27.tex
+OUTPUT /home/enrico/latex/Analisi-Matematica-2/ListaTeoremiOrale/teo-28.aux
+INPUT /home/enrico/latex/Analisi-Matematica-2/ListaTeoremiOrale/teo-28.tex
+INPUT /home/enrico/latex/Analisi-Matematica-2/ListaTeoremiOrale/teo-28.tex
 INPUT /home/enrico/latex/Analisi-Matematica-2/Appunti.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-01.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-01.aux
@@ -683,6 +693,10 @@ INPUT /home/enrico/latex/Analisi-Matematica-2/ListaTeoremiOrale/teo-25.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/ListaTeoremiOrale/teo-25.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/ListaTeoremiOrale/teo-26.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/ListaTeoremiOrale/teo-26.aux
+INPUT /home/enrico/latex/Analisi-Matematica-2/ListaTeoremiOrale/teo-27.aux
+INPUT /home/enrico/latex/Analisi-Matematica-2/ListaTeoremiOrale/teo-27.aux
+INPUT /home/enrico/latex/Analisi-Matematica-2/ListaTeoremiOrale/teo-28.aux
+INPUT /home/enrico/latex/Analisi-Matematica-2/ListaTeoremiOrale/teo-28.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/Appunti.out
 INPUT /home/enrico/latex/Analisi-Matematica-2/Appunti.out
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/dutchcal/DutchCalReg.pfb
