@@ -94,46 +94,52 @@
 \contentsline {subsubsection}{Teo: Chiusa = Esatta}{81}{section*.19}
 \contentsline {subsection}{\numberline {3.4.5}Costruzione di un potenziale per una forma diff. chiusa su aperto conv.}{82}{subsection.3.4.5}
 \contentsline {subsubsection}{Procedura per la costruzione di $\mathcal {U}$}{82}{section*.20}
-\contentsline {chapter}{\numberline {4}Esercitazioni}{86}{chapter.4}
-\contentsline {section}{\numberline {4.1}Lezione 1 - 09/03/2022}{86}{section.4.1}
-\contentsline {section}{\numberline {4.2}Esercitazione 2 - 23/03/2022}{90}{section.4.2}
-\contentsline {section}{\numberline {4.3}Lezione 3 - 06/04/2022}{95}{section.4.3}
-\contentsline {chapter}{\numberline {5}Teoremi Orale}{99}{chapter.5}
-\contentsline {section}{\numberline {5.1}Continuit\`a , derivabilit\`a , differenziabilit\`a , polinomio di Taylor.}{99}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Teorema del confronto}{99}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Definizione di limite per una funzione $f: A \subseteq \mathbb {R}^2 \to \mathbb {R}$}{101}{subsection.5.1.2}
-\contentsline {subsection}{\numberline {5.1.3}Definizione di continuit\`a per una funzione $f: A \subseteq \mathbb {R}^2 \to \mathbb {R}$}{102}{subsection.5.1.3}
-\contentsline {subsection}{\numberline {5.1.4}Definizione di derivate parziali e di vettore gradiente per una funzione $f: A \subseteq \mathbb {R}^2 \to \mathbb {R}$ A aperto}{103}{subsection.5.1.4}
-\contentsline {subsection}{\numberline {5.1.5}Definizione di differenziabilit\`a in un punto per una funzione $f: A \subseteq \mathbb {R}^2 \to \mathbb {R}$ e relazione con l'esistenza del gradiente in quel punto}{104}{subsection.5.1.5}
-\contentsline {subsection}{\numberline {5.1.6}Regola della catena nel caso generale di due funzioni, $f:\mathbb {R}^n \to \mathbb {R}^m$ e $g:\mathbb {R}^m\to \mathbb {R}^k$}{105}{subsection.5.1.6}
-\contentsline {subsection}{\numberline {5.1.7}Formula di Taylor del II ordine per una funzione di due variabili}{106}{subsection.5.1.7}
-\contentsline {subsection}{\numberline {5.1.8} Definizione di matrice Hessiana per un funzione $f: A \subseteq \mathbb {R}^2 \to \mathbb {R}$ e sua applicazione nella formula di Taylor del II ordine}{107}{subsection.5.1.8}
-\contentsline {section}{\numberline {5.2}Massimi e minimi}{108}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Definizione di punto di massimo/minimo relativo, massimo/minimo assoluto e punto di sella per una funzione $f: A \subseteq \mathbb {R}^2 \to \mathbb {R}$}{108}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Teorema di Fermat sui punti stazionari di una funzione}{109}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {5.2.3}Teorema di Weierstrass sull’esistenza del massimo e minimo assoluto di una funzione}{110}{subsection.5.2.3}
-\contentsline {subsection}{\numberline {5.2.4}Metodo dei moltiplicatori di Lagrange per la ricerca di massimi e minimi vincolati per funzioni di due variabili}{111}{subsection.5.2.4}
-\contentsline {section}{\numberline {5.3}Integrali per funzioni in pi\`u variabili}{112}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Definizione di insieme insieme semplice (o normale) in $\mathbb {R}^2$ rispetto agli assi cartesiani}{112}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Formula di riduzione di integrali doppi su insiemi semplici}{113}{subsection.5.3.2}
-\contentsline {subsection}{\numberline {5.3.3}Formula di cambiamento di variabili per integrali doppi e tripli}{114}{subsection.5.3.3}
-\contentsline {subsubsection}{Integrali doppi}{114}{section*.21}
-\contentsline {subsubsection}{Integrali tripli}{114}{section*.22}
-\contentsline {subsection}{\numberline {5.3.4}Cambiamento di coordinate cilindriche e sferiche}{116}{subsection.5.3.4}
-\contentsline {subsubsection}{Coordinate ellittiche}{116}{section*.23}
-\contentsline {subsubsection}{Coordinate sferiche}{116}{section*.24}
-\contentsline {subsection}{\numberline {5.3.5}Formule di riduzione per integrali tripli su un parallelepipedo}{117}{subsection.5.3.5}
-\contentsline {subsection}{\numberline {5.3.6}Definizione di insieme definito per fili e per strati}{118}{subsection.5.3.6}
-\contentsline {subsection}{\numberline {5.3.7}Formula di integrazione per fili e per strati}{119}{subsection.5.3.7}
-\contentsline {section}{\numberline {5.4}Curve e forme differenziali}{120}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1} Definizione di curva in $\mathbb {R}^n$, supporto di una curva, estremi di una curva, equazione parametrica di una curva}{120}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Definizione di curva chiusa, semplice, regolare, orientazione (o verso di percorrenza) di una curva semplice}{121}{subsection.5.4.2}
-\contentsline {subsection}{\numberline {5.4.3}Definizione di versore tangente ad una curva regolare}{122}{subsection.5.4.3}
-\contentsline {subsection}{\numberline {5.4.4}Definizione di curva rettificabile e lunghezza di una curva L($\gamma $)}{123}{subsection.5.4.4}
-\contentsline {subsubsection}{Curva rettificabile}{123}{section*.25}
-\contentsline {subsubsection}{Lunghezza curva}{123}{section*.26}
-\contentsline {subsection}{\numberline {5.4.5} Formula per il calcolo della lunghezza di una curva rettificabile}{124}{subsection.5.4.5}
-\contentsline {subsection}{\numberline {5.4.6} Definizione di integrale curvilineo di prima specie per una funzione continua f lungo una curva $\gamma $ di classe $C^1$}{125}{subsection.5.4.6}
-\contentsline {subsection}{\numberline {5.4.7} Definizione di integrale curvilineo di seconda specie di una forma differenziale lungo una curva di classe $C^1$}{126}{subsection.5.4.7}
-\contentsline {subsection}{\numberline {5.4.8}Definizione di forma differenziale esatta e di potenziale di una forma differenziale}{127}{subsection.5.4.8}
-\contentsline {subsection}{\numberline {5.4.9}Formula per il calcolo dell’integrale curvilineo di una forma differenziale esatta}{128}{subsection.5.4.9}
+\contentsline {chapter}{\numberline {4}Superfici ed integrali di superfici, [BDPG,15]}{86}{chapter.4}
+\contentsline {section}{\numberline {4.1}Lez - 17, Superfici in $\mathbb {R}^3$}{86}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Punti interni e bordo di una superficie}{88}{subsection.4.1.1}
+\contentsline {section}{\numberline {4.2}Regolarit\`a della parametrizzazione e piano tangente ad una superficie}{89}{section.4.2}
+\contentsline {section}{\numberline {4.3}Lez - 18, Superfici orientabili}{92}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Idea per definire l'area di una superficie}{92}{subsection.4.3.1}
+\contentsline {chapter}{\numberline {5}Esercitazioni}{93}{chapter.5}
+\contentsline {section}{\numberline {5.1}Lezione 1 - 09/03/2022}{93}{section.5.1}
+\contentsline {section}{\numberline {5.2}Esercitazione 2 - 23/03/2022}{97}{section.5.2}
+\contentsline {section}{\numberline {5.3}Lezione 3 - 06/04/2022}{102}{section.5.3}
+\contentsline {chapter}{\numberline {6}Teoremi Orale}{106}{chapter.6}
+\contentsline {section}{\numberline {6.1}Continuit\`a , derivabilit\`a , differenziabilit\`a , polinomio di Taylor.}{106}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Teorema del confronto}{106}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Definizione di limite per una funzione $f: A \subseteq \mathbb {R}^2 \to \mathbb {R}$}{108}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}Definizione di continuit\`a per una funzione $f: A \subseteq \mathbb {R}^2 \to \mathbb {R}$}{109}{subsection.6.1.3}
+\contentsline {subsection}{\numberline {6.1.4}Definizione di derivate parziali e di vettore gradiente per una funzione $f: A \subseteq \mathbb {R}^2 \to \mathbb {R}$ A aperto}{110}{subsection.6.1.4}
+\contentsline {subsection}{\numberline {6.1.5}Definizione di differenziabilit\`a in un punto per una funzione $f: A \subseteq \mathbb {R}^2 \to \mathbb {R}$ e relazione con l'esistenza del gradiente in quel punto}{111}{subsection.6.1.5}
+\contentsline {subsection}{\numberline {6.1.6}Regola della catena nel caso generale di due funzioni, $f:\mathbb {R}^n \to \mathbb {R}^m$ e $g:\mathbb {R}^m\to \mathbb {R}^k$}{112}{subsection.6.1.6}
+\contentsline {subsection}{\numberline {6.1.7}Formula di Taylor del II ordine per una funzione di due variabili}{113}{subsection.6.1.7}
+\contentsline {subsection}{\numberline {6.1.8} Definizione di matrice Hessiana per un funzione $f: A \subseteq \mathbb {R}^2 \to \mathbb {R}$ e sua applicazione nella formula di Taylor del II ordine}{114}{subsection.6.1.8}
+\contentsline {section}{\numberline {6.2}Massimi e minimi}{115}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Definizione di punto di massimo/minimo relativo, massimo/minimo assoluto e punto di sella per una funzione $f: A \subseteq \mathbb {R}^2 \to \mathbb {R}$}{115}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Teorema di Fermat sui punti stazionari di una funzione}{116}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Teorema di Weierstrass sull’esistenza del massimo e minimo assoluto di una funzione}{117}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}Metodo dei moltiplicatori di Lagrange per la ricerca di massimi e minimi vincolati per funzioni di due variabili}{118}{subsection.6.2.4}
+\contentsline {section}{\numberline {6.3}Integrali per funzioni in pi\`u variabili}{119}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Definizione di insieme insieme semplice (o normale) in $\mathbb {R}^2$ rispetto agli assi cartesiani}{119}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Formula di riduzione di integrali doppi su insiemi semplici}{120}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Formula di cambiamento di variabili per integrali doppi e tripli}{121}{subsection.6.3.3}
+\contentsline {subsubsection}{Integrali doppi}{121}{section*.21}
+\contentsline {subsubsection}{Integrali tripli}{121}{section*.22}
+\contentsline {subsection}{\numberline {6.3.4}Cambiamento di coordinate cilindriche e sferiche}{123}{subsection.6.3.4}
+\contentsline {subsubsection}{Coordinate ellittiche}{123}{section*.23}
+\contentsline {subsubsection}{Coordinate sferiche}{123}{section*.24}
+\contentsline {subsection}{\numberline {6.3.5}Formule di riduzione per integrali tripli su un parallelepipedo}{124}{subsection.6.3.5}
+\contentsline {subsection}{\numberline {6.3.6}Definizione di insieme definito per fili e per strati}{125}{subsection.6.3.6}
+\contentsline {subsection}{\numberline {6.3.7}Formula di integrazione per fili e per strati}{126}{subsection.6.3.7}
+\contentsline {section}{\numberline {6.4}Curve e forme differenziali}{127}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1} Definizione di curva in $\mathbb {R}^n$, supporto di una curva, estremi di una curva, equazione parametrica di una curva}{127}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Definizione di curva chiusa, semplice, regolare, orientazione (o verso di percorrenza) di una curva semplice}{128}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.3}Definizione di versore tangente ad una curva regolare}{129}{subsection.6.4.3}
+\contentsline {subsection}{\numberline {6.4.4}Definizione di curva rettificabile e lunghezza di una curva L($\gamma $)}{130}{subsection.6.4.4}
+\contentsline {subsubsection}{Curva rettificabile}{130}{section*.25}
+\contentsline {subsubsection}{Lunghezza curva}{130}{section*.26}
+\contentsline {subsection}{\numberline {6.4.5} Formula per il calcolo della lunghezza di una curva rettificabile}{131}{subsection.6.4.5}
+\contentsline {subsection}{\numberline {6.4.6} Definizione di integrale curvilineo di prima specie per una funzione continua f lungo una curva $\gamma $ di classe $C^1$}{132}{subsection.6.4.6}
+\contentsline {subsection}{\numberline {6.4.7} Definizione di integrale curvilineo di seconda specie di una forma differenziale lungo una curva di classe $C^1$}{133}{subsection.6.4.7}
+\contentsline {subsection}{\numberline {6.4.8}Definizione di forma differenziale esatta e di potenziale di una forma differenziale}{134}{subsection.6.4.8}
+\contentsline {subsection}{\numberline {6.4.9}Formula per il calcolo dell’integrale curvilineo di una forma differenziale esatta}{135}{subsection.6.4.9}

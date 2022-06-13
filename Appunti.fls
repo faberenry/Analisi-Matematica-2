@@ -294,6 +294,10 @@ INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-15.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-15.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-16.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-16.aux
+INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-17.aux
+INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-17.aux
+INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-18.aux
+INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-18.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-01.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-01.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-02.aux
@@ -503,6 +507,12 @@ INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-15.tex
 OUTPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-16.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-16.tex
 INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-16.tex
+OUTPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-17.aux
+INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-17.tex
+INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-17.tex
+OUTPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-18.aux
+INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-18.tex
+INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-18.tex
 OUTPUT /home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-01.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-01.tex
 INPUT /home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-01.tex
@@ -635,6 +645,10 @@ INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-15.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-15.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-16.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-16.aux
+INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-17.aux
+INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-17.aux
+INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-18.aux
+INPUT /home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-18.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-01.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-01.aux
 INPUT /home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-02.aux

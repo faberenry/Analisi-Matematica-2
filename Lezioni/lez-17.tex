@@ -1,0 +1,216 @@
+\chapter{Superfici ed integrali di superfici, [BDPG,15]}
+\section{Lez - 17, Superfici in $\R^3$}
+Intuitivamente una superficie nello spazio \ace un oggetto bidimensionale, senza spessore. \\
+Prima delle definizione intriduciamo due esemi di superfici note. 
+\begin{example}
+  \begin{enumerate}
+    \item Sia $D=\{(x,y): x^2+y^2 < 1\}$ e sia $f : \overline{D} \to \R$ la funzione 
+          definita da $f(x,y) = x^2+y^2$. \\
+          Il grafico di f, 
+          $$S_1 = G_f = \{(x,y,f(x,y)): (x,y)\in\overline{D}\}$$
+          (porzione di paraboloide) \\\\
+          $S_1$ pu\aco essere vista come l'immagine della mappa (detta \underline{parametrizzazione})
+          $$\sigma : \overline{D} \subseteq \R^2\to\R^3 , \, \sigma(x,y) = (x,y,x^2+y^2)$$
+    \item La sfera di raggio 1 e centro (0,0,0) in $\R^3$ 1ace il sottoinsieme definito da 
+          $$S_2 = \{(x,y,z): x^2+y^2+z^2=1\}$$
+          \ac{E} noto che $S_2$ non pu\aco essere visto come il grafico di una funzione di due 
+          variabili, ma pu\aco essere visto come immagine di una parametrizzazione. \\
+          Per esempio, una parametrizzazione di $S_2$ pu\aco essere ottenuta tramite le 
+          coordinate sferiche:
+          $$\left\{\begin{array}{l}
+            x = \cos\vartheta\sin\varphi \\
+            y = \sin\vartheta\sin\varphi \\
+            z = \cos\varphi \\
+          \end{array}\right.$$
+          dove $\vartheta \in [0,2\pi], \varphi \in [0,\pi]$. \\
+          Pi\acu precisamente $S_2$ \ace l'immagine della mappa 
+          $\sigma : [0,2\pi]\times[0,\pi] \subseteq \R^2 \to \R^3$
+          $$\sigma(\vartheta,\varphi) := (\cos\vartheta\sin\varphi, \sin\vartheta\sin\varphi, \cos\varphi)$$
+  \end{enumerate} 
+\end{example}
+Prima della definizione di superficie, premettiamo la nozione di curva di Jordan nel piano.
+\begin{definition}
+  Una \underline{curva di Jordan} \ace una curva piana $\gamma : [a,b]\to\R^2$ semplice e chiusa.
+\end{definition}
+\begin{theorem}[BDPG,p. 359]
+  Sia $\g$ una curva di Jordan. Allora valgono le seguenti prop.
+  \begin{enumerate}
+    \item Il \underline{sostegno} $\Gamma = \g([a,b])$ divide il piano in due insiemi aperti
+          di cui uno \ace limitato, e si chiama \underline{interno della curva} ($D_{int}$), e l'altro
+          \ace illimitato, e si chiama \underline{esterno della curva} ($D_{est}$)
+    \item $\Dint,\Dest$ hanno la stessa frontiera e coincide con $\Gamma$
+  \end{enumerate}
+\end{theorem}
+\begin{definition}
+  Un sottoinsieme $S\subset\R^3$ si dice \underline{superficie} (elementare) se esiste una mappa
+  $\sigma:\overline{D}\subseteq\R^2\to\R^3$, 
+  $$\sigma(u,v) = (x(u,v),y(u,v),z(u,v))$$
+  verificante
+  \begin{enumerate}
+    \item D \ace un aperto di $\R^2$, interno di una curva di Jordan
+    \item $\sigma$ \ace continua e $\sigma:D\to\R^3$ \ace iniettiva
+    \item $\sigma(\overline{D})=S$
+  \end{enumerate}
+  Una funzione verificante (1.-3.) \ace detta parametrizzazione di S. \\\\
+  S si dice \underline{superficie cartesiana} se esiste una parametrizzazione
+  $\sigma : \overline{D}\subseteq\R^2\to\R^3$ del tipo
+  $$\sigma(u,v) = \begin{array}{lr}
+    (u,v,f(u,v)) & z = f(x,y) \\
+    \text{oppure} \\
+    (f(u,v),u,v) & x = f(y,z) \\
+    \text{oppure} \\
+    (u,f(u,v),v) & y = f(x,z) \\
+  \end{array} (u,v)\in\overline{D}$$
+  dove $f:\overline{D}\to\R$ continua.
+\end{definition}
+\begin{osservazione}
+  \begin{enumerate}
+    \item Si noti che, a differenza della nozione di curva, nella nozione di superficie \ace all'immagine
+          della parametrizzazione che si assegna il nome "superficie" e non alla parametrizzazione
+    \item Le superifici considerate sono \underline{limitate}. \\
+          Per includere superfici illimitate si necessiterebbe nella definizione di un cambiamento 
+          che non \ace tratto nel corso.
+    \item Data una superficie $S\subseteq\R^3$, la parametrizzazione di S non \ace unica.
+  \end{enumerate}
+\end{osservazione}
+\begin{exercise}
+  Si provvi che la mappa 
+  $\sigma^*(u,v) = (u\cos{v},u\sin{v}, u^2)$, $(u,v)\in[0,1]\times[0,2\pi]$
+  \ace un'altra parametrizzazione della superficie $S_1$, con $D:= (0,1)\times(2\pi)$
+\end{exercise}
+\subsection{Punti interni e bordo di una superficie}
+Vogliamo ora precisare la nozione di bordo e punti interni per una superficie 
+$S\subseteq\R^3$ da un punto di vista intrinseco. \\
+Osserivamo che la precisazione "da un punto di vista intrinseco" evidenzia la differenza
+con le nozioni di frontiera e parte interna di S, visto come sottoinsieme di $\R^3$. \\
+Infatti, si pu\aco provare che, data $S\subseteq\R^3$ superficie, allora 
+$$\p S = S \text{ e } \overcirc{S} = \varnothing$$
+D'altra parte \ace abbastanza intuitivo ritenere che, per esempio, il bordo (intrinseco) della 
+porzione di paraboloide ($S_1$), sia la circonferenza 
+$$\{(x,y,1):x^2+y^2=1\}$$
+mentre il bordo (intrinseco) della sfera sia $\varnothing$. \\\\
+Vogliamo introdurre due nozioni che formalizzino questa intuizione.
+\begin{definition}
+  Sia $S$ una superficie
+  \begin{enumerate}
+    \item Un puno $p\in S$ si dice \underline{interno a S} se esiste un 
+          $B(p,r)$ ed una parametrizzazione $\sigma^* : \overline{D^*}\subseteq\R^2\to\R^3$
+          di $\overline{B(p,r)\cap S}$ tale che $p\in \sigma^*(D^*)$. \\
+          L'insime dei punti interni \ace denotato da: S'
+    \item Si chiama \underline{bordo di S} e si denota $bor(S)$ l'insieme dei punti 
+          che non sono interni ad S, cio\ace $bor(S) = S \setminus S'$
+  \end{enumerate}
+\end{definition}
+\begin{example}
+  \begin{enumerate}
+    \item Si potrebbe provare che $S_1$ ha come punti interni l'insieme
+          $$S_1' = \{(x,y,x^2+y^2):x^2+y^2<1\}$$
+          mentre 
+          $$bor(S_1) = \{(x,y,x^2+y^2):x^2+y^2=1\}$$
+    \item La superficie $S_2$ ha come insieme dei punti interni tutti i punti, $S_2' = S_2$ 
+          mentre $bor(S_2) = \varnothing$
+  \end{enumerate}
+\end{example}
+\section{Regolarit\aca della parametrizzazione e piano tangente ad una superficie}
+Possiamo intuire, tenendo presente il caso delle curve, che la regolarit\aca delle parametrizzazioni
+di una superficie potrebbe non bastare per l'esistenza del piano tangente ad una superficie. \\
+In effett, come vedremo, si possono costruire superifci che ammettono 
+parametrizzazione di classe $C^1$ e non ammettono piano tangente in qualche punto.\\
+Quindi necessiter\aca individuare, come nel caso delle curve, una condizione aggiuntiva alla regolarit\aca 
+$C^1$ della parametrizzazione di una superficie, per l'esistenza del piano tangente. \\\\
+Per capire quale sia questa condizione aggiuntiva, ci aiuteremo con un argomento geometrico
+che utilizza la nozione di tangente di una curva. \\\\
+Sia $S$ superficie, sia $\sigma:\overline{D}\to\R^3$ una sua parametrizzazione di classe $C^1$\\
+L'esistenza di un piano tangente $\pi$ a S in un punto interno 
+$p_0=\sigma(u_0,v_0)$ con $(u_0,v_0)\in D$ dovrebbe implicare la seguente propriet\aca:
+se $\g :[a,b]\to D$ curva di classe $C^1$ con $\g'(t_0) \neq (0,0) \Rightarrow
+\gtilde = \sigma\circ\g:[a,b]\to S$ \ace ancora di classe $C^1$ con 
+$\gtilde'(t_0)\neq (0,0,0)$ e la retta tangente alla curva $\gtilde$, passante 
+per $\gtilde(t_0)$, deve appartenere a $\pi$. \\
+Siano $\g:[a,b]\to D$ di classe $C^1$ con $\g'(t_0)\neq (0,0)$ 
+e $\g(t) = (u(t),v(t))$, $t\in[a,b]$, $\g(t_0)=(u_0,v_0)$, 
+$$\sigma(u,v):= (x(u,v),y(u,v),z(u,v))$$ con $(u,v)\in\overline{D}$, 
+$$\gtilde(t) := \sigma(\g(t)) = (x(\g(t)), y(\g(t)), z(\g(t)))$$ per RDC.
+\begin{exercise}
+  $(1) \, \g'(t_0) = u'(t_0)\sigma_u(u_0,v_0) + v'(t_0)\sigma_v(u_0,v_0)$
+  dove 
+  $$\sigma_u(u,v) := \left(\frac{\p x}{\p u}, \frac{\p y}{\p u}, \frac{\p z}{\p u}\right)(u,v)$$
+  $$\sigma_v(u,v) := \left(\frac{\p x}{\p v}, \frac{\p y}{\p v}, \frac{\p z}{\p v}\right)(u,v)$$
+  Vogliamo imporre che $\gtilde'(t_0)\neq(0,0,0)$. \\
+  Essendo $\g'(t_0) \neq (0,0)$, allora da (1) segue 
+  $$(2) \, \sigma_u(u_0,v_0) \text{ e } \sigma_v(u_0,v_0) \text{ sono L.I.}$$
+  Ricordiamo ora che:
+  $$(2) \iff \sigma_u(u_0,v_0)\wedge\sigma_v(u_0,v_0)\neq(0,0,0)$$
+  dove dati $w=(w_1,w_2,w_3), z = (z_1,z_2,z_3) \in \R^3$
+  $$w\wedge z = \det\begin{bmatrix}
+    e_1 & e_2 & e_3 \\
+    w_1 & w_2 & w_3 \\
+    z_1 & z_2 & z_3 \\
+  \end{bmatrix} = \left(w_2z_3 - z_2w_3, w_1z_3+z_1w_3, w_1z_2-z_1w_2\right) \in \R^3$$ 
+  (prodotto vettore di w e z) \\
+  Ricordiamo inoltre che valgono le seguenti propriet\aca
+  \begin{itemize}
+    \item $w\wedge z$ \ace ortogonale sia a w che a z;
+    \item $\norma{w\wedge z} = \norma{w}\norma{z}\sin{\alpha}$;
+    \item $w\wedge z = (0,0,0) \iff$ w e z sono paralleli;
+  \end{itemize}
+  Consideriamo ora il piano $\pi \subset \R^3$ definito da 
+  $$\pi := \{\sigma(u_0,v_0) + \lambda \sigma_u(u_0,v_0) + \mu \sigma_v(u_0,v_0) : \lambda, \mu \in \R\}$$
+  (eq. parametrica di un piano) \\\\
+  Osserivamo che $\pi$ \ace il piano di eq.:
+  $$a(x-x_0)+b(y-y_0)+c(z-z_0) = 0$$
+  dove, $(a,b,c) := \sigma_u(u_0,v_0) \wedge \sigma_v(u_0,v_0) \neq (0,0,0)$, 
+  $(x_0,y_0,z_0 ):= \sigma(u_0,v_0)$ \\
+  Infatti, basta osservare che, se $(x,y,z)\in \pi$, allora $(x,y,z)$
+  verifica (*), allora, per propriet\aca del prodotto vettore, esistono
+  $\lambda,\mu \in \R$ t.c. 
+  $$(x,y,z) = \sigma(u_0,v_0) + \lambda \sigma_u(u_0,v_0) + \mu \sigma_v(u_0,v_0) : \lambda, \mu \in \R$$
+  Infine si osservi che la retta tangente alla curva $\gtilde$, passante pr 
+  $\gtilde(t_0)$, di eq. parametrica 
+  $$(x,y,z) = \sigma(u_0,v_0) + \gtilde'(t_0)(t-t_0) = 
+      \sigma(u_0,v_0) + \left(u'(t_0)\sigma_u(u_0,v_0) + v'(t_0)\sigma_v(u_0,v_0)\right)(t-t_0)$$
+  $$= \sigma(u_0,v_0) + u'(t_0)\sigma_u(u_0,v_0)(t-t_0) + v'(t_0)\sigma_v(u_0,v_0)(t-t_0) \in \pi$$
+  $\forall t \in \R$. Dunquq essa \ace contenuta in $\pi$
+\end{exercise}
+\begin{definition}
+  Sia S superfice e sia $p_0\in S'$
+  \begin{enumerate}
+    \item Il punto $p_0$ si dice \underline{regolare} se esistono 
+          $B(p_0,r_0)$ ed una parametrizzazione $\sigma:\overline{D}\to\R^3$ di 
+          $\overline{B(p_0,r_0)\cap S}$ t.c. 
+          \begin{enumerate}
+            \item[1.1] $\sigma$ \ace di classe $C^1$
+            \item[1.2] vale (2) per il punto $(u_0,v_0)\in D$ t.c. $\sigma(u_0,v_0)=p_0$.\\
+                        In tal caso il piano $\pi$ si chiama \underline{piano tangente}
+                        a S nel punto $p_0$.\\
+                        Le due direzioni (o versori)
+                        $$\pm \frac{\sigma_u(u_0,v_0)\wedge\sigma_v(u_0,v_0)}
+                                {\norma{\sigma_u(u_0,v_0)\wedge \sigma_v(u_0,v_0)}}$$
+                        si chiamano \underline{direzioni} (o versori) normali a S in $p_0$
+          \end{enumerate}
+    \item S si dice \underline{regolare}, se tutti i punti interni di S sono regolari.
+  \end{enumerate}
+\end{definition}
+\begin{osservazione}
+  Sia $D\subseteq\R^2$ intorno di una curva di Jordan e sia $f\in C^0(\overline{D})\cap C^1(D)$. 
+  Consideriamo la superficie cartesiana
+  $$S=G_f = \{(x,y,f(x,y)) : (x,y) \in \overline{D}\}$$
+  Allora 
+  \begin{exercise}
+    \begin{enumerate}
+      \item ogni punto $p_0 = (x_0,y_0,f(x_0,y_0))$ con $(x_0,y_0)\in D$ \ace interno di S regolare.
+      \item L'eq. del piano tangente a S nel punto $p_0$ \ace data da 
+            $$z = f(x_0,y_0) + \frac{\p f}{\p x}(x_0,y_0) (x-x_0) + \frac{\p f}{\p y}(x_0,y_0)(y-y_0)$$
+    \end{enumerate}
+    \textbf{Soluzione:} Si consideri la parametrizzazione di S data da 
+    $$\sigma(u,v) = (u,v,f(u,v))$$
+    $(u,v)\in\overline{D}$
+    \begin{exercise}
+      Provare che
+      $$\sigma_u(u_0,v_0) \wedge \sigma_v(u_0,v_0) = \left(-\p_u f(u,v), -\p_v f(u,v), 1\right) \, (u,v)\in D$$
+    \end{exercise}
+    Da ci\aco segue subito il punto uno. \\ 
+    Inoltre ricordando l'eq cartesiana del piano tangente a S nel punto $p_0$ (vedi (*)), segue 
+    subito il punto due. 
+  \end{exercise}
+\end{osservazione}

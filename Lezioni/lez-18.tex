@@ -1,0 +1,42 @@
+\section{Lez - 18, Superfici orientabili}
+Per introdurre il concetto di orientabilit\aca di una superficie
+partiamo dal caso pi\acu semplice di una superficie cartesiana. \\
+Per esempio, supponiamo che una superficie sia parametrizzata dalla mappa 
+$$\sigma:\overline{D}\to\R^3 \, \sigma(u,v)=(u,v,f(u,v))$$
+$D\subseteq \R^2$ interno di una curva di Jordan $f \in C^0(\overline{D})\cap C^1(D)$. \\
+I due versori normali a S nel punto $p = \sigma(u,v)$, $(u,v)\in D$ sono date da 
+$$\pm \frac{\sigma_u(u_0,v_0)\wedge\sigma_v(u_0,v_0)}
+{\norma{\sigma_u(u_0,v_0)\wedge \sigma_v(u_0,v_0)}} = \pm \frac{\left(-\p_u f(u,v), -\p_v f(u,v), 1\right)}
+    {\sqrt{1+\abs{\nabla f(u,v)}^2}}$$
+Si noti che la terza componente del vettore 
+$$\pm \frac{1}{\sqrt{1+\abs{\nabla f(u,v)}^2}} \neq 0$$
+e $S' = \sigma(D)$. \\
+Pertanto \ace sempre possibile selezionare, in ciascun punto, il versore normale che 
+"punti verso l'alto" e lo denotiamo con 
+$$N_S^{+} (x,y,z) = \frac{\sigma_u\wedge \sigma_v}{\norma{\sigma_u\wedge\sigma_v}}\left(\sigma^{-1}(x,y,z)\right)$$
+$(x,y,z)\in S'$, dove $\sigma^{-1}:S'\to D$, $\sigma'(x,y,z) = (x,y)$, mentre 
+denotiamo 
+$$N_S^{-} (x,y,z) = - N_S^{+} (x,y,z)$$
+Si noti che $N_S^{+}, N_S^{-}: S' \to \R^3$ sono continue. \\
+Si dice in questo caso che sono possibili due \underline{orientazioni} della superficie S, indotte
+dalla parametrizzazione. \\
+Pi\acu in generale vale la seguente
+\begin{definition}
+  Una superficie $S\subseteq\R^3$ si dice \underline{orientabile} se esiste una mappa 
+  $N_S^{+} : S'\to\R^3$ t.c. 
+  \begin{enumerate}
+    \item $N_S^{+}(p)$ coincide con uno dei due versori normali definiti tramite parametrizzazione;
+    \item $N_S^{+}$ \ace continua.  
+  \end{enumerate}
+  $N_S^{+}$ \ace detto \underline{versore normale positivo} a S. \\
+  Definiamo $N_S^{-} = - N_S^{+}$
+\end{definition} 
+\begin{example}
+  \begin{itemize}
+    \item (Porzione di paraboloide) \\
+          Sia $S=\{(x,y,x^2+y^2): x^2+y^2\leq r^2\}$ \\
+          Sappiamo che l'insieme dei punti interni \ace dato da 
+          $$S'$$
+  \end{itemize}
+\end{example}
+\subsection{Idea per definire l'area di una superficie}
