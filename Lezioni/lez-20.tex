@@ -1,0 +1,140 @@
+\section{Lez - 20, Dimostrazione Gauss-Green}
+Dimostriamo ora il teorema di Gauss-Green, \ref{gaussgreen},
+\begin{proof}
+  Supponimao che E sia semplice rispetto a y e sia rappresentato con le 
+  notazioni precedenti. \\
+  \begin{itemize}
+    \item Incominciamo a provare (GG2). \\
+          Dall'esercizio 5 foglio 10, segue:
+          $$(1)\, \int_{\p^+ E} f \, dx = \int_{\al}^{\bb}\left(f(x,g_1(x))-f(x,g_2(x))\right)\,dx$$
+          Per la formula di riduzione degli integrali doppi su domini semplici, 
+          $$(2)\, \iint_{E}\frac{\p f}{\p y} \,dx\,dy = \int_{\al}^{\bb}\left(\int_{g_1(x)}^{g_2(x)} \frac{\p f}{\p y} \,dy\right)\,dx = $$
+          $$= \int_{\al}^{\bb} \left(f(x,g_2(x))-f(x,g_1(x))\right)\,dx$$
+          Da (1) e (2) segue (GG2)
+    \item Proviamo ora (GG1). \\
+          Definiamo $F:[\al,\bb]\to\R$ come $$F(x) = \int_{g_1(x)}^{g_2(x)} f(x,y)\,dy$$
+          Per l'esercizio precedente (\ref{es41}) 
+          $$F'(x) = f(x,g_2(x))g_2'(x) - f(x,g_1(x))g_1'(x) + \int_{g_1(x)}^{g_2(x)} \frac{\p f}{\p x}(x,y)\,dy$$
+          $\forall x \in [\al,\bb]$. \\
+          Integrando rispetto a x la precedente identit\aca, otteniamo
+          $$F(\bb)-F(\al) = \int_{\al}^{\bb} F'(x) \,dx = \int_{\al}^{\bb} = $$
+          $$= \int_{\al}^{\bb} f(x,g_2(x))g_2'(x) - 
+                \int_{\al}^{\bb} f(x,g_1(x))g_1'(x) + \int_{\al}^{\bb} \left(\int_{g_1(x)}^{g_2(x)} \frac{\p f}{\p x}(x,y)\,dy\right)\,dx = $$
+          $$ = \iint_{E} \frac{\p f}{\p x}\,dx\,dy$$
+          Possiamo riscrivere la precedente identit\aca come 
+          $$(3)\, \iint_{E} \frac{\p f}{\p x} \,dx\,dy = \int_{\al}^{\bb} f(x,g_1(x))g_1'(x) \,dx + 
+            \int_{g_1(\bb)}^{g_2(\bb)} f(\bb,y)\,dy - $$
+            $$ - \int_{\al}^{\bb} f(x,g_2(x))\,dx - \int_{g_1(\al)}^{g_2(\al)} f(\al,y)\,dy$$
+          D'altra parte, utilizzando la definizione di integrale curvilineo di 
+          II specie di $\om = f\,dy$ lungo $\g$ si ottiene:
+          \begin{exercise}
+            $$(4)\, \int_{\p^+ E} \om = \int_{\g} \om = \sum_{i=1}^{4} \int_{\g_i}\om =  $$
+            $$= \int_{\al}^{\bb} f(x,g_1(x))g_1'(x) \,dx + 
+            \int_{g_1(\bb)}^{g_2(\bb)} f(\bb,y)\,dy - $$
+            $$ - \int_{\al}^{\bb} f(x,g_2(x))\,dx - \int_{g_1(\al)}^{g_2(\al)} f(\al,y)\,dy$$
+          \end{exercise}
+          Da (3) e (4) segue (GG1)
+  \end{itemize}
+\end{proof}
+Una conseguenza importante delle formule di \ref{gaussgreen} \ace il teorema della divergenza. 
+Prima per\aco enunciamo la nozione di versore normale esterno ad un dominio semplice 
+regolare a tratti. 
+\subsection{Versore normale esterno ad un insieme semplice regoalre a tratti nel piano}
+Assumiamo che $E\subseteq\R^2$ si un insieme y-semplice regolare a tratti ed utilizziamo 
+ancora le nozioni precedenti.\\
+Ricordiamo che $\p E = $ sostegno di $\g$, dove $\g$ \ace chiusa, semplice, regolare 
+a tratti, $\g = \cup_{1}^{4} \g_i$ e $\g$ \ace percorsa in senso anti-orario. 
+Pi\acu precisamente 
+$$\g:[\al,\bb+3] \to \p E$$
+e, se $\al = t_0 < t_1 = \bb < t_2 = \bb + 1 < t_3 = \bb+2 < t_4 = \bb +3$,
+$\g_i : [t_{i-1},t_i]\to \p E$ regolare e 
+$$\g_i(t) = (x_i(t),y_(t)) \, i = 1,2,3,4$$
+Definiamo, per ogni punto $p\in \p E$, con $p \neq \g(t_{i-1})$, $\g(t_i)$
+(i = 1,2,3,4) i versori 
+$$\T^+(p) \frac{(x_i'(t),y_i'(t))}{\norma{\g'(t)}}$$
+se $p = \g(t)$, $t \in (t_{i-1},t_i)$ e 
+$$Ne(p) := \frac{(y_i'(t), -x_i'(t))}{\norma{\g'(t)}}$$
+se $p = \g(t)$, $t\in(t_{i-1},t_i)$. \\
+I versori $\T^+(p)$ e $Ne(p)$ sono detti, risp., \underline{versore tangente positivo} e  \\
+\underline{versore normale esterno a $\p E$}. \\
+\ac{E} facile verificare che $\T^+(p)$ e $Ne(p)$ sono ortogonali e si potrebbe 
+provare che $Ne(p)$ punta vero l'esterno di E. 
+\begin{theorem}[divergenza per domini semplici]
+  Sia $E\subseteq\R^n$ un dominio semplice, regolare a tratti e sia $v=(v_1,v_2):E\subseteq\R^2\to\R^2$
+  di classe $C^1(E)$. Allora 
+  $$(GG)\, \iint_{E} div(u)\,dx\,dy = \int_{\p E} \tuple{v,Ne}\,ds = \int_{\p^+ E} (v_1\,dy-v_2\,dx)$$
+  \begin{proof}
+    Proviamo (GG) nel caso in cui E sia y-semplice, regolare a tratti ed utilizziamo le notazioni precedenti, con cui abbiamo rappresentato E.
+    $$\int_{\p E} \tuple{v,Ne} \,ds := \int_{\g} \tuple{v,Ne} \,ds = \sum_{i=1}^4 \int_{\g_i} \tuple{v,Ne}\,ds = $$
+    $$= \sum_{i=1}^4 \int_{t_{i-1}}^{t_i} \tuple{v(\g_i(t)),Ne(\g_i(t))}\norma{\g'(t)}\,dt = $$
+    $$= \sum_{i=1}^4 \int_{t_{i-1}}^{t_i} \left(v_1(\g_i(t))y_i'(t) - v_2(\g_i(t))x_i'(t)\right)\,dt = $$
+    $$= \sum_{i=1}^4 \int_{t_{i-1}}^{t_i} v_1(\g_i(t))y_i'(t) - \sum_{i=1}^4 \int_{t_{i-1}}^{t_i} v_2(\g_i(t))x_i'(t)\,dt = $$
+    $$= \int_{\p^+ E} v_1\,dy - \int_{\p^+ E} v_2\,dx =_{(GG1+GG2)} = 
+        \iint_{E} \frac{\p v_1}{\p x}\,dx\,dy + \iint_{E} \frac{\p v_2}{\p y}\,dx\,dy = $$
+    $$= \iint_{E} \left(\frac{\p v_1}{\p x}+\frac{\p v_2}{\p y}\right)\,dx1\,dy = \iint_{E} div(v) \,dx\,dy$$
+  \end{proof}
+\end{theorem}
+\subsection{Teorema della divergenza per insiemi generali del piano}
+Il teorema della divergenza vale per insiemi del piano molto generali
+\begin{definition}
+  Dato $A\subseteq\R^n$ si dice \underline{convesso} se, $\forall p,q \in A$, essite una curva 
+  $C^1$ a tratti $\g:[a,b]\to A$ t.c. $\g(a)=p$ e $\g(b) = q$
+\end{definition}
+\begin{osservazione}
+  Un insieme convesso \ace connesso, mentre il viceversa pu\aco non valere. Infatti, se A \ace convesso
+  presi $p,q\in A$ se definiamo la curva $C^1$ $\g:[0,1]\to A$, definita come 
+  $\g(t) = tq+(1-t)p$ \ace la curva cercata.\\
+  Invece se, n=2, e 
+  $$A=\{(x,y):0<x^2+y^2<1\}$$
+  abbiamo vissto che A \ace{non \ace convesso}. D'altra parte \ace facile convincersi che A \ace connesso.
+\end{osservazione}
+\begin{definition}
+  Un insieme E si dice \underline{dominio reolare a tratti} se 
+  \begin{enumerate}
+    \item $E=\overline{A}$, con A aperto, connesso e limitato
+    \item E \ace misurabile
+    \item $\p E$ \ace l'unione disgiunta del sostegno di k curve di Jordan, $C^1$ a tratti, orientate in 
+          modo tale da percorrere $\p E$ tenendo a sinistra E.
+  \end{enumerate}
+\end{definition}
+\begin{example}
+  Sia $E=\{(x,y): 1\leq x^2+y^2\leq 4\}$. \\
+  Allora E \ace n dominio regolare a tratti. \\ 
+  Infatti $E=\overline{A}$ dove $A = \{(x,y): 1 \leq x^2+y^2 \leq 4\}$, con A aperto limitato e connesso. 
+  Inoltre E \ace misurabile e $\p E = \Gamma_1 \cup \Gamma_2$, dove 
+  \begin{itemize}
+    \item $\Gamma_1 = \{(x,y):x^2+y^2=1\} = \g_1([0,2\pi])$
+    \item $\Gamma_2 = \{(x,y):x^2+y^2=4\} = \g_2([0,2\pi])$
+  \end{itemize}
+  dove 
+  \begin{itemize}
+    \item $\g_1 : [0,2\pi]\to \p E$, $\g_1(t) = (cost, -sint)$
+    \item $\g_2 : [0,2\pi]\to \p E$, $\g_2(t) = (2cost, 2sint)$
+  \end{itemize}
+  Dato E dominio regolare a tratti, data $\om$ forma diff. di classe $C^0$ su $\p E$, 
+  data $f:\p E \to \R$ di classe $C^0$ su $\p E$, definiamo 
+  $$\int_{\p^+ E} \om = \sum_{i=1}^k \int_{\g_i}\om$$
+  e 
+  $$\int_{\p E} f\,ds = \sum_{i=1}^k \int_{\g_i}f \,ds $$
+\end{example}
+\subsection{Versore normale esterno ad un dominio regolare a tratti del piano e 
+teo. della divergenza}
+Sia E un dominio regolare a tratti. \\
+Ricordiamo che 
+$\p E$ = unione disgiunta dei sostegni di k curve $\g_1,...,\g_k$ di Jordan regolari 
+a tratti, orientate in modo tale da percorrere $\p E$ tenendo a sinistra E.\\
+Definiamo in ogni punto di $\p E$, eccetto al pi\acu un numero finito di punti, il 
+\underline{versore tangente} positivo in un punto $p\in\p E$ nel modo seguente:\\
+se $\g_i(t) = (x_i(t),y_i(t)) = p$, 
+$$\T^+(p)=\frac{(x_i'(t), y_i'(t))}{\norma{\g_i'(t)}}$$
+Si definisce \underline{versore normale esterno} in un punto $p\in\p E$ il versore
+$$Ne(p) = \frac{(y_i'(t), -x_i'(t))}{\norma{\g_i'(t)}}$$
+se $p=\g_i(t)$
+\begin{theorem}[della divergenza nel piano][BDPG,16.5]
+  Sia $E\subseteq\R^2$ un dominio regolare a tratti e sia $v:E\to\R^2$ 
+  di classe $C^1(E)$. Allora
+  $$(GG)\, \iint_{E}div(v)\,dx\,dy = \int_{\p E}\tuple{v,Ne}\,ds = \int_{\p^+ E} v_1\,dy-v_2\,dx$$
+  La quantit\aca $$\int_{\p E}\tuple{v,Ne}\,dS$$
+  rappresenta il flusso del campo v ... dell'insieme E.
+\end{theorem}
+Il teorema della divergenza ha fondamentali applicazioni fisiche/ingegneristiche.

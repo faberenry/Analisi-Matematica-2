@@ -1,0 +1,84 @@
+\chapter{Il teorema della divergenza nel piano e nello spazio, [BDPG,16]}
+\section{Lez - 19}
+Ricordiamo che se $v\in E\subseteq\R^n\to\R^n$ \ace un campo vettoriale di classe $C^1(E)$
+su un aperto E, l'operatore
+$$v(x) = \left(v_1(x),..,v_n(x)\right) \to div(v)(x) = \sum_{i=1}^{n} \frac{\p v_i}{\p x_i} (x) \in \R$$
+se $x\in E$, \underline{operatore di divergenza}
+\begin{definition}
+  Sia $E\subseteq\R^n$ chiuso, una funzione $f:E\to\R$ si dice di classe $C^1(E)$ se esiste 
+  un aperto $E^*\supset E$ ed una funzione $f^* : E^* \to \R$ di classe $C^1(E^*)$ t.c.
+  $$f^*(x) = f(x) \, \forall x\in E$$
+  Pi\acu in generale, se $v = (v_1,...,v_n) : E \subseteq \R^n \to \R^n$ campo vettoriale
+  si dice di classe $C^1(E)$ se ogni componente
+  $v_i : E \to \R$ \ace di classe $C^1(E)$
+\end{definition}
+\begin{osservazione}
+  Tipicamente utilizzeremo questa nozione nel caso in cui $E = \overline{A} \supset A$ con 
+  $A\subseteq \R^n$ aperto.
+\end{osservazione}
+\begin{definition}
+  \begin{enumerate}
+    \item Un dominio E semplice rispetto a y si dice \underline{regolare a tratti} se 
+          $$E = \{(x,y)\in\R^2 : x\in[\alpha,\beta], g_1(x)\leq y \leq g_2(x)\}$$
+          con $g_1(x) < g_2(x)$ $\forall x \in [\alpha,\beta]$, $g_1,g_2\in C^1([\alpha,\beta])$
+    \item Un dominio $E\subseteq \R^2$ semplice rispetto a x si dice regolare a tratti se 
+          $$E = \{(x,y)\in\R^2 : y\in[\alpha,\beta], g_1(y)\leq x \leq g_2(y)\}$$
+          con $g_1(y) < g_2(y)$ $\forall y \in [\alpha,\beta]$, $g_1,g_2\in C^1([\alpha,\beta])$
+  \end{enumerate}
+\end{definition}
+Assumiamo, per esempio, che $E\subseteq\R^2$ sia un dominio y-semplice come in (1). Allora si pu\aco provare che 
+$\p E$ \ace il sostegno di una curva semplice chiusa e ragolare a tratti 
+$\g : [\alpha,\beta+3] \to \R^2$ definita come 
+$$\g = \bigcup_{i=1}^{4} \g_i$$
+dove 
+\begin{itemize}
+  \item $\g_1(t)=(t,g_1(t))$, $t\in[\alpha,\beta]$
+  \item $\g_2(t)=(\beta,g_1(\beta)+(g_2(\beta)-g_1(\beta))(t-\beta))$, $t\in[\beta, \beta+1]$
+  \item $\g_3(t)=(\beta+(\beta-\al)(\beta+1-t),g_2(\beta+(\beta-\al)(\beta+1-t)))$, $t\in[\beta+1,\beta+2]$
+  \item $\g_4(t)=(\al, g_2(\alpha)+ (g_2(\alpha)-g_1(\alpha))(\beta+2-t))$, $t\in[\beta+2,\beta+3]$
+\end{itemize}
+Si noti che $\g$ \ace una curva di Jordan, che induce un orientamento positivo su $\p E$. \\
+Infatti una curva di Jordan si dice che induca un orientamento positivo su $\p E$, frontiera
+del suo interno, quando $\p E$ \ace prcorso in senso anti-orario. In questo caso 
+l'insieme E \ace tenuto a sinistra quanto $\p E$ \ace percorso. \\
+Con questa convenzione, se $\om$ \ace una forma differenziale continua su $\p E$ e 
+$f\in C^0(\p E)$ si pone, per definizione, 
+$$\int_{\p^+ E} \om = \int_{\g} \om , \int_{\p E} f \, ds = \int_{\g} f \, ds$$
+Vale allora il seguente fondamentale risultato
+\section{Teorema Gauss-Green}
+\begin{theorem}[formule di Gauss-Green per domini semplici] 
+  \label{gaussgreen}
+  Sia $E\subseteq \R^2$ un dominio semplice, regolare a tratti e sia $f\in C^1(E)$. 
+  Allora 
+  $$(GG1) \, \iint_{E} \frac{\p f}{\p x} \,dx\,dy = \int_{\p^+ E} f \,dy$$
+  $$(GG2) \, \iint_{E} \frac{\p f}{\p y} \,dx\,dy = -\int_{\p^+ E} f \,dx$$
+\end{theorem}
+\begin{osservazione}
+  Le formule (GG1) e (GG2) collegano un integrale doppio su un insieme $E\subseteq\R^2$ 
+  ad un integrale curvilineo sulla frontiera $\p E$. Quindi si "abbassa" la
+  dimensione sull'insieme su cui si integra da 2 (insieme E) a 1 (insieme $\p E$). \\
+  In questo senso questo risultato pu\aco essere considerato l'analogo in $\R^2$ del 
+  teorema fondamentale del calcolo dell'integrale dove si afferma che se 
+  $v \in C^1([a,b])$, $$\int_{a}^{b} \frac{dv}{dx}(x)\,dx = v(b)-v(a)$$
+  Quindi l'integrale di una funzione su un intervallo (dim = 1) al valore della sua primitiva
+  in due punti (dim = 0).
+\end{osservazione}
+\begin{exercise}
+  \label{es41}
+  Siano $f\in C^1(\R^2)$, $a,b\in C^1(\R)$ e $F:\R\to\R$ definita da 
+  $$F(x) = \int_{a(x)}^{b(x)}f(x,y)\,dy$$
+  Supponendo noto che $\forall \al, \bb \in \R$
+  $$\frac{d}{dx}\int_{\al}^{\bb} f(x,y)\,dy = \int_{\al}^{\bb} \frac{\p f}{\p x} (x,y) \, dy$$
+  provare che 
+  $$\exists F'(x) = f(x,b(x))b'(x) - f(x,a(x))a'(x) + \int_{a(x)}^{b(x)} \frac{\p f}{\p x}(x,y)\,dy$$
+  \textbf{Soluzione:} \\\\
+  Si osservi che $F(x) = G(H(x))$, $x\in\R$, dove $G:\R^3\to\R$, $H:\R\to\R^3$ definite come
+  $$G(x,s,t):=\int_{s}^{t} f(x,y)\,dy , H(x) = (x,a(x),b(x))$$
+  Per RDC, 
+  $$\exists F'(x) = \nabla G(H(x))\cdot H'(x) \, \forall x \in \R$$
+  D'altra parte poich\ace
+  $$\nabla G(x,s,t) = \left(\frac{\p}{\p x} \int_{s}^{t} f(x,y)\,dy, -f(x,s), f(x,t)\right) = $$
+  $$= \left(\int_{s}^{t} \frac{\p}{\p x}f(x,y)\,dy, -f(x,s), f(x,t)\right)$$
+  e $$H'(x) = (1,a'(x),b'(x))$$
+  segue la tesi.
+\end{exercise}

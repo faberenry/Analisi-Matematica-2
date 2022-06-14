@@ -36,7 +36,151 @@ Pi\acu in generale vale la seguente
     \item (Porzione di paraboloide) \\
           Sia $S=\{(x,y,x^2+y^2): x^2+y^2\leq r^2\}$ \\
           Sappiamo che l'insieme dei punti interni \ace dato da 
-          $$S'$$
+          $$S':=\{(x,y,x^2+y^2):x^2+y^2< r^2\}$$
+          $$\overline{D} := \{(u,v)\in\R^2 : u^2+v^2\leq r^2\}$$
+          $\sigma:\overline{D}\to\R^3$, $\sigma(u,v):= (u,v,u^2+v^2)$\\
+          $\sigma^{-1}:S' \to D$, $\sigma^{-1}(x,y,z)=(x,y)$. \\
+          Definiamo la mappa $N_S^{+}$,
+          $$N_S^{+}(x,y,z) = \frac{\sigma_u\wedge\sigma_v}{\norma{\sigma_u\wedge\sigma_v}}\left(\sigma^{-1}(x,y,z)\right)
+          = \frac{(-2x,-2y,1)}{\sqrt{4x^2+4y^2+1}}$$
+          se $(x,y,z)\in S'$. \\
+          \ac{E} facile verificare che $N_S^{+}$ \ace un'orientazione di S. \\
+          L'altra orientazione \ace data da $N_S^{-} = -N_S^{+}$. 
+          In questo caso si dice cche l'orientazione positiva \ace indotta dalla parametrizzazione $\sigma$
+    \item (Sfera di $\R^3$) \\
+          $$S = \{(x,y,z): x^2+y^2+z^2=r^2\}$$
   \end{itemize}
 \end{example}
+\section{Integrali di superficie}
+Incominciamo a definire la nozione di area di una superficie.
 \subsection{Idea per definire l'area di una superficie}
+Sia $S\subseteq\R^3$ una superficie regolare e sia 
+$\sigma:\overline{D}\subseteq \R^2\to\R^3$ una sua parametrizzazione. \\
+Sia $Q = [u_0+u_0d_u]\times[v_0,v_0+dv]$ cpn $(u_0,v_0)\in D$, l'elemento 
+infinitesimo di area $dS$ \ace dato da 
+$$(1)\, dS = area(\sigma(Q))$$
+se $du$ e $dv$ sono quantit\aca positive "molto piccole". \\
+Ricordiamo che essendo S regolare, ammette piano tangente nel punto $p_0 = \sigma(u_0,v_0)$ 
+definito da 
+$$\pi = \{\sigma(u_0,v_0) + \lambda\sigma_u(u_0,v_0) + \mu\sigma_v(u_0,v_0):\lambda,\mu\in\R\}$$
+Essendo $\sigma$ di classe $C^1$ \ace differenziabile in $p_0$, cio\ace 
+$$(2) \, \sigma(u,v) = \sigma(u_0,v_0)+d\sigma(u_0,,v_0)(u-u_0,v-v_0)+ o\left(\norma{(u-u_0,v-v_0)}\right) $$
+$\forall (u,v)\in D$, dove per definizione 
+$d\sigma(u_0,v_0) : \R^2\to\R^3$ e 
+$$d\sigma(u_0,v_0)(\lambda,\mu) := D\sigma(u_0,v_0)\begin{bmatrix}
+  \lambda \\
+  \mu \\
+\end{bmatrix} \, (\lambda,\mu)\in\R^2$$
+$$D\sigma(u_0,v_0):= \begin{bmatrix}
+  \frac{\p x}{\p u} & \frac{\p x}{\p v} \\
+  \\
+  \frac{\p y}{\p u} & \frac{\p y}{\p v} \\
+  \\
+  \frac{\p z}{\p u} & \frac{\p z}{\p v} \\
+\end{bmatrix}(u_0,v_0) \text{ matrice Jacobiana di } \sigma \text{ in } (u_0,v_0)$$
+$$D\sigma(u_0,v_0) = \begin{bmatrix}
+  \sigma_u(u_0,v_0) & | & \sigma_v(u_0,v_0) \\
+\end{bmatrix}$$
+Se du e dv sono molto piccoli, per l'approssimazione (2), possiamo considerare nullo 
+$o\left(\norma{(u-u_0,v-v_0)}\right)$. \\
+Perci\aco $$(3) \, area(\sigma(Q)) \simeq area(\widetilde{Q})$$
+dove 
+$$\widetilde{Q} = \T(Q) = \{\sigma(u_0,v_0) + \lambda\sigma_u(u_0,v_0) + \mu\sigma_v(u_0,v_0): \lambda\in[0,du],
+  \mu \in [0,dv]\} \subseteq \pi$$
+(parallelogramma determinato dal vertice $\sigma(u_0,v_0)$ e dai vettori 
+ $du\cdot \sigma_u(u_0,v_0)$ e $dv\cdot \sigma_v(u_0,v_0)$) e
+$$\T (\lambda,\mu):= \sigma(u_0,v_0)+d\sigma(u_0,v_0)(\lambda,\mu) \, (\lambda,\mu)\in\R^2$$
+Denotiamo 
+$$w = du\cdot\sigma_u(u_0,v_0) \text{ e } z = dv\cdot\sigma_v(u_0,v_0)$$
+Allora 
+$$(4)\, area(\widetilde{Q}) = \norma{w}\norma{z} \sin\alpha := \norma{w\wedge z}
+= \norma{\sigma_u(u_0,v_0)\wedge \sigma_v(u_0,v_0)}\,du\,dv$$
+dove $\alpha =$ angolo tra w e z. \\
+Pertanto da (1), (3), (4) otteniamo 
+$$dS \simeq \norma{\sigma_u(u_0,v_0) \wedge \sigma_v(u_0,v_0)}\,du\,dv$$
+\begin{definition}
+  Sia S una superficie regolare di parametrizzazione $\sigma : D\subseteq \R^2 \to \R^3$
+  insieme misurabile e supponiamo che la funzione 
+  $$(*) D \ni (u,v) \to \norma{\sigma_u\wedge\sigma_v}(u,v)$$
+  sia limitata. \\
+  Si chiama \underline{area di S} il valore 
+  $$A(S) := \iint_D \norma{\sigma_u(u,v)\wedge\sigma_v(u,v)}\,du\,dv$$
+  Una superficie S regolare per cui valga $(*)$ si dice \underline{di area ben definita}
+\end{definition}
+\begin{example}
+  \begin{enumerate}
+    \item Calcolare l'area della sfera di centro (0,0,0) e raggio $r>0$ \\
+          \textbf{Soluzione:} \\\\
+          Possiamo rappresentare 
+          $$S = \{(x,y,z)\in\R^3:x^2+y^2+z^2 = r^2\}$$
+          e consideriammo la sua parametrizzazione in coordinate sferiche, cio\ace 
+          la mappa $\sigma:\overline{D}\to\R^3$, $\overline{D}=[0,2\pi]\times[0,\pi]$, 
+          $$\sigma(u,v) = r\left(\cos{u}\sin{v}, \sin{u}\sin{v}, \\cos{v}\right)$$
+          \begin{exercise}
+            Verificare $$\norma{\sigma_u\wedge\sigma_v} = r^2\abs{\sin{v}}$$
+          \end{exercise}
+          Pertanto 
+          $$A(S) = \iint_{D} \norma{\sigma_u\wedge\sigma_v} (u,v) \,du\,dv = \iint_{D} r^2\abs{\sin{v}} \,du\,dv = $$
+          $$= r^2\left(\int_{0}^{2\pi} \,du\right)\cdot\left(\int_{0}^{\pi}\sin{v} \,dv\right) = 
+              r^2\cdot 2\pi \left(\left.-cos{v}\right|_{0}^{\pi}\right) = 4\pi r^2$$
+    \item Sia $D\subseteq\R^2$ interno di una curva di Jordan, e sia 
+          $f\in C^0(\overline{D})\cap C^1(D)$ e supponiamo che 
+          $\p_u f, \p_v f : D \to \R$ siano limitate. \\
+          Allora se $S = G_f := \{(u,v,f(u,v)):(u,v)\in D\}$, 
+          $$A(S) = \iint_{D} \sqrt{1+\abs{\nabla f(u,v)}^2} \,du \,dv$$
+          \textbf{Soluzione:} \\\\
+          Consideriamo la parametrizzazione cartesiana $\sigma : \overline{D}\to\R^3$ di S definita come
+          $$\sigma(u,v)=(u,v,f(u,v)) \, (u,v)\in\overline{D}$$
+          Sappiamo che 
+          $$\sigma_u \wedge \sigma_v = \left(-\p_u f, -\p_v f, 1\right)$$
+          se $(u,v)\in D$. \\
+          Pertanto 
+          $$A(S) = \iint_{D}\norma{\sigma_u\wedge\sigma_v}(u,v)\,du\,dv = 
+              \iint_{D} \sqrt{1+\p_u f^2+\p_v f^2} \,du\,dv = $$
+          $$= \iint_{D} \sqrt{1+\abs{\nabla f(u,v)}^2} \,du\,dv$$
+  \end{enumerate}
+\end{example}
+\begin{exercise}
+  Siano $\g = (\g_1,\g_2):[a,b]\to\R^2$ una curva regolare, 
+  $f:\Gamma = \g([a,b])\to [0,+\infty)$ continua, e sia
+  $$S=\{\left(\g_1(u),\g_2(u),v\right): a \leq u\leq b, 0 \leq v \leq f(\g(u))\}$$
+  (sottografico di f lungo $\Gamma$). \\
+  Provare che S \ace una superficie regolare e $A(S) = \int_{\g} f \,ds$. \\
+  \textbf{Soluzione:} \\\\
+  Consideriamo la parametrizzazione $\sigma:\overline{D}\to\R^3$, $\sigma(u,v)=\left(\g_1(u),\g_2(u),v\right)$
+  dove 
+  $$\overline{D} = \{(u,v)\in\R^2: u \in [a,b], v \in [0,f(\g(u))]\}$$
+  Allora \begin{itemize}
+    \item $\sigma_u = \left(\g_1'(u),\g_2'(u), 0\right)$
+    \item $\sigma_v = (0,0,1)$
+  \end{itemize}
+  se $(u,v)\in D$ e 
+  \begin{exercise}
+    Verificare:
+    \begin{enumerate}
+      \item D \ace interno di una curva di Jordan
+      \item $\sigma_u\wedge\sigma_v= \left(\g_2'(u),-\g_1'(u),0\right)$ se $(u,v)\in D$
+      \item $\sigma(\overline{D}) = S$
+    \end{enumerate}
+  \end{exercise}
+  In particolare, essendo $\g$ una curva regolare, dal punto (2) segue che S \ace regolare.
+  Inoltre 
+  $$A(S) = \iint_{D} \norma{\sigma_u\wedge\sigma_v}(u,v) \,du\,dv = 
+          \iint_{D} \sqrt{\g_1'(u)^2 + \g_2'(u)^2} \,du\,dv$$
+  Essendo D un insieme semplice rispetto a v, per la formula di riduzione su domini semplici,
+  otteniamo:
+  $$A(S) = \iint_{D}\norma{\g'(u)}\,du\,dv = \int_{a}^{b}\norma{\g'(u)}\left(\int_{0}^{f(\g(u))} \,dv\right)\,du = $$
+  $$= \int_{a}^{b} f(\g(u))\norma{\g'(u)}\,du =: \int_{\g} f \, ds$$
+\end{exercise}
+\subsection{Generalizzazione di nozione di integrale di I sp. per curve a superfici}
+Si pu\aco generalizzare la nozione di integrale di I specie per curve alle superfici.
+\begin{definition}
+  Sia $S$ una superficie regolare di parametrizzazione $\sigma:\overline{D}\to\R^3$ t.c. 
+  \begin{enumerate}
+    \item $D\subseteq \R^2$ misurabile
+    \item $D\ni (u,v) \to \norma{\sigma_u\wedge\sigma_v}(u,v)$ sia limitata
+  \end{enumerate}
+  Sia $f:S' \to \R$ continua e limitata. Il valore
+  $$\iint_{S} f \,dS := \iint_{D} f(\sigma(u,v))\norma{\sigma_u\wedge\sigma_v}(u,v) \,du\,dv$$
+  si chiama \underline{integrale di superficie} di f.
+\end{definition}

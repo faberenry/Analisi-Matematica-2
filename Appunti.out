@@ -80,41 +80,50 @@
 \BOOKMARK [2][-]{subsection.4.1.1}{Punti interni e bordo di una superficie}{section.4.1}% 80
 \BOOKMARK [1][-]{section.4.2}{Regolarit\340 della parametrizzazione e piano tangente ad una superficie}{chapter.4}% 81
 \BOOKMARK [1][-]{section.4.3}{Lez - 18, Superfici orientabili}{chapter.4}% 82
-\BOOKMARK [2][-]{subsection.4.3.1}{Idea per definire l'area di una superficie}{section.4.3}% 83
-\BOOKMARK [0][-]{chapter.5}{Esercitazioni}{}% 84
-\BOOKMARK [1][-]{section.5.1}{Lezione 1 - 09/03/2022}{chapter.5}% 85
-\BOOKMARK [1][-]{section.5.2}{Esercitazione 2 - 23/03/2022}{chapter.5}% 86
-\BOOKMARK [1][-]{section.5.3}{Lezione 3 - 06/04/2022}{chapter.5}% 87
-\BOOKMARK [0][-]{chapter.6}{Teoremi Orale}{}% 88
-\BOOKMARK [1][-]{section.6.1}{Continuit\340 , derivabilit\340 , differenziabilit\340 , polinomio di Taylor.}{chapter.6}% 89
-\BOOKMARK [2][-]{subsection.6.1.1}{Teorema del confronto}{section.6.1}% 90
-\BOOKMARK [2][-]{subsection.6.1.2}{Definizione di limite per una funzione f: A R2 R}{section.6.1}% 91
-\BOOKMARK [2][-]{subsection.6.1.3}{Definizione di continuit\340 per una funzione f: A R2 R}{section.6.1}% 92
-\BOOKMARK [2][-]{subsection.6.1.4}{Definizione di derivate parziali e di vettore gradiente per una funzione f: A R2 R A aperto}{section.6.1}% 93
-\BOOKMARK [2][-]{subsection.6.1.5}{Definizione di differenziabilit\340 in un punto per una funzione f: A R2 R e relazione con l'esistenza del gradiente in quel punto}{section.6.1}% 94
-\BOOKMARK [2][-]{subsection.6.1.6}{Regola della catena nel caso generale di due funzioni, f:Rn Rm e g:RmRk}{section.6.1}% 95
-\BOOKMARK [2][-]{subsection.6.1.7}{Formula di Taylor del II ordine per una funzione di due variabili}{section.6.1}% 96
-\BOOKMARK [2][-]{subsection.6.1.8}{ Definizione di matrice Hessiana per un funzione f: A R2 R e sua applicazione nella formula di Taylor del II ordine}{section.6.1}% 97
-\BOOKMARK [1][-]{section.6.2}{Massimi e minimi}{chapter.6}% 98
-\BOOKMARK [2][-]{subsection.6.2.1}{Definizione di punto di massimo/minimo relativo, massimo/minimo assoluto e punto di sella per una funzione f: A R2 R}{section.6.2}% 99
-\BOOKMARK [2][-]{subsection.6.2.2}{Teorema di Fermat sui punti stazionari di una funzione}{section.6.2}% 100
-\BOOKMARK [2][-]{subsection.6.2.3}{Teorema di Weierstrass sull’esistenza del massimo e minimo assoluto di una funzione}{section.6.2}% 101
-\BOOKMARK [2][-]{subsection.6.2.4}{Metodo dei moltiplicatori di Lagrange per la ricerca di massimi e minimi vincolati per funzioni di due variabili}{section.6.2}% 102
-\BOOKMARK [1][-]{section.6.3}{Integrali per funzioni in pi\371 variabili}{chapter.6}% 103
-\BOOKMARK [2][-]{subsection.6.3.1}{Definizione di insieme insieme semplice \(o normale\) in R2 rispetto agli assi cartesiani}{section.6.3}% 104
-\BOOKMARK [2][-]{subsection.6.3.2}{Formula di riduzione di integrali doppi su insiemi semplici}{section.6.3}% 105
-\BOOKMARK [2][-]{subsection.6.3.3}{Formula di cambiamento di variabili per integrali doppi e tripli}{section.6.3}% 106
-\BOOKMARK [2][-]{subsection.6.3.4}{Cambiamento di coordinate cilindriche e sferiche}{section.6.3}% 107
-\BOOKMARK [2][-]{subsection.6.3.5}{Formule di riduzione per integrali tripli su un parallelepipedo}{section.6.3}% 108
-\BOOKMARK [2][-]{subsection.6.3.6}{Definizione di insieme definito per fili e per strati}{section.6.3}% 109
-\BOOKMARK [2][-]{subsection.6.3.7}{Formula di integrazione per fili e per strati}{section.6.3}% 110
-\BOOKMARK [1][-]{section.6.4}{Curve e forme differenziali}{chapter.6}% 111
-\BOOKMARK [2][-]{subsection.6.4.1}{ Definizione di curva in Rn, supporto di una curva, estremi di una curva, equazione parametrica di una curva}{section.6.4}% 112
-\BOOKMARK [2][-]{subsection.6.4.2}{Definizione di curva chiusa, semplice, regolare, orientazione \(o verso di percorrenza\) di una curva semplice}{section.6.4}% 113
-\BOOKMARK [2][-]{subsection.6.4.3}{Definizione di versore tangente ad una curva regolare}{section.6.4}% 114
-\BOOKMARK [2][-]{subsection.6.4.4}{Definizione di curva rettificabile e lunghezza di una curva L\(\)}{section.6.4}% 115
-\BOOKMARK [2][-]{subsection.6.4.5}{ Formula per il calcolo della lunghezza di una curva rettificabile}{section.6.4}% 116
-\BOOKMARK [2][-]{subsection.6.4.6}{ Definizione di integrale curvilineo di prima specie per una funzione continua f lungo una curva \040di classe C1}{section.6.4}% 117
-\BOOKMARK [2][-]{subsection.6.4.7}{ Definizione di integrale curvilineo di seconda specie di una forma differenziale lungo una curva di classe C1}{section.6.4}% 118
-\BOOKMARK [2][-]{subsection.6.4.8}{Definizione di forma differenziale esatta e di potenziale di una forma differenziale}{section.6.4}% 119
-\BOOKMARK [2][-]{subsection.6.4.9}{Formula per il calcolo dell’integrale curvilineo di una forma differenziale esatta}{section.6.4}% 120
+\BOOKMARK [1][-]{section.4.4}{Integrali di superficie}{chapter.4}% 83
+\BOOKMARK [2][-]{subsection.4.4.1}{Idea per definire l'area di una superficie}{section.4.4}% 84
+\BOOKMARK [2][-]{subsection.4.4.2}{Generalizzazione di nozione di integrale di I sp. per curve a superfici}{section.4.4}% 85
+\BOOKMARK [0][-]{chapter.5}{Il teorema della divergenza nel piano e nello spazio, [BDPG,16]}{}% 86
+\BOOKMARK [1][-]{section.5.1}{Lez - 19}{chapter.5}% 87
+\BOOKMARK [1][-]{section.5.2}{Teorema Gauss-Green}{chapter.5}% 88
+\BOOKMARK [1][-]{section.5.3}{Lez - 20, Dimostrazione Gauss-Green}{chapter.5}% 89
+\BOOKMARK [2][-]{subsection.5.3.1}{Versore normale esterno ad un insieme semplice regoalre a tratti nel piano}{section.5.3}% 90
+\BOOKMARK [2][-]{subsection.5.3.2}{Teorema della divergenza per insiemi generali del piano}{section.5.3}% 91
+\BOOKMARK [2][-]{subsection.5.3.3}{Versore normale esterno ad un dominio regolare a tratti del piano e teo. della divergenza}{section.5.3}% 92
+\BOOKMARK [0][-]{chapter.6}{Esercitazioni}{}% 93
+\BOOKMARK [1][-]{section.6.1}{Lezione 1 - 09/03/2022}{chapter.6}% 94
+\BOOKMARK [1][-]{section.6.2}{Esercitazione 2 - 23/03/2022}{chapter.6}% 95
+\BOOKMARK [1][-]{section.6.3}{Lezione 3 - 06/04/2022}{chapter.6}% 96
+\BOOKMARK [0][-]{chapter.7}{Teoremi Orale}{}% 97
+\BOOKMARK [1][-]{section.7.1}{Continuit\340 , derivabilit\340 , differenziabilit\340 , polinomio di Taylor.}{chapter.7}% 98
+\BOOKMARK [2][-]{subsection.7.1.1}{Teorema del confronto}{section.7.1}% 99
+\BOOKMARK [2][-]{subsection.7.1.2}{Definizione di limite per una funzione f: A R2 R}{section.7.1}% 100
+\BOOKMARK [2][-]{subsection.7.1.3}{Definizione di continuit\340 per una funzione f: A R2 R}{section.7.1}% 101
+\BOOKMARK [2][-]{subsection.7.1.4}{Definizione di derivate parziali e di vettore gradiente per una funzione f: A R2 R A aperto}{section.7.1}% 102
+\BOOKMARK [2][-]{subsection.7.1.5}{Definizione di differenziabilit\340 in un punto per una funzione f: A R2 R e relazione con l'esistenza del gradiente in quel punto}{section.7.1}% 103
+\BOOKMARK [2][-]{subsection.7.1.6}{Regola della catena nel caso generale di due funzioni, f:Rn Rm e g:RmRk}{section.7.1}% 104
+\BOOKMARK [2][-]{subsection.7.1.7}{Formula di Taylor del II ordine per una funzione di due variabili}{section.7.1}% 105
+\BOOKMARK [2][-]{subsection.7.1.8}{ Definizione di matrice Hessiana per un funzione f: A R2 R e sua applicazione nella formula di Taylor del II ordine}{section.7.1}% 106
+\BOOKMARK [1][-]{section.7.2}{Massimi e minimi}{chapter.7}% 107
+\BOOKMARK [2][-]{subsection.7.2.1}{Definizione di punto di massimo/minimo relativo, massimo/minimo assoluto e punto di sella per una funzione f: A R2 R}{section.7.2}% 108
+\BOOKMARK [2][-]{subsection.7.2.2}{Teorema di Fermat sui punti stazionari di una funzione}{section.7.2}% 109
+\BOOKMARK [2][-]{subsection.7.2.3}{Teorema di Weierstrass sull’esistenza del massimo e minimo assoluto di una funzione}{section.7.2}% 110
+\BOOKMARK [2][-]{subsection.7.2.4}{Metodo dei moltiplicatori di Lagrange per la ricerca di massimi e minimi vincolati per funzioni di due variabili}{section.7.2}% 111
+\BOOKMARK [1][-]{section.7.3}{Integrali per funzioni in pi\371 variabili}{chapter.7}% 112
+\BOOKMARK [2][-]{subsection.7.3.1}{Definizione di insieme insieme semplice \(o normale\) in R2 rispetto agli assi cartesiani}{section.7.3}% 113
+\BOOKMARK [2][-]{subsection.7.3.2}{Formula di riduzione di integrali doppi su insiemi semplici}{section.7.3}% 114
+\BOOKMARK [2][-]{subsection.7.3.3}{Formula di cambiamento di variabili per integrali doppi e tripli}{section.7.3}% 115
+\BOOKMARK [2][-]{subsection.7.3.4}{Cambiamento di coordinate cilindriche e sferiche}{section.7.3}% 116
+\BOOKMARK [2][-]{subsection.7.3.5}{Formule di riduzione per integrali tripli su un parallelepipedo}{section.7.3}% 117
+\BOOKMARK [2][-]{subsection.7.3.6}{Definizione di insieme definito per fili e per strati}{section.7.3}% 118
+\BOOKMARK [2][-]{subsection.7.3.7}{Formula di integrazione per fili e per strati}{section.7.3}% 119
+\BOOKMARK [1][-]{section.7.4}{Curve e forme differenziali}{chapter.7}% 120
+\BOOKMARK [2][-]{subsection.7.4.1}{ Definizione di curva in Rn, supporto di una curva, estremi di una curva, equazione parametrica di una curva}{section.7.4}% 121
+\BOOKMARK [2][-]{subsection.7.4.2}{Definizione di curva chiusa, semplice, regolare, orientazione \(o verso di percorrenza\) di una curva semplice}{section.7.4}% 122
+\BOOKMARK [2][-]{subsection.7.4.3}{Definizione di versore tangente ad una curva regolare}{section.7.4}% 123
+\BOOKMARK [2][-]{subsection.7.4.4}{Definizione di curva rettificabile e lunghezza di una curva L\(\)}{section.7.4}% 124
+\BOOKMARK [2][-]{subsection.7.4.5}{ Formula per il calcolo della lunghezza di una curva rettificabile}{section.7.4}% 125
+\BOOKMARK [2][-]{subsection.7.4.6}{ Definizione di integrale curvilineo di prima specie per una funzione continua f lungo una curva \040di classe C1}{section.7.4}% 126
+\BOOKMARK [2][-]{subsection.7.4.7}{ Definizione di integrale curvilineo di seconda specie di una forma differenziale lungo una curva di classe C1}{section.7.4}% 127
+\BOOKMARK [2][-]{subsection.7.4.8}{Definizione di forma differenziale esatta e di potenziale di una forma differenziale}{section.7.4}% 128
+\BOOKMARK [2][-]{subsection.7.4.9}{Formula per il calcolo dell’integrale curvilineo di una forma differenziale esatta}{section.7.4}% 129
