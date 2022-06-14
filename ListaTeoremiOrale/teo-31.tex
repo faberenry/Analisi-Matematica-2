@@ -1,0 +1,25 @@
+\subsection{Area di una superficie cartesiana regolare e di una superficie di rotazione}
+\subsubsection{Superficie regolare cartesiana}
+\begin{definition}
+  Sia $D\subseteq\R^2$ interno di una curva di Jordan, e sia 
+  $f\in C^0(\overline{D})\cap C^1(D)$ e supponiamo che 
+  $\p_u f, \p_v f : D \to \R$ siano limitate. \\
+  Allora se $S = G_f := \{(u,v,f(u,v)):(u,v)\in D\}$ (superficie cartesiana), 
+  $$A(S) = \iint_{D} \sqrt{1+\abs{\nabla f(u,v)}^2} \,du \,dv$$
+\end{definition}
+\subsubsection{Superficie di rotazione}
+\textbf{Non riesco a trovarla, suppongo:}
+\begin{definition}
+  Calcolare l'area della sfera di centro (0,0,0) e raggio $r>0$ \\
+  \textbf{Soluzione:} \\\\
+  Possiamo rappresentare 
+  $$S = \{(x,y,z)\in\R^3:x^2+y^2+z^2 = r^2\}$$
+  e consideriammo la sua parametrizzazione in coordinate sferiche, cio\ace 
+  la mappa $\sigma:\overline{D}\to\R^3$, $\overline{D}=[0,2\pi]\times[0,\pi]$, 
+  $$\sigma(u,v) = r\left(\cos{u}\sin{v}, \sin{u}\sin{v}, \\cos{v}\right)$$
+  Sappiamo che $$\norma{\sigma_u\wedge\sigma_v} = r^2\abs{\sin{v}}$$
+  Pertanto 
+  $$A(S) = \iint_{D} \norma{\sigma_u\wedge\sigma_v} (u,v) \,du\,dv = \iint_{D} r^2\abs{\sin{v}} \,du\,dv = $$
+  $$= r^2\left(\int_{0}^{2\pi} \,du\right)\cdot\left(\int_{0}^{\pi}\sin{v} \,dv\right) = 
+      r^2\cdot 2\pi \left(\left.-cos{v}\right|_{0}^{\pi}\right) = 4\pi r^2$$
+\end{definition}
