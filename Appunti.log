@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.9.27)  14 JUL 2022 12:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.9.27)  14 JUL 2022 12:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -798,7 +798,7 @@ Package: listings 2015/06/04 1.6 (Carsten Heinz)
 \c@exercise=\count334
 \c@eexercise=\count335
 \c@definition=\count336
- (/home/enrico/latex/Analisi-Matematica-2/Appunti.aux (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-01.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-02.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-03.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-04.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-05.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-06.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-07.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-08.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-09.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-10.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-11.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-12.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-13.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-14.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-15.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-16.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-17.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-18.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-19.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-20.aux))
+ (/home/enrico/latex/Analisi-Matematica-2/Appunti.aux (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-01.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-02.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-03.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-04.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-05.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-06.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-07.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-08.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-09.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-10.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-11.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-12.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-13.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-14.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-15.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-16.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-17.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-18.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-19.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-20.aux) (/home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-01.aux) (/home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-02.aux) (/home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-03.aux))
 \openout1 = `Appunti.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 74.
@@ -881,7 +881,7 @@ Missing character: There is no ° in font cmr10!
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.41 ...egno di una matrice}{37}{subsection.1.8.4}
+l.41 ...egno di una matrice}{35}{subsection.1.8.4}
                                                    [1
 
 ] [2])
@@ -1370,4 +1370,340 @@ Overfull \hbox (77.952pt too wide) in paragraph at lines 125--128
 
 
 Overfull \hbox (15.10837pt too wide) detected at line 136
-\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^C ^^C ^^C\OT1/cmr/m/n/10 ) \OML/cmm/m/it/10 A[] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; z\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2 \U/bbold/m/n/10 R[] \OT1/cmr/m/n/10 :
+\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^C ^^C ^^C\OT1/cmr/m/n/10 ) \OML/cmm/m/it/10 A[] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; z\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2 \U/bbold/m/n/10 R[] \OT1/cmr/m/n/10 : (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 A\OMS/cmsy/m/n/10 g[]
+ []
+
+
+Overfull \hbox (4.28572pt too wide) in paragraph at lines 138--140
+[]\OT1/cmr/m/it/10 [BDPG,14.28] Sia $\OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 ^^R
+ []
+
+[64]
+Overfull \hbox (2.96896pt too wide) in paragraph at lines 179--182
+[]\OT1/cmr/m/it/10 Siano
+ []
+
+[65]) [66]
+\openout2 = `Lezioni/lez-14.aux'.
+
+ (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-14.tex
+Chapter 3.
+LaTeX Font Info:    Font shape `U/dutchcal/m/n' will be
+(Font)              scaled to size 14.4pt on input line 2.
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 2.
+
+[67
+
+
+
+] [68]
+Overfull \hbox (1.34268pt too wide) in paragraph at lines 128--130
+[]\OT1/cmr/m/it/10 Si noti che il vet-tore $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 v[]; \OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10 v[]\OT1/cmr/m/n/10 )$ \OT1/cmr/m/it/10 ^^Re $[]$ al vet-tore $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 v[]; v[]\OT1/cmr/m/n/10 )$\OT1/cmr/m/it/10 ,
+ []
+
+[69] [70]
+Underfull \hbox (badness 10000) in paragraph at lines 194--199
+
+ []
+
+) [71]
+\openout2 = `Lezioni/lez-15.aux'.
+
+ (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-15.tex
+Overfull \hbox (14.15773pt too wide) in paragraph at lines 40--41
+[]
+ []
+
+[72
+
+
+] [73]
+Overfull \hbox (0.98524pt too wide) in paragraph at lines 107--110
+[]\OT1/cmr/m/it/10 In fisi-ca/ingeg-ne-ria un campo vet-to-ri-ale pu^^Ro rap-p-re-sentare
+ []
+
+
+Overfull \hbox (35.43997pt too wide) in paragraph at lines 112--114
+[]\OT1/cmr/m/it/10 Dato un campo vet-to-ri-ale $\OML/cmm/m/it/10 F \OT1/cmr/m/n/10 : \OML/cmm/m/it/10 E \OMS/cmsy/m/n/10 ! \U/bbold/m/n/10 R[]$\OT1/cmr/m/it/10 , si chiama $[]$
+ []
+
+[74]) [75]
+\openout2 = `Lezioni/lez-16.aux'.
+
+ (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-16.tex
+Overfull \hbox (5.66379pt too wide) in paragraph at lines 1--1
+[]\OT1/cmr/bx/n/12 Lez - 16, Teo: In-te-grale curvi-li-neo di II specie rispetto
+ []
+
+
+Overfull \hbox (0.59077pt too wide) in paragraph at lines 29--30
+[]\OT1/cmr/m/it/10 Le pro-priet^^Ra 1 e 2 sono co-er-enti con l'interpretazione fisica
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--44
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--44
+
+ []
+
+[76
+
+
+] [77] [78]
+Overfull \hbox (0.88992pt too wide) in paragraph at lines 141--145
+\OT1/cmr/m/it/10 Per il teo. sull'inversione dell'ordine di derivazione, fis-sato $\OML/cmm/m/it/10 i$ \OT1/cmr/m/it/10 e derivando rispetto
+ []
+
+[79] [80]
+Underfull \hbox (badness 10000) in paragraph at lines 202--205
+
+ []
+
+[81]
+Overfull \hbox (12.31073pt too wide) detected at line 227
+[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; :::; x[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^@ []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; :::; x[]\OT1/cmr/m/n/10 ) = [](\OML/cmm/m/it/10 x[]; :::; x[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^@ []\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; :::; x[]\OT1/cmr/m/n/10 ) =
+ []
+
+[82]
+Underfull \hbox (badness 10000) in paragraph at lines 256--264
+
+ []
+
+[83]) [84]
+\openout2 = `Lezioni/lez-17.aux'.
+
+ (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-17.tex
+Chapter 4.
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 2.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 2.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--13
+
+ []
+
+
+Overfull \hbox (0.98831pt too wide) in paragraph at lines 10--13
+\OML/cmm/m/it/10 S[]$ \OT1/cmr/m/it/10 pu^^Ro es-sere vista come l'immagine della mappa (detta $[]$) 
+ []
+
+[85
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 54--57
+
+ []
+
+[86]
+Underfull \hbox (badness 10000) in paragraph at lines 90--94
+
+ []
+
+
+Overfull \hbox (3.66725pt too wide) in paragraph at lines 115--132
+\OT1/cmr/m/n/10 In ef-fett, come ve-dremo, si pos-sono costru-ire su-per-ifci che am-met-tono parametriz-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 115--132
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 115--132
+
+ []
+
+[87] [88]
+Underfull \hbox (badness 10000) in paragraph at lines 158--161
+
+ []
+
+
+Overfull \hbox (38.86963pt too wide) detected at line 171
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y; z\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 ^^[\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 u[]; v[]\OT1/cmr/m/n/10 ) + [](\OML/cmm/m/it/10 t[]\OT1/cmr/m/n/10 )(\OML/cmm/m/it/10 t \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 t[]\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 ^^[\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 u[]; v[]\OT1/cmr/m/n/10 ) + [] (\OML/cmm/m/it/10 t \OMS/cmsy/m/n/10 ^^@ \OML/cmm/m/it/10 t[]\OT1/cmr/m/n/10 )
+ []
+
+[89]) [90]
+\openout2 = `Lezioni/lez-18.aux'.
+
+ (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-18.tex
+Overfull \hbox (3.22655pt too wide) in paragraph at lines 28--29
+[]$\OML/cmm/m/it/10 N[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$ \OT1/cmr/m/it/10 co-in-cide con uno dei due ver-sori nor-mali definiti tramite parametriz-
+ []
+
+[91
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+
+ []
+
+[92]
+Underfull \hbox (badness 10000) in paragraph at lines 112--115
+
+ []
+
+[93]
+Underfull \hbox (badness 10000) in paragraph at lines 130--133
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--152
+
+ []
+
+[94]) [95]
+\openout2 = `Lezioni/lez-19.aux'.
+
+ (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-19.tex
+Chapter 5.
+
+Overfull \hbox (16.55238pt too wide) in paragraph at lines 21--22
+[]\OT1/cmr/m/it/10 Un do-minio E sem-plice rispetto a y si dice $[]$
+ []
+
+[96
+
+
+
+]
+Overfull \hbox (1.55238pt too wide) in paragraph at lines 51--53
+[]\OT1/cmr/m/it/10 Sia $\OML/cmm/m/it/10 E \OMS/cmsy/m/n/10 ^^R
+ []
+
+[97]
+Underfull \hbox (badness 10000) in paragraph at lines 73--76
+
+ []
+
+) [98]
+\openout2 = `Lezioni/lez-20.aux'.
+
+ (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-20.tex
+Underfull \hbox (badness 10000) in paragraph at lines 4--7
+
+ []
+
+
+Overfull \hbox (17.0753pt too wide) detected at line 22
+\OT1/cmr/m/n/10 = [][] \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; g[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ))\OML/cmm/m/it/10 g[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^@ [][] \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; g[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ))\OML/cmm/m/it/10 g[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x\OT1/cmr/m/n/10 ) + [][] []  \OML/cmm/m/it/10 dx \OT1/cmr/m/n/10 =
+ []
+
+[99
+
+
+]
+Overfull \hbox (0.9777pt too wide) in paragraph at lines 63--65
+[]\OT1/cmr/m/it/10 Sia $\OML/cmm/m/it/10 E \OMS/cmsy/m/n/10 ^^R \U/bbold/m/n/10 R[]$ \OT1/cmr/m/it/10 un do-minio
+ []
+
+[100] [101] [102]) [103]
+\openout2 = `Esercitazioni/es-01.aux'.
+
+ (/home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-01.tex
+Chapter 6.
+
+Overfull \hbox (1.24283pt too wide) in paragraph at lines 14--27
+\OML/cmm/m/it/10 A[] \OT1/cmr/m/n/10 = \U/bbold/m/n/10 R[] \OMS/cmsy/m/n/10 n \OML/cmm/m/it/10 A$ \OT1/cmr/m/it/10 ^^Re aperto. Fisso ora $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; y[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 A[]$\OT1/cmr/m/it/10 , $\OML/cmm/m/it/10 r \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 d\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 @A; \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; y[]\OT1/cmr/m/n/10 )) = [] []$\OT1/cmr/m/it/10 .
+ []
+
+[104
+
+
+
+]
+Overfull \hbox (27.12868pt too wide) detected at line 38
+\OML/cmm/m/it/10 A \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2 \U/bbold/m/n/10 R[] \OMS/cmsy/m/n/10 j \OML/cmm/m/it/10 y \OMS/cmsy/m/n/10 ^^U \OML/cmm/m/it/10 x[] \OMS/cmsy/m/n/10 _ \OML/cmm/m/it/10 y \OMS/cmsy/m/n/10 ^^T ^^@\OML/cmm/m/it/10 x[]\OMS/cmsy/m/n/10 g \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2 \U/bbold/m/n/10 R[] \OMS/cmsy/m/n/10 j \OML/cmm/m/it/10 y \OMS/cmsy/m/n/10 ^^U \OML/cmm/m/it/10 x[]\OMS/cmsy/m/n/10 g [ f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2 \U/bbold/m/n/10 R[] \OMS/cmsy/m/n/10 j \OML/cmm/m/it/10 y \OMS/cmsy/m/n/10 ^^T ^^@\OML/cmm/m/it/10 x[]\OMS/cmsy/m/n/10 g
+ []
+
+[105] [106]) [107]
+\openout2 = `Esercitazioni/es-02.aux'.
+
+ (/home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-02.tex [108
+
+
+] [109]
+Overfull \hbox (9.66373pt too wide) in paragraph at lines 59--62
+\OML/cmm/m/it/10 y[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 t[] \OMS/cmsy/m/n/10 ^^U \OT1/cmr/m/n/10 0$\OT1/cmr/m/it/10 , lo stesso vale per $[] \OMS/cmsy/m/n/10 ^^T []$ \OT1/cmr/m/it/10 e $[] \OMS/cmsy/m/n/10 ^^T []$\OT1/cmr/m/it/10 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--81
+
+ []
+
+[110]
+Overfull \hbox (2.00244pt too wide) in paragraph at lines 112--115
+\OT1/cmr/m/it/10 Ottenimao due ris-lu-tati di-versi, $[]$,
+ []
+
+[111]) [112]
+\openout2 = `Esercitazioni/es-03.aux'.
+
+ (/home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-03.tex [113
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 77--82
+
+ []
+
+[114] [115]
+Underfull \hbox (badness 10000) in paragraph at lines 213--215
+
+ []
+
+) [116]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 132.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 132.
+ (/home/enrico/latex/Analisi-Matematica-2/Appunti.aux (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-01.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-02.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-03.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-04.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-05.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-06.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-07.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-08.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-09.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-10.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-11.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-12.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-13.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-14.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-15.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-16.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-17.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-18.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-19.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-20.aux) (/home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-01.aux) (/home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-02.aux) (/home/enrico/latex/Analisi-Matematica-2/Esercitazioni/es-03.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 132.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 132.
+Package rerunfilecheck Info: File `Appunti.out' has not changed.
+(rerunfilecheck)             Checksum: BB22F528A75B877013F7B7ABADCD418C;8386.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 132.
+ ) 
+Here is how much of TeX's memory you used:
+ 37532 strings out of 492982
+ 860879 string characters out of 6134896
+ 1026456 words of memory out of 5000000
+ 39792 multiletter control sequences out of 15000+600000
+ 546279 words of font info for 84 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 62i,17n,96p,10440b,618s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/dutchcal/DutchCalReg.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on /home/enrico/latex/Analisi-Matematica-2/Appunti.pdf (117 pages, 623433 bytes).
+PDF statistics:
+ 1680 PDF objects out of 1728 (max. 8388607)
+ 1520 compressed objects within 16 object streams
+ 633 named destinations out of 1000 (max. 500000)
+ 781 words of extra memory for PDF output out of 10000 (max. 10000000)
+

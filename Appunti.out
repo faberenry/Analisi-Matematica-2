@@ -47,4 +47,50 @@
 \BOOKMARK [1][-]{section.2.2}{Lez 11 - Integrale doppio su insiemi generali}{chapter.2}% 47
 \BOOKMARK [2][-]{subsection.2.2.1}{Insiemi numerabili e loro area}{section.2.2}% 48
 \BOOKMARK [2][-]{subsection.2.2.2}{Integrali doppi su insiemi misurabili}{section.2.2}% 49
-\BOOKMARK [2][-]{subsection.2.2.3}{Te
+\BOOKMARK [2][-]{subsection.2.2.3}{Teo.: Integrale doppio su insieme di misura nulla}{section.2.2}% 50
+\BOOKMARK [1][-]{section.2.3}{Integrali doppi su domini semplici e formule di riduzione}{chapter.2}% 51
+\BOOKMARK [2][-]{subsection.2.3.1}{Teorema: Forumla di riduzione su domini semplici}{section.2.3}% 52
+\BOOKMARK [1][-]{section.2.4}{Lez - 12}{chapter.2}% 53
+\BOOKMARK [2][-]{subsection.2.4.1}{Applicazione della formula di riduzione su domini semplici al calcolo di volumi di solidi}{section.2.4}% 54
+\BOOKMARK [2][-]{subsection.2.4.2}{Teorema: Additivit\340 dell'integrale doppio}{section.2.4}% 55
+\BOOKMARK [1][-]{section.2.5}{Cambiamento di var. per gli integrali doppi}{chapter.2}% 56
+\BOOKMARK [2][-]{subsection.2.5.1}{Caso particolare: coordinate polari}{section.2.5}% 57
+\BOOKMARK [2][-]{subsection.2.5.2}{Caso generale}{section.2.5}% 58
+\BOOKMARK [2][-]{subsection.2.5.3}{Teorema: Cambiamento di variabili negli integrali doppi}{section.2.5}% 59
+\BOOKMARK [1][-]{section.2.6}{Lez - 13, Integrali tripli, [BDPG,14.5]}{chapter.2}% 60
+\BOOKMARK [2][-]{subsection.2.6.1}{Integrale triplo su un parallelepipedo}{section.2.6}% 61
+\BOOKMARK [2][-]{subsection.2.6.2}{Integrale triplo su insiemi generali}{section.2.6}% 62
+\BOOKMARK [2][-]{subsection.2.6.3}{Formule di riduzione per integrali tripli}{section.2.6}% 63
+\BOOKMARK [2][-]{subsection.2.6.4}{Cambiamento di variabili negli integrali tripli}{section.2.6}% 64
+\BOOKMARK [0][-]{chapter.3}{Curve ed integrali curvilinei, [BDPG, 12]}{}% 65
+\BOOKMARK [1][-]{section.3.1}{Lez - 14, Curve in Rn}{chapter.3}% 66
+\BOOKMARK [2][-]{subsection.3.1.1}{Orientazione di una curva semplice}{section.3.1}% 67
+\BOOKMARK [2][-]{subsection.3.1.2}{Vettore velocit\340 di una curva}{section.3.1}% 68
+\BOOKMARK [2][-]{subsection.3.1.3}{Cambiamento di parametro di una curva}{section.3.1}% 69
+\BOOKMARK [1][-]{section.3.2}{Lez - 15, Lunghezza di una curva}{chapter.3}% 70
+\BOOKMARK [1][-]{section.3.3}{Integrali curvilinei di I specie}{chapter.3}% 71
+\BOOKMARK [1][-]{section.3.4}{Integrali curvilinei di II specie: campi vettoriali e forme differenziali}{chapter.3}% 72
+\BOOKMARK [2][-]{subsection.3.4.1}{Campi vettoriali e forme differenziali}{section.3.4}% 73
+\BOOKMARK [2][-]{subsection.3.4.2}{Lez - 16, Teo: Integrale curvilineo di II specie rispetto a curve eq.}{section.3.4}% 74
+\BOOKMARK [2][-]{subsection.3.4.3}{Forme differenziali esatte \(o campi vettoriali conservativi\)}{section.3.4}% 75
+\BOOKMARK [2][-]{subsection.3.4.4}{Forma differenziali chiuse}{section.3.4}% 76
+\BOOKMARK [2][-]{subsection.3.4.5}{Costruzione di un potenziale per una forma diff. chiusa su aperto conv.}{section.3.4}% 77
+\BOOKMARK [0][-]{chapter.4}{Superfici ed integrali di superfici, [BDPG,15]}{}% 78
+\BOOKMARK [1][-]{section.4.1}{Lez - 17, Superfici in R3}{chapter.4}% 79
+\BOOKMARK [2][-]{subsection.4.1.1}{Punti interni e bordo di una superficie}{section.4.1}% 80
+\BOOKMARK [1][-]{section.4.2}{Regolarit\340 della parametrizzazione e piano tangente ad una superficie}{chapter.4}% 81
+\BOOKMARK [1][-]{section.4.3}{Lez - 18, Superfici orientabili}{chapter.4}% 82
+\BOOKMARK [1][-]{section.4.4}{Integrali di superficie}{chapter.4}% 83
+\BOOKMARK [2][-]{subsection.4.4.1}{Idea per definire l'area di una superficie}{section.4.4}% 84
+\BOOKMARK [2][-]{subsection.4.4.2}{Generalizzazione di nozione di integrale di I sp. per curve a superfici}{section.4.4}% 85
+\BOOKMARK [0][-]{chapter.5}{Il teorema della divergenza nel piano e nello spazio, [BDPG,16]}{}% 86
+\BOOKMARK [1][-]{section.5.1}{Lez - 19}{chapter.5}% 87
+\BOOKMARK [1][-]{section.5.2}{Teorema Gauss-Green}{chapter.5}% 88
+\BOOKMARK [1][-]{section.5.3}{Lez - 20, Dimostrazione Gauss-Green}{chapter.5}% 89
+\BOOKMARK [2][-]{subsection.5.3.1}{Versore normale esterno ad un insieme semplice regoalre a tratti nel piano}{section.5.3}% 90
+\BOOKMARK [2][-]{subsection.5.3.2}{Teorema della divergenza per insiemi generali del piano}{section.5.3}% 91
+\BOOKMARK [2][-]{subsection.5.3.3}{Versore normale esterno ad un dominio regolare a tratti del piano e teo. della divergenza}{section.5.3}% 92
+\BOOKMARK [0][-]{chapter.6}{Esercitazioni}{}% 93
+\BOOKMARK [1][-]{section.6.1}{Lezione 1 - 09/03/2022}{chapter.6}% 94
+\BOOKMARK [1][-]{section.6.2}{Esercitazione 2 - 23/03/2022}{chapter.6}% 95
+\BOOKMARK [1][-]{section.6.3}{Lezione 3 - 06/04/2022}{chapter.6}% 96
