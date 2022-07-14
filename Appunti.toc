@@ -1,154 +1,111 @@
-\contentsline {chapter}{\numberline {1}Funzioni a pi\`u variabili, [BDPG, 10]}{5}{chapter.1}
-\contentsline {section}{\numberline {1.1}Lez - 01}{5}{section.1.1}
-\contentsline {subsection}{\numberline {1.1.1}Grafico di una funzione scalare di pi\`u variabili}{6}{subsection.1.1.1}
-\contentsline {subsection}{\numberline {1.1.2}Curve di livello di una funzione di pi\`u variabili}{6}{subsection.1.1.2}
-\contentsline {subsection}{\numberline {1.1.3}Limiti e continuit\`a per funzioni di pi\`u variabili}{7}{subsection.1.1.3}
-\contentsline {subsubsection}{Idea per l'introduzione di limite per funzioni di $n=2$ varaibili}{7}{section*.2}
-\contentsline {section}{\numberline {1.2}Lez - 02}{8}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Calcolo dei limiti}{9}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}Esempi calcolo limiti}{10}{subsection.1.2.2}
-\contentsline {section}{\numberline {1.3}Lez - 03}{12}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}Definizioni limiti e continuit\`a per $\mathbb {R}^n$}{12}{subsection.1.3.1}
-\contentsline {subsection}{\numberline {1.3.2}Calcolo differenziale per funzioni a pi\`u variabili}{13}{subsection.1.3.2}
-\contentsline {subsubsection}{Derivate parziali}{13}{section*.3}
-\contentsline {subsection}{\numberline {1.3.3}Piano tangente al grafico}{14}{subsection.1.3.3}
-\contentsline {section}{\numberline {1.4}Lez - 04}{16}{section.1.4}
-\contentsline {subsection}{\numberline {1.4.1}Differenziabilit\`a in $n\geq 3$}{17}{subsection.1.4.1}
-\contentsline {section}{\numberline {1.5}Lez - 05}{21}{section.1.5}
-\contentsline {subsection}{\numberline {1.5.1}Condizioni sulle derivate parziali che assicurino la diffrenenziablit\`a }{21}{subsection.1.5.1}
-\contentsline {subsection}{\numberline {1.5.2}Derivate direzionali}{22}{subsection.1.5.2}
-\contentsline {subsubsection}{Norma di un vettore di $\mathbb {R}^n$}{22}{section*.4}
-\contentsline {subsection}{\numberline {1.5.3}Teo: Diff. vs. Deriv. direz.}{23}{subsection.1.5.3}
-\contentsline {subsection}{\numberline {1.5.4}Teorema del valore medio}{24}{subsection.1.5.4}
-\contentsline {section}{\numberline {1.6}Lez - 06}{25}{section.1.6}
-\contentsline {subsection}{\numberline {1.6.1}Derivate parziali di una f composta di pi\`u variabili}{25}{subsection.1.6.1}
-\contentsline {subsubsection}{Richiami della RDC}{25}{section*.5}
-\contentsline {subsection}{\numberline {1.6.2}I° caso particolare}{25}{subsection.1.6.2}
-\contentsline {subsubsection}{Espansione calssica di RDC, Leibniz}{26}{section*.6}
-\contentsline {subsection}{\numberline {1.6.3}II° caso particolare}{27}{subsection.1.6.3}
-\contentsline {subsection}{\numberline {1.6.4}Caso generale di RDC}{28}{subsection.1.6.4}
-\contentsline {subsubsection}{Matrice Jacobiana}{28}{section*.7}
-\contentsline {subsection}{\numberline {1.6.5}Teorema RDC}{29}{subsection.1.6.5}
-\contentsline {section}{\numberline {1.7}Lez - 07}{30}{section.1.7}
-\contentsline {subsection}{\numberline {1.7.1}Derivate parziali di ordine superiore}{30}{subsection.1.7.1}
-\contentsline {subsection}{\numberline {1.7.2}Teo: Inversione dell'ordine di derivazione}{30}{subsection.1.7.2}
-\contentsline {subsection}{\numberline {1.7.3}Taylor per funzioni di pi\`u variabili}{31}{subsection.1.7.3}
-\contentsline {subsection}{\numberline {1.7.4}Taylor del II ordine + resto di Peano}{32}{subsection.1.7.4}
-\contentsline {section}{\numberline {1.8}Lez - 08}{34}{section.1.8}
-\contentsline {subsection}{\numberline {1.8.1}Massimi e minimi per funzioni a pi\`u variabili}{34}{subsection.1.8.1}
-\contentsline {subsection}{\numberline {1.8.2}Estremi liberi di una funzione (min/max relativi)}{34}{subsection.1.8.2}
-\contentsline {subsection}{\numberline {1.8.3}Matrice Hessiana}{35}{subsection.1.8.3}
-\contentsline {subsection}{\numberline {1.8.4}Teorema: Criterio per il segno di una matrice}{36}{subsection.1.8.4}
-\contentsline {subsubsection}{Richiami di algfebra lineare}{36}{section*.8}
-\contentsline {subsection}{\numberline {1.8.5}Esempi}{37}{subsection.1.8.5}
-\contentsline {section}{\numberline {1.9}Lez - 09}{39}{section.1.9}
-\contentsline {subsection}{\numberline {1.9.1}Ricerca del max e min (assoluto) su insieme limitato e chiuso}{39}{subsection.1.9.1}
-\contentsline {subsection}{\numberline {1.9.2}Frontiera attraverso parametrizzazione}{40}{subsection.1.9.2}
-\contentsline {subsubsection}{Caso $n=2$}{40}{section*.9}
-\contentsline {subsubsection}{Caso $n=3$}{40}{section*.10}
-\contentsline {subsection}{\numberline {1.9.3}Metodo dei moltiplicatori di Lagrange, TML}{42}{subsection.1.9.3}
-\contentsline {subsubsection}{Caso $n=2$}{42}{section*.11}
-\contentsline {subsubsection}{Teorema della funzione implicita, U. Dini}{42}{section*.12}
-\contentsline {subsubsection}{Caso $n=3$}{43}{section*.13}
-\contentsline {chapter}{\numberline {2}Integrale per funzioni a pi\`u variabili, [BDPG, 14]}{45}{chapter.2}
-\contentsline {section}{\numberline {2.1}Lez - 10, Integrale doppio su un rettangolo}{45}{section.2.1}
-\contentsline {subsubsection}{Caso $n=2$}{45}{section*.14}
-\contentsline {subsection}{\numberline {2.1.1}Propriet\`a importanti delle somme sup. ed inf. }{46}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Teoremi: Esistenza \& Propriet\`a integrale}{47}{subsection.2.1.2}
-\contentsline {subsection}{\numberline {2.1.3}Formula di riduzione sui rettangoli}{48}{subsection.2.1.3}
-\contentsline {subsection}{\numberline {2.1.4}Esempio}{48}{subsection.2.1.4}
-\contentsline {section}{\numberline {2.2}Lez 11 - Integrale doppio su insiemi generali}{50}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Insiemi numerabili e loro area}{51}{subsection.2.2.1}
-\contentsline {subsubsection}{Teorema: Caraterizzazione degli insiemi misurabili}{51}{section*.15}
-\contentsline {subsection}{\numberline {2.2.2}Integrali doppi su insiemi misurabili}{52}{subsection.2.2.2}
-\contentsline {subsubsection}{Teorema: Esistenza integrale doppio su insiemi misurabili}{52}{section*.16}
-\contentsline {subsection}{\numberline {2.2.3}Teo.: Integrale doppio su insieme di misura nulla}{52}{subsection.2.2.3}
-\contentsline {section}{\numberline {2.3}Integrali doppi su domini semplici e formule di riduzione}{52}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Teorema: Forumla di riduzione su domini semplici}{53}{subsection.2.3.1}
-\contentsline {section}{\numberline {2.4}Lez - 12}{55}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Applicazione della formula di riduzione su domini semplici al calcolo di volumi di solidi}{55}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Teorema: Additivit\`a dell'integrale doppio}{56}{subsection.2.4.2}
-\contentsline {section}{\numberline {2.5}Cambiamento di var. per gli integrali doppi}{56}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Caso particolare: coordinate polari}{56}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}Caso generale}{58}{subsection.2.5.2}
-\contentsline {subsection}{\numberline {2.5.3}Teorema: Cambiamento di variabili negli integrali doppi}{59}{subsection.2.5.3}
-\contentsline {section}{\numberline {2.6}Lez - 13, Integrali tripli, [BDPG,14.5]}{62}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}Integrale triplo su un parallelepipedo}{62}{subsection.2.6.1}
-\contentsline {subsubsection}{Propriet\`a }{63}{section*.17}
-\contentsline {subsection}{\numberline {2.6.2}Integrale triplo su insiemi generali}{63}{subsection.2.6.2}
-\contentsline {subsection}{\numberline {2.6.3}Formule di riduzione per integrali tripli}{64}{subsection.2.6.3}
-\contentsline {subsubsection}{Applicazione della formula di riduzione per strati: volume di un solido di rotazione}{66}{section*.18}
-\contentsline {subsection}{\numberline {2.6.4}Cambiamento di variabili negli integrali tripli}{66}{subsection.2.6.4}
-\contentsline {chapter}{\numberline {3}Curve ed integrali curvilinei, [BDPG, 12]}{68}{chapter.3}
-\contentsline {section}{\numberline {3.1}Lez - 14, Curve in $\mathbb {R}^n$}{68}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Orientazione di una curva semplice}{69}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Vettore velocit\`a di una curva}{70}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Cambiamento di parametro di una curva}{72}{subsection.3.1.3}
-\contentsline {section}{\numberline {3.2}Lez - 15, Lunghezza di una curva}{73}{section.3.2}
-\contentsline {section}{\numberline {3.3}Integrali curvilinei di I specie}{74}{section.3.3}
-\contentsline {section}{\numberline {3.4}Integrali curvilinei di II specie: campi vettoriali e forme differenziali}{75}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Campi vettoriali e forme differenziali}{75}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Lez - 16, Teo: Integrale curvilineo di II specie rispetto a curve eq.}{77}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Forme differenziali esatte (o campi vettoriali conservativi)}{78}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}Forma differenziali chiuse}{80}{subsection.3.4.4}
-\contentsline {subsubsection}{Teo: Chiusa = Esatta}{81}{section*.19}
-\contentsline {subsection}{\numberline {3.4.5}Costruzione di un potenziale per una forma diff. chiusa su aperto conv.}{82}{subsection.3.4.5}
-\contentsline {subsubsection}{Procedura per la costruzione di $\mathcal {U}$}{82}{section*.20}
-\contentsline {chapter}{\numberline {4}Superfici ed integrali di superfici, [BDPG,15]}{86}{chapter.4}
-\contentsline {section}{\numberline {4.1}Lez - 17, Superfici in $\mathbb {R}^3$}{86}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Punti interni e bordo di una superficie}{88}{subsection.4.1.1}
-\contentsline {section}{\numberline {4.2}Regolarit\`a della parametrizzazione e piano tangente ad una superficie}{89}{section.4.2}
-\contentsline {section}{\numberline {4.3}Lez - 18, Superfici orientabili}{92}{section.4.3}
-\contentsline {section}{\numberline {4.4}Integrali di superficie}{93}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Idea per definire l'area di una superficie}{93}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Generalizzazione di nozione di integrale di I sp. per curve a superfici}{96}{subsection.4.4.2}
-\contentsline {chapter}{\numberline {5}Il teorema della divergenza nel piano e nello spazio, [BDPG,16]}{97}{chapter.5}
-\contentsline {section}{\numberline {5.1}Lez - 19}{97}{section.5.1}
-\contentsline {section}{\numberline {5.2}Teorema Gauss-Green}{98}{section.5.2}
-\contentsline {section}{\numberline {5.3}Lez - 20, Dimostrazione Gauss-Green}{100}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Versore normale esterno ad un insieme semplice regoalre a tratti nel piano}{101}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Teorema della divergenza per insiemi generali del piano}{102}{subsection.5.3.2}
-\contentsline {subsection}{\numberline {5.3.3}Versore normale esterno ad un dominio regolare a tratti del piano e teo. della divergenza}{103}{subsection.5.3.3}
-\contentsline {chapter}{\numberline {6}Esercitazioni}{105}{chapter.6}
-\contentsline {section}{\numberline {6.1}Lezione 1 - 09/03/2022}{105}{section.6.1}
-\contentsline {section}{\numberline {6.2}Esercitazione 2 - 23/03/2022}{109}{section.6.2}
-\contentsline {section}{\numberline {6.3}Lezione 3 - 06/04/2022}{114}{section.6.3}
-\contentsline {chapter}{\numberline {7}Teoremi Orale}{118}{chapter.7}
-\contentsline {section}{\numberline {7.1}Continuit\`a , derivabilit\`a , differenziabilit\`a , polinomio di Taylor.}{118}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Teorema del confronto}{118}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}Definizione di limite per una funzione $f: A \subseteq \mathbb {R}^2 \to \mathbb {R}$}{120}{subsection.7.1.2}
-\contentsline {subsection}{\numberline {7.1.3}Definizione di continuit\`a per una funzione $f: A \subseteq \mathbb {R}^2 \to \mathbb {R}$}{121}{subsection.7.1.3}
-\contentsline {subsection}{\numberline {7.1.4}Definizione di derivate parziali e di vettore gradiente per una funzione $f: A \subseteq \mathbb {R}^2 \to \mathbb {R}$ A aperto}{122}{subsection.7.1.4}
-\contentsline {subsection}{\numberline {7.1.5}Definizione di differenziabilit\`a in un punto per una funzione $f: A \subseteq \mathbb {R}^2 \to \mathbb {R}$ e relazione con l'esistenza del gradiente in quel punto}{123}{subsection.7.1.5}
-\contentsline {subsection}{\numberline {7.1.6}Regola della catena nel caso generale di due funzioni, $f:\mathbb {R}^n \to \mathbb {R}^m$ e $g:\mathbb {R}^m\to \mathbb {R}^k$}{124}{subsection.7.1.6}
-\contentsline {subsection}{\numberline {7.1.7}Formula di Taylor del II ordine per una funzione di due variabili}{125}{subsection.7.1.7}
-\contentsline {subsection}{\numberline {7.1.8} Definizione di matrice Hessiana per un funzione $f: A \subseteq \mathbb {R}^2 \to \mathbb {R}$ e sua applicazione nella formula di Taylor del II ordine}{126}{subsection.7.1.8}
-\contentsline {section}{\numberline {7.2}Massimi e minimi}{127}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Definizione di punto di massimo/minimo relativo, massimo/minimo assoluto e punto di sella per una funzione $f: A \subseteq \mathbb {R}^2 \to \mathbb {R}$}{127}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}Teorema di Fermat sui punti stazionari di una funzione}{128}{subsection.7.2.2}
-\contentsline {subsection}{\numberline {7.2.3}Teorema di Weierstrass sull’esistenza del massimo e minimo assoluto di una funzione}{129}{subsection.7.2.3}
-\contentsline {subsection}{\numberline {7.2.4}Metodo dei moltiplicatori di Lagrange per la ricerca di massimi e minimi vincolati per funzioni di due variabili}{130}{subsection.7.2.4}
-\contentsline {section}{\numberline {7.3}Integrali per funzioni in pi\`u variabili}{131}{section.7.3}
-\contentsline {subsection}{\numberline {7.3.1}Definizione di insieme insieme semplice (o normale) in $\mathbb {R}^2$ rispetto agli assi cartesiani}{131}{subsection.7.3.1}
-\contentsline {subsection}{\numberline {7.3.2}Formula di riduzione di integrali doppi su insiemi semplici}{132}{subsection.7.3.2}
-\contentsline {subsection}{\numberline {7.3.3}Formula di cambiamento di variabili per integrali doppi e tripli}{133}{subsection.7.3.3}
-\contentsline {subsubsection}{Integrali doppi}{133}{section*.21}
-\contentsline {subsubsection}{Integrali tripli}{133}{section*.22}
-\contentsline {subsection}{\numberline {7.3.4}Cambiamento di coordinate cilindriche e sferiche}{135}{subsection.7.3.4}
-\contentsline {subsubsection}{Coordinate ellittiche}{135}{section*.23}
-\contentsline {subsubsection}{Coordinate sferiche}{135}{section*.24}
-\contentsline {subsection}{\numberline {7.3.5}Formule di riduzione per integrali tripli su un parallelepipedo}{136}{subsection.7.3.5}
-\contentsline {subsection}{\numberline {7.3.6}Definizione di insieme definito per fili e per strati}{137}{subsection.7.3.6}
-\contentsline {subsection}{\numberline {7.3.7}Formula di integrazione per fili e per strati}{138}{subsection.7.3.7}
-\contentsline {section}{\numberline {7.4}Curve e forme differenziali}{139}{section.7.4}
-\contentsline {subsection}{\numberline {7.4.1} Definizione di curva in $\mathbb {R}^n$, supporto di una curva, estremi di una curva, equazione parametrica di una curva}{139}{subsection.7.4.1}
-\contentsline {subsection}{\numberline {7.4.2}Definizione di curva chiusa, semplice, regolare, orientazione (o verso di percorrenza) di una curva semplice}{140}{subsection.7.4.2}
-\contentsline {subsection}{\numberline {7.4.3}Definizione di versore tangente ad una curva regolare}{141}{subsection.7.4.3}
-\contentsline {subsection}{\numberline {7.4.4}Definizione di curva rettificabile e lunghezza di una curva L($\gamma $)}{142}{subsection.7.4.4}
-\contentsline {subsubsection}{Curva rettificabile}{142}{section*.25}
-\contentsline {subsubsection}{Lunghezza curva}{142}{section*.26}
-\contentsline {subsection}{\numberline {7.4.5} Formula per il calcolo della lunghezza di una curva rettificabile}{143}{subsection.7.4.5}
-\contentsline {subsection}{\numberline {7.4.6} Definizione di integrale curvilineo di prima specie per una funzione continua f lungo una curva $\gamma $ di classe $C^1$}{144}{subsection.7.4.6}
-\contentsline {subsection}{\numberline {7.4.7} Definizione di integrale curvilineo di seconda specie di una forma differenziale lungo una curva di classe $C^1$}{145}{subsection.7.4.7}
-\contentsline {subsection}{\numberline {7.4.8}Definizione di forma differenziale esatta e di potenziale di una forma differenziale}{146}{subsection.7.4.8}
-\contentsline {subsection}{\numberline {7.4.9}Formula per il calcolo dell’integrale curvilineo di una forma differenziale esatta}{147}{subsection.7.4.9}
+\contentsline {chapter}{\numberline {1}Funzioni a pi\`u variabili, [BDPG, 10]}{4}{chapter.1}
+\contentsline {section}{\numberline {1.1}Lez - 01}{4}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Grafico di una funzione scalare di pi\`u variabili}{5}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.2}Curve di livello di una funzione di pi\`u variabili}{5}{subsection.1.1.2}
+\contentsline {subsection}{\numberline {1.1.3}Limiti e continuit\`a per funzioni di pi\`u variabili}{6}{subsection.1.1.3}
+\contentsline {subsubsection}{Idea per l'introduzione di limite per funzioni di $n=2$ varaibili}{6}{section*.2}
+\contentsline {section}{\numberline {1.2}Lez - 02}{7}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Calcolo dei limiti}{8}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Esempi calcolo limiti}{9}{subsection.1.2.2}
+\contentsline {section}{\numberline {1.3}Lez - 03}{11}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}Definizioni limiti e continuit\`a per $\mathbb {R}^n$}{11}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Calcolo differenziale per funzioni a pi\`u variabili}{12}{subsection.1.3.2}
+\contentsline {subsubsection}{Derivate parziali}{12}{section*.3}
+\contentsline {subsection}{\numberline {1.3.3}Piano tangente al grafico}{13}{subsection.1.3.3}
+\contentsline {section}{\numberline {1.4}Lez - 04}{15}{section.1.4}
+\contentsline {subsection}{\numberline {1.4.1}Differenziabilit\`a in $n\geq 3$}{16}{subsection.1.4.1}
+\contentsline {section}{\numberline {1.5}Lez - 05}{20}{section.1.5}
+\contentsline {subsection}{\numberline {1.5.1}Condizioni sulle derivate parziali che assicurino la diffrenenziablit\`a }{20}{subsection.1.5.1}
+\contentsline {subsection}{\numberline {1.5.2}Derivate direzionali}{21}{subsection.1.5.2}
+\contentsline {subsubsection}{Norma di un vettore di $\mathbb {R}^n$}{21}{section*.4}
+\contentsline {subsection}{\numberline {1.5.3}Teo: Diff. vs. Deriv. direz.}{22}{subsection.1.5.3}
+\contentsline {subsection}{\numberline {1.5.4}Teorema del valore medio}{23}{subsection.1.5.4}
+\contentsline {section}{\numberline {1.6}Lez - 06}{24}{section.1.6}
+\contentsline {subsection}{\numberline {1.6.1}Derivate parziali di una f composta di pi\`u variabili}{24}{subsection.1.6.1}
+\contentsline {subsubsection}{Richiami della RDC}{24}{section*.5}
+\contentsline {subsection}{\numberline {1.6.2}I° caso particolare}{24}{subsection.1.6.2}
+\contentsline {subsubsection}{Espansione calssica di RDC, Leibniz}{25}{section*.6}
+\contentsline {subsection}{\numberline {1.6.3}II° caso particolare}{26}{subsection.1.6.3}
+\contentsline {subsection}{\numberline {1.6.4}Caso generale di RDC}{27}{subsection.1.6.4}
+\contentsline {subsubsection}{Matrice Jacobiana}{27}{section*.7}
+\contentsline {subsection}{\numberline {1.6.5}Teorema RDC}{28}{subsection.1.6.5}
+\contentsline {section}{\numberline {1.7}Lez - 07}{29}{section.1.7}
+\contentsline {subsection}{\numberline {1.7.1}Derivate parziali di ordine superiore}{29}{subsection.1.7.1}
+\contentsline {subsection}{\numberline {1.7.2}Teo: Inversione dell'ordine di derivazione}{29}{subsection.1.7.2}
+\contentsline {subsection}{\numberline {1.7.3}Taylor per funzioni di pi\`u variabili}{30}{subsection.1.7.3}
+\contentsline {subsection}{\numberline {1.7.4}Taylor del II ordine + resto di Peano}{31}{subsection.1.7.4}
+\contentsline {section}{\numberline {1.8}Lez - 08}{33}{section.1.8}
+\contentsline {subsection}{\numberline {1.8.1}Massimi e minimi per funzioni a pi\`u variabili}{33}{subsection.1.8.1}
+\contentsline {subsection}{\numberline {1.8.2}Estremi liberi di una funzione (min/max relativi)}{33}{subsection.1.8.2}
+\contentsline {subsection}{\numberline {1.8.3}Matrice Hessiana}{34}{subsection.1.8.3}
+\contentsline {subsection}{\numberline {1.8.4}Teorema: Criterio per il segno di una matrice}{35}{subsection.1.8.4}
+\contentsline {subsubsection}{Richiami di algfebra lineare}{35}{section*.8}
+\contentsline {subsection}{\numberline {1.8.5}Esempi}{36}{subsection.1.8.5}
+\contentsline {section}{\numberline {1.9}Lez - 09}{38}{section.1.9}
+\contentsline {subsection}{\numberline {1.9.1}Ricerca del max e min (assoluto) su insieme limitato e chiuso}{38}{subsection.1.9.1}
+\contentsline {subsection}{\numberline {1.9.2}Frontiera attraverso parametrizzazione}{39}{subsection.1.9.2}
+\contentsline {subsubsection}{Caso $n=2$}{39}{section*.9}
+\contentsline {subsubsection}{Caso $n=3$}{39}{section*.10}
+\contentsline {subsection}{\numberline {1.9.3}Metodo dei moltiplicatori di Lagrange, TML}{41}{subsection.1.9.3}
+\contentsline {subsubsection}{Caso $n=2$}{41}{section*.11}
+\contentsline {subsubsection}{Teorema della funzione implicita, U. Dini}{41}{section*.12}
+\contentsline {subsubsection}{Caso $n=3$}{42}{section*.13}
+\contentsline {chapter}{\numberline {2}Integrale per funzioni a pi\`u variabili, [BDPG, 14]}{44}{chapter.2}
+\contentsline {section}{\numberline {2.1}Lez - 10, Integrale doppio su un rettangolo}{44}{section.2.1}
+\contentsline {subsubsection}{Caso $n=2$}{44}{section*.14}
+\contentsline {subsection}{\numberline {2.1.1}Propriet\`a importanti delle somme sup. ed inf. }{45}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Teoremi: Esistenza \& Propriet\`a integrale}{46}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Formula di riduzione sui rettangoli}{47}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}Esempio}{47}{subsection.2.1.4}
+\contentsline {section}{\numberline {2.2}Lez 11 - Integrale doppio su insiemi generali}{49}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Insiemi numerabili e loro area}{50}{subsection.2.2.1}
+\contentsline {subsubsection}{Teorema: Caraterizzazione degli insiemi misurabili}{50}{section*.15}
+\contentsline {subsection}{\numberline {2.2.2}Integrali doppi su insiemi misurabili}{51}{subsection.2.2.2}
+\contentsline {subsubsection}{Teorema: Esistenza integrale doppio su insiemi misurabili}{51}{section*.16}
+\contentsline {subsection}{\numberline {2.2.3}Teo.: Integrale doppio su insieme di misura nulla}{51}{subsection.2.2.3}
+\contentsline {section}{\numberline {2.3}Integrali doppi su domini semplici e formule di riduzione}{51}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Teorema: Forumla di riduzione su domini semplici}{52}{subsection.2.3.1}
+\contentsline {section}{\numberline {2.4}Lez - 12}{54}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Applicazione della formula di riduzione su domini semplici al calcolo di volumi di solidi}{54}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Teorema: Additivit\`a dell'integrale doppio}{55}{subsection.2.4.2}
+\contentsline {section}{\numberline {2.5}Cambiamento di var. per gli integrali doppi}{55}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Caso particolare: coordinate polari}{55}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Caso generale}{57}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}Teorema: Cambiamento di variabili negli integrali doppi}{58}{subsection.2.5.3}
+\contentsline {section}{\numberline {2.6}Lez - 13, Integrali tripli, [BDPG,14.5]}{61}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Integrale triplo su un parallelepipedo}{61}{subsection.2.6.1}
+\contentsline {subsubsection}{Propriet\`a }{62}{section*.17}
+\contentsline {subsection}{\numberline {2.6.2}Integrale triplo su insiemi generali}{62}{subsection.2.6.2}
+\contentsline {subsection}{\numberline {2.6.3}Formule di riduzione per integrali tripli}{63}{subsection.2.6.3}
+\contentsline {subsubsection}{Applicazione della formula di riduzione per strati: volume di un solido di rotazione}{65}{section*.18}
+\contentsline {subsection}{\numberline {2.6.4}Cambiamento di variabili negli integrali tripli}{65}{subsection.2.6.4}
+\contentsline {chapter}{\numberline {3}Curve ed integrali curvilinei, [BDPG, 12]}{67}{chapter.3}
+\contentsline {section}{\numberline {3.1}Lez - 14, Curve in $\mathbb {R}^n$}{67}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Orientazione di una curva semplice}{68}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Vettore velocit\`a di una curva}{69}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Cambiamento di parametro di una curva}{71}{subsection.3.1.3}
+\contentsline {section}{\numberline {3.2}Lez - 15, Lunghezza di una curva}{72}{section.3.2}
+\contentsline {section}{\numberline {3.3}Integrali curvilinei di I specie}{73}{section.3.3}
+\contentsline {section}{\numberline {3.4}Integrali curvilinei di II specie: campi vettoriali e forme differenziali}{74}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Campi vettoriali e forme differenziali}{74}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Lez - 16, Teo: Integrale curvilineo di II specie rispetto a curve eq.}{76}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Forme differenziali esatte (o campi vettoriali conservativi)}{77}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}Forma differenziali chiuse}{79}{subsection.3.4.4}
+\contentsline {subsubsection}{Teo: Chiusa = Esatta}{80}{section*.19}
+\contentsline {subsection}{\numberline {3.4.5}Costruzione di un potenziale per una forma diff. chiusa su aperto conv.}{81}{subsection.3.4.5}
+\contentsline {subsubsection}{Procedura per la costruzione di $\mathcal {U}$}{81}{section*.20}
+\contentsline {chapter}{\numberline {4}Superfici ed integrali di superfici, [BDPG,15]}{85}{chapter.4}
+\contentsline {section}{\numberline {4.1}Lez - 17, Superfici in $\mathbb {R}^3$}{85}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Punti interni e bordo di una superficie}{87}{subsection.4.1.1}
+\contentsline {section}{\numberline {4.2}Regolarit\`a della parametrizzazione e piano tangente ad una superficie}{88}{section.4.2}
+\contentsline {section}{\numberline {4.3}Lez - 18, Superfici orientabili}{91}{section.4.3}
+\contentsline {section}{\numberline {4.4}Integrali di superficie}{92}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Idea per definire l'area di una superficie}{92}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Generalizzazione di nozione di integrale di I sp. per curve a superfici}{95}{subsection.4.4.2}
+\contentsline {chapter}{\numberline {5}Il teorema della divergenza nel piano e nello spazio, [BDPG,16]}{96}{chapter.5}
+\contentsline {section}{\numberline {5.1}Lez - 19}{96}{section.5.1}
+\contentsline {section}{\numberline {5.2}Teorema Gauss-Green}{97}{section.5.2}
+\contentsline {section}{\numberline {5.3}Lez - 20, Dimostrazione Gauss-Green}{99}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Versore normale esterno ad un insieme semplice regoalre a tratti nel piano}{100}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Teorema della divergenza per insiemi generali del piano}{101}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Versore normale esterno ad un dominio regolare a tratti del piano e teo. della divergenza}{102}{subsection.5.3.3}

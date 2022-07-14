@@ -1,0 +1,489 @@
+\documentclass{report}
+\usepackage{mathtools}
+\usepackage{mathbbol}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{blindtext}
+\usepackage{nicematrix}
+\usepackage{booktabs}
+\usepackage{amsfonts}
+\usepackage{pgfplots}
+\usepackage{dutchcal}
+\usepackage{bbm}
+\usepackage{listings}
+\usepackage{tikz} 
+
+\newcommand{\sol}{\textbf{Soluzione:}}
+\newcommand{\ac}[1]{\`#1}
+\newcommand{\ace}{\`e }
+\newcommand{\aci}{\`i }
+\newcommand{\aca}{\`a }
+\newcommand{\aco}{\`o }
+\newcommand{\acu}{\`u }
+\newcommand{\Ins}[1]{\mathbb{#1}}
+\newcommand{\R}{\Ins{R}}
+\newcommand{\f}{f: A \subseteq \R^2 \to \R}
+\newcommand{\fn}{f: A \subseteq \R^n \to \R}
+\newcommand{\frestr}[1]{f\lvert_{#1}}
+\newcommand{\ppartx}{\frac{\partial f}{\partial x}(p_0)}
+\newcommand{\pparty}{\frac{\partial f}{\partial y}(p_0)}
+\newcommand{\abs}[1]{\left\lvert #1 \right\rvert}
+\newcommand{\polarBase}{\begin{array}{l}
+                          x = \rho\cos\vartheta \\
+                          y = \rho\sin\vartheta \\
+                        \end{array}}
+\newcommand{\tuple}[1]{\left\langle #1 \right\rangle}
+\newcommand{\norma}[1]{\left\lVert#1\right\rVert}
+\newcommand{\origine}{\underline{O}}
+\newcommand{\p}{\partial}
+\newcommand{\overcirc}[1]{\mathring{#1}}
+\newcommand{\V}{\mathsf{V}}
+\newcommand{\T}{\mathsf{T}}
+\newcommand{\Qbase}{Q = [a,b]\times[c,d]}
+\newcommand{\D}{\mathcal{D}}
+\newcommand{\Rcal}{\mathcal{R}}
+\newcommand{\ftilde}{\widetilde{f}}
+\newcommand{\g}{\gamma}
+\newcommand{\gtilde}{\widetilde{g}}
+\newcommand{\om}{\omega}
+\newcommand{\al}{\alpha}
+\newcommand{\bb}{\beta}
+\newcommand{\U}{\mathcal{U}}
+\newcommand{\Dint}{D_{int}}
+\newcommand{\Dest}{D_{est}}
+
+\begin{document}
+  \tableofcontents
+  \chapter{Orale}
+  \section{Obbligatori}
+  \begin{itemize}
+    \subsection{TDC}
+    \item Sia $h,g,\f$, supponiamo che:
+          \begin{itemize}
+            \item[5.1] $f(p) \leq g(p) \leq h(p)$, $\forall p \in A \setminus \{p_0\}$
+            \item[5.2] $\exists\lim_{p \to p_0} f(p) = \lim_{p \to p\to p_0} h(p) = L \in \R \cup \{\pm \infty\}$
+          \end{itemize}
+          allora $\exists \lim_{p \to p_0} g(p) = L$
+
+    \subsection{Definizione di limite per una funzione $\f$}
+    \item Sia $\f$ e sia $p_0 \in \R^2$ punto di accomulazione per A. Si dice che:
+          $$\exists lim_{(x,y)\to (x_0,y_0)} f(x,y) = L \in \R$$
+          oppure $\exists \lim_{p \to p_0} f(p) = L$ se 
+          $$\forall \varepsilon > 0, \exists \delta = d(p_0,\varepsilon) > 0 \mid 
+          \lvert f(x,y)-L\rvert < \varepsilon, \forall (x,y) \in B(p,\delta) \cap (A \setminus \{p_0\})$$
+
+    \subsection{Definizione di continuit\aca per una funzione $\f$}
+    \item Sia $\f$
+          \begin{enumerate}
+            \item f si dice continua in $p_0 \in A$ se 
+            \begin{enumerate}
+              \item $p_0$ \ace un punto \underline{isolato} di A, oppure
+              \item $p_0$ \ace un punto di accomulazione ed $\exists \lim_{p \to p_0} f(p) = f(p_0)$
+            \end{enumerate}
+            \item f si dice \underline{continua} su A se f \ace continua in ogni punto $p_0 \in A$
+          \end{enumerate}
+
+    \subsection{Definizione di derivate parziali e di vettore gradiente per una funzione $\f$ A aperto}
+    \item \begin{enumerate}
+            \item Si dice che $f$ \ace \underline{derivabile}(parzialmente) rispetto alla variabile x nel punto $p_0 = (x_0,y_0)$ se 
+                  $$\exists \lim_{x \to x_0} \frac{f(x,y_0) - f(x_0,y_0)}{x-x_0} := \frac{\partial f}{\partial x}(x_0,y_0) = D_1 f(x_0,y_0) \in \R$$
+            \item Si dice che $f$ \ace \underline{derivabile}(parzialmente) rispetto alla variabile y nel punto $p_0 = (x_0,y_0)$ se 
+                  $$\exists \lim_{y \to y_0} \frac{f(x_0,y) - f(x_0,y_0)}{y-y_0} := \frac{\partial f}{\partial y}(x_0,y_0) = D_2 f(x_0,y_0) \in \R$$
+            \item Se $f$ \ace derivabile (parzialmente) sia rispetto ad x ed y nel punto $p_0 = (x_0,y_0)$, si chiama (vettore)\underline{gradiente} di $f$ in $p_0$
+                  il vettore:
+                  $$\nabla f(p_0) = \left(\frac{\partial f}{\partial x}(p_0), \frac{\partial f}{\partial y}(p_0)\right) \in \R^2$$
+          \end{enumerate}
+          Sia $\f$, A insieme aperto. Supponiamo che:
+          $$\exists \frac{\partial f}{\partial x},\frac{\partial f}{\partial y} : A \to \R$$
+          allora \ace ben definito il \underline{campo} dei vettori gradiente:
+          $$\nabla f : \R^2 \supseteq A \ni p \to \nabla f(p) = \left(\frac{\partial f}{\partial x}(p), \frac{\partial f}{\partial y}(p)\right) \in \R^2$$
+
+    \subsection{Definizione di differenziabilit\aca in un punto per una funzione $\f$ e relazione con l'esistenza del gradiente in quel punto}
+    \item  Dato $A \subseteq \R^2$ aperto e dato $p_0=(x_0,y_0)\in A$, la funzione $\f$ si dice \underline{differenziabile}
+           nel punto $p_0$ se vale 
+           $$\text{(D) } \exists \lim_{(x,y)\to (0,0)}\frac{f(x)-\left[a(x-x_0)+b(y-y_0)+f(x_0)\right]}{d(p,p_0)}$$
+           dove $d(p,p_0) = \sqrt{(x-x_0)^2+(y-y_0)^2}$ e per $a,b \in \R$ opportuni. \\\\
+           Se f \ace differenziabile nel punto $p_0 =(x_0,y_0)$, allora $$\exists\nabla f(p_0) = \left(\ppartx, \pparty\right)$$
+           e $$a = \ppartx , b =\pparty $$
+    
+    \subsection{Regola della catena nel caso generale di due funzioni, $f:\R^n \to \R^m$ e $g:\R^m\to\R^k$}
+    \item Siano $g: A \subseteq \R^n\to \R^m$ e $f : B \subseteq \R^m \to \R^k$, A e B aperti
+          \begin{enumerate}
+            \item[(i)] $g(A) \subseteq B$
+            \item[(ii)] Se $g = (g_1, \dots, g_m)$, $f = (f_1, \dots, f_k)$ \\
+                      Supponiamo che  $\begin{array}{l}
+                        g_i : A \subseteq \R^n \to \R \, (i = 1,\dots,m) \text{ sia diff. in un dato } x_0 \in A \\
+                        f_i : B \subseteq \R^m \to \R \, (i = 1,\dots,k) \text{ sia diff. in un dato } y_0 = g(x_0) \\ 
+                      \end{array}$ \\
+                      Consideriamo ora la funzione $h:= f \circ g : A \subseteq \R^n \to \R^k$, $h = (h_1, \dots, h_k)$
+                      con $h_i : A \subseteq \R^n \to \R$, \\ allora le funzioni 
+                      $h_i : A \to \R (i = 1,\dots,k) \text{ sono diff. in } x_0$ e 
+                      $$D h(x_0) = D f(g(x_0)) \cdot D g(x_0)$$
+          \end{enumerate}
+
+    \subsection{Formula di Taylor del II ordine per una funzione di due variabili}
+    \item Dato $m \in \Ins{N}$, $p_0 = (x_0,y_0) \in \R^2$ fissato, si chiama \underline{polinomio di ordine m} di $n=2$ variabili,
+          centrato in $p_0$, una funzione $T: \R^2 \to \R$ del tipo
+          $$T(x,y) = \sum_{h=0}^{m} \sum_{i = 0}^n c_{i,h-i} (x-x_0)^i(y-y_0)^{h-i}$$
+          $(x,y)\in \R^2$, dove $c_{i,h-i}$ (i = 0,...,h e h = 0,..., m) sono $\frac{(m+1)(m+2)}{2}$ coeff. ass. \\\\
+          Sia $f \in C^2\left(B(p_0,r)\right)$, $p_0 = (x_0,y_0) \in \R^2$ e $r > 0$ fissato. Allora vale:
+          $$\left(FT_2\right) f(p) = T_2(p) + o\left(\norma{p-p_0}^2\right)$$
+          $\forall p = (x,y) \in B(p_0,r)$, dove 
+          $$T_2(p) := f(p_0) + \tuple{\nabla f(p_0), p-p_0} + \frac{1}{2} \tuple{D^2f(p_0) \cdot (p-p_0), p-p_0}$$
+          se $p \in \R^2$. \\
+          (polinomio di taylor del II ordine di f, centrato in $p_0$) 
+
+    \subsection{ Definizione di matrice Hessiana per un funzione $\f$ e sua applicazione nella formula di Taylor del II ordine}
+    \item Data $f \in C^2(A)$, $A \in \R^2$ aperto, si chiama, \underline{matrice hessiana}
+            di f in un punto $p\in A$, la matrice $2\times 2$
+            $$D^2f(p) = H(f)(p) = \begin{bmatrix}
+              \frac{\p^2 f}{\p x^2}(p) & \frac{\p^2 f}{\p y \p x}(p) \\
+              \frac{\p^2 f}{\p x \p y}(p) & \frac{\p^2 f}{\p y^2}(p) \\
+            \end{bmatrix}_{2\times 2}$$
+          L'applicazione della matrice Hessiana nel PT2o si pu\aco trovare nello 
+          sviluppo della dimostrazione, infatti per una funzione
+          $F(t) = f(p_0+tv), t \in (-r,r) \text{ e } B(p_0,r)$ andando a calcolare il polinomio di Taylor 
+          per $t = 0$, e supponendo di avere $v = \frac{p-p_0}{\norma{p-p_0}}$,
+          otteniamo che $F''(t)$:
+          $$F''(t) = v_1 \cdot \tuple{\nabla \left(\frac{\p f}{\p x}\right)(p_0+tv), v} + 
+                      v_2 \cdot \tuple{\nabla \left(\frac{\p f}{\p y}\right)(p_0+tv), v} = $$
+          $$= v_1 \left(\frac{\p^2 f}{\p x^2}(p_0+tv)v_1 + \frac{\p^2 f}{\p y \p x}(p_0+tv)v_2\right) + 
+              v_2 \left( \frac{\p^2 f}{\p x \p y}(p_0+tv)v_1 + \frac{\p^2 f}{\p y^2}(p_0+tv)v_2\right) = $$
+          $$ = \frac{\p^2 f}{\p x^2}(p_0+tv)v_1^2 + 2 \frac{\p^2 f}{\p y \p x}(p_0+tv)v_1 v_2 + 
+                \frac{\p^2 f}{\p y^2}(p_0 + tv)v_2^2$$
+          Pertanto calcolando $F''(0)$ otteniamo:
+          $$F''(0) = \frac{\p^2 f}{\p x^2}(p_0+tv)v_1^2 + 2 \frac{\p^2 f}{\p y \p x}(p_0+tv)v_1 v_2 + 
+            \frac{\p^2 f}{\p y^2}(p_0 + tv)v_2^2$$
+          Che pu\aco essere riscritto mediante matrice Hessiana del tipo:
+          $$F''(0) = \tuple{D^2f(p_0)v,v}$$
+          E sostituendola otteniamo
+          $$f(p_0+tv) = F(t) = f(p_0) + \tuple{\nabla f(p_0), v}t + \frac{1}{2} \tuple{D^2 f(p_0)v, v}t^2 + o(t^2) , \text{ per } t \to 0$$
+          Scegliendo $t = \norma{p-p_0}$ e otteniamo la forma del polinomio di Taylor di II ordine. 
+          Ed \ace questa l'applicazione della matrice Hessiana.
+    
+  \subsection{Definizione di punto di massimo/minimo relativo, massimo/minimo assoluto e punto di sella per una funzione $\f$}
+  \item Data $\f$: 
+        \begin{enumerate}
+          \item $p_0 \in A$ si dice, punto di \underline{massimo} (= max) \underline{relativo} di f su A se 
+                $\exists r_0 > 0$ t.c. $f(p) \leq f(p_0) \, \forall p \in A \cap B(p_0,r_0)$ \\
+                Rispettivamente $p_0 \in A$ si dice, punto di \underline{minimo} (= min) \underline{relativo} di f su A se 
+                $\exists r_0 > 0$ t.c. $f(p) \geq f(p_0) \, \forall p \in A \cap B(p_0,r_0)$
+          \item $p_0 \in A$ si dice punto di \underline{massimo} (= MAX) \underline{assoluto} se 
+                $\forall p \in A$, $f(p) \leq f(p_0)$ \\
+                Rispettivamente $p_0 \in A$ si dice punto di \underline{minimo} (= MIN) \underline{assoluto} se 
+                $\forall p \in A$, $f(p) \geq f(p_0)$ 
+        \end{enumerate}
+        Sia $\fn$, A aperto. Un punto $p_0 \in A$ si dice \underline{punto di sella} se $p_0$ \ace un punto 
+        stazionario di f e $f(p)-f(p_0)$ amette sia valori positivi che negativi in ogni intorno di $p_0$
+
+  \subsection{Teorema di Fermat sui punti stazionari di una funzione}
+  \item Sia $\fn$, A aperto. Supponiamo che esista $p_0 \in A$ t.c. 
+          \begin{enumerate}
+            \item[(i)] f differenziabile in $p_0$. In particolare $\exists \nabla f(p_0)$
+            \item[(ii)] $p_0$ sia un estremo libero di f in A
+          \end{enumerate}
+          Allora $\nabla f(p_0) = \underline{O}_{\R^n} = (0,...,0) \text{ (n-volte)}$ \\\\       
+
+  \subsection{Teorema di Weierstrass sull’esistenza del massimo e minimo assoluto di una funzione}
+  \item Sia $\fn$, Supponiamo che:
+        \begin{itemize}
+          \item[(i)] A sia limitato e chiuso, (in $n=1$, $A = [a,b], \p A = \{a,b\}, \overcirc{A} = (a,b)$)
+          \item[(ii)] f sia continua su A 
+        \end{itemize}
+        Allora esiste $\min_{A}f$ e $\max_{A}f$
+
+  \subsection{Metodo dei moltiplicatori di Lagrange per la ricerca di massimi e minimi vincolati per funzioni di due variabili}
+  \item Sia $f \in C^1(\R^2)$ e $\V = \{(x,y)\in \R^2 : g(x,y) = 0\}$ dove $g \in C^1(\R^2)$. Supponiamo che:
+        \begin{enumerate}
+          \item[(i)] $\exists \min_{\V} f = f(p_0) (\text{o } \exists \max_{\V} f = f(p_0))$ con $p_0 = (x_0,y_0) \in \V$
+          \item[(ii)] $\exists \nabla g(p_0) \not = (0,0)$
+        \end{enumerate}
+        Allora esiste $\lambda_0 \in \R$ (detto \underline{moltiplicatore}) t.c. $(x_0,y_0,\lambda_0)\in \R^3$ \ace un 
+        punto stazionario della funzione. \\
+        Equivalentemente: $$\exists\lambda_0 \in \R \text{ t.c. } \left\{\begin{array}{l}
+          g(p_0) = 0 \\
+          \\
+          \nabla f(p_0) + \lambda_0 \nabla g(p_0) = (0,0) \\
+        \end{array}\right. (*)  \label{tml_v2}$$
+  
+  \subsection{Definizione di insieme insieme semplice (o normale) in $\R^2$ rispetto agli assi cartesiani}
+  \item Un sottoinsieme $A \subset \R^2$ si dice 
+          \begin{itemize}
+            \item \underline{Dominio semplice} (o normale) rispetto all'asse y se esistono 
+                  $g_1, g_2 \in C^0([a,b])$ t.c. $g_1 \leq g_2$ su $[a,b]$ e 
+                  $$A = \{(x,y)\in\R^2 : x \in [a,b], g_1(x) \leq y \leq g_2(x)\}$$
+            \item \underline{Dominio semplice} (o normale) rispetto all'asse x se esistono 
+                  $h_1, h_2 \in C^0([c,d])$ t.c. $h_1 \leq h_2$ su $[c,d]$ e 
+                  $$A = \{(x,y)\in\R^2 : y \in [c,d], h_1(y) \leq x \leq h_2(y)\}$$
+          \end{itemize}
+
+  \subsection{Formula di riduzione di integrali doppi su insiemi semplici}
+  \item Sia $A\subseteq\R^2$ un dominio semplice rispetto ad uno degli assi. Supponiamo che $f\in C^{0}(A)$, allora 
+        $f\in\Rcal(A)$ e valgono le seguenti formule:
+        \begin{enumerate}
+          \item Se $A = \{(x,y)\in\R^2 : x \in [a,b], g_1(x) \leq y \leq g_2(x)\}$ con $g_1, g_2 \in C^0([a,b])$, allora 
+                $$(1) \iint_{A} f = \int_{a}^{b} \left(\int_{g_1(x)}^{g_2(x)} f(x,y) \, dy\right) \, dx$$
+                In particoalre A \ace misurabile e $\abs{A}_2 = \iint_{A} 1 = \int_{a}^{b} \left(g_2(x)-g_1(x)\right) \, dx$
+          \item Se $A = \{(x,y)\in\R^2 : y \in [c,d], h_1(y) \leq x \leq h_2(y)\}$ con $h_1, h_2 \in C^0([c,d])$, allora 
+                $$(2) \iint_{A} f = \int_{c}^{d} \left(\int_{h_1(y)}^{h_2(y)} f(x,y) \, dx\right) \, dy$$
+                In particoalre A \ace misurabile e $\abs{A}_2 = \iint_{A} 1 = \int_{c}^{d} \left(h_2(y)-h_1(y)\right) \, dy$
+        \end{enumerate}
+  
+  \subsection{Formula di cambiamento di variabili per integrali doppi e tripli}
+  \item \subsubsection{Integrali doppi}
+        La mappa $\psi$ si dice un cambiamento di variabili se
+        \begin{itemize}
+          \item $\psi$ \ace bigettiva
+          \item $\psi_i \in C^1(D^*)$, $\psi_i, \frac{\p \psi_i}{\p u}, \frac{\p \psi_i}{\p v} : D^* \to \R$ limitate (i=1,2)
+          \item $\det D\psi(u,v)\not = 0$ , $\forall (u,v)\in D^*$, dove
+                $$D \psi(u,v) := \begin{bmatrix}
+                  \frac{\p \psi_1}{\p u} (u,v) & \frac{\p \psi_1}{\p v} (u,v)\\
+                  \\
+                  \frac{\p \psi_2}{\p u} (u,v) & \frac{\p \psi_2}{\p v} (u,v) \\
+                \end{bmatrix} \text{ (Matrice Jacobiana)}$$
+        \end{itemize}
+        Denotiamo $dA^* = du\,dv$ e $dA = dx\,dy$
+      Si pu\aco provare che $dA = \abs[det D\psi(u,v)] dA^*$.\\\\
+      Siano $D, D^* \subseteq \R^2$ aperti limitati e misurabili, sia $\psi : D^* \to D$
+      un cambiamento di variabili e sia $f:D \to \R$ continua e limitata. \\
+      Allora vale la formula
+      $$(FCV)_2 \, \iint_{D} f(x,y) \,dx\,dy = \iint_{D^*} f(\psi(u,v))\abs{\det D\psi(u,v)} \,du\,dv$$ 
+
+      \subsubsection{Integrali tripli}
+      La mappa $\Psi$ si dice \underline{cambiamento di variabile} (in $\R^3$) Se
+      \begin{itemize}
+        \item[(i)] $\Psi$ \ace bigettiva
+        \item[(ii)] $\Psi_i \in C^1(D^*)$, 
+                    $$\Psi_i, \frac{\p \Psi_i}{\p u}, \frac{\p \Psi_i}{\p v}, \frac{\p \Psi_i}{\p w} : D^* \to \R$$
+                    limitate (i = 1,2,3) 
+        \item[(iii)] $\det D\Psi(u,v,w) \neq 0$, dove 
+                    $$D\Psi(u,v,w) := \begin{bmatrix}
+                      \frac{\p \Psi_1}{\p u} & \frac{\p \Psi_1}{\p v} & \frac{\p \Psi_1}{\p w} \\
+                      \\
+                      \frac{\p \Psi_2}{\p u} & \frac{\p \Psi_2}{\p v} & \frac{\p \Psi_2}{\p w} \\
+                      \\
+                      \frac{\p \Psi_3}{\p u} & \frac{\p \Psi_3}{\p v} & \frac{\p \Psi_3}{\p w} \\
+                    \end{bmatrix}$$
+                    se $(u,v,w)\in\D^*$
+      \end{itemize}
+      Siano $D^*, D \subset \R^3$ aperti limitati e misurabili, sia 
+      $\Psi : D^* \to D$ un cambiamento di variabili e sia $f \in C^0(D)$ e limitata.
+      Allora 
+      $$\iiint_{D} f(x,y,z) \,dx\,dy\,dz = \iiint_{D^*} f(\Psi(u,v,w)) \abs{\det D\Psi(u,v,w)} \,du\,dv\,dw$$
+
+  \subsection{Cambiamento di coordinate cilindriche e sferiche}
+  \item \subsubsection{Coordinate cilindriche}
+          $$\Psi \equiv \left\{\begin{array}{l}
+            x = \rho\cos\vartheta \\
+            y = \rho\sin\vartheta \\
+            z = z \\
+          \end{array}\right.$$
+          $0 \leq \vartheta\leq 2\pi, \rho\geq 0$, $\abs{\det D\Psi(\rho,\vartheta,z)} = \rho$
+        \subsubsection{Coordinate sferiche}
+          $$\Psi \equiv \left\{\begin{array}{l}
+            x = r \sin\varphi\cos\vartheta \\
+            y = r \sin\varphi\sin\vartheta \\
+            z = r \cos\varphi \\
+          \end{array}\right.$$
+          $0 \leq \vartheta\leq 2\pi, r\geq 0, 0 \leq \varphi \leq \pi$,
+          $\abs{\det D\Psi(r,\vartheta,\varphi)} = r^2 \sin\varphi$
+    
+  \subsection{Formule di riduzione per integrali tripli su un parallelepipedo}
+  \item Sia $A\subseteq \R^3$ un insieme semplice rispetto all'asse z di tipo 
+        $$A=\{(x,y,z)\in\R^3: (x,y)\in E, g_1(x,y)\leq z \leq g_2(x,y)\}$$
+        e sia $f\in C^0(A)$. Allora 
+        $$\iiint_{A}f = \iint_{E} \left(\int_{g_1(x,y)}^{g_2(x,y)} f(x,y,z) \,dz\right) \,dx\,dy$$
+        
+  \subsection{Definizione di insieme definito per fili e per strati}
+  \item Dato un insieme $Q = [a_1,b_1] \times [a_2,b_2]\times[a_3,b_3]$ si definisce:
+        \begin{itemize}
+          \item L'insieme $\{(x,y,z)\in\R^3:(y,z)\in[a_2,b_2]\times[a_3,b_3]\}$ \ace uno strato.
+          \item L'insieme $\{(x,y,z)\in\R^3: z\in[a_3,b_3]\}$ \ace un filo.
+        \end{itemize}
+        
+  \subsection{Formula di integrazione per fili e per strati}
+  \item Siano $Q = [a_1,b_1]\times [a_2,b_2]\times [a_3,b_3]$, $f \in C^0(Q)$
+        \begin{enumerate}
+          \item[(i)] La funzione $$[a_1,b_1]\times [a_2,b_2] \ni (x,y) \to \int_{a_3}^{b_3} f(x,y,z) \,dz$$
+                    \ace integrabile su $[a_1,b_1]\times [a_2,b_2]$ e 
+                    $$(1) \iiint_{Q} f = \iint_{[a_1,b_1]\times [a_2,b_2]} \left(\int_{a_3}^{b_3} f(x,y,z) \,dz\right)$$
+          \item[(ii)] La funzione $$[a_1,b_1] \ni x \to \iint_{[a_2,b_2]\times [a_3,b_3]} f(x,y,z) \,dy\,dz$$
+                      \ace integrabile su $[a_1,b_1]$ e 
+                      $$(2) \iiint_{Q} f = \int_{a_1}^{b_1} \left(\iint_{[a_2,b_2]\times[a_3,b_3]} f(x,y,z) \,dz\right)$$
+        \end{enumerate}
+        La \begin{itemize}
+          \item[(1)] si chiama formula di riduzione per \underline{fili}
+          \item[(2)] si chiama formula di riduzione per \underline{strati}
+        \end{itemize}
+
+  \subsection{ Definizione di curva in $\R^n$, supporto di una curva, estremi di una curva, equazione parametrica di una curva}
+  \item \begin{itemize}
+          \item[(i)] Si chiama \underline{curva} una mappa $\gamma:I \to \R^n$ continua, 
+                      $\gamma(t) = (\gamma_1(t),...,\gamma_n(t))$
+                      con $I$ intervallo di $\R$
+          \item[(ii)] Se $I = [a,b]$, i punti $\gamma(a)$, $\gamma(b)$ di $\R^n$ si chiamano
+                      \underline{estremi} della curva
+          \item[(iii)] Si chiama \underline{sostegno} (o supporto) della curva $\gamma$, l'insieme 
+                        $\gamma(I) \subseteq \R^n$. Si chiama \underline{equazione parametrica} di $\gamma$ 
+                        l'equazione $x = (x_1,...,x_n) = \gamma(t) \, t \in I$
+        \end{itemize}
+
+  \subsection{Definizione di curva chiusa, semplice, regolare, orientazione (o verso di percorrenza) di una curva semplice}
+  \item \begin{itemize}
+          \item[(i)] La curva $\gamma$ si dice \underline{chiusa} se $I = [a,b]$ e $\gamma(a) = \gamma(b)$
+          \item[(ii)] La curva $\gamma:I\to\R^n$ si dice \underline{semplice} se $\gamma$ \ace iniettiva, o 
+                      se $\gamma$ \ace chiusa e $I = [a,b]$, allora $\gamma :[a,b) \to \R^n$ \ace iniettiva.
+        \end{itemize}
+        Una curva $\gamma:I\to\R^n$ si dice \underline{regolare} se $\gamma$ 
+        \ace di classe $C^1$ e $\gamma'(t) \neq \origine_{\R^n}$ $\forall t \in I$ 
+        Sia data una curva semplice $\gamma:I\to\R^n$. Allora 
+        essa induce \underline{un'orientazione} sul suo sostegno $\gamma(I) \subseteq \R^n$.
+        Pi\acu precisamente \\\\
+        Data $\gamma:I\to\R^n$ curva semplice, si dice che il punto $x_1 = \gamma(t_1)$ \underline{precede}
+        il punto $x_2 = \gamma(t_2)$ se $t_1 < t_2$. L'orientazione della curva viene detta
+        anche \underline{verso} della curva.
+
+  \subsection{Definizione di versore tangente ad una curva regolare}
+  \item Data $\gamma : I \to \R^n$ curva regolare, si chiama \underline{versore} (o direzione) tangente a $\gamma$
+        il campo vettore $$\T_{\gamma} (t) := \frac{\gamma'(t)}{\norma{\gamma'(t)}} \, t \in I$$
+
+  \subsection{Definizione di curva rettificabile e lunghezza di una curva L($\g$)}
+  \item \subsubsection{Curva rettificabile}
+          Sia $\g:[a,b]\to\R^n$ una curva. Se $L(\g) < +\infty$, allora la curva si dice
+          \underline{rettificabile} e $L(\g)$ \ace detta \underline{lunghezza} di $\g$
+
+  \subsubsection{Lunghezza curva}
+  \item Sia $\g:[a,b]\to\R^n$ una curva di classe $C^1$. Allora $\g$ \ace rettificabile e 
+        $$L(\g)= \int_{a}^{b} \norma{\g'(t)} \,dt = \int_{a}^{b} \sqrt{\g_1'(t)^2 + ... + \g_n'(t)^2}\,dt$$
+
+  \subsection{ Formula per il calcolo della lunghezza di una curva rettificabile}
+  \item Vogliamo ora definire la nozione di lunghezza di una curva.\\
+        Sia $\g:[a,b]\to\R^n$ una curva e sia $\D := {t_0 = a < t_1 < ... < t_N = b}$ 
+        una suddivisione di $[a,b]$: essa induce una suddivisione del sostegno di 
+        $\g$ in $N+1$ parti definite da 
+        $\g(t_0),\g(t_1)\dots \g(t_N)$. \\
+        Consideriamo i segmenti
+        $$[\g(t_{i-1}),\g(t_i)] := \{s\g(t_i)+(1-t)\g(t_{i-1}) : 0 \leq s \leq 1\}$$
+        $i = 1,...,N$. La lunghezza della spezzata definita dall'unione 
+        $\bigcup_{i=1}^{N} [\g(t_{i-1}),\g(t_i)]$ \ace data da 
+        $$L(\g,\D) := \sum_{i=1}^{N} \norma{\g(t_i)-\g(t_{i-1})} \in [0,+\infty)$$
+        Denotiamo 
+        $$L(\g) := sup_{\D} L(\g,\D) \in [0,+\infty] =_{def} [0,+\infty) \cup \{+\infty\}$$
+  
+  \subsection{ Definizione di integrale curvilineo di prima specie per una funzione continua f lungo una curva $\g$ di classe $C^1$}
+  \item Sia $\g : [a,b]\to\R^n$ una curva di classe $C^1$ e sia $f:\Gamma \to \R$
+        una funzione continua. Si definisce
+        $$\int_{\gamma} f \,ds = \int_{a}^{b} f(\gamma(t))\norma{\g'(t)} \,dt$$
+        e si chiama \underline{Integrale curvilineo} di I specie di f lungo $\g$.
+
+  \subsection{ Definizione di integrale curvilineo di seconda specie di una forma differenziale lungo una curva di classe $C^1$}
+  \item Sia $\g:[a,b]\to E\subseteq\R^n$ una curva di classe $C^1$ e sia
+        $\omega$ una forma differenziale di classe $C^0$ su E. \\
+        Si definisce \underline{integrale curvilineo} di II specie di $\omega$
+        (o del campo F) lungo $\g$ il valore 
+        $$\int_{\g} \omega := \int_{a}^{b} \tuple{f(\g(t)), \g'(t)}\,dt = 
+          \int_{a}^{b} \sum_{i=1}^{n} F_i(\g(t))\g_i'(t) \,dt$$
+        Se $\g$ fosse chiusa il precedente integrale si scrive anche $\oint_{\g} \omega$
+  
+  \subsection{Definizione di forma differenziale esatta e di potenziale di una forma differenziale}
+  \item Sia $E\subseteq\R^n$ un insieme aperto e sia $\U \in C^1(E)$. Possiamo associare ad $\U$
+        la forma diff. 
+        $$d\U = \tuple{\nabla\U,dx} = \frac{\p \U}{\p x_1}\,dx_1+\dots+\frac{\p \U}{\p x_n}\,dx_n$$
+        che viene anche chiamata \underline{differenziale di $\U$} poich\ace coincide con la notazione
+        con cui indichiamo il differenziale di $\U$\\\\
+        Sia $E\subseteq\R^n$ un aperto e sia $\om = \tuple{F,dx}$ dove
+        $F:E\to\R^n$ di classe $C^0$. La forma $\om$ si dice \underline{esatta} in E 
+        se esiste $\U:E\to\R$ di classe $C^1$ t.c.
+        $$\nabla\U(x) = F(x) \, \forall x \in E$$
+        o, equivalentemente, $d\U = \om$.\\
+        In tal caso $\U$ \ace detta \underline{funzione potenziale} (o primitiva) di $\om$ in E.
+
+  \subsection{Formula per il calcolo dell’integrale curvilineo di una forma differenziale esatta}
+  \item Sia $E \subseteq \R^n$ aperto, $\om$ forma diff. continua ed esatta su E. Allora per ogni
+        curva $\g:[a,b]\to E$ $C^1$ a tratti vale che 
+        $$(*)\, \int_{\g}\om = \U(\g(b))-\U(\g(a))$$
+        dove $\U:E\to\R$ \ace un qualunque potenziale di $\om$
+
+  \subsection{Definizione di superficie elementare di $\R^3$: parametrizzazione di una superficie}
+  \item Un sottoinsieme $S\subset\R^3$ si dice \underline{superficie} (elementare) se esiste una mappa
+        $\sigma:\overline{D}\subseteq\R^2\to\R^3$, 
+        $$\sigma(u,v) = (x(u,v),y(u,v),z(u,v))$$
+        verificante
+        \begin{enumerate}
+          \item D \ace un aperto di $\R^2$, interno di una curva di Jordan
+          \item $\sigma$ \ace continua e $\sigma:D\to\R^3$ \ace iniettiva
+          \item $\sigma(\overline{D})=S$
+        \end{enumerate}
+        Una funzione verificante (1.-3.) \ace detta parametrizzazione di S. \\\\
+        S si dice \underline{superficie cartesiana} se esiste una parametrizzazione
+        $\sigma : \overline{D}\subseteq\R^2\to\R^3$ del tipo
+        $$\sigma(u,v) = \begin{array}{lr}
+          (u,v,f(u,v)) & z = f(x,y) \\
+          \text{oppure} \\
+          (f(u,v),u,v) & x = f(y,z) \\
+          \text{oppure} \\
+          (u,f(u,v),v) & y = f(x,z) \\
+        \end{array} (u,v)\in\overline{D}$$
+        dove $f:\overline{D}\to\R$ continua.
+
+  \subsection{Definizione di area per una superficie regolare}
+  \item Sia S una superficie regolare di parametrizzazione $\sigma : D\subseteq \R^2 \to \R^3$
+        insieme misurabile e supponiamo che la funzione 
+        $$(*) D \ni (u,v) \to \norma{\sigma_u\wedge\sigma_v}(u,v)$$
+        sia limitata. \\
+        Si chiama \underline{area di S} il valore 
+        $$A(S) := \iint_D \norma{\sigma_u(u,v)\wedge\sigma_v(u,v)}\,du\,dv$$
+        Una superficie S regolare per cui valga $(*)$ si dice \underline{di area ben definita}
+
+  \subsection{Area di una superficie cartesiana regolare e di una superficie di rotazione}
+  \item \subsubsection{Superficie regolare cartesiana}
+          Sia $D\subseteq\R^2$ interno di una curva di Jordan, e sia 
+          $f\in C^0(\overline{D})\cap C^1(D)$ e supponiamo che 
+          $\p_u f, \p_v f : D \to \R$ siano limitate. \\
+          Allora se $S = G_f := \{(u,v,f(u,v)):(u,v)\in D\}$ (superficie cartesiana), 
+          $$A(S) = \iint_{D} \sqrt{1+\abs{\nabla f(u,v)}^2} \,du \,dv$$
+        \subsubsection{Superficie di rotazione}
+        Calcolare l'area della sfera di centro (0,0,0) e raggio $r>0$ \\
+        \textbf{Soluzione:} \\\\
+        Possiamo rappresentare 
+        $$S = \{(x,y,z)\in\R^3:x^2+y^2+z^2 = r^2\}$$
+        e consideriammo la sua parametrizzazione in coordinate sferiche, cio\ace 
+        la mappa $\sigma:\overline{D}\to\R^3$, $\overline{D}=[0,2\pi]\times[0,\pi]$, 
+        $$\sigma(u,v) = r\left(\cos{u}\sin{v}, \sin{u}\sin{v}, \\cos{v}\right)$$
+        Sappiamo che $$\norma{\sigma_u\wedge\sigma_v} = r^2\abs{\sin{v}}$$
+        Pertanto 
+        $$A(S) = \iint_{D} \norma{\sigma_u\wedge\sigma_v} (u,v) \,du\,dv = \iint_{D} r^2\abs{\sin{v}} \,du\,dv = $$
+        $$= r^2\left(\int_{0}^{2\pi} \,du\right)\cdot\left(\int_{0}^{\pi}\sin{v} \,dv\right) = 
+            r^2\cdot 2\pi \left(\left.-cos{v}\right|_{0}^{\pi}\right) = 4\pi r^2$$
+
+  \subsection{Definizione di integrale di superficie per una funzione continua $f:\Sigma\subseteq\R^3\to\R$, dove $\Sigma$ è una superficie regolare}
+  \item Sia $S$ una superficie regolare di parametrizzazione $\sigma:\overline{D}\to\R^3$ t.c. 
+        \begin{enumerate}
+          \item $D\subseteq \R^2$ misurabile
+          \item $D\ni (u,v) \to \norma{\sigma_u\wedge\sigma_v}(u,v)$ sia limitata
+        \end{enumerate}
+        Sia $f:S' \to \R$ continua e limitata. Il valore
+        $$\iint_{S} f \,dS := \iint_{D} f(\sigma(u,v))\norma{\sigma_u\wedge\sigma_v}(u,v) \,du\,dv$$
+        si chiama \underline{integrale di superficie} di f.
+  \end{itemize}
+
+  \section{Enunciati}
+  \begin{itemize}
+    \subsection{Unicit\aca del limite}
+    \item Sia $\f$ e sia $p_0 \in \R^2$ punto di accomulazione per A. Supponiamo che 
+          $\exists lim_{p \to p_0} f(p) = L \in \R$. Allora $L$ \ace \underline{unico}.
+
+    \subsection{Teorema (algebra dei limiti)}
+    \item Siano $g,\f$, $p_0 \in \R^2$ punto di accomulazione per A. Supponiamo che 
+          $\exists \lim_{p\to p_0} f(p) = L \in \R$ e $\exists \lim_{p\to p_0} g(p) = M \in \R$, allora:
+          \begin{enumerate}
+            \item $\exists \lim_{p\to p_0} f(p) + g(p)= L + M$
+            \item $\exists \lim_{p\to p_0} f(p) \cdot g(p)= L \cdot M$
+            \item Se $g(p) \not = 0, \forall p \in A\setminus \{p_0\}$ e $M \not = 0$, allora $\exists \lim_{p\to p_0} \frac{f(p)}{g(p)} = \frac{L}{M}$
+            \item Sia $F:\R \to \R$ continua e sia $h(p) = F(f(p))$, allora $\exists  \lim_{p\to p_0} h(p) = F(L)$
+          \end{enumerate}
+  \end{itemize}
+\end{document}

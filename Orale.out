@@ -1,0 +1,37 @@
+\BOOKMARK [0][-]{chapter.1}{Orale}{}% 1
+\BOOKMARK [1][-]{section.1.1}{Obbligatori}{chapter.1}% 2
+\BOOKMARK [2][-]{subsection.1.1.1}{TDC}{section.1.1}% 3
+\BOOKMARK [2][-]{subsection.1.1.2}{Definizione di limite per una funzione f: A R2 R}{section.1.1}% 4
+\BOOKMARK [2][-]{subsection.1.1.3}{Definizione di continuit\340 per una funzione f: A R2 R}{section.1.1}% 5
+\BOOKMARK [2][-]{subsection.1.1.4}{Definizione di derivate parziali e di vettore gradiente per una funzione f: A R2 R A aperto}{section.1.1}% 6
+\BOOKMARK [2][-]{subsection.1.1.5}{Definizione di differenziabilit\340 in un punto per una funzione f: A R2 R e relazione con l'esistenza del gradiente in quel punto}{section.1.1}% 7
+\BOOKMARK [2][-]{subsection.1.1.6}{Regola della catena nel caso generale di due funzioni, f:Rn Rm e g:RmRk}{section.1.1}% 8
+\BOOKMARK [2][-]{subsection.1.1.7}{Formula di Taylor del II ordine per una funzione di due variabili}{section.1.1}% 9
+\BOOKMARK [2][-]{subsection.1.1.8}{ Definizione di matrice Hessiana per un funzione f: A R2 R e sua applicazione nella formula di Taylor del II ordine}{section.1.1}% 10
+\BOOKMARK [2][-]{subsection.1.1.9}{Definizione di punto di massimo/minimo relativo, massimo/minimo assoluto e punto di sella per una funzione f: A R2 R}{section.1.1}% 11
+\BOOKMARK [2][-]{subsection.1.1.10}{Teorema di Fermat sui punti stazionari di una funzione}{section.1.1}% 12
+\BOOKMARK [2][-]{subsection.1.1.11}{Teorema di Weierstrass sull’esistenza del massimo e minimo assoluto di una funzione}{section.1.1}% 13
+\BOOKMARK [2][-]{subsection.1.1.12}{Metodo dei moltiplicatori di Lagrange per la ricerca di massimi e minimi vincolati per funzioni di due variabili}{section.1.1}% 14
+\BOOKMARK [2][-]{subsection.1.1.13}{Definizione di insieme insieme semplice \(o normale\) in R2 rispetto agli assi cartesiani}{section.1.1}% 15
+\BOOKMARK [2][-]{subsection.1.1.14}{Formula di riduzione di integrali doppi su insiemi semplici}{section.1.1}% 16
+\BOOKMARK [2][-]{subsection.1.1.15}{Formula di cambiamento di variabili per integrali doppi e tripli}{section.1.1}% 17
+\BOOKMARK [2][-]{subsection.1.1.16}{Cambiamento di coordinate cilindriche e sferiche}{section.1.1}% 18
+\BOOKMARK [2][-]{subsection.1.1.17}{Formule di riduzione per integrali tripli su un parallelepipedo}{section.1.1}% 19
+\BOOKMARK [2][-]{subsection.1.1.18}{Definizione di insieme definito per fili e per strati}{section.1.1}% 20
+\BOOKMARK [2][-]{subsection.1.1.19}{Formula di integrazione per fili e per strati}{section.1.1}% 21
+\BOOKMARK [2][-]{subsection.1.1.20}{ Definizione di curva in Rn, supporto di una curva, estremi di una curva, equazione parametrica di una curva}{section.1.1}% 22
+\BOOKMARK [2][-]{subsection.1.1.21}{Definizione di curva chiusa, semplice, regolare, orientazione \(o verso di percorrenza\) di una curva semplice}{section.1.1}% 23
+\BOOKMARK [2][-]{subsection.1.1.22}{Definizione di versore tangente ad una curva regolare}{section.1.1}% 24
+\BOOKMARK [2][-]{subsection.1.1.23}{Definizione di curva rettificabile e lunghezza di una curva L\(\)}{section.1.1}% 25
+\BOOKMARK [2][-]{subsection.1.1.24}{ Formula per il calcolo della lunghezza di una curva rettificabile}{section.1.1}% 26
+\BOOKMARK [2][-]{subsection.1.1.25}{ Definizione di integrale curvilineo di prima specie per una funzione continua f lungo una curva \040di classe C1}{section.1.1}% 27
+\BOOKMARK [2][-]{subsection.1.1.26}{ Definizione di integrale curvilineo di seconda specie di una forma differenziale lungo una curva di classe C1}{section.1.1}% 28
+\BOOKMARK [2][-]{subsection.1.1.27}{Definizione di forma differenziale esatta e di potenziale di una forma differenziale}{section.1.1}% 29
+\BOOKMARK [2][-]{subsection.1.1.28}{Formula per il calcolo dell’integrale curvilineo di una forma differenziale esatta}{section.1.1}% 30
+\BOOKMARK [2][-]{subsection.1.1.29}{Definizione di superficie elementare di R3: parametrizzazione di una superficie}{section.1.1}% 31
+\BOOKMARK [2][-]{subsection.1.1.30}{Definizione di area per una superficie regolare}{section.1.1}% 32
+\BOOKMARK [2][-]{subsection.1.1.31}{Area di una superficie cartesiana regolare e di una superficie di rotazione}{section.1.1}% 33
+\BOOKMARK [2][-]{subsection.1.1.32}{Definizione di integrale di superficie per una funzione continua f:R3R, dove \040è una superficie regolare}{section.1.1}% 34
+\BOOKMARK [1][-]{section.1.2}{Enunciati}{chapter.1}% 35
+\BOOKMARK [2][-]{subsection.1.2.1}{Unicit\340 del limite}{section.1.2}% 36
+\BOOKMARK [2][-]{subsection.1.2.2}{Teorema \(algebra dei limiti\)}{section.1.2}% 37

@@ -1,2 +1,12 @@
 \subsection{Definizione di integrale di superficie per una funzione continua
 $f:\Sigma\subseteq\R^3\to\R$, dove $\Sigma$ è una superficie regolare}
+\begin{definition}
+  Sia $S$ una superficie regolare di parametrizzazione $\sigma:\overline{D}\to\R^3$ t.c. 
+  \begin{enumerate}
+    \item $D\subseteq \R^2$ misurabile
+    \item $D\ni (u,v) \to \norma{\sigma_u\wedge\sigma_v}(u,v)$ sia limitata
+  \end{enumerate}
+  Sia $f:S' \to \R$ continua e limitata. Il valore
+  $$\iint_{S} f \,dS := \iint_{D} f(\sigma(u,v))\norma{\sigma_u\wedge\sigma_v}(u,v) \,du\,dv$$
+  si chiama \underline{integrale di superficie} di f.
+\end{definition}

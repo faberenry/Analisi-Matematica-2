@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.9.27)  14 JUL 2022 12:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2021.9.27)  12 JUL 2022 22:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/enrico/latex/Analisi-Matematica-2/Appunti.tex
-(/home/enrico/latex/Analisi-Matematica-2/Appunti.tex
+**/home/enrico/latex/Analisi-Matematica-2/Orale.tex
+(/home/enrico/latex/Analisi-Matematica-2/Orale.tex
 LaTeX2e <2017-04-15>
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/report.cls
@@ -790,43 +790,35 @@ File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
-\c@theorem=\count329
-\c@corollary=\count330
-\c@proof=\count331
-\c@example=\count332
-\c@proposition=\count333
-\c@exercise=\count334
-\c@eexercise=\count335
-\c@definition=\count336
- (/home/enrico/latex/Analisi-Matematica-2/Appunti.aux (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-01.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-02.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-03.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-04.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-05.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-06.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-07.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-08.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-09.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-10.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-11.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-12.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-13.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-14.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-15.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-16.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-17.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-18.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-19.aux) (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-20.aux))
-\openout1 = `Appunti.aux'.
+ (/home/enrico/latex/Analisi-Matematica-2/Orale.aux)
+\openout1 = `Orale.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 74.
-LaTeX Font Info:    ... okay on input line 74.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 58.
+LaTeX Font Info:    ... okay on input line 58.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count337
+\scratchcounter=\count329
 \scratchdimen=\dimen294
 \scratchbox=\box59
-\nofMPsegments=\count338
-\nofMParguments=\count339
+\nofMPsegments=\count330
+\nofMParguments=\count331
 \everyMPshowfont=\toks41
-\MPscratchCnt=\count340
+\MPscratchCnt=\count332
 \MPscratchDim=\dimen295
-\MPnumerator=\count341
-\makeMPintoPDFobject=\count342
+\MPnumerator=\count333
+\makeMPintoPDFobject=\count334
 \everyMPtoPDFconversion=\toks42
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -841,533 +833,502 @@ Package grfext Info: Graphics extension search list:
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 \AtBeginShipoutBox=\box60
-Package hyperref Info: Link coloring OFF on input line 74.
+Package hyperref Info: Link coloring OFF on input line 58.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count343
+\c@section@level=\count335
 )
-LaTeX Info: Redefining \ref on input line 74.
-LaTeX Info: Redefining \pageref on input line 74.
-LaTeX Info: Redefining \nameref on input line 74.
- (/home/enrico/latex/Analisi-Matematica-2/Appunti.out) (/home/enrico/latex/Analisi-Matematica-2/Appunti.out)
+LaTeX Info: Redefining \ref on input line 58.
+LaTeX Info: Redefining \pageref on input line 58.
+LaTeX Info: Redefining \nameref on input line 58.
+ (/home/enrico/latex/Analisi-Matematica-2/Orale.out) (/home/enrico/latex/Analisi-Matematica-2/Orale.out)
 \@outlinefile=\write4
-\openout4 = `Appunti.out'.
+\openout4 = `Orale.out'.
 
  ABD: EveryShipout initializing macros
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable tick labels; missing features). Consider writing \pgfplotsset{compat=1.15} into your preamble.
- on input line 74.
+ on input line 58.
 
-\c@lstlisting=\count344
-LaTeX Font Info:    Try loading font information for U+bbold on input line 76.
-(/usr/share/texlive/texmf-dist/tex/latex/bbold/Ubbold.fd)
-LaTeX Font Info:    Try loading font information for U+msa on input line 76.
+\c@lstlisting=\count336
+(/home/enrico/latex/Analisi-Matematica-2/Orale.toc
+LaTeX Font Info:    Try loading font information for U+bbold on input line 2.
+ (/usr/share/texlive/texmf-dist/tex/latex/bbold/Ubbold.fd)
+LaTeX Font Info:    Try loading font information for U+msa on input line 2.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 76.
+LaTeX Font Info:    Try loading font information for U+msb on input line 2.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (/home/enrico/latex/Analisi-Matematica-2/Appunti.toc
-Missing character: There is no Â in font cmr10!
-Missing character: There is no ° in font cmr10!
-Missing character: There is no Â in font cmr10!
-Missing character: There is no ° in font cmr10!
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.41 ...egno di una matrice}{37}{subsection.1.8.4}
-                                                   [1
+Overfull \hbox (0.30618pt too wide) in paragraph at lines 23--23
+ [][] [][]\OT1/cmr/m/n/10 Formule di riduzione per in-te-grali tripli su un par-al-lelepipedo[] [][]  
+ []
 
-] [2])
+[1
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (3.75058pt too wide) in paragraph at lines 27--27
+ [][] [][]\OT1/cmr/m/n/10 Definizione di curva chiusa, sem-plice, re-go-lare, ori-en-tazione 
+ []
+
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+Missing character: There is no Ã in font cmr10!
+Missing character: There is no ¨ in font cmr10!
+)
 \tf@toc=\write5
-\openout5 = `Appunti.toc'.
+\openout5 = `Orale.toc'.
 
- [3]
-\openout2 = `Lezioni/lez-01.aux'.
-
- (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-01.tex
+ [2]
 Chapter 1.
-
-Underfull \hbox (badness 10000) in paragraph at lines 3--10
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 3--10
-
- []
-
-[4
-
-
-
-]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 46.
- (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 64.
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 46.
- [5]) [6]
-\openout2 = `Lezioni/lez-02.aux'.
-
- (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-02.tex
-Overfull \hbox (3.69254pt too wide) in paragraph at lines 3--5
-[]\OT1/cmr/m/it/10 Si chiama $[]$ di
- []
-
-
-Overfull \hbox (40.2578pt too wide) in paragraph at lines 22--24
-[]\OT1/cmr/m/it/10 L'insieme di tutti i punti di A che non sono di fron-tiera si chiama $[]$
- []
-
-
-Overfull \hbox (0.63162pt too wide) in paragraph at lines 48--49
-[]\OT1/cmr/m/it/10 Sia $\OML/cmm/m/it/10 f \OT1/cmr/m/n/10 : \OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 ^^R \U/bbold/m/n/10 R[] \OMS/cmsy/m/n/10 !
- []
-
-[7
-
-
-] [8] [9]) [10]
-\openout2 = `Lezioni/lez-03.aux'.
-
- (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-03.tex
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 2.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 17--20
-
- []
-
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 24.
-[11
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 64.
 
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 71.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\subseteq' on input line 71.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 71.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\to' on input line 71.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 71.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 78.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\subseteq' on input line 78.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 78.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\to' on input line 78.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 78.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 89.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\subseteq' on input line 89.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 89.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\to' on input line 89.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 89.
+
+[3
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 68--73
 
- []
-
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 87--92
-
- []
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 104.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--92
-
- []
-
-
-Overfull \hbox (26.39444pt too wide) in paragraph at lines 87--92
-[]$\OT1/cmr/m/n/10 : Definire il "pi-ano tan-gente" alla "su-per-fi-cie" $\OML/cmm/m/it/10 G[]$ \OT1/cmr/m/n/10 nel punto $(\OML/cmm/m/it/10 x[]; y[]; f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; y[]\OT1/cmr/m/n/10 ))$
- []
-
-[13]) [14]
-\openout2 = `Lezioni/lez-04.aux'.
-
- (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-04.tex
-Overfull \hbox (19.34103pt too wide) in paragraph at lines 26--28
-\OT1/cmr/m/it/10 feren-zi-a-bile in $\OML/cmm/m/it/10 p[]$\OT1/cmr/m/it/10 . Si chiama $[]$ al grafico $\OML/cmm/m/it/10 G[]$ \OT1/cmr/m/it/10 nel punto $\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; y[]; f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; y[]\OT1/cmr/m/n/10 ))$
- []
-
-[15
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\subseteq' on input line 104.
 
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 34--36
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 104.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\to' on input line 104.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 104.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--109
 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 39.
+(hyperref)                removing `math shift' on input line 112.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\geq' on input line 39.
+(hyperref)                removing `superscript' on input line 112.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 39.
+(hyperref)                removing `\to' on input line 112.
 
 
-Overfull \hbox (88.85889pt too wide) in paragraph at lines 41--44
-\OT1/cmr/m/n/10 dove $\OML/cmm/m/it/10 i \OT1/cmr/m/n/10 = 1\OML/cmm/m/it/10 ; :::; n$\OT1/cmr/m/n/10 , $\OML/cmm/m/it/10 e[]; :::; e[]$ \OT1/cmr/m/n/10 de-nota la base canon-ica di $\U/bbold/m/n/10 R[]$\OT1/cmr/m/n/10 , cio^^Re $\OML/cmm/m/it/10 e[] \OT1/cmr/m/n/10 = (0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 ; :::; \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1[]\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 ; :::; \OT1/cmr/m/n/10 0)$ 
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 112.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 112.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 112.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 112.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\to' on input line 112.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 112.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 112.
+
+[4]
+Overfull \hbox (52.14809pt too wide) in paragraph at lines 116--124
+\OT1/cmr/m/n/10 Supponiamo che $[]$ 
  []
 
 
-Overfull \hbox (59.73163pt too wide) in paragraph at lines 47--49
-[]\OT1/cmr/m/it/10 f si dice $[]$ in un punto $\OML/cmm/m/it/10 p[] \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 A$ \OT1/cmr/m/it/10 se es-iste un'$[]$
- []
-
-[16]
-Underfull \hbox (badness 10000) in paragraph at lines 85--92
-
- []
-
-[17] [18]) [19]
-\openout2 = `Lezioni/lez-05.aux'.
-
- (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-05.tex [20
-
-
-]
-Overfull \hbox (5.80156pt too wide) in paragraph at lines 57--58
-[]\OT1/cmr/m/it/10 Un vet-tore $\OML/cmm/m/it/10 v \OMS/cmsy/m/n/10 2 \U/bbold/m/n/10 R[]$ \OT1/cmr/m/it/10 si dice $[]$ ($[]$, $[]$)
- []
-
-[21]
-Overfull \hbox (9.32732pt too wide) in paragraph at lines 87--88
-[]\OT1/cmr/m/it/10 Sia $\OML/cmm/m/it/10 f \OT1/cmr/m/n/10 : \OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 ^^R
- []
-
-[22]) [23]
-\openout2 = `Lezioni/lez-06.aux'.
-
- (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-06.tex
-Overfull \hbox (18.22533pt too wide) in paragraph at lines 17--18
-[]\OT1/cmr/m/it/10 Se $\OML/cmm/m/it/10 f; g$ \OT1/cmr/m/it/10 sono deriv-abli, rispet-
- []
-
-Missing character: There is no Â in font cmbx12!
-Missing character: There is no ° in font cmbx12!
-[24
-
-
-] [25]
-Missing character: There is no Â in font cmbx12!
-Missing character: There is no ° in font cmbx12!
-
-Overfull \hbox (0.82529pt too wide) in paragraph at lines 85--90
-\OT1/cmr/m/n/10 Sia $\OML/cmm/m/it/10 f \OT1/cmr/m/n/10 : \OML/cmm/m/it/10 B \OMS/cmsy/m/n/10 ^^R \U/bbold/m/n/10 R[] \OMS/cmsy/m/n/10 ! \U/bbold/m/n/10 R$\OT1/cmr/m/n/10 , B aperto, f dif-feren-zi-a-bile in $\OML/cmm/m/it/10 q[] \OT1/cmr/m/n/10 = (\OML/cmm/m/it/10 x[]; y[]\OT1/cmr/m/n/10 ) = (\OML/cmm/m/it/10 g[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; g[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 ))$,
- []
-
-[26]
-Underfull \hbox (badness 10000) in paragraph at lines 120--123
+Underfull \hbox (badness 10000) in paragraph at lines 130--133
 
  []
 
 
-Overfull \hbox (10.77994pt too wide) in paragraph at lines 134--137
-[]\OT1/cmr/m/it/10 La nozione di ma-trice Ja-co-biana gen-er-al-izza la nozione
- []
-
-[27]
-Overfull \hbox (31.49115pt too wide) in paragraph at lines 148--156
-\OT1/cmr/m/it/10 Supponiamo che $[]$ 
- []
-
-) [28]
-\openout2 = `Lezioni/lez-07.aux'.
-
- (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-07.tex
-Overfull \hbox (8.9176pt too wide) in paragraph at lines 20--24
-[]\OT1/cmr/m/it/10 [BDPG, 11.11]
- []
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 139.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--29
-
- []
-
-
-Overfull \hbox (3.86166pt too wide) in paragraph at lines 29--34
-\OT1/cmr/m/n/10 Con queste no-tazioni, vale la seguente gen-er-al-iz-zazione del teo-rema sull'inversione
- []
-
-[29
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\subseteq' on input line 139.
 
 
-]
-Overfull \hbox (54.60869pt too wide) in paragraph at lines 59--61
-[]\OT1/cmr/m/it/10 Dato $\OML/cmm/m/it/10 m \OMS/cmsy/m/n/10 2 \U/bbold/m/n/10 N$\OT1/cmr/m/it/10 , $\OML/cmm/m/it/10 p[] \OT1/cmr/m/n/10 = (\OML/cmm/m/it/10 x[]; y[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2 \U/bbold/m/n/10 R[]$ \OT1/cmr/m/it/10 fis-sato, si chiama $[]$
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 139.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\to' on input line 139.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 139.
+
+
+Overfull \hbox (3.63951pt too wide) in paragraph at lines 145--151
+\OT1/cmr/m/n/10 L'applicazione della ma-trice Hes-siana nel PT2o si pu^^Ro trovare nello sviluppo
  []
 
 
-Overfull \hbox (4.16302pt too wide) in paragraph at lines 79--81
-[]\OT1/cmr/m/it/10 Data $\OML/cmm/m/it/10 f \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 C[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 A\OT1/cmr/m/n/10 )$\OT1/cmr/m/it/10 , $\OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 2 \U/bbold/m/n/10 R[]$ \OT1/cmr/m/it/10 aperto, si chiama, $[]$
+Overfull \hbox (38.59875pt too wide) in paragraph at lines 145--151
+\OT1/cmr/m/n/10 della di-mostrazione, in-fatti per una fun-zione $\OML/cmm/m/it/10 F\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 tv\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; t \OMS/cmsy/m/n/10 2 \OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^@\OML/cmm/m/it/10 r; r\OT1/cmr/m/n/10 )[]\OML/cmm/m/it/10 B\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p[]; r\OT1/cmr/m/n/10 )$
  []
 
-[30]
-Overfull \hbox (63.10684pt too wide) detected at line 111
+[5]
+Overfull \hbox (63.10684pt too wide) detected at line 154
 \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 v[] [] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 v[] [] \OT1/cmr/m/n/10 =
  []
 
-[31]) [32]
-\openout2 = `Lezioni/lez-08.aux'.
 
- (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-08.tex
-Overfull \hbox (0.79033pt too wide) in paragraph at lines 3--6
-\OT1/cmr/bx/n/10 Problema: \OT1/cmr/m/n/10 Dato un in-sieme $\OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 ^^R \U/bbold/m/n/10 R[]$ \OT1/cmr/m/n/10 e data $\OML/cmm/m/it/10 f \OT1/cmr/m/n/10 : \OML/cmm/m/it/10 A \OMS/cmsy/m/n/10 ! \U/bbold/m/n/10 R$\OT1/cmr/m/n/10 , de-ter-minare, $[]$,
+Overfull \hbox (16.28111pt too wide) detected at line 163
+\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 tv\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 F\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 p[]\OT1/cmr/m/n/10 ) + [] \OML/cmm/m/it/10 t \OT1/cmr/m/n/10 + [] [] \OML/cmm/m/it/10 t[] \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 o\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; []t \OMS/cmsy/m/n/10 ! \OT1/cmr/m/n/10 0
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 31--35
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--40
-
- []
-
-[33
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 167.
 
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 58--63
-
- []
-
-[34] [35] [36]) [37]
-\openout2 = `Lezioni/lez-09.aux'.
-
- (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-09.tex [38
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\subseteq' on input line 167.
 
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 50--57
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 167.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\to' on input line 167.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 167.
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 188--189
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--75
+Underfull \hbox (badness 10000) in paragraph at lines 188--189
 
  []
 
-[39]
-Underfull \hbox (badness 10000) in paragraph at lines 81--85
+Missing character: There is no â in font cmbx12!
+Missing character: There is no € in font cmbx12!
+Missing character: There is no ™ in font cmbx12!
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 95--101
-
- []
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 212.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--101
-
- []
-
-[40]
-Overfull \hbox (4.95793pt too wide) in paragraph at lines 112--114
-[]\OT1/cmr/m/it/10 Sia $\OML/cmm/m/it/10 f \OMS/cmsy/m/n/10 2
- []
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 212.
 
 
-Overfull \hbox (5.12447pt too wide) in paragraph at lines 147--153
-[]\OT1/cmr/m/it/10 [BDPG, 13.3] []Sup-poni-
- []
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 212.
 
-[41] [42]
-Overfull \hbox (13.97945pt too wide) detected at line 207
-[]  \OMS/cmsy/m/n/10 ([])  \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; y; z; ^^U\OT1/cmr/m/n/10 ) = []
- []
-
-Missing character: There is no Ã in font cmr10!
-Missing character: There is no ¹ in font cmr10!
-) [43]
-\openout2 = `Lezioni/lez-10.aux'.
-
- (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-10.tex
-Chapter 2.
-
-Underfull \hbox (badness 10000) in paragraph at lines 6--10
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6--10
-
- []
-
-LaTeX Font Info:    Try loading font information for U+dutchcal on input line 21.
-(/usr/share/texlive/texmf-dist/tex/latex/dutchcal/udutchcal.fd
+[7]
+LaTeX Font Info:    Try loading font information for U+dutchcal on input line 225.
+ (/usr/share/texlive/texmf-dist/tex/latex/dutchcal/udutchcal.fd
 File: udutchcal.fd 2011/06/16 Fontinst v1.933 font definitions for U/dutchcal.
 )
 LaTeX Font Info:    Font shape `U/dutchcal/m/n' will be
-(Font)              scaled to size 10.0pt on input line 21.
+(Font)              scaled to size 10.0pt on input line 225.
 LaTeX Font Info:    Font shape `U/dutchcal/m/n' will be
-(Font)              scaled to size 7.0pt on input line 21.
+(Font)              scaled to size 7.0pt on input line 225.
 LaTeX Font Info:    Font shape `U/dutchcal/m/n' will be
-(Font)              scaled to size 5.0pt on input line 21.
- [44
+(Font)              scaled to size 5.0pt on input line 225.
 
-
-
-] [45]
-Underfull \hbox (badness 10000) in paragraph at lines 61--64
-
+Overfull \hbox (34.43428pt too wide) in paragraph at lines 248--253
+[]\OT1/cmr/m/n/10 Denotiamo $\OML/cmm/m/it/10 dA[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 du dv$ \OT1/cmr/m/n/10 e $\OML/cmm/m/it/10 dA \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 dx dy$ \OT1/cmr/m/n/10 Si pu^^Ro provare che $\OML/cmm/m/it/10 dA \OT1/cmr/m/n/10 = [] \OML/cmm/m/it/10 detD \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 u; v\OT1/cmr/m/n/10 )]\OML/cmm/m/it/10 dA[]$\OT1/cmr/m/n/10 . 
  []
 
 
-Overfull \hbox (0.50987pt too wide) in paragraph at lines 73--76
-[]\OT1/cmr/m/it/10 [BDPG, 14.5] Siano $\OML/cmm/m/it/10 f; g \OMS/cmsy/m/n/10 2 \U/dutchcal/m/n/10 R\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Q\OT1/cmr/m/n/10 )$
- []
-
-[46]
-Overfull \hbox (5.32452pt too wide) in paragraph at lines 89--93
-[]\OT1/cmr/m/it/10 [BDPG, 14.6] []Siano
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 116--120
+Underfull \hbox (badness 10000) in paragraph at lines 248--253
 
  []
 
-[47]) [48]
-\openout2 = `Lezioni/lez-11.aux'.
+[8]
+Overfull \hbox (9.01253pt too wide) in paragraph at lines 277--277
+[]\OT1/cmr/bx/n/12 Cambiamento di co-or-di-nate cilin-driche e sferiche 
+ []
 
- (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-11.tex [49
+[9] [10]
+LaTeX Font Info:    Font shape `U/dutchcal/m/n' will be
+(Font)              scaled to size 12.0pt on input line 322.
+LaTeX Font Info:    Font shape `U/dutchcal/m/n' will be
+(Font)              scaled to size 8.0pt on input line 322.
+LaTeX Font Info:    Font shape `U/dutchcal/m/n' will be
+(Font)              scaled to size 6.0pt on input line 322.
 
 
-]
-Overfull \hbox (4.2856pt too wide) in paragraph at lines 49--52
-[]\OT1/cmr/m/it/10 [BDPG,14.9]
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 322.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 322.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 322.
+
+
+Overfull \hbox (11.29039pt too wide) in paragraph at lines 324--327
+[]\OT1/cmr/m/n/10 Si chiama $[]$ una mappa $\OML/cmm/m/it/10 ^^M \OT1/cmr/m/n/10 : \OML/cmm/m/it/10 I \OMS/cmsy/m/n/10 ! \U/bbold/m/n/10 R[]$ \OT1/cmr/m/n/10 con-tinua, $\OML/cmm/m/it/10 ^^M\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) = (\OML/cmm/m/it/10 ^^M[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; :::; ^^M[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ))$
  []
 
 
-Overfull \hbox (15.85536pt too wide) in paragraph at lines 67--68
-[]\OT1/cmr/m/it/10 Siano $\OML/cmm/m/it/10 g[]; g[] \OT1/cmr/m/n/10 : [\OML/cmm/m/it/10 a; b\OT1/cmr/m/n/10 ] \OMS/cmsy/m/n/10 !
- []
-
-
-Overfull \hbox (18.25354pt too wide) in paragraph at lines 78--82
-[]\OT1/cmr/m/it/10 [BDPG,
- []
-
-[50]
-Overfull \hbox (23.30077pt too wide) in paragraph at lines 97--101
-[]\OT1/cmr/m/it/10 [BDPG,14.15]
- []
-
-
-Overfull \hbox (14.1527pt too wide) in paragraph at lines 112--114
-[]$[]$ \OT1/cmr/m/it/10 (o nor-male) rispetto all'asse y se es-istono $\OML/cmm/m/it/10 g[]; g[] \OMS/cmsy/m/n/10 2 \OML/cmm/m/it/10 C[]\OT1/cmr/m/n/10 ([\OML/cmm/m/it/10 a; b\OT1/cmr/m/n/10 ])$
- []
-
-[51]
-Overfull \hbox (7.90367pt too wide) in paragraph at lines 126--131
-[]\OT1/cmr/m/it/10 [BDPG,14.17]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 146--149
+Underfull \hbox (badness 10000) in paragraph at lines 340--348
 
  []
 
+[11]
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--158
-
- []
-
-[52]) [53]
-\openout2 = `Lezioni/lez-12.aux'.
-
- (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-12.tex
-Underfull \hbox (badness 10000) in paragraph at lines 15--19
-
- []
-
-[54
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 353.
 
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 39--43
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\gamma' on input line 353.
 
- []
 
-[55]
-Overfull \hbox (16.95654pt too wide) in paragraph at lines 59--62
-\OT1/cmr/m/n/10 Utilizziamo le co-or-di-nate po-lari, cio^^Re con-sid-e-ri-amo l'applicazione $\OML/cmm/m/it/10   \OT1/cmr/m/n/10 : (0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 +\OMS/cmsy/m/n/10 1\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^B
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 353.
+
+
+Overfull \hbox (23.37595pt too wide) in paragraph at lines 369--372
+$\OML/cmm/m/it/10 i \OT1/cmr/m/n/10 = 1\OML/cmm/m/it/10 ; :::; N$\OT1/cmr/m/n/10 . La lunghezza della spez-zata definita dall'unione $[][][\OML/cmm/m/it/10 ^^M\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; ^^M\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t[]\OT1/cmr/m/n/10 )]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--84
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 376.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\gamma' on input line 376.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 376.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 376.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 376.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 376.
+
+[12]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 382.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 382.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 382.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 394--400
 
  []
 
-
-Overfull \hbox (12.4845pt too wide) in paragraph at lines 89--94
-\OT1/cmr/m/n/10 Se $\OML/cmm/m/it/10 d^^Z$ \OT1/cmr/m/n/10 e $\OML/cmm/m/it/10 d#$ \OT1/cmr/m/n/10 sono "molto pic-coli", $\OML/cmm/m/it/10 dA \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 dxdy [] area\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Q\OT1/cmr/m/n/10 ) [] \OML/cmm/m/it/10 lunghezza\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 L[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 d^^Z \OT1/cmr/m/n/10 =
- []
-
-[56]
-Underfull \hbox (badness 10000) in paragraph at lines 125--128
-
- []
-
-
-Overfull \hbox (37.43541pt too wide) in paragraph at lines 129--133
-[]\OT1/cmr/m/it/10 [BDPG,14.19]
- []
-
-[57]
-Underfull \hbox (badness 10000) in paragraph at lines 138--144
-
+Missing character: There is no â in font cmbx12!
+Missing character: There is no € in font cmbx12!
+Missing character: There is no ™ in font cmbx12!
+[13]
+Overfull \hbox (40.60973pt too wide) in paragraph at lines 410--410
+[]\OT1/cmr/bx/n/12 Definizione di su-per-fi-cie el-e-mentare di $\U/bbold/m/n/12 R[]$\OT1/cmr/bx/n/12 : parametriz-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 138--144
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 410.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 410.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 410.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 420--423
 
  []
 
-
-Overfull \hbox (6.41727pt too wide) in paragraph at lines 138--144
-\OT1/cmr/m/it/10 L'insieme D rap-p-re-senta un'elisse con semi-assi di lunghezza a e b. L'insieme
- []
-
-[58]
-Underfull \hbox (badness 10000) in paragraph at lines 164--169
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 449--452
 
  []
 
+Missing character: There is no Ã in font cmbx12!
+Missing character: There is no ¨ in font cmbx12!
 
-Underfull \hbox (badness 10000) in paragraph at lines 164--169
-
- []
-
-[59]) [60]
-\openout2 = `Lezioni/lez-13.aux'.
-
- (/home/enrico/latex/Analisi-Matematica-2/Lezioni/lez-13.tex [61
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 462.
 
 
-] [62]
-Overfull \hbox (2.21481pt too wide) in paragraph at lines 84--86
-[]\OT1/cmr/m/it/10 Sia $\OML/cmm/m/it/10 f \OT1/cmr/m/n/10 :
- []
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\Sigma' on input line 462.
 
 
-Overfull \hbox (2.03429pt too wide) in paragraph at lines 92--95
-[]\OT1/cmr/m/it/10 [BDPG,14.26]
- []
-
-[63]
-Overfull \hbox (77.952pt too wide) in paragraph at lines 125--128
-[]
- []
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\subseteq' on input line 462.
 
 
-Overfull \hbox (15.10837pt too wide) detected at line 136
-\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 ^^C ^^C ^^C\OT1/cmr/m/n/10 ) \OML/cmm/m/it/10 A[] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 x; z\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 2 \U/bbold/m/n/10 R[] \OT1/cmr/m/n/10 :
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 462.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\to' on input line 462.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 462.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 462.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\Sigma' on input line 462.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 462.
+
+[15] [16]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 489.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 489.
+ (/home/enrico/latex/Analisi-Matematica-2/Orale.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 489.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 489.
+Package rerunfilecheck Info: File `Orale.out' has not changed.
+(rerunfilecheck)             Checksum: 5354A3569D8DD90B7931B0F72696D28F;4523.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 489.
+ ) 
+Here is how much of TeX's memory you used:
+ 36638 strings out of 492982
+ 844168 string characters out of 6134896
+ 1023452 words of memory out of 5000000
+ 39616 multiletter control sequences out of 15000+600000
+ 544308 words of font info for 77 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 62i,9n,96p,10438b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/dutchcal/DutchCalReg.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bbold-type1/bbold7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on /home/enrico/latex/Analisi-Matematica-2/Orale.pdf (16 pages, 252547 bytes).
+PDF statistics:
+ 424 PDF objects out of 1000 (max. 8388607)
+ 381 compressed objects within 4 object streams
+ 83 named destinations out of 1000 (max. 500000)
+ 309 words of extra memory for PDF output out of 10000 (max. 10000000)
+
